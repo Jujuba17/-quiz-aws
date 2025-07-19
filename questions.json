@@ -106,7 +106,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "<div>O S3 permite que&nbsp;<font color=\"#ff5500\">1 único</font> arquivo tenha no máximo _____TB de tamanho.</div>",
+    "question": "<div>O S3 permite que;<font color=\"#ff5500\">1 único</font> arquivo tenha no máximo _____TB de tamanho.</div>",
     "answers": [
       "15",
       "10",
@@ -119,7 +119,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "S3 _______ é a <font color=\"#ff5500\">classe</font> que permite armazenamento com <font color=\"#ff5500\"><b>alto\nnível</b></font> de resiliência, <b><font color=\"#ff5500\">disponibilidade e performance</font></b> para dados acessados com\nfrequência.&nbsp;",
+    "question": "S3 _______ é a <font color=\"#ff5500\">classe</font> que permite armazenamento com <font color=\"#ff5500\"><b>alto\nnível</b></font> de resiliência, <b><font color=\"#ff5500\">disponibilidade e performance</font></b> para dados acessados com\nfrequência.;",
     "answers": [
       "EFS",
       "Glacier",
@@ -236,7 +236,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "O S3 Glacier _____ Archive oferece duas opções de recuperação, variando de <font color=\"#ff5500\"><b>12 a 48&nbsp;horas.</b></font>",
+    "question": "O S3 Glacier _____ Archive oferece duas opções de recuperação, variando de <font color=\"#ff5500\"><b>12 a 48;horas.</b></font>",
     "answers": [
       "Deep",
       "Storage Gateway",
@@ -327,7 +327,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "O Storage _____ é um serviço para fazer a replicação dos dados do data center on-premise para AWS.&nbsp;",
+    "question": "O Storage _____ é um serviço para fazer a replicação dos dados do data center on-premise para AWS.;",
     "answers": [
       "EFS",
       "S3",
@@ -366,7 +366,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "No storage gateway qual o tipo de armazenamento indicado para <span style=\"color: rgb(255, 85, 0);\">volume de</span>&nbsp;<span style=\"color: rgb(255, 85, 0);\"><b>sistemas operacionais</b></span> ou máquinas virtuais?",
+    "question": "No storage gateway qual o tipo de armazenamento indicado para <span style=\"color: rgb(255, 85, 0);\">volume de</span>;<span style=\"color: rgb(255, 85, 0);\"><b>sistemas operacionais</b></span> ou máquinas virtuais?",
     "answers": [
       "File Gateway",
       "Tape Gateway",
@@ -392,7 +392,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "No storage gateway temos 3 tipos de armazenamento, F_____, V_____ e T_____.&nbsp;",
+    "question": "No storage gateway temos 3 tipos de armazenamento, F_____, V_____ e T_____.;",
     "answers": [
       "Armazenamento | File | Volume",
       "File Volume | Tape",
@@ -418,7 +418,7 @@
   },
   {
     "titulo": "Migração e Transferência",
-    "question": "O Snowball <b>Edge</b> possui entre 40 e _____ terabytes.&nbsp;",
+    "question": "O Snowball <b>Edge</b> possui entre 40 e _____ terabytes.;",
     "answers": [
       "Savings Plans",
       "Cost Explorer",
@@ -431,12 +431,12 @@
   },
   {
     "titulo": "Migração e Transferência",
-    "question": "O Snow _____&nbsp;é um cointainer em um <span style=\"color: rgb(255, 85, 0);\">caminhão</span>, capaz de armazenar até _____ PB.&nbsp;",
+    "question": "O Snow _____;é um cointainer em um <span style=\"color: rgb(255, 85, 0);\">caminhão</span>, capaz de armazenar até _____ PB.;",
     "answers": [
       "Mobile | 100",
-      "Route53",
-      "S3",
-      "KMS"
+      "Route53 | 50",
+      "S3 | 100 ",
+      "Mobile | 50"
     ],
     "correct": 0,
     "dica": "",
@@ -444,12 +444,12 @@
   },
   {
     "titulo": "Computação",
-    "question": "O que significa EC2?&nbsp;<br><br>Elastic C______ C_____",
+    "question": "O que significa EC2",
     "answers": [
-      "Lightsail",
+      "Elastic Two",
       "Elastic Beanstalk",
-      "Auto Scaling",
-      "Compute | Cloud"
+      "Elastic Cloud",
+      "Elastic Compute Cloud"
     ],
     "correct": 3,
     "dica": "",
@@ -457,12 +457,12 @@
   },
   {
     "titulo": "Computação",
-    "question": "<div>No EC2, o modelo de preço <u>Sob D______</u>&nbsp;<font color=\"#ff5500\"><b>não há</b></font> compromisso de longo prazo ou pagamentos antecipados.</div>",
+    "question": "<div>No EC2, o modelo de preço <u>Sob ______</u>;<font color=\"#ff5500\"><b>não há</b></font> compromisso de longo prazo ou pagamentos antecipados.</div>",
     "answers": [
       "Demanda",
-      "Elastic Beanstalk",
-      "EC2",
-      "Lambda"
+      "Reserva",
+      "Capacidade Dedicada",
+      "Reserva"
     ],
     "correct": 0,
     "dica": "",
@@ -483,10 +483,10 @@
   },
   {
     "titulo": "Computação",
-    "question": "<div>No EC2, o modelo de preço Instância Sp_____ é um tipo de modelo utilizado para <font color=\"#ff5500\">testes\ncomputacionais</font> ou serviços que suportam interrupções.&nbsp;</div>",
+    "question": "<div>No EC2, o modelo de preço Instância _____ é um tipo de modelo utilizado para <font color=\"#ff5500\">testes\ncomputacionais</font> ou serviços que suportam interrupções.;</div>",
     "answers": [
       "Elastic Beanstalk",
-      "pot",
+      "Spot",
       "Lightsail",
       "EC2"
     ],
@@ -522,7 +522,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "Para finalidade de armazenamento de&nbsp;<span style=\"color: rgb(255, 85, 0);\"><b>arquivos</b></span>&nbsp;e pensando no <b><span style=\"color: rgb(255, 85, 0);\">menor custo</span></b>, qual tipo de volume no EBS é mais indicado?",
+    "question": "Para finalidade de armazenamento de;<span style=\"color: rgb(255, 85, 0);\"><b>arquivos</b></span>;e pensando no <b><span style=\"color: rgb(255, 85, 0);\">menor custo</span></b>, qual tipo de volume no EBS é mais indicado?",
     "answers": [
       "SSD gp2",
       "Storage Gateway",
@@ -548,9 +548,9 @@
   },
   {
     "titulo": "Computação",
-    "question": "É possível <span style=\"color: rgb(255, 85, 0);\">monitorar </span>instâncias EC2 e criar alarmes de alertas através do serviço de Cloud_____.",
+    "question": "É possível <span style=\"color: rgb(255, 85, 0);\">monitorar </span>instâncias EC2 e criar alarmes de alertas através do serviço de _____.",
     "answers": [
-      "dWatch",
+      "CloudWatch",
       "Auto Scaling",
       "Elastic Beanstalk",
       "Lightsail"
@@ -561,9 +561,9 @@
   },
   {
     "titulo": "Computação",
-    "question": "<div>Pelo EC2 Glo_____ Vi_____ é possível ver <span style=\"color: rgb(255, 85, 0);\">todas </span>as instâncias EC2 de\ntodas as regiões.</div>",
+    "question": "<div>Pelo EC2 _________ é possível ver <span style=\"color: rgb(255, 85, 0);\">todas </span>as instâncias EC2 de\ntodas as regiões.</div>",
     "answers": [
-      "obal | iew",
+      "Global View",
       "EC2",
       "Lightsail",
       "Auto Scaling"
@@ -574,7 +574,7 @@
   },
   {
     "titulo": "Computação",
-    "question": "<div>Através de um Snap_____ é possível criar uma AMI para criação de\ninstâncias.&nbsp;</div>",
+    "question": "<div>Através de um Snap_____ é possível criar uma AMI para criação de\ninstâncias.;</div>",
     "answers": [
       "pshot",
       "Auto Scaling",
@@ -600,12 +600,12 @@
   },
   {
     "titulo": "Computação",
-    "question": "<div>Você pode usar o \"User Data\" na criação de uma instância EC2 para executar um script no momento da criação da instância.</div><div><br></div><div>Esse script é executado<u> somente na criação</u> da instância ou <u>todas as vezes</u> que ela iniciar?</div><div><br></div><div>_______________________________</div>",
+    "question": "<div>Você pode usar o \"User Data\" na criação de uma instância EC2 para executar um script no momento da criação da instância.</div><div><br></div><div>Esse script é executado<u> somente na criação</u> da instância ou <u>todas as vezes</u> que ela iniciar?</div>",
     "answers": [
-      "Outposts",
+      "Uma vez por dia",
       "Somente na criação da instância",
-      "EC2",
-      "Lightsail"
+      "Nunca é executado",
+      "Todas as vezes que ela iniciar"
     ],
     "correct": 1,
     "dica": "",
@@ -613,25 +613,21 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "<div>É possível conectar 2 instâncias EC2 a um único volume EBS:</div><div><br></div><div><u>Sim</u> ou <u>Não</u>?<br><br>_____</div>",
+    "question": "<div>É possível conectar 2 instâncias EC2 a um único volume EBS? </div>",
     "answers": [
-      "EFS",
-      "Glacier",
-      "Sim.",
-      "S3"
+      "Não",
+      "Sim."
     ],
-    "correct": 2,
+    "correct": 1,
     "dica": "",
     "icone_dica": "💡"
   },
   {
     "titulo": "Armazenamento",
-    "question": "<div>É possível conectar 2 instancias a um volume EFS:</div><div><br></div><div><u>Sim</u> ou <u>Não</u>?<br><br>_____</div>",
+    "question": "<div>É possível conectar 2 instancias a um volume EFS?</div>",
     "answers": [
-      "Storage Gateway",
-      "Sim.",
-      "Glacier",
-      "S3"
+      "Não",
+      "Sim."
     ],
     "correct": 1,
     "dica": "",
@@ -639,7 +635,7 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "<div>No RDS (relation database service), qual recurso permite <span style=\"color: rgb(255, 85, 0);\">failover automático</span> de instância de banco de dados:&nbsp;</div><div><br></div><div><u>Multi-AZ</u> ou <u>Read Replication</u>?</div><div><br></div><div>_________<br></div>",
+    "question": "<div>No RDS (relation database service), qual recurso permite <span style=\"color: rgb(255, 85, 0);\">failover automático</span> de instância de banco de dados:;</div><div><br></div><div><u>Multi-AZ</u> ou <u>Read Replication</u>?</div><div><br></div><div>_________<br></div>",
     "answers": [
       "Outposts",
       "S3",
@@ -676,7 +672,7 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "O\nque Significa Amazon RDS?&nbsp;<br><br>R_________ D_______ Service",
+    "question": "O\nque Significa Amazon RDS?;<br><br>R_________ D_______ Service",
     "answers": [
       "AWS Config",
       "CloudTrail",
@@ -689,7 +685,7 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "<div>O Dy______ é um banco de dados de <span style=\"color: rgb(255, 85, 0);\">chave-valor</span>&nbsp;(não relacional) que é utilizado para aplicações de baixa latência.</div>",
+    "question": "<div>O Dy______ é um banco de dados de <span style=\"color: rgb(255, 85, 0);\">chave-valor</span>;(não relacional) que é utilizado para aplicações de baixa latência.</div>",
     "answers": [
       "VPC (Virtual Private Cloud)",
       "ynamoDB",
@@ -741,7 +737,7 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "<div>Nos banco de dados RDS (relacionais), as ré______ são recursos usados para <span style=\"color: rgb(255, 85, 0);\">melhorar</span> o tempo de <span style=\"color: rgb(255, 85, 0);\">resposta </span>dos bancos de dados (baixa latência).&nbsp;</div>",
+    "question": "<div>Nos banco de dados RDS (relacionais), as ré______ são recursos usados para <span style=\"color: rgb(255, 85, 0);\">melhorar</span> o tempo de <span style=\"color: rgb(255, 85, 0);\">resposta </span>dos bancos de dados (baixa latência).;</div>",
     "answers": [
       "Transit Gateway",
       "Trusted Advisor",
@@ -754,7 +750,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "<div>O R______ é o serviço utilizado para gerenciamento de\n<font color=\"#ff5500\"><b>domínio</b></font>.&nbsp;</div>",
+    "question": "<div>O R______ é o serviço utilizado para gerenciamento de\n<font color=\"#ff5500\"><b>domínio</b></font>.;</div>",
     "answers": [
       "ACL (Access Control List)",
       "Lambda",
@@ -793,12 +789,12 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Na política de DNS Sim_____ routing metric, cada usuário acessa um servidor diferente de forma aleatória dentro da lista de ips dos servidores.&nbsp;&nbsp;",
+    "question": "Na política de DNS _____ routing metric, cada usuário acessa um servidor diferente de forma aleatória dentro da lista de ips dos servidores.",
     "answers": [
       "S3",
       "Storage Gateway",
       "KMS",
-      "mple"
+      "Simple"
     ],
     "correct": 3,
     "dica": "",
@@ -806,10 +802,10 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "A política de DNS Sim_____ routing metric possui o recurso de He_____ Check para identificar se o servidor está disponível.&nbsp;",
+    "question": "A política de DNS _____ routing metric possui o recurso de He_____ Check para identificar se o servidor está disponível.;",
     "answers": [
       "EC2",
-      "mple | ealth",
+      "Simple | ealth",
       "Glacier",
       "CloudTrail"
     ],
@@ -819,7 +815,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "A política de&nbsp;DNS Fai_____ routing metric automaticamente <span style=\"color: rgb(0, 0, 0);\">muda </span>o servidor de destino quando algum se torna <span style=\"color: rgb(255, 85, 0);\"><b>indisponível</b></span>.&nbsp;",
+    "question": "A política de;DNS Fai_____ routing metric automaticamente <span style=\"color: rgb(0, 0, 0);\">muda </span>o servidor de destino quando algum se torna <span style=\"color: rgb(255, 85, 0);\"><b>indisponível</b></span>.;",
     "answers": [
       "Trusted Advisor",
       "Billing Dashboard",
@@ -832,7 +828,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "A política de&nbsp;DNS G__________ routing metric permite gerenciar o acesso de acordo com a <font color=\"#ff5500\"><b>Geolocalização</b></font>.&nbsp;",
+    "question": "A política de;DNS G__________ routing metric permite gerenciar o acesso de acordo com a <font color=\"#ff5500\"><b>Geolocalização</b></font>.;",
     "answers": [
       "S3",
       "Geolocation",
@@ -845,7 +841,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "A política de&nbsp;DNS La___________ routing metric permite o acesso por <font color=\"#ff5500\"><b>latência</b></font>.&nbsp;",
+    "question": "A política de;DNS La___________ routing metric permite o acesso por <font color=\"#ff5500\"><b>latência</b></font>.;",
     "answers": [
       "EBS",
       "atency-based",
@@ -858,7 +854,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "A política de&nbsp;DNS Mult_____________ routing metric permite informar <font color=\"#ff5500\"><b>diversos endereços</b></font> ips para uma mesma URL.&nbsp;",
+    "question": "A política de;DNS Mult_____________ routing metric permite informar <font color=\"#ff5500\"><b>diversos endereços</b></font> ips para uma mesma URL.;",
     "answers": [
       "Outposts",
       "Cost Explorer",
@@ -897,7 +893,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "VPC P______ permite conexão de VPC com VPC, de mesma conta AWS ou de contas diferentes.&nbsp;&nbsp;",
+    "question": "VPC P______ permite conexão de VPC com VPC, de mesma conta AWS ou de contas diferentes.;;",
     "answers": [
       "Route53",
       "Peering",
@@ -910,25 +906,23 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "VPC Peering permite conexões de VPC's entre contas diferentes da AWS?&nbsp;<br><br>_____.",
+    "question": "VPC Peering permite conexões de VPC's entre contas diferentes da AWS?;<br><br>_____.",
     "answers": [
-      "EBS",
-      "EC2",
-      "IAM (Identity Access Management)",
+      "Não",
       "Sim"
     ],
-    "correct": 3,
+    "correct": 1,
     "dica": "",
     "icone_dica": "💡"
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "VPC P______ é no transit, não permite que uma VPC se conecte em outra <font color=\"#ff5500\"><b>VPC vizinha</b></font> de uma <font color=\"#ff5500\"><b>conexão já existente</b></font>.&nbsp;",
+    "question": "VPC ______ é no transit, não permite que uma VPC se conecte em outra <font color=\"#ff5500\"><b>VPC vizinha</b></font> de uma <font color=\"#ff5500\"><b>conexão já existente</b></font>.;",
     "answers": [
       "Peering",
-      "Storage Gateway",
-      "VPC (Virtual Private Cloud)",
-      "ACL (Access Control List)"
+      "Gateway",
+      "Direct Connect",
+      "Endpoint"
     ],
     "correct": 0,
     "dica": "",
@@ -936,12 +930,12 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Na VPC o Int_____ G______ é quem permite que os recursos acessem a internet.&nbsp;",
+    "question": "Na VPC o _____ é quem permite que os recursos acessem a internet.;",
     "answers": [
       "EC2",
       "CloudTrail",
       "Free Tier",
-      "ternet | Gateway"
+      "Internet Gateway"
     ],
     "correct": 3,
     "dica": "",
@@ -949,10 +943,10 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Na VPC primeiro a A_____ controla os acessos, e depois o S_____________.",
+    "question": "Na VPC primeiro a _____ controla os acessos, e depois o _____________.",
     "answers": [
       "ACL | Security Group",
-      "Storage Gateway",
+      "ACL | Storage Gateway",
       "Transit Gateway",
       "ACL (Access Control List)"
     ],
@@ -975,7 +969,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "O recurso VPC F_____ log é o log de eventos de acessos de entrada e saída VPC.&nbsp;",
+    "question": "O recurso VPC F_____ log é o log de eventos de acessos de entrada e saída VPC.;",
     "answers": [
       "Flow",
       "EFS",
@@ -988,7 +982,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Di_____ C______ é utilizado para <font color=\"#ff5500\"><b>conectar </b></font>a rede física da sua empresa (on-premises)&nbsp;com a cloud.",
+    "question": "Di_____ C______ é utilizado para <font color=\"#ff5500\"><b>conectar </b></font>a rede física da sua empresa (on-premises);com a cloud.",
     "answers": [
       "CloudFront",
       "IAM (Identity Access Management)",
@@ -1001,7 +995,7 @@
   },
   {
     "titulo": "Integração de Aplicações",
-    "question": "O que significa SQS?&nbsp;<br><br>S_____ Q_____&nbsp;Service.",
+    "question": "O que significa SQS?;<br><br>S_____ Q_____;Service.",
     "answers": [
       "Simple | Queue",
       "VPC (Virtual Private Cloud)",
@@ -1014,7 +1008,7 @@
   },
   {
     "titulo": "Integração de Aplicações",
-    "question": "S_____ é utilizado como serviço de re_________.&nbsp;",
+    "question": "S_____ é utilizado como serviço de re_________.;",
     "answers": [
       "Outposts",
       "Lightsail",
@@ -1027,7 +1021,7 @@
   },
   {
     "titulo": "Integração de Aplicações",
-    "question": "Qual <span style=\"color: rgb(0, 0, 0);\">fila do SQS</span> <b><span style=\"color: rgb(255, 85, 0);\">não</span> </b>entrega as requisições em ordem (requisições são recebidas e enviadas em <b><span style=\"color: rgb(255, 85, 0);\">diferentes </span></b>ordens):<br><br>Fifo ou Standard?&nbsp;<br><br>________",
+    "question": "Qual <span style=\"color: rgb(0, 0, 0);\">fila do SQS</span> <b><span style=\"color: rgb(255, 85, 0);\">não</span> </b>entrega as requisições em ordem (requisições são recebidas e enviadas em <b><span style=\"color: rgb(255, 85, 0);\">diferentes </span></b>ordens):<br><br>Fifo ou Standard?;<br><br>________",
     "answers": [
       "Outposts",
       "Lambda",
@@ -1053,7 +1047,7 @@
   },
   {
     "titulo": "Analytics",
-    "question": "Kinesis A________ realiza&nbsp;<b><font color=\"#ff5500\">análises&nbsp;</font></b>do kinesis streams e/ou kinesis firehose.",
+    "question": "Kinesis A________ realiza;<b><font color=\"#ff5500\">análises;</font></b>do kinesis streams e/ou kinesis firehose.",
     "answers": [
       "Route53",
       "Analytics",
@@ -1066,7 +1060,7 @@
   },
   {
     "titulo": "Segurança, Identidade e Conformidade",
-    "question": "O recurso Co_____ faz o Web Identity <font color=\"#ff5500\"><b>Federation</b></font>&nbsp;(WIF) na AWS.&nbsp;",
+    "question": "O recurso Co_____ faz o Web Identity <font color=\"#ff5500\"><b>Federation</b></font>;(WIF) na AWS.;",
     "answers": [
       "AWS Config",
       "STS (Security Token Service)",
@@ -1092,7 +1086,7 @@
   },
   {
     "titulo": "Integração de Aplicações",
-    "question": "Com S_____ é possível enviar&nbsp;<font color=\"#ff5500\">notificações</font> para um sistema de monitoramento HTTPS.&nbsp;",
+    "question": "Com S_____ é possível enviar;<font color=\"#ff5500\">notificações</font> para um sistema de monitoramento HTTPS.;",
     "answers": [
       "Storage Gateway",
       "ACL (Access Control List)",
@@ -1105,7 +1099,7 @@
   },
   {
     "titulo": "Integração de Aplicações",
-    "question": "Com o serviço S_____ é possível enviar as <font color=\"#ff5500\">notificações</font> através de SMS.&nbsp;",
+    "question": "Com o serviço _____ é possível enviar as <font color=\"#ff5500\">notificações</font> através de SMS.;",
     "answers": [
       "AWS Config",
       "Free Tier",
@@ -1118,7 +1112,7 @@
   },
   {
     "titulo": "Integração de Aplicações",
-    "question": "Através de qual recurso é possível enviar&nbsp;<b><font color=\"#ff5500\">notificações</font></b> através de Email:<br><br><u>SNS</u> ou <u>SQS</u>?<br><br>_____",
+    "question": "Através de qual recurso é possível enviar;<b><font color=\"#ff5500\">notificações</font></b> através de Email:<br><br><u>SNS</u> ou <u>SQS</u>?<br><br>_____",
     "answers": [
       "Storage Gateway",
       "Route53",
@@ -1131,7 +1125,7 @@
   },
   {
     "titulo": "Integração de Aplicações",
-    "question": "Com o serviço S_____ é possível enviar as <font color=\"#ff5500\">notificações</font> através de mensagem de texto, e-mail, e outros.&nbsp;",
+    "question": "Com o serviço S_____ é possível enviar as <font color=\"#ff5500\">notificações</font> através de mensagem de texto, e-mail, e outros.;",
     "answers": [
       "SNS",
       "Savings Plans",
@@ -1144,7 +1138,7 @@
   },
   {
     "titulo": "Gerenciamento, Monitoramento e Governança",
-    "question": "CloudFormation é gratuito?&nbsp;",
+    "question": "CloudFormation é gratuito?;",
     "answers": [
       "Sim.",
       "Não"
@@ -1156,7 +1150,7 @@
   },
   {
     "titulo": "Analytics",
-    "question": "O _____ é um serviço de <b><font color=\"#ff5500\">consultas e análise</font> </b>de dados no S3 usando SQL padrão.&nbsp;",
+    "question": "O _____ é um serviço de <b><font color=\"#ff5500\">consultas e análise</font> </b>de dados no S3 usando SQL padrão.;",
     "answers": [
       "Budgets",
       "Auto Scaling",
@@ -1169,7 +1163,7 @@
   },
   {
     "titulo": "Analytics",
-    "question": "O uso do Athena é <font color=\"#ff5500\">cobrado </font>por ________ executadas.&nbsp;",
+    "question": "O uso do Athena é <font color=\"#ff5500\">cobrado </font>por ________ executadas.;",
     "answers": [
       "Aplicação",
       "Diretório",
@@ -1182,7 +1176,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "O serviço de _____ é o recurso de <span style=\"color: rgb(255, 85, 0);\">CDN</span>, utilizado para fazer o <span style=\"color: rgb(255, 85, 0);\"><b>cache </b></span>de conteúdo em&nbsp;edge locations, (servidores de borda), para diminuir a latência e aumentar a velocidade.&nbsp;",
+    "question": "O serviço de _____ é o recurso de <span style=\"color: rgb(255, 85, 0);\">CDN</span>, utilizado para fazer o <span style=\"color: rgb(255, 85, 0);\"><b>cache </b></span>de conteúdo em;edge locations, (servidores de borda), para diminuir a latência e aumentar a velocidade.;",
     "answers": [
       "CloudFront",
       "EFS",
@@ -1195,7 +1189,7 @@
   },
   {
     "titulo": "Contêineres",
-    "question": "O Amazon Elastic ________ Service (ECS) é um <span style=\"color: rgb(0, 0, 0);\">serviço </span>de gerenciamento de <span style=\"color: rgb(255, 85, 0);\">contêineres </span>altamente rápido e escalável.&nbsp;",
+    "question": "O Amazon Elastic ________ Service (ECS) é um <span style=\"color: rgb(0, 0, 0);\">serviço </span>de gerenciamento de <span style=\"color: rgb(255, 85, 0);\">contêineres </span>altamente rápido e escalável.;",
     "answers": [
       "Load",
       "Container",
@@ -1208,7 +1202,7 @@
   },
   {
     "titulo": "Contêineres",
-    "question": "O que significa ECS?&nbsp;<br><br>Elastic ________ Service.&nbsp;",
+    "question": "O que significa ECS?;<br><br>Elastic ________ Service.;",
     "answers": [
       "Load",
       "Container",
@@ -1221,7 +1215,7 @@
   },
   {
     "titulo": "Gerenciamento, Monitoramento e Governança",
-    "question": "O que significa SCPs?&nbsp;<br><br>Service C______ P______",
+    "question": "O que significa SCPs?;<br><br>Service C______ P______",
     "answers": [
       "Storage Gateway",
       "VPC (Virtual Private Cloud)",
@@ -1234,7 +1228,7 @@
   },
   {
     "titulo": "Segurança, Identidade e Conformidade",
-    "question": "Ro_____, de forma geral são identidades (papeis) para fazer <font color=\"#ff5500\"><b>gestão de acesso</b></font> a recursos de uma conta.&nbsp;",
+    "question": "Ro_____, de forma geral são identidades (papeis) para fazer <font color=\"#ff5500\"><b>gestão de acesso</b></font> a recursos de uma conta.;",
     "answers": [
       "Secrets Manager",
       "STS (Security Token Service)",
@@ -1260,7 +1254,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "O que significa EFA?&nbsp;<br><br>Elastic F_____ Adapter",
+    "question": "O que significa EFA?;<br><br>Elastic F_____ Adapter",
     "answers": [
       "KMS",
       "Outposts",
@@ -1299,7 +1293,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "O que significa ENI?<br><br>Elastic N______ In_______&nbsp;",
+    "question": "O que significa ENI?<br><br>Elastic N______ In_______;",
     "answers": [
       "Budgets",
       "ACL (Access Control List)",
@@ -1312,7 +1306,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "O que significa ENA?<br><br>Elastic N______ A______&nbsp;",
+    "question": "O que significa ENA?<br><br>Elastic N______ A______;",
     "answers": [
       "Network | Adapter",
       "AWS Config",
@@ -1325,7 +1319,7 @@
   },
   {
     "titulo": "Conceitos",
-    "question": "Serviços resilientes glo________, são por padrão hospedados em <font color=\"#ff5500\">várias regiões da AWS</font>&nbsp;ao mesmo tempo.<br><br><i>Ex. IAM e Route53&nbsp;</i>",
+    "question": "Serviços resilientes glo________, são por padrão hospedados em <font color=\"#ff5500\">várias regiões da AWS</font>;ao mesmo tempo.<br><br><i>Ex. IAM e Route53;</i>",
     "answers": [
       "obalmente",
       "CloudTrail",
@@ -1338,7 +1332,7 @@
   },
   {
     "titulo": "Conceitos",
-    "question": "Serviços resilientes na re_____, são por padrão hospedados em&nbsp;<font color=\"#ff5500\">mais de uma</font> zona de disponibilidade de uma região.<br><br><i>Ex. Api Gateway, S3.&nbsp;</i>",
+    "question": "Serviços resilientes na re_____, são por padrão hospedados em;<font color=\"#ff5500\">mais de uma</font> zona de disponibilidade de uma região.<br><br><i>Ex. Api Gateway, S3.;</i>",
     "answers": [
       "Glacier",
       "ACL (Access Control List)",
@@ -1351,7 +1345,7 @@
   },
   {
     "titulo": "Conceitos",
-    "question": "Serviços resilientes na Z_____ de D______________, por padrão, é hospedado somente em <font color=\"#ff5500\">uma única zona</font> de disponibilidade.<br><br><i>Ex. EBS (Elastic Block Store), EC2 (Elastic Cloud Compute) e RDS (Relacional Database Service).</i>&nbsp;",
+    "question": "Serviços resilientes na Z_____ de D______________, por padrão, é hospedado somente em <font color=\"#ff5500\">uma única zona</font> de disponibilidade.<br><br><i>Ex. EBS (Elastic Block Store), EC2 (Elastic Cloud Compute) e RDS (Relacional Database Service).</i>;",
     "answers": [
       "Auto Scaling",
       "Elastic Beanstalk",
@@ -1377,7 +1371,7 @@
   },
   {
     "titulo": "Conceitos",
-    "question": "Nuvem pú_____ é quando usamos <font color=\"#ff5500\">apenas nuvem pública</font> (aws, azure, oracle cloud).&nbsp;",
+    "question": "Nuvem pú_____ é quando usamos <font color=\"#ff5500\">apenas nuvem pública</font> (aws, azure, oracle cloud).;",
     "answers": [
       "Savings Plans",
       "ública",
@@ -1390,7 +1384,7 @@
   },
   {
     "titulo": "Conceitos",
-    "question": "Muitas vezes utilizamos a cloud pública integrada com o ambiente on-premisse <font color=\"#ff5500\">não cloud</font>, o que não configura uma nuvem hí_____.&nbsp;",
+    "question": "Muitas vezes utilizamos a cloud pública integrada com o ambiente on-premisse <font color=\"#ff5500\">não cloud</font>, o que não configura uma nuvem hí_____.;",
     "answers": [
       "íbrida",
       "Glacier",
@@ -1403,7 +1397,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Na ACL, ao liberar ICMP somente na <font color=\"#ff5500\"><b>entrada</b></font>&nbsp;para permitir ping, o ping <u>já funcionará</u> ou será <u>necessário liberar o tráfego também na saída</u> da ACL?<br><br>___________________________________",
+    "question": "Na ACL, ao liberar ICMP somente na <font color=\"#ff5500\"><b>entrada</b></font>;para permitir ping, o ping <u>já funcionará</u> ou será <u>necessário liberar o tráfego também na saída</u> da ACL?<br><br>___________________________________",
     "answers": [
       "ACL (Access Control List)",
       "Necessário liberar também na saída.",
@@ -1429,7 +1423,7 @@
   },
   {
     "titulo": "Contêineres",
-    "question": "O que significa&nbsp;EKS?&nbsp;<br><br>Elastic K_________ Service",
+    "question": "O que significa;EKS?;<br><br>Elastic K_________ Service",
     "answers": [
       "CloudTrail",
       "Auto Scaling",
@@ -1442,7 +1436,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "O Internet Gateway se enquadra na <font color=\"#ff5500\"><b>resiliência</b></font>&nbsp;global, regional ou de AZ?<br><br>_________&nbsp;",
+    "question": "O Internet Gateway se enquadra na <font color=\"#ff5500\"><b>resiliência</b></font>;global, regional ou de AZ?<br><br>_________;",
     "answers": [
       "Regional.",
       "STS (Security Token Service)",
@@ -1468,7 +1462,7 @@
   },
   {
     "titulo": "Sem Servidor",
-    "question": "O Lam_____ é um serviço de <span style=\"color: rgb(255, 85, 0);\">computação sem servidor</span>, adequado para carga de trabalho mais curtas e orientadas a eventos, pois suas funções são executadas por até 15 minutos por invocação.&nbsp;",
+    "question": "O Lam_____ é um serviço de <span style=\"color: rgb(255, 85, 0);\">computação sem servidor</span>, adequado para carga de trabalho mais curtas e orientadas a eventos, pois suas funções são executadas por até 15 minutos por invocação.;",
     "answers": [
       "CloudFront",
       "mbda",
@@ -1494,7 +1488,7 @@
   },
   {
     "titulo": "Segurança, Identidade e Conformidade",
-    "question": "O Amazon Ma_____ é um serviço de <b><font color=\"#ff5500\">proteção</font> </b>e privacidade de <font color=\"#ff5500\"><b>dados</b></font> que pode ser utilizado para monitorar e gerar alertas.&nbsp;",
+    "question": "O Amazon Ma_____ é um serviço de <b><font color=\"#ff5500\">proteção</font> </b>e privacidade de <font color=\"#ff5500\"><b>dados</b></font> que pode ser utilizado para monitorar e gerar alertas.;",
     "answers": [
       "acie",
       "IAM (Identity Access Management)",
@@ -1507,7 +1501,7 @@
   },
   {
     "titulo": "Segurança, Identidade e Conformidade",
-    "question": "O Amazon In_______ é um serviço automatizado de gerenciamento de <span style=\"color: rgb(255, 85, 0);\">vulnerabilidade</span> que verifica continuamente seus recursos da AWS em busca de vulnerabilidades.&nbsp;",
+    "question": "O Amazon In_______ é um serviço automatizado de gerenciamento de <span style=\"color: rgb(255, 85, 0);\">vulnerabilidade</span> que verifica continuamente seus recursos da AWS em busca de vulnerabilidades.;",
     "answers": [
       "Cognito",
       "AWS Config",
@@ -1520,7 +1514,7 @@
   },
   {
     "titulo": "Ferramenta de Desenvolvedor",
-    "question": "O AWS X_____ ajuda desenvolvedores a <span style=\"color: rgb(255, 85, 0);\">analisar e depurar</span> aplicações distribuídas (arquitetura de microsserviços)&nbsp;",
+    "question": "O AWS X_____ ajuda desenvolvedores a <span style=\"color: rgb(255, 85, 0);\">analisar e depurar</span> aplicações distribuídas (arquitetura de microsserviços);",
     "answers": [
       "Auto Scaling",
       "Billing Dashboard",
@@ -1533,7 +1527,7 @@
   },
   {
     "titulo": "Segurança, Identidade e Conformidade",
-    "question": "O AWS S_____ é um serviço de proteção contra DDoS que protege os aplicativos executados na AWS.&nbsp;",
+    "question": "O AWS S_____ é um serviço de proteção contra DDoS que protege os aplicativos executados na AWS.;",
     "answers": [
       "AWS Config",
       "KMS",
@@ -1559,7 +1553,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "O NAT gateway se enquadra na&nbsp;<font color=\"#ff5500\"><b>resiliência&nbsp;</b></font>de:<br><br>AZ (zona de disponibilidade), regional ou global? <br><br>_____.&nbsp;",
+    "question": "O NAT gateway se enquadra na;<font color=\"#ff5500\"><b>resiliência;</b></font>de:<br><br>AZ (zona de disponibilidade), regional ou global? <br><br>_____.;",
     "answers": [
       "EFS",
       "AZ",
@@ -1572,7 +1566,7 @@
   },
   {
     "titulo": "Analytics",
-    "question": "O Qui_______ é serviço de <span style=\"color: rgb(255, 85, 0);\">BI</span>&nbsp;serverless.&nbsp;<br><br>Ela permite criar paineis interativos (Dashboards) e relatórios.",
+    "question": "O Qui_______ é serviço de <span style=\"color: rgb(255, 85, 0);\">BI</span>;serverless.;<br><br>Ela permite criar paineis interativos (Dashboards) e relatórios.",
     "answers": [
       "ickSight",
       "IAM (Identity Access Management)",
@@ -1598,7 +1592,7 @@
   },
   {
     "titulo": "Gerenciamento, Monitoramento e Governança",
-    "question": "O SSE-_____ também fornece uma trilha de <font color=\"#ff5500\"><b>auditoria </b></font>que mostra quando a chave de criptografia foi usada e por quem.&nbsp;",
+    "question": "O SSE-_____ também fornece uma trilha de <font color=\"#ff5500\"><b>auditoria </b></font>que mostra quando a chave de criptografia foi usada e por quem.;",
     "answers": [
       "Elastic Beanstalk",
       "Trusted Advisor",
@@ -1611,7 +1605,7 @@
   },
   {
     "titulo": "Gerenciamento, Monitoramento e Governança",
-    "question": "Uma chave de criptografia do tipo SSE-_____ fornece <font color=\"#ff5500\"><b>maior proteção</b></font> contra acesso não autorizado de seus objetos no Amazon S3.&nbsp;",
+    "question": "Uma chave de criptografia do tipo SSE-_____ fornece <font color=\"#ff5500\"><b>maior proteção</b></font> contra acesso não autorizado de seus objetos no Amazon S3.;",
     "answers": [
       "Secrets Manager",
       "ACL (Access Control List)",
@@ -1675,7 +1669,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "O Amazon EFS tem compatibilidade com protocolo SMB? <br><br>_____&nbsp;",
+    "question": "O Amazon EFS tem compatibilidade com protocolo SMB? <br><br>_____;",
     "answers": [
       "Glacier",
       "Não",
@@ -1688,7 +1682,7 @@
   },
   {
     "titulo": "Integração de Aplicações",
-    "question": "<div><div>O _____&nbsp;é um serviço de mensageria utilizado para <font color=\"#ff5500\">desacoplar</font> microsserviços.</div></div>",
+    "question": "<div><div>O _____;é um serviço de mensageria utilizado para <font color=\"#ff5500\">desacoplar</font> microsserviços.</div></div>",
     "answers": [
       "SQS",
       "Trusted Advisor",
@@ -1712,7 +1706,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "O E_____ é um tipo de <b><span style=\"color: rgb(255, 85, 0);\">armazenamento </span></b>desenvolvido para&nbsp;<span style=\"color: rgb(255, 85, 0);\"><b>escalar </b></span>conforme a necessidade, sem que isso interrompa os serviços que o utilizam.",
+    "question": "O E_____ é um tipo de <b><span style=\"color: rgb(255, 85, 0);\">armazenamento </span></b>desenvolvido para;<span style=\"color: rgb(255, 85, 0);\"><b>escalar </b></span>conforme a necessidade, sem que isso interrompa os serviços que o utilizam.",
     "answers": [
       "EFS",
       "Storage Gateway",
@@ -1764,7 +1758,7 @@
   },
   {
     "titulo": "Gerenciamento, Monitoramento e Governança",
-    "question": "O recurso AWS C_____ fornece uma visão detalhada das&nbsp;<span style=\"color: rgb(255, 85, 0);\">configurações&nbsp;</span>dos recursos da AWS.",
+    "question": "O recurso AWS C_____ fornece uma visão detalhada das;<span style=\"color: rgb(255, 85, 0);\">configurações;</span>dos recursos da AWS.",
     "answers": [
       "Config",
       "Savings Plans",
@@ -1842,7 +1836,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "No EBS, qual tipo de volume fornece <font color=\"#ff5500\">alta performance</font> para workloads de missão crítica de <font color=\"#ff5500\">baixa latência</font> ou de <span style=\"color: rgb(255, 85, 0);\">alta taxa de transferência</span><span style=\"color: rgb(0, 0, 0);\">:<br><br>o tipo <b><u>SSD gp2</u>&nbsp;</b>ou <u><b>IOPS SSD</b></u>?</span><br><br>_________",
+    "question": "No EBS, qual tipo de volume fornece <font color=\"#ff5500\">alta performance</font> para workloads de missão crítica de <font color=\"#ff5500\">baixa latência</font> ou de <span style=\"color: rgb(255, 85, 0);\">alta taxa de transferência</span><span style=\"color: rgb(0, 0, 0);\">:<br><br>o tipo <b><u>SSD gp2</u>;</b>ou <u><b>IOPS SSD</b></u>?</span><br><br>_________",
     "answers": [
       "EFS",
       "EBS",
@@ -1868,7 +1862,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "Qual é o tipo de volume EBS para <b><font color=\"#ff5500\">propósitos gerais&nbsp;</font></b>(bancos de dados com baixa volumetria, ambiente de desenvolvimento, e outros):<br><br><u><b>Throughput HDD</b></u> ou <u><b>SSD gp2</b></u>?<br><br>_______",
+    "question": "Qual é o tipo de volume EBS para <b><font color=\"#ff5500\">propósitos gerais;</font></b>(bancos de dados com baixa volumetria, ambiente de desenvolvimento, e outros):<br><br><u><b>Throughput HDD</b></u> ou <u><b>SSD gp2</b></u>?<br><br>_______",
     "answers": [
       "EBS",
       "SSD gp2",
@@ -1881,7 +1875,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "<span style=\"color: rgb(255, 85, 0);\">Enquanto está ocorrendo</span> um snapshot de um Volume EBS, o volume pode ser:<br><br>\"<u>usado normalmente</u>\" ou \"<u>é preciso aguardar o snapshot terminar</u>\" ?&nbsp;<br><br>__________________________.",
+    "question": "<span style=\"color: rgb(255, 85, 0);\">Enquanto está ocorrendo</span> um snapshot de um Volume EBS, o volume pode ser:<br><br>\"<u>usado normalmente</u>\" ou \"<u>é preciso aguardar o snapshot terminar</u>\" ?;<br><br>__________________________.",
     "answers": [
       "EFS",
       "pode ser usado normalmente",
@@ -1959,7 +1953,7 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "Sobre banco de dados, qual cópia&nbsp;é realizada em <b><span style=\"color: rgb(255, 85, 0);\">tempo real</span></b>, <u>síncrona</u> ou <u>assíncrona</u>?<br><br>________",
+    "question": "Sobre banco de dados, qual cópia;é realizada em <b><span style=\"color: rgb(255, 85, 0);\">tempo real</span></b>, <u>síncrona</u> ou <u>assíncrona</u>?<br><br>________",
     "answers": [
       "Storage Gateway",
       "Síncrona",
@@ -2037,7 +2031,7 @@
   },
   {
     "titulo": "Analytics",
-    "question": "O que significa EMR?&nbsp;<br><br>Elastich M_________",
+    "question": "O que significa EMR?;<br><br>Elastich M_________",
     "answers": [
       "IAM (Identity Access Management)",
       "Cognito",
@@ -2074,7 +2068,7 @@
   },
   {
     "titulo": "Computação",
-    "question": "No IAM, é possível aplicar <font color=\"#ff5500\"><b>permissões</b></font> em recurso através de&nbsp;<font color=\"#ff5500\"><b>tags</b></font>: <br><br>?<br><br>",
+    "question": "No IAM, é possível aplicar <font color=\"#ff5500\"><b>permissões</b></font> em recurso através de;<font color=\"#ff5500\"><b>tags</b></font>: <br><br>?<br><br>",
     "answers": [
       "Não",
       "Sim"
@@ -2111,7 +2105,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Qual o <font color=\"#ff5500\">tipo de failover</font>&nbsp;é mais indicado quando é necessário que todos os seus recursos estejam disponíveis na maior parte do tempo:<br><br>Ativo-Ativo ou Ativo-Passivo?<br><br>___________",
+    "question": "Qual o <font color=\"#ff5500\">tipo de failover</font>;é mais indicado quando é necessário que todos os seus recursos estejam disponíveis na maior parte do tempo:<br><br>Ativo-Ativo ou Ativo-Passivo?<br><br>___________",
     "answers": [
       "Elastic Beanstalk",
       "Auto Scaling",
@@ -2200,7 +2194,7 @@
   },
   {
     "titulo": "Conceitos",
-    "question": "O Amazon Re_______ Name&nbsp;<span style=\"color: rgb(255, 85, 0);\">identificam </span>exclusivamente os recursos da AWS.",
+    "question": "O Amazon Re_______ Name;<span style=\"color: rgb(255, 85, 0);\">identificam </span>exclusivamente os recursos da AWS.",
     "answers": [
       "EFS",
       "Secrets Manager",
@@ -2239,7 +2233,7 @@
   },
   {
     "titulo": "Gerenciamento, Monitoramento e Governança",
-    "question": "O Cloud_____ é o serviço utilizado para&nbsp;<font color=\"#ff5500\"><b>observabilidade</b></font>&nbsp;na AWS, capturando <font color=\"#ff5500\"><b>métricas </b></font>da <b>CPU</b>, <b>Memória </b>e <b>Disco </b>e <b>aplicações</b>.",
+    "question": "O Cloud_____ é o serviço utilizado para;<font color=\"#ff5500\"><b>observabilidade</b></font>;na AWS, capturando <font color=\"#ff5500\"><b>métricas </b></font>da <b>CPU</b>, <b>Memória </b>e <b>Disco </b>e <b>aplicações</b>.",
     "answers": [
       "Elastic Beanstalk",
       "dWatch",
@@ -2410,7 +2404,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Com NAT gateway <span style=\"color: rgb(255, 85, 0);\">privado </span>é possível se conectar a outras VPCs ou rede on-premise:&nbsp;<br><br>?",
+    "question": "Com NAT gateway <span style=\"color: rgb(255, 85, 0);\">privado </span>é possível se conectar a outras VPCs ou rede on-premise:;<br><br>?",
     "answers": [
       "Não",
       "Sim"
@@ -2485,7 +2479,7 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "O D_____ é um recurso de&nbsp;<b><font color=\"#ff5500\">cache</font></b>&nbsp;compatível com o <font color=\"#ff5500\"><b>DynamoDB</b>.</font>",
+    "question": "O D_____ é um recurso de;<b><font color=\"#ff5500\">cache</font></b>;compatível com o <font color=\"#ff5500\"><b>DynamoDB</b>.</font>",
     "answers": [
       "Transit Gateway",
       "Lightsail",
@@ -2614,7 +2608,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "É possível hospedar sites estáticos em buckets S3? <br><br>_____.&nbsp;",
+    "question": "É possível hospedar sites estáticos em buckets S3? <br><br>_____.;",
     "answers": [
       "Storage Gateway",
       "S3",
@@ -2666,7 +2660,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Qual o tipo de roteamento (Route53) que permite que até 8 hosts de forma aleatória responda a uma solicitação:<br><br><span style=\"background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(255, 85, 0);\"><b>Simple</b></span> </span>Routing ou&nbsp;<span style=\"color: rgb(255, 85, 0);\"><b>Multivalue Answer</b> </span>Routing?<br><br>_________________.",
+    "question": "Qual o tipo de roteamento (Route53) que permite que até 8 hosts de forma aleatória responda a uma solicitação:<br><br><span style=\"background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(255, 85, 0);\"><b>Simple</b></span> </span>Routing ou;<span style=\"color: rgb(255, 85, 0);\"><b>Multivalue Answer</b> </span>Routing?<br><br>_________________.",
     "answers": [
       "Cost Explorer",
       "Storage Gateway",
@@ -2718,7 +2712,7 @@
   },
   {
     "titulo": "Computação",
-    "question": "As <font color=\"#ff5500\"><b>instâncias</b>&nbsp;<b>(EC2) </b></font>otimizadas para m______ são projetadas para fornecer desempenho rápido para cargas de trabalho que utilizam muita&nbsp;<font color=\"#ff5500\" style=\"font-weight: bold;\">memória.</font>",
+    "question": "As <font color=\"#ff5500\"><b>instâncias</b>;<b>(EC2) </b></font>otimizadas para m______ são projetadas para fornecer desempenho rápido para cargas de trabalho que utilizam muita;<font color=\"#ff5500\" style=\"font-weight: bold;\">memória.</font>",
     "answers": [
       "Elastic Beanstalk",
       "Outposts",
@@ -2809,7 +2803,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "Qual o tipo de EBS recomendado para Big Data, Data, <b><font color=\"#ff5500\">Warehouse</font></b> e processamento de logs:<br><br>o tipo IOPS&nbsp;<b>SSD </b>ou Throughput&nbsp;<b>HDD</b>?<br><br>______________",
+    "question": "Qual o tipo de EBS recomendado para Big Data, Data, <b><font color=\"#ff5500\">Warehouse</font></b> e processamento de logs:<br><br>o tipo IOPS;<b>SSD </b>ou Throughput;<b>HDD</b>?<br><br>______________",
     "answers": [
       "Throughput HDD",
       "EBS",
@@ -2835,7 +2829,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "Qual tipo de EBS é otimizado para <b><font color=\"#ff5500\">bancos de dados</font></b> grandes, com alta volumetria e tráfego de entrada e saída:<br><br><b>IOPS SSD</b> ou <b>Throughput&nbsp;HDD</b>?<br><br>_________",
+    "question": "Qual tipo de EBS é otimizado para <b><font color=\"#ff5500\">bancos de dados</font></b> grandes, com alta volumetria e tráfego de entrada e saída:<br><br><b>IOPS SSD</b> ou <b>Throughput;HDD</b>?<br><br>_________",
     "answers": [
       "EBS",
       "IOPS SSD.",
@@ -2861,7 +2855,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "Qual tipo de volume EBS recomendado para <b><font color=\"#ff5500\">banco de dados</font></b> com <b><font color=\"#ff5500\">alto consumo</font></b> de E/S:<br><br>o tipo <b>Throughput HDD&nbsp;</b>ou <b>IOPS SSD</b>?<br><br>________",
+    "question": "Qual tipo de volume EBS recomendado para <b><font color=\"#ff5500\">banco de dados</font></b> com <b><font color=\"#ff5500\">alto consumo</font></b> de E/S:<br><br>o tipo <b>Throughput HDD;</b>ou <b>IOPS SSD</b>?<br><br>________",
     "answers": [
       "EFS",
       "EBS",
@@ -2887,7 +2881,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "Volumes EBS do tipo IOPS SSD possuem <b><font color=\"#ff5500\">suporte para inicialização (volume boot)</font></b>&nbsp;de sistema operacional?&nbsp;<br><br>_____",
+    "question": "Volumes EBS do tipo IOPS SSD possuem <b><font color=\"#ff5500\">suporte para inicialização (volume boot)</font></b>;de sistema operacional?;<br><br>_____",
     "answers": [
       "Sim",
       "Storage Gateway",
@@ -2900,7 +2894,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "Volumes EBS do tipo cold HDD possuem&nbsp;<b><font color=\"#ff5500\">suporte para inicialização (volume boot)</font></b>&nbsp;de sistema operacional?&nbsp;<br><br>_____",
+    "question": "Volumes EBS do tipo cold HDD possuem;<b><font color=\"#ff5500\">suporte para inicialização (volume boot)</font></b>;de sistema operacional?;<br><br>_____",
     "answers": [
       "EBS",
       "Não",
@@ -2924,7 +2918,7 @@
   },
   {
     "titulo": "Computação",
-    "question": "As zonas do Wave______ estendem a infraestrutura da AWS para a borda da rede de telecomunicações,&nbsp;permitindo que aplicações ofereçam&nbsp;<span style=\"color: rgb(255, 85, 0);\">baixíssimas latências</span> para dispositivos 5G e usuários finais.",
+    "question": "As zonas do Wave______ estendem a infraestrutura da AWS para a borda da rede de telecomunicações,;permitindo que aplicações ofereçam;<span style=\"color: rgb(255, 85, 0);\">baixíssimas latências</span> para dispositivos 5G e usuários finais.",
     "answers": [
       "Lightsail",
       "EC2",
@@ -3041,7 +3035,7 @@
   },
   {
     "titulo": "Computação",
-    "question": "No EC2, com as instâncias no modelo&nbsp;<font color=\"#ff5500\">Sob Demanda (On-Demand)</font>, você paga pela capacidade computacional por ho_____ ou por se_____.",
+    "question": "No EC2, com as instâncias no modelo;<font color=\"#ff5500\">Sob Demanda (On-Demand)</font>, você paga pela capacidade computacional por ho_____ ou por se_____.",
     "answers": [
       "Auto Scaling",
       "Outposts",
@@ -3054,7 +3048,7 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "Com o recurso de Cluster Mul_____ do RDS, além de alta disponibilidade nas instâncias em <font color=\"#ff5500\">espera</font>&nbsp;(failover), elas podem servir como instancia de consulta.",
+    "question": "Com o recurso de Cluster Mul_____ do RDS, além de alta disponibilidade nas instâncias em <font color=\"#ff5500\">espera</font>;(failover), elas podem servir como instancia de consulta.",
     "answers": [
       "Budgets",
       "Elastic Load Balancer",
@@ -3106,7 +3100,7 @@
   },
   {
     "titulo": "Gerenciamento, Monitoramento e Governança",
-    "question": "AWS Sys_____ M______ é uma ferramente poderosa para gerenciar recursos da AWS de forma <span style=\"color: rgb(255, 85, 0);\">centralizada</span> e <span style=\"color: rgb(255, 85, 0);\">automatizada</span>.&nbsp;",
+    "question": "AWS Sys_____ M______ é uma ferramente poderosa para gerenciar recursos da AWS de forma <span style=\"color: rgb(255, 85, 0);\">centralizada</span> e <span style=\"color: rgb(255, 85, 0);\">automatizada</span>.;",
     "answers": [
       "AWS Config",
       "stems | Manager",
@@ -3158,7 +3152,7 @@
   },
   {
     "titulo": "Segurança, Identidade e Conformidade",
-    "question": "O Amazon Gua______ é&nbsp;um serviço de detecção de ameaças que monitora continuamente suas contas e workloads da AWS.",
+    "question": "O Amazon Gua______ é;um serviço de detecção de ameaças que monitora continuamente suas contas e workloads da AWS.",
     "answers": [
       "ACL (Access Control List)",
       "STS (Security Token Service)",
@@ -3197,7 +3191,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "Volumes EBS do tipo <span style=\"color: rgb(255, 85, 0);\">SSD gp2&nbsp;</span>podem ser anexadas a quantas instâncias EC2? <br><br>___________________",
+    "question": "Volumes EBS do tipo <span style=\"color: rgb(255, 85, 0);\">SSD gp2;</span>podem ser anexadas a quantas instâncias EC2? <br><br>___________________",
     "answers": [
       "Glacier",
       "somente 1 instância",
@@ -3223,7 +3217,7 @@
   },
   {
     "titulo": "Integração de Aplicações",
-    "question": "<span style=\"color: rgb(22, 25, 31);\">O Event</span>______<font color=\"#16191f\">&nbsp;é um serviço de barramento de&nbsp;</font><b style=\"\"><font color=\"#ff5500\">eventos</font></b><font color=\"#16191f\">&nbsp;tomar ações ou orquestra comunicações entre componentes em ambientes distribuídos.</font>",
+    "question": "<span style=\"color: rgb(22, 25, 31);\">O Event</span>______<font color=\"#16191f\">;é um serviço de barramento de;</font><b style=\"\"><font color=\"#ff5500\">eventos</font></b><font color=\"#16191f\">;tomar ações ou orquestra comunicações entre componentes em ambientes distribuídos.</font>",
     "answers": [
       "CloudTrail",
       "Lambda",
@@ -3236,7 +3230,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Qual tipo de API são protocolos stateless, ou seja, requisições são abertas e fechadas:&nbsp;<u>API websocket</u> ou <u>API rest</u>?<br><br>&nbsp;________.",
+    "question": "Qual tipo de API são protocolos stateless, ou seja, requisições são abertas e fechadas:;<u>API websocket</u> ou <u>API rest</u>?<br><br>;________.",
     "answers": [
       "Auto Scaling",
       "STS (Security Token Service)",
@@ -3388,7 +3382,7 @@
   },
   {
     "titulo": "Interação com os Clientes",
-    "question": "Quais são os 4 tipos de planos de suporte da AWS?<br><br>De_______ , Bu______, Enterprise O______ e En________.&nbsp;",
+    "question": "Quais são os 4 tipos de planos de suporte da AWS?<br><br>De_______ , Bu______, Enterprise O______ e En________.;",
     "answers": [
       "Storage Gateway",
       "Lambda",
@@ -3556,7 +3550,7 @@
   },
   {
     "titulo": "Ferramenta de Desenvolvedor",
-    "question": "AWS Code________ é um serviço para gerenciar <b><span style=\"color: rgb(255, 85, 0);\">dependencias e&nbsp;artefatos</span>&nbsp;</b>no desenvolvimento de software.",
+    "question": "AWS Code________ é um serviço para gerenciar <b><span style=\"color: rgb(255, 85, 0);\">dependencias e;artefatos</span>;</b>no desenvolvimento de software.",
     "answers": [
       "S3",
       "Trusted Advisor",
@@ -3582,7 +3576,7 @@
   },
   {
     "titulo": "Sem Servidor",
-    "question": "O <span style=\"color: rgb(255, 85, 0);\">EKS </span>é um serviço <u>serverless</u> para execução de containeres Kubernets ou um serviço de&nbsp;<span style=\"color: rgb(0, 0, 0);\"><u>orquestração</u></span> de contêineres com Kubernetes?<br><br>_____________",
+    "question": "O <span style=\"color: rgb(255, 85, 0);\">EKS </span>é um serviço <u>serverless</u> para execução de containeres Kubernets ou um serviço de;<span style=\"color: rgb(0, 0, 0);\"><u>orquestração</u></span> de contêineres com Kubernetes?<br><br>_____________",
     "answers": [
       "Auto Scaling",
       "Orquestração.",
@@ -3711,7 +3705,7 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "Nos banco de dados relacionais, o recurso de <font color=\"#ff5500\">multi-AZ</font> cria instâncias para failover em <font color=\"#ff5500\">outras regiões</font>:<br><br><u>Sim</u> ou <u>Não</u>?&nbsp;<br><br>_____",
+    "question": "Nos banco de dados relacionais, o recurso de <font color=\"#ff5500\">multi-AZ</font> cria instâncias para failover em <font color=\"#ff5500\">outras regiões</font>:<br><br><u>Sim</u> ou <u>Não</u>?;<br><br>_____",
     "answers": [
       "Auto Scaling",
       "Trusted Advisor",
@@ -3737,7 +3731,7 @@
   },
   {
     "titulo": "Analytics",
-    "question": "O banco de dados R_______ é utilizado para <span style=\"color: rgb(255, 85, 0);\">Data Warehouse</span>.&nbsp;",
+    "question": "O banco de dados R_______ é utilizado para <span style=\"color: rgb(255, 85, 0);\">Data Warehouse</span>.;",
     "answers": [
       "CloudTrail",
       "Billing Dashboard",
@@ -3763,7 +3757,7 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "O DynamoDB também possuí o recurso de Auto S______, que fazem o ajuste de capacidade (Throughput) <span style=\"color: rgb(255, 85, 0);\">dinamicamente</span>.&nbsp;",
+    "question": "O DynamoDB também possuí o recurso de Auto S______, que fazem o ajuste de capacidade (Throughput) <span style=\"color: rgb(255, 85, 0);\">dinamicamente</span>.;",
     "answers": [
       "Billing Dashboard",
       "AWS Config",
@@ -3776,7 +3770,7 @@
   },
   {
     "titulo": "Conceitos",
-    "question": "Nuvem pri_____ é quando usamos <span style=\"color: rgb(255, 85, 0);\">nuvem</span>&nbsp;em data center <span style=\"color: rgb(255, 85, 0);\">privado/exclusivo</span>.&nbsp;",
+    "question": "Nuvem pri_____ é quando usamos <span style=\"color: rgb(255, 85, 0);\">nuvem</span>;em data center <span style=\"color: rgb(255, 85, 0);\">privado/exclusivo</span>.;",
     "answers": [
       "ACL (Access Control List)",
       "Auto Scaling",
@@ -3802,7 +3796,7 @@
   },
   {
     "titulo": "Integração de Aplicações",
-    "question": "O CloudWatch Events e EventBridge são serviços com a mesma finalidade (tomar ações, a partir de&nbsp;<font color=\"#ff5500\"><b>eventos&nbsp;</b></font>que ocorrem no ambiente)<br><br>Porém, entre os dois, o ___________ oferece mais recursos.",
+    "question": "O CloudWatch Events e EventBridge são serviços com a mesma finalidade (tomar ações, a partir de;<font color=\"#ff5500\"><b>eventos;</b></font>que ocorrem no ambiente)<br><br>Porém, entre os dois, o ___________ oferece mais recursos.",
     "answers": [
       "Billing Dashboard",
       "EventBridge",
@@ -3815,7 +3809,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "No serviço Cloud_____, o conteúdo é enviado para região <span style=\"color: rgb(0, 0, 0);\">mais próximo do usuário</span>&nbsp;(Edge Locations) para aumentar a&nbsp;<b><span style=\"color: rgb(255, 85, 0);\">performance </span></b><span style=\"color: rgb(0, 0, 0);\">de acesso</span>&nbsp;para usuários.&nbsp;",
+    "question": "No serviço Cloud_____, o conteúdo é enviado para região <span style=\"color: rgb(0, 0, 0);\">mais próximo do usuário</span>;(Edge Locations) para aumentar a;<b><span style=\"color: rgb(255, 85, 0);\">performance </span></b><span style=\"color: rgb(0, 0, 0);\">de acesso</span>;para usuários.;",
     "answers": [
       "dfront",
       "VPC (Virtual Private Cloud)",
@@ -3828,7 +3822,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "O F_____ Log da VPC é um recurso da que <font color=\"#ff5500\"><b>registra</b></font> os ips do <font color=\"#ff5500\"><b>tráfego </b></font>da VPC.&nbsp;",
+    "question": "O F_____ Log da VPC é um recurso da que <font color=\"#ff5500\"><b>registra</b></font> os ips do <font color=\"#ff5500\"><b>tráfego </b></font>da VPC.;",
     "answers": [
       "Elastic Beanstalk",
       "Flow",
@@ -3841,7 +3835,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Eg_________ Internet gateway, através de&nbsp;<font color=\"#ff5500\"><b>IPV6</b></font>&nbsp;permite o tráfego de saída mas&nbsp;<b><font color=\"#ff5500\">impede o tráfego de entrada.</font></b>",
+    "question": "Eg_________ Internet gateway, através de;<font color=\"#ff5500\"><b>IPV6</b></font>;permite o tráfego de saída mas;<b><font color=\"#ff5500\">impede o tráfego de entrada.</font></b>",
     "answers": [
       "Lambda",
       "CloudTrail",
@@ -3893,7 +3887,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "O preço de um volume EBS pode variar de acordo com seu tipo (SSD, HDD).<br><br>Podendo ser cobrado pelo arm__________, IO_____ e o thr_______.&nbsp;",
+    "question": "O preço de um volume EBS pode variar de acordo com seu tipo (SSD, HDD).<br><br>Podendo ser cobrado pelo arm__________, IO_____ e o thr_______.;",
     "answers": [
       "S3",
       "mazenamento | OPS | roughput",
@@ -3932,7 +3926,7 @@
   },
   {
     "titulo": "Gerenciamento, Monitoramento e Governança",
-    "question": "Qual tipo de criptografia oferece <span style=\"color: rgb(255, 85, 0);\">maior proteção</span> contra acessos não autorizados:<br><br>SSE-KMS ou SSE-S3?<br><br>_______&nbsp;&nbsp;",
+    "question": "Qual tipo de criptografia oferece <span style=\"color: rgb(255, 85, 0);\">maior proteção</span> contra acessos não autorizados:<br><br>SSE-KMS ou SSE-S3?<br><br>_______;;",
     "answers": [
       "SSE-KMS",
       "EBS",
@@ -4010,7 +4004,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "O serviço de armazenamento S3 permite que&nbsp;<font color=\"#ff5500\">1 único</font>&nbsp;arquivo tenha no máximo:<br><br>&nbsp;<u>5 GB</u> ou <u>5 TB</u> de tamanho?<br><br>_____",
+    "question": "O serviço de armazenamento S3 permite que;<font color=\"#ff5500\">1 único</font>;arquivo tenha no máximo:<br><br>;<u>5 GB</u> ou <u>5 TB</u> de tamanho?<br><br>_____",
     "answers": [
       "Storage Gateway",
       "5 TB",
@@ -4049,7 +4043,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Qual recurso permite que recursos da VPC <span style=\"color: rgb(0, 0, 0);\">acessem a internet</span>, mas <span style=\"color: rgb(255, 85, 0);\">não permite</span> que esses recursos sejam acessados externamente (de fora para dentro): <br><br>Internet Gateway ou Egress-only Internet Gateway?&nbsp;<br><br>____________________________",
+    "question": "Qual recurso permite que recursos da VPC <span style=\"color: rgb(0, 0, 0);\">acessem a internet</span>, mas <span style=\"color: rgb(255, 85, 0);\">não permite</span> que esses recursos sejam acessados externamente (de fora para dentro): <br><br>Internet Gateway ou Egress-only Internet Gateway?;<br><br>____________________________",
     "answers": [
       "Budgets",
       "Lambda",
@@ -4062,7 +4056,7 @@
   },
   {
     "titulo": "Analytics",
-    "question": "O AWS D_____ E_______ permite aos clientes <u>encontrar</u>, <u>assinar</u> e <u>trocar</u><span style=\"color: rgb(255, 85, 0);\"> dados de terceiros</span> de maneira segura e simplificada.&nbsp;<br><br>",
+    "question": "O AWS D_____ E_______ permite aos clientes <u>encontrar</u>, <u>assinar</u> e <u>trocar</u><span style=\"color: rgb(255, 85, 0);\"> dados de terceiros</span> de maneira segura e simplificada.;<br><br>",
     "answers": [
       "Data | Exchange",
       "Savings Plans",
@@ -4088,7 +4082,7 @@
   },
   {
     "titulo": "Analytics",
-    "question": "AWS Glue é um serviço de ETL da AWS.&nbsp;<br><br>O que significa as siglas ETL?<br><br>Ex_______________, Tran___________________ e Lo_____________.",
+    "question": "AWS Glue é um serviço de ETL da AWS.;<br><br>O que significa as siglas ETL?<br><br>Ex_______________, Tran___________________ e Lo_____________.",
     "answers": [
       "Budgets",
       "EBS",
@@ -4179,7 +4173,7 @@
   },
   {
     "titulo": "Conceitos",
-    "question": "O Route53 é resiliente em qual nível: <br><br>Nível de&nbsp;<span style=\"color: rgb(0, 0, 0);\"><u>zona de disponibilidade</u></span>,&nbsp;<u><span style=\"color: rgb(0, 0, 0);\">Região</span></u>&nbsp;ou&nbsp;<u><span style=\"color: rgb(0, 0, 0);\">Global</span></u>?<br><br>______",
+    "question": "O Route53 é resiliente em qual nível: <br><br>Nível de;<span style=\"color: rgb(0, 0, 0);\"><u>zona de disponibilidade</u></span>,;<u><span style=\"color: rgb(0, 0, 0);\">Região</span></u>;ou;<u><span style=\"color: rgb(0, 0, 0);\">Global</span></u>?<br><br>______",
     "answers": [
       "Global",
       "Auto Scaling",
@@ -4192,7 +4186,7 @@
   },
   {
     "titulo": "Computação",
-    "question": "Você precisa migrar servidores físicos para EC2 na AWS. Esses servidores serão usados por pelo menos <span style=\"color: rgb(255, 85, 0);\">1 ou 2 anos</span>, e não podem ser interrompidos repentinamente.<br><br>Qual o modelo de preço mais adequado visando menor custo:&nbsp;<br><br><u>On-Demand</u>, <u>Saving Plans</u> ou <u>Spot Instance</u>?&nbsp;<br><br>_____________",
+    "question": "Você precisa migrar servidores físicos para EC2 na AWS. Esses servidores serão usados por pelo menos <span style=\"color: rgb(255, 85, 0);\">1 ou 2 anos</span>, e não podem ser interrompidos repentinamente.<br><br>Qual o modelo de preço mais adequado visando menor custo:;<br><br><u>On-Demand</u>, <u>Saving Plans</u> ou <u>Spot Instance</u>?;<br><br>_____________",
     "answers": [
       "Lightsail",
       "Lambda",
@@ -4244,7 +4238,7 @@
   },
   {
     "titulo": "Contêineres",
-    "question": "O serviço EC_____ permite <i><u>armazenar</u>, <u>gerenciar </u>e <u>distribuir</u>&nbsp;</i>imagens de contêineres&nbsp;<span style=\"color: rgb(255, 85, 0);\">Docker</span>.",
+    "question": "O serviço EC_____ permite <i><u>armazenar</u>, <u>gerenciar </u>e <u>distribuir</u>;</i>imagens de contêineres;<span style=\"color: rgb(255, 85, 0);\">Docker</span>.",
     "answers": [
       "Elastic Beanstalk",
       "CR",
@@ -4283,7 +4277,7 @@
   },
   {
     "titulo": "Interação com os Clientes",
-    "question": "O AWS IQ&nbsp;é um serviço que permite que clientes AWS encontrem es___________ certificados para trabalhos sob demanda em um projetos.",
+    "question": "O AWS IQ;é um serviço que permite que clientes AWS encontrem es___________ certificados para trabalhos sob demanda em um projetos.",
     "answers": [
       "Lightsail",
       "VPC (Virtual Private Cloud)",
@@ -4296,7 +4290,7 @@
   },
   {
     "titulo": "Interação com os Clientes",
-    "question": "O AWS Ma_____ Services (AMS) é um serviço que te <span style=\"color: rgb(255, 85, 0);\">auxilia a gerenciar</span>&nbsp;sua infraestrutura na AWS (suporte).",
+    "question": "O AWS Ma_____ Services (AMS) é um serviço que te <span style=\"color: rgb(255, 85, 0);\">auxilia a gerenciar</span>;sua infraestrutura na AWS (suporte).",
     "answers": [
       "ACL (Access Control List)",
       "Free Tier",
@@ -4322,7 +4316,7 @@
   },
   {
     "titulo": "Ferramenta de Desenvolvedor",
-    "question": "Em vez de codificar configurações no código da aplicação ou arquivos de configurações, você pode usar o AWS AppC_____ para armazenar, monitorar e <span style=\"color: rgb(255, 85, 0);\">gerenciar essas configurações</span>.&nbsp;",
+    "question": "Em vez de codificar configurações no código da aplicação ou arquivos de configurações, você pode usar o AWS AppC_____ para armazenar, monitorar e <span style=\"color: rgb(255, 85, 0);\">gerenciar essas configurações</span>.;",
     "answers": [
       "CloudTrail",
       "Config",
@@ -4387,7 +4381,7 @@
   },
   {
     "titulo": "Computação de Usuário Final",
-    "question": "<span style=\"color: rgb(22, 25, 31); background-color: rgb(255, 255, 255);\">A Amazon Work</span>______<span style=\"background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(22, 25, 31);\">&nbsp;permite que você provisione desktops virtuais Microsoft Windows, Amazon Linux ou Ubuntu Linux baseados em nuvem para seus </span><span style=\"color: rgb(255, 85, 0);\">usuários</span><span style=\"color: rgb(22, 25, 31);\">.</span></span>",
+    "question": "<span style=\"color: rgb(22, 25, 31); background-color: rgb(255, 255, 255);\">A Amazon Work</span>______<span style=\"background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(22, 25, 31);\">;permite que você provisione desktops virtuais Microsoft Windows, Amazon Linux ou Ubuntu Linux baseados em nuvem para seus </span><span style=\"color: rgb(255, 85, 0);\">usuários</span><span style=\"color: rgb(22, 25, 31);\">.</span></span>",
     "answers": [
       "Storage Gateway",
       "Billing Dashboard",
@@ -4413,7 +4407,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "O frontend de sua aplicação está em uma sub-rede pública, e o backend em uma sub-rede privada. Você precisa que seu backend tenha acesso a internet.&nbsp;<br><br>Qual recurso permite esse acesso de forma <span style=\"color: rgb(255, 85, 0);\">segura</span>, sem expor seu backend a internet:<br><br><u>Internet Gateway</u> ou <u>NAT Gateway</u>?<br><br>___________",
+    "question": "O frontend de sua aplicação está em uma sub-rede pública, e o backend em uma sub-rede privada. Você precisa que seu backend tenha acesso a internet.;<br><br>Qual recurso permite esse acesso de forma <span style=\"color: rgb(255, 85, 0);\">segura</span>, sem expor seu backend a internet:<br><br><u>Internet Gateway</u> ou <u>NAT Gateway</u>?<br><br>___________",
     "answers": [
       "S3",
       "Budgets",
@@ -4491,7 +4485,7 @@
   },
   {
     "titulo": "Machine Learning",
-    "question": "O Amazon Ke_____ é um serviço que utiliza machine learning e <span style=\"color: rgb(0, 0, 0);\">linguagem natural</span> para encontrar respostas mais rápidas em <span style=\"color: rgb(255, 85, 0);\">pesquisas corporativas</span>&nbsp;inteligente (<i>pesquisas internas</i>).",
+    "question": "O Amazon Ke_____ é um serviço que utiliza machine learning e <span style=\"color: rgb(0, 0, 0);\">linguagem natural</span> para encontrar respostas mais rápidas em <span style=\"color: rgb(255, 85, 0);\">pesquisas corporativas</span>;inteligente (<i>pesquisas internas</i>).",
     "answers": [
       "IAM (Identity Access Management)",
       "Lightsail",
@@ -4556,7 +4550,7 @@
   },
   {
     "titulo": "Machine Learning",
-    "question": "O recurso Amazon T_______ <span style=\"color: rgb(255, 85, 0);\">extrai texto</span> de documentos impressos ou manuscritos através de Machine Learning.&nbsp;",
+    "question": "O recurso Amazon T_______ <span style=\"color: rgb(255, 85, 0);\">extrai texto</span> de documentos impressos ou manuscritos através de Machine Learning.;",
     "answers": [
       "Lightsail",
       "Cognito",
@@ -4647,7 +4641,7 @@
   },
   {
     "titulo": "Gerenciamento, Monitoramento e Governança",
-    "question": "Através do AWS Re______ Groups você pode agrupar determinados serviços ou recurso da AWS em grupos, através de <span style=\"color: rgb(255, 85, 0);\">TAG</span> ou pilhas do <span style=\"color: rgb(255, 85, 0);\">CloudFormation</span> e executar operações em massa nos grupos recursos.&nbsp;",
+    "question": "Através do AWS Re______ Groups você pode agrupar determinados serviços ou recurso da AWS em grupos, através de <span style=\"color: rgb(255, 85, 0);\">TAG</span> ou pilhas do <span style=\"color: rgb(255, 85, 0);\">CloudFormation</span> e executar operações em massa nos grupos recursos.;",
     "answers": [
       "VPC (Virtual Private Cloud)",
       "esource",
@@ -4673,7 +4667,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "O EFS é um serviço de armazenamento escalável, não compatível com servidores Windows.<br><br>Para Windows, existe o AWS F_____ for Windows.&nbsp;",
+    "question": "O EFS é um serviço de armazenamento escalável, não compatível com servidores Windows.<br><br>Para Windows, existe o AWS F_____ for Windows.;",
     "answers": [
       "FSx",
       "EFS",
@@ -4712,7 +4706,7 @@
   },
   {
     "titulo": "Segurança, Identidade e Conformidade",
-    "question": "O AWS Sec_____ Ma_____ é um serviço que ajuda a proteger informações confidenciais, como <span style=\"color: rgb(255, 85, 0);\">senhas</span>, chaves de API, certificados e outros dados sensíveis.&nbsp;",
+    "question": "O AWS Sec_____ Ma_____ é um serviço que ajuda a proteger informações confidenciais, como <span style=\"color: rgb(255, 85, 0);\">senhas</span>, chaves de API, certificados e outros dados sensíveis.;",
     "answers": [
       "KMS",
       "ACL (Access Control List)",
@@ -4751,7 +4745,7 @@
   },
   {
     "titulo": "Segurança, Identidade e Conformidade",
-    "question": "O AWS A_____ Manager é um serviço projetado para simplificar e automatizar o processo de <span style=\"color: rgb(255, 85, 0);\">auditoria</span>&nbsp;de recursos na AWS.",
+    "question": "O AWS A_____ Manager é um serviço projetado para simplificar e automatizar o processo de <span style=\"color: rgb(255, 85, 0);\">auditoria</span>;de recursos na AWS.",
     "answers": [
       "Secrets Manager",
       "ACL (Access Control List)",
@@ -4816,7 +4810,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "No S3, quem é que possuí a <span style=\"color: rgb(255, 85, 0);\">classe</span> de armazenamento (standard, glacier, standard-ia...):&nbsp;<br><br><u>Bucket</u> ou <u>Objeto</u>?<br><br>______",
+    "question": "No S3, quem é que possuí a <span style=\"color: rgb(255, 85, 0);\">classe</span> de armazenamento (standard, glacier, standard-ia...):;<br><br><u>Bucket</u> ou <u>Objeto</u>?<br><br>______",
     "answers": [
       "EFS",
       "Storage Gateway",
@@ -4946,7 +4940,7 @@
   },
   {
     "titulo": "Analytics",
-    "question": "O K______ é o serviços para ingestão, processamento e análise de dados em tempo real (<span style=\"color: rgb(255, 85, 0);\">streaming</span>).&nbsp;",
+    "question": "O K______ é o serviços para ingestão, processamento e análise de dados em tempo real (<span style=\"color: rgb(255, 85, 0);\">streaming</span>).;",
     "answers": [
       "Lambda",
       "EC2",
@@ -5024,7 +5018,7 @@
   },
   {
     "titulo": "Computação",
-    "question": "O recurso de <u>Reserva de Elastic IP</u>&nbsp;é cobrado quando a instância está des______",
+    "question": "O recurso de <u>Reserva de Elastic IP</u>;é cobrado quando a instância está des______",
     "answers": [
       "Lightsail",
       "Outposts",
@@ -5141,7 +5135,7 @@
   },
   {
     "titulo": "Integração de Aplicações",
-    "question": "<span style=\"color: rgb(0, 0, 0);\">Em aplicação de mi</span>___________<span style=\"color: rgb(0, 0, 0);\">&nbsp;cada função é um </span><span style=\"color: rgb(255, 85, 0);\">serviço</span><span style=\"color: rgb(0, 0, 0);\">, e pode ser criada e implantada de maneira independente. <br><br>Nesse tipo de arquitetura, um serviço pode falhar sem comprometer os demais.</span>",
+    "question": "<span style=\"color: rgb(0, 0, 0);\">Em aplicação de mi</span>___________<span style=\"color: rgb(0, 0, 0);\">;cada função é um </span><span style=\"color: rgb(255, 85, 0);\">serviço</span><span style=\"color: rgb(0, 0, 0);\">, e pode ser criada e implantada de maneira independente. <br><br>Nesse tipo de arquitetura, um serviço pode falhar sem comprometer os demais.</span>",
     "answers": [
       "EBS",
       "ACL (Access Control List)",
@@ -5349,7 +5343,7 @@
   },
   {
     "titulo": "Conceitos",
-    "question": "Uma arquitetura em <span style=\"color: rgb(255, 85, 0);\">microsserviço</span> pode ser tanto uma arquitetura com ou sem es____________.&nbsp;",
+    "question": "Uma arquitetura em <span style=\"color: rgb(255, 85, 0);\">microsserviço</span> pode ser tanto uma arquitetura com ou sem es____________.;",
     "answers": [
       "Outposts",
       "stado (state)",
@@ -5375,7 +5369,7 @@
   },
   {
     "titulo": "Segurança, Identidade e Conformidade",
-    "question": "Uma empresa precisa bloquear ataques de <span style=\"color: rgb(255, 85, 0);\">injeção de SQL</span>.&nbsp;Qual serviço ou recurso da AWS pode atender a esse requisito:<br><br><u>AWS WAF</u> ou <u>AWS Shield</u>?<br><br>_______",
+    "question": "Uma empresa precisa bloquear ataques de <span style=\"color: rgb(255, 85, 0);\">injeção de SQL</span>.;Qual serviço ou recurso da AWS pode atender a esse requisito:<br><br><u>AWS WAF</u> ou <u>AWS Shield</u>?<br><br>_______",
     "answers": [
       "KMS",
       "Secrets Manager",
