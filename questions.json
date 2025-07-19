@@ -342,10 +342,10 @@
     "titulo": "Armazenamento",
     "question": "Storage Gateway é um <span style=\"color: rgb(255, 85, 0);\">software </span>que você instala, um <span style=\"color: rgb(255, 85, 0);\">appliance </span>(hardware) ou <span style=\"color: rgb(255, 85, 0);\">as duas coisas</span><span style=\"color: rgb(0, 0, 0);\">?</span><br><br>_",
     "answers": [
-      "Software",
+      "é um software",
       "As duas coisas",
       "Storage Gateway",
-      "Appliance"
+      "é um appliance"
     ],
     "correct": 1,
     "dica": "",
@@ -509,12 +509,12 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "Qual EBS mais indicado para ser o <b><span style=\"color: rgb(255, 85, 0);\">volume de boot</span></b> de um sistema operacional:<br><br>o tipo <span style=\"color: rgb(0, 0, 0);\"><b>SSD</b> <b>gp2&nbsp;</b></span>ou <b>cold&nbsp;<span style=\"color: rgb(0, 0, 0);\">HDD</span></b>?<br><br>_______",
+    "question": "Qual EBS mais indicado para ser o <b><span style=\"color: rgb(255, 85, 0);\">volume de boot</span></b> de um sistema operacional?",
     "answers": [
       "EFS",
       "SSD gp2",
       "Storage Gateway",
-      "S3"
+      "Cold HDD"
     ],
     "correct": 1,
     "dica": "",
@@ -522,9 +522,9 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "Para finalidade de armazenamento de&nbsp;<span style=\"color: rgb(255, 85, 0);\"><b>arquivos</b></span>&nbsp;e pensando no <b><span style=\"color: rgb(255, 85, 0);\">menor custo</span></b>, qual tipo de volume no EBS é mais indicado:<br><br><b><u>Cold HDD</u> </b>ou <u><b>SSD gp2</b></u>?<br><br>________.",
+    "question": "Para finalidade de armazenamento de&nbsp;<span style=\"color: rgb(255, 85, 0);\"><b>arquivos</b></span>&nbsp;e pensando no <b><span style=\"color: rgb(255, 85, 0);\">menor custo</span></b>, qual tipo de volume no EBS é mais indicado?",
     "answers": [
-      "Glacier",
+      "SSD gp2",
       "Storage Gateway",
       "Cold HDD",
       "EFS"
@@ -1144,12 +1144,11 @@
   },
   {
     "titulo": "Gerenciamento, Monitoramento e Governança",
-    "question": "CloudFormation é gratuito?&nbsp;<br><br>_____",
+    "question": "CloudFormation é gratuito?&nbsp;",
     "answers": [
       "Sim.",
-      "Elastic Beanstalk",
-      "Budgets",
-      "S3"
+      "Não"
+
     ],
     "correct": 0,
     "dica": "",
@@ -1157,11 +1156,11 @@
   },
   {
     "titulo": "Analytics",
-    "question": "O A_____ é um serviço de <b><font color=\"#ff5500\">consultas e análise</font> </b>de dados no _____ usando SQL padrão.&nbsp;",
+    "question": "O _____ é um serviço de <b><font color=\"#ff5500\">consultas e análise</font> </b>de dados no S3 usando SQL padrão.&nbsp;",
     "answers": [
       "Budgets",
       "Auto Scaling",
-      "Athena | S3",
+      "Athena",
       "Outposts"
     ],
     "correct": 2,
@@ -1170,12 +1169,12 @@
   },
   {
     "titulo": "Analytics",
-    "question": "O uso do Athena é <font color=\"#ff5500\">cobrado </font>por c________ executadas.&nbsp;",
+    "question": "O uso do Athena é <font color=\"#ff5500\">cobrado </font>por ________ executadas.&nbsp;",
     "answers": [
-      "AWS Config",
-      "STS (Security Token Service)",
-      "VPC (Virtual Private Cloud)",
-      "consultas"
+      "Aplicação",
+      "Diretório",
+      "Pesquisas",
+      "Consultas"
     ],
     "correct": 3,
     "dica": "",
@@ -1183,12 +1182,12 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "O serviço de Cloud_____ é o recurso de <span style=\"color: rgb(255, 85, 0);\">CDN</span>, utilizado para fazer o <span style=\"color: rgb(255, 85, 0);\"><b>cache </b></span>de conteúdo em&nbsp;edge locations, (servidores de borda), para diminuir a latência e aumentar a velocidade.&nbsp;",
+    "question": "O serviço de _____ é o recurso de <span style=\"color: rgb(255, 85, 0);\">CDN</span>, utilizado para fazer o <span style=\"color: rgb(255, 85, 0);\"><b>cache </b></span>de conteúdo em&nbsp;edge locations, (servidores de borda), para diminuir a latência e aumentar a velocidade.&nbsp;",
     "answers": [
-      "dFront",
+      "CloudFront",
       "EFS",
-      "Cognito",
-      "Transit Gateway"
+      "CloudFormation",
+      "CloudWatch"
     ],
     "correct": 0,
     "dica": "",
@@ -1196,12 +1195,12 @@
   },
   {
     "titulo": "Contêineres",
-    "question": "O Amazon Elastic C________ Service (ECS) é um <span style=\"color: rgb(0, 0, 0);\">serviço </span>de gerenciamento de <span style=\"color: rgb(255, 85, 0);\">contêineres </span>altamente rápido e escalável.&nbsp;",
+    "question": "O Amazon Elastic ________ Service (ECS) é um <span style=\"color: rgb(0, 0, 0);\">serviço </span>de gerenciamento de <span style=\"color: rgb(255, 85, 0);\">contêineres </span>altamente rápido e escalável.&nbsp;",
     "answers": [
-      "Transit Gateway",
+      "Load",
       "Container",
-      "KMS",
-      "Trusted Advisor"
+      "Balancer",
+      "Advisor"
     ],
     "correct": 1,
     "dica": "",
@@ -1209,12 +1208,12 @@
   },
   {
     "titulo": "Contêineres",
-    "question": "O que significa ECS?&nbsp;<br><br>Elastic C________ Service.&nbsp;",
+    "question": "O que significa ECS?&nbsp;<br><br>Elastic ________ Service.&nbsp;",
     "answers": [
-      "Elastic Load Balancer",
+      "Load",
       "Container",
-      "Elastic Beanstalk",
-      "Lightsail"
+      "Beanstalk",
+      "Balancer"
     ],
     "correct": 1,
     "dica": "",
@@ -1689,7 +1688,7 @@
   },
   {
     "titulo": "Integração de Aplicações",
-    "question": "<div><div>O S_____&nbsp;é um serviço de mensageria utilizado para <font color=\"#ff5500\">desacoplar</font> microsserviços.</div></div>",
+    "question": "<div><div>O _____&nbsp;é um serviço de mensageria utilizado para <font color=\"#ff5500\">desacoplar</font> microsserviços.</div></div>",
     "answers": [
       "SQS",
       "Trusted Advisor",
@@ -2125,24 +2124,22 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Qual o <font color=\"#ff5500\">tipo de failover</font> quando o recurso primário está disponível e o secundário fica em espera:<br><br><u>Ativo-Ativo</u> ou <u>Ativo-Passivo</u>?<br><br>_____________",
+    "question": "Qual o <font color=\"#ff5500\">tipo de failover</font> quando o recurso primário está disponível e o secundário fica em espera?",
     "answers": [
-      "IAM (Identity Access Management)",
-      "Cost Explorer",
-      "EBS",
+      "Ativo-Ativo",
       "Ativo-Passivo"
     ],
-    "correct": 3,
+    "correct": 1,
     "dica": "",
     "icone_dica": "💡"
   },
   {
     "titulo": "Ferramenta de Desenvolvedor",
-    "question": "O Code______ é um serviço de <span style=\"color: rgb(255, 85, 0);\"><b>implantação</b></span> que automatiza implantações de <span style=\"color: rgb(0, 0, 0);\">aplicativos </span>em instâncias do Amazon <span style=\"color: rgb(255, 85, 0);\"><b>EC2</b></span>.",
+    "question": "O _____ é um serviço de <span style=\"color: rgb(255, 85, 0);\"><b>implantação</b></span> que automatiza implantações de <span style=\"color: rgb(0, 0, 0);\">aplicativos </span>em instâncias do Amazon <span style=\"color: rgb(255, 85, 0);\"><b>EC2</b></span>.",
     "answers": [
       "Elastic Load Balancer",
       "Cost Explorer",
-      "eDeploy",
+      "CodeDeploy",
       "Lambda"
     ],
     "correct": 2,
@@ -2151,7 +2148,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "o E__________ Internet Gateway pode ser usado somente para liberar saída para internet, impedindo comunicação de fora para dentro (acesso externo).",
+    "question": "o _________ Internet Gateway pode ser usado somente para liberar saída para internet, impedindo comunicação de fora para dentro (acesso externo).",
     "answers": [
       "Elastic Beanstalk",
       "CloudTrail",
@@ -2164,12 +2161,12 @@
   },
   {
     "titulo": "Computação",
-    "question": "Para o <span style=\"color: rgb(255, 85, 0);\">Auto Scaling</span> realizar o aumento ou diminuição de instâncias em um grupo, ele usa métricas do Cloud_____ para saber se a demanda aumentou ou diminuiu.",
+    "question": "Para o <span style=\"color: rgb(255, 85, 0);\">Auto Scaling</span> realizar o aumento ou diminuição de instâncias em um grupo, ele usa métricas do _____ para saber se a demanda aumentou ou diminuiu.",
     "answers": [
-      "EC2",
+      "CloudTrail",
       "Outposts",
       "Auto Scaling",
-      "dWatch"
+      "CloudWatch"
     ],
     "correct": 3,
     "dica": "",
@@ -2279,12 +2276,12 @@
   },
   {
     "titulo": "Gerenciamento, Monitoramento e Governança",
-    "question": "Existem quatro tipos de ELB (Elastic Load Balancer)? <br><br>_____",
+    "question": "Existem quantos tipos de ELB (Elastic Load Balancer)?",
     "answers": [
-      "IAM (Identity Access Management)",
-      "S3",
+      "1",
+      "2",
       "4",
-      "Glacier"
+      "6"
     ],
     "correct": 2,
     "dica": "",
@@ -2292,12 +2289,12 @@
   },
   {
     "titulo": "Gerenciamento, Monitoramento e Governança",
-    "question": "Caso você queira fazer o balanceamento de carga por protocolo <span style=\"color: rgb(255, 85, 0);\">HTTP/HTTPS</span> ou outros, qual o ELB recomendado:<br><br>Application, Network ou Gateway?<br><br>___________ Load Balancer.",
+    "question": "Caso você queira fazer o balanceamento de carga por protocolo <span style=\"color: rgb(255, 85, 0);\">HTTP/HTTPS</span> ou outros, qual o ELB recomendado?",
     "answers": [
-      "Secrets Manager",
-      "Cost Explorer",
-      "Application",
-      "Lambda"
+      "Gateway Load Balancer",
+      "Application Load Balancer",
+      "Network Load Balancer",
+      "Lambda Load Balancer"
     ],
     "correct": 2,
     "dica": "",
@@ -3590,7 +3587,7 @@
       "Auto Scaling",
       "Orquestração.",
       "Cost Explorer",
-      "STS (Security Token Service)"
+      "Serverless"
     ],
     "correct": 1,
     "dica": "",
@@ -3639,10 +3636,9 @@
     "titulo": "Armazenamento",
     "question": "Um volume EFS é armazenado somente em 1 zona de disponibilidade:<br><br><span style=\"color: rgb(255, 85, 0);\">Sim</span>, <span style=\"color: rgb(255, 85, 0);\">Não </span>ou <span style=\"color: rgb(255, 85, 0);\">Depende</span>?<br><br>________",
     "answers": [
-      "EBS",
+      "Sim",
       "Depende.",
-      "Storage Gateway",
-      "Glacier"
+      "Não"
     ],
     "correct": 1,
     "dica": "",
