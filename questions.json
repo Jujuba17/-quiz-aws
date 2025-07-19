@@ -184,11 +184,7 @@
   },
   {
     "titulo": "Armazenamento",
-<<<<<<< HEAD
-    "question": "S3 Glacier I_____ ________, é a classe criada para armazenamento de <span style=\"color: rgb(0, 0, 0);\"><b>longa duração</b>, que <b>raramente são acessados</b></span>, mas que exigem <span style=\"color: rgb(255, 85, 0);\"><b>recuperação rápida</b></span>.",
-=======
     "question": "S3 Glacier ________, é a classe criada para armazenamento de <span style=\"color: rgb(0, 0, 0);\"><b>longa duração</b>, que <b>raramente são acessados</b></span>, mas que exigem <span style=\"color: rgb(255, 85, 0);\"><b>recuperação rápida</b></span>.",
->>>>>>> 0315243b8fc4c71d9e8e2f77ade390300b7a4d35
     "answers": [
       "Intelligent Tiering",
       "Instant Retrieval",
