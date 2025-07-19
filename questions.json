@@ -707,5 +707,293 @@
     "correct": 1,
     "dica": "",
     "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "O Well-Architected Framework destaca a _________ Operacional como um pilar fundamental, incentivando a melhoria contínua nos processos e <span style=\"color: rgb(255, 85, 0);\">operações </span>para otimizar a entrega de valor.",
+    "answers": [
+      "EBS",
+      "Excelência",
+      "Sustentabilidade",
+      "Segurança"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "O Well-Architected Framework coloca a ________ como um pilar crucial, enfatizando a importância de <span style=\"color: rgb(255, 85, 0);\">proteger </span>ativos e dados, bem como garantir conformidade com normas de segurança.",
+    "answers": [
+      "Sustentabilidade",
+      "Confiabilidade",
+      "Excelência operacional",
+      "Segurança"
+    ],
+    "correct": 3,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "O Well-Architected Framework enfoca a ___________ como um pilar essencial, incentivando a construção de sistemas <span style=\"color: rgb(255, 85, 0);\">resilientes </span>que operam consistentemente e se recuperam automaticamente de falhas.",
+    "answers": [
+      "Excelência operacional",
+      "Segurança",
+      "Confiabilidade",
+      "desempenho"
+    ],
+    "correct": 2,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "O Well-Architected Framework destaca a _________ de Performance como um pilar vital, promovendo a <span style=\"color: rgb(255, 85, 0);\">otimização </span>de recursos para garantir desempenho <span style=\"color: rgb(255, 85, 0);\">eficiente</span>.",
+    "answers": [
+      "EFS",
+      "Eficiência",
+      "Eficácia",
+      "EC2"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "O Well-Architected Framework coloca a Otimização de _____ como um pilar crucial, encorajando a gestão eficiente de recursos para maximizar o <span style=\"color: rgb(255, 85, 0);\">valor </span>dos investimentos em nuvem.",
+    "answers": [
+      "KMS",
+      "Custos",
+      "Resultados",
+      "Config"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "O Well-Architected Framework destaca a _______________ como um pilar emergente, incentivando a consideração dos impactos <span style=\"color: rgb(255, 85, 0);\">ambientais </span>e a adoção de práticas <span style=\"color: rgb(255, 85, 0);\">sustentáveis </span>no design e operação de sistemas.",
+    "answers": [
+      "Sustentabilidade",
+      "Segurança",
+      "Desempenho",
+      "Confiabilidade"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento de Custos",
+    "question": "O _____ ______ é um serviço da AWS que permite automaticamente <span style=\"color: rgb(255, 85, 0);\">ajustar a capacidade</span> de computação para cima ou para baixo com base na demanda do aplicativo.",
+    "answers": [
+      "S3 | bucket",
+      "Cost Explorer | IAM",
+      "Trusted | Advisor",
+      "Auto | Scaling"
+    ],
+    "correct": 3,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Analytics",
+    "question": "Uma empresa deseja integrar processamento de linguagem natural (NLP) em <span style=\"color: rgb(255, 85, 0);\">painéis de inteligência</span> empresarial (BI).<br><br>Qual serviço mais indicado: <u>Amazon Macie</u> ou <u>Amazon QuickSight</u>?<br><br>__________",
+    "answers": [
+      "Amazon Macie",
+      "Amazon QuickSight"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "Uma empresa deseja monitorar o <span style=\"color: rgb(255, 85, 0);\">desempenho </span>de sua carga de trabalho para garantir que os recursos atendam as necessidades.<br><br>Qual pilar do AWS CAF aborda esse requisito: <u>Plataformas</u> ou <u>Operações</u>?<br><br>_________",
+    "answers": [
+      "Plataforma",
+      "Operações"
+    
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento de Custos",
+    "question": "Uma empresa deseja acessar um relatório sobre o <span style=\"color: rgb(255, 85, 0);\">impacto ambiental</span> estimado do uso da AWS pela empresa.<br><br>Qual recurso da AWS pode trazer essa resposta: AWS <u>Organizations</u> ou AWS <u>Billing</u>?<br><br>_______",
+    "answers": [
+      "AWS Billing",
+      "AWS Organizations"
+
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Qual serviço da AWS uma empresa pode usar para encontrar <span style=\"color: rgb(255, 85, 0);\">relatórios de segurança e conformidade</span> (como relatório ISO, SOC e outros): <br><br><u>AWS Artifact</u> ou AWS <u>Audit Manager</u>?<br><br>____________",
+    "answers": [
+      "AWS Audit Manager",
+      "AWS Artifact"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "Utilizar o ECS (Container) para decompor uma arquitetura monolítica em <span style=\"color: rgb(255, 85, 0);\">microsserviços</span> é um exemplo de arquitetura:<br><br>Fortemente acoplada ou Fracamente acoplada?<br><br>___________________",
+    "answers": [
+      "Fortemente acoplada",
+      "Fracamente acoplada"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "Uma arquitetura em <span style=\"color: rgb(255, 85, 0);\">microsserviço</span> pode ser tanto uma arquitetura com ou sem ____________.;",
+    "answers": [
+      "Outposts",
+      "Estado (state)",
+      "Elastic Beanstalk",
+      "EC2"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Ferramenta de Desenvolvedor",
+    "question": "Cloud Formation e o AWS CDK (Cloud Development Kit) são recursos para criar infraestrutura através de _____.",
+    "answers": [
+      "IAM",
+      "KMS",
+      "Código",
+      "Budgets"
+    ],
+    "correct": 2,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Uma empresa precisa bloquear ataques de <span style=\"color: rgb(255, 85, 0);\">injeção de SQL</span>.;Qual serviço ou recurso da AWS pode atender a esse requisito:<br><br><u>AWS WAF</u> ou <u>AWS Shield</u>?<br><br>_______",
+    "answers": [
+      "KMS",
+      "AWS Shield",
+      "AWS WAF",
+      "CloudTrail"
+    ],
+    "correct": 2,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Migração e Transferência",
+    "question": "O Migration _______ é uma ferramenta da AWS que ajuda empresas a entender os <span style=\"color: rgb(255, 85, 0);\">custos</span> do uso da Cloud antes de iniciar uma migração.",
+    "answers": [
+      "Valuator",
+      "Elastic Beanstalk",
+      "Storage Gateway",
+      "Auto Scaling"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento de Custos",
+    "question": "Qual serviço ou ferramenta da AWS fornece aos usuários a capacidade de <span style=\"color: rgb(255, 85, 0);\">monitorar quotas</span> de serviços AWS:<br><br><u>AWS Trusted Advisor</u> ou <u>AWS Budgets</u>?<br><br>_______________",
+    "answers": [
+      "AWS Budgets",
+      "AWS Cost Explorer",
+      "AWS Trusted Advisor",
+      "AWS Free Tier"
+    ],
+    "correct": 2,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Uma empresa deseja garantir que todas as suas instâncias Amazon EC2 tenham <span style=\"color: rgb(255, 85, 0);\">patches</span> de sistema operacional atualizados.<br><br>Qual serviço atenderá esse requisito: AWS <u>System Manager</u> ou AWS <u>Computer Optmizer</u>?<br><br>______________",
+    "answers": [
+      "AWS Computer Optmizer",
+      "AWS System Manager"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Através de S_____, é possível <span style=\"color: rgb(255, 85, 0);\">definir diretrizer</span> para suas contas na AWS, como por exemplo, exigir o uso de tags em recursos, negar acesso a recursos especificos, entre outras definições.",
+    "answers": [
+      "KMS",
+      "SCPs",
+      "STS (Security Token Service)",
+      "Auto Scaling"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Interação com os Clientes",
+    "question": "Uma empresa precisa de ajuda com seu de <span style=\"color: rgb(255, 85, 0);\">faturamento</span> na AWS.<br><br><u>A partir</u> de qual plano de support está disponível um assistente de faturamento (<span style=\"color: rgb(255, 85, 0);\">Concierge</span> Engineer)?<br><br><img src=\"paste-1a5ae1181326e4f8e2f30e62950aec03efec2eb7.jpg\"><br><br>__________________",
+    "answers": [
+      "Enterprise On-Ramp",
+      "Billing Dashboard",
+      "AWS Config",
+      "Lightsail"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Uma empresa precisa de um serviço automatizado de gerenciamento de vulnerabilidades que faça <span style=\"color: rgb(255, 85, 0);\">varreduras</span> contínuas em busca de <span style=\"color: rgb(255, 85, 0);\">vulnerabilidades</span>.<br><br>Qual serviço atenderá a esses requisitos: AWS <u>Inspector</u> ou AWS <u>Shield</u>?<br><br>_________",
+    "answers": [
+      "AWS Inspector",
+      "AWS Shield"
+     
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Ferramenta de Desenvolvedor",
+    "question": "O AWS Application ______ é uma ferramenta que permite projetar e construir <span style=\"color: rgb(255, 85, 0);\">visualmente</span> aplicações sem servidor.",
+    "answers": [
+      "Savings Plans",
+      "S3",
+      "Glacier",
+      "Composer"
+    ],
+    "correct": 3,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "No EC2, o modelo de preço <u>Host ______</u> disponibiliza um <span style=\"color: rgb(255, 85, 0);\">servidor físico dedicado</span> exclusivamente ao seu uso.",
+    "answers": [
+      "Elastic Beanstalk",
+      "EC2",
+      "Auto Scaling",
+      "Dedicado"
+    ],
+    "correct": 3,
+    "dica": "",
+    "icone_dica": "💡"
   }
 ]
