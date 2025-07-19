@@ -1,16 +1,15 @@
-// Adicione este evento antes da função loadQuestions
-document.getElementById('start-btn').addEventListener('click', () => {
-  document.getElementById('start-screen').style.display = 'none';
-  document.getElementById('quiz-content').style.display = 'block';
-  loadQuestions();
-});
-
 let questions = [];
 let selectedQuestions = [];
 let currentQuestion = 0;
 let score = 0;
 const TOTAL_QUESTIONS = 20;
 
+// Evento do botão Iniciar
+document.getElementById('start-btn').addEventListener('click', () => {
+  document.getElementById('start-screen').style.display = 'none';
+  document.getElementById('quiz-content').style.display = 'block';
+  loadQuestions();
+});
 
 async function loadQuestions() {
   const res = await fetch('questions.json');
@@ -21,10 +20,9 @@ async function loadQuestions() {
 }
 
 function showQuestion() {
-
   const q = selectedQuestions[currentQuestion];
 
-  // Exibe a pergunta (já com innerHTML)
+  // Exibe a pergunta
   document.getElementById('question').innerHTML = q.question;
 
   // Gerencia a dica
@@ -38,7 +36,7 @@ function showQuestion() {
 
     hintBtn.onclick = () => {
       hintText.style.display = 'block';
-      hintBtn.style.display = 'none'; // esconde o botão após clicar
+      hintBtn.style.display = 'none';
     };
   } else {
     hintBtn.style.display = 'none';
@@ -46,20 +44,17 @@ function showQuestion() {
     hintText.textContent = '';
   }
 
-  // Gera alternativas
+  // Gera alternativas SEM EMBARALHAR
   const answersEl = document.getElementById('answers');
   answersEl.innerHTML = '';
-// Cria lista com índice para embaralhar
-const indexedAnswers = q.answers.map((ans, i) => ({ ans, index: i }));
-const shuffled = indexedAnswers.sort(() => 0.5 - Math.random());
 
-shuffled.forEach(({ ans, index }) => {
-  const btn = document.createElement('button');
-  btn.textContent = ans;
-  btn.onclick = () => selectAnswer(btn, index);  // índice original
-  answersEl.appendChild(btn);
-});
-
+  // Cria botões na ordem original do JSON
+  q.answers.forEach((ans, index) => {
+    const btn = document.createElement('button');
+    btn.textContent = ans;
+    btn.onclick = () => selectAnswer(btn, index);
+    answersEl.appendChild(btn);
+  });
 
   document.getElementById('current').textContent = currentQuestion + 1;
   document.getElementById('next-btn').disabled = true;
@@ -68,15 +63,23 @@ shuffled.forEach(({ ans, index }) => {
 function selectAnswer(button, index) {
   const correct = selectedQuestions[currentQuestion].correct;
   const buttons = document.querySelectorAll('#answers button');
-  buttons.forEach((btn, idx) => {
+  
+  // Desabilita todos os botões
+  buttons.forEach((btn) => {
     btn.disabled = true;
-    if (idx === correct) btn.classList.add('correct');
-    else if (idx === index) btn.classList.add('wrong');
   });
+
+  // Verifica se acertou
   if (index === correct) {
+    button.classList.add('correct');
     score++;
     document.getElementById('score').textContent = score;
+  } else {
+    button.classList.add('wrong');
+    // Destaca a resposta correta
+    buttons[correct].classList.add('correct');
   }
+  
   document.getElementById('next-btn').disabled = false;
 }
 
@@ -96,4 +99,3 @@ function showResult() {
     <button onclick="location.reload()">Tentar novamente</button>
   `;
 }
-

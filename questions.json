@@ -665,12 +665,10 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "<div>O Read Replication do RDS (relational database service) serve como estratégia de Failover ou Desaster Recovery <span style=\"color: rgb(255, 85, 0);\">automático:</span></div><div><span style=\"color: rgb(255, 85, 0);\"><br></span></div><div><span style=\"color: rgb(0, 0, 0);\">Sim ou Não?</span></div><div><br>_____</div>",
+    "question": "<div>O Read Replication do RDS (relational database service) serve como estratégia de Failover ou Desaster Recovery <span style=\"color: rgb(255, 85, 0);\">automático:</span></div><div><span style=\"color: rgb(255, 85, 0);\"><br></span></div><div><span style=\"color: rgb(0, 0, 0);\">?</span></div><div><br></div>",
     "answers": [
-      "Free Tier",
-      "Não",
-      "Lightsail",
-      "CloudTrail"
+      "Sim",
+      "Não"
     ],
     "correct": 1,
     "dica": "",
@@ -1627,12 +1625,11 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Os dados são criptografados no Direct Connect (recurso para <span style=\"color: rgb(255, 85, 0);\">conectar</span> a rede física da sua empresa com a cloud):<br><br>Sim ou Não:<br><br>_____",
+    "question": "Os dados são criptografados no Direct Connect (recurso para <span style=\"color: rgb(255, 85, 0);\">conectar</span> a rede física da sua empresa com a cloud)?",
     "answers": [
       "Não",
-      "Elastic Beanstalk",
-      "Free Tier",
-      "Elastic Load Balancer"
+      "Sim"
+      
     ],
     "correct": 0,
     "dica": "",
@@ -1705,12 +1702,10 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "Um volume EFS pode ser montado em sistemas operacionais Windows?<br><br>Sim ou Não?<br><br>_____.",
+    "question": "Um volume EFS pode ser montado em sistemas operacionais Windows?",
     "answers": [
-      "Glacier",
-      "Não",
-      "S3",
-      "EBS"
+      "Sim",
+      "Não"
     ],
     "correct": 1,
     "dica": "",
@@ -2069,12 +2064,10 @@
   },
   {
     "titulo": "Conceitos",
-    "question": "Por padrão, tags são atribuídas automaticamente aos seus recursos na AWS: <br><br>Sim ou Não?<br><br>_____",
+    "question": "Por padrão, tags são atribuídas automaticamente aos seus recursos na AWS?",
     "answers": [
-      "Free Tier",
-      "Não.",
-      "EC2",
-      "Secrets Manager"
+      "Sim",
+      "Não."
     ],
     "correct": 1,
     "dica": "",
@@ -2082,14 +2075,12 @@
   },
   {
     "titulo": "Computação",
-    "question": "No IAM, é possível aplicar <font color=\"#ff5500\"><b>permissões</b></font> em recurso através de&nbsp;<font color=\"#ff5500\"><b>tags</b></font>: <br><br>Sim ou Não?<br><br>_____",
+    "question": "No IAM, é possível aplicar <font color=\"#ff5500\"><b>permissões</b></font> em recurso através de&nbsp;<font color=\"#ff5500\"><b>tags</b></font>: <br><br>?<br><br>",
     "answers": [
-      "Elastic Beanstalk",
-      "Lambda",
-      "Outposts",
-      "Sim."
+      "Não",
+      "Sim"
     ],
-    "correct": 3,
+    "correct": 1,
     "dica": "",
     "icone_dica": "💡"
   },
@@ -2264,14 +2255,12 @@
   },
   {
     "titulo": "Computação",
-    "question": "O recurso de Auto Scaling do EC2 possuí custo: Sim ou Não?<br><br>_____.",
+    "question": "O recurso de Auto Scaling do EC2 possuí custo?<br><br>.",
     "answers": [
-      "Outposts",
-      "Elastic Beanstalk",
-      "EC2",
+      "Sim",
       "Não"
     ],
-    "correct": 3,
+    "correct": 1,
     "dica": "",
     "icone_dica": "💡"
   },
@@ -2355,14 +2344,12 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "NAT Gateway possui custo:<br><br>Sim ou Não?<br><br>_____",
+    "question": "NAT Gateway possui custo?",
     "answers": [
-      "Outposts",
-      "KMS",
-      "AWS Config",
+      "Não",
       "Sim"
     ],
-    "correct": 3,
+    "correct": 1,
     "dica": "",
     "icone_dica": "💡"
   },
@@ -2381,25 +2368,10 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "NAT gateway <font color=\"#ff5500\"><b>público</b></font> permite o acesso a internet de uma sub-rede privada:<br><br>Sim ou Não?<br><br>_____.",
+    "question": "NAT gateway <font color=\"#ff5500\"><b>público</b></font> permite o acesso a internet de uma sub-rede privada?",
     "answers": [
-      "VPC (Virtual Private Cloud)",
-      "Free Tier",
-      "CloudTrail",
-      "Sim"
-    ],
-    "correct": 3,
-    "dica": "",
-    "icone_dica": "💡"
-  },
-  {
-    "titulo": "Redes e Entrega de Conteúdo",
-    "question": "NAT gateway <b><font color=\"#ff5500\">privado </font></b>permite o acesso a internet de uma sub-rede privada:<br><br>Sim ou Não?<br><br>_____.",
-    "answers": [
-      "VPC (Virtual Private Cloud)",
       "Não",
-      "Free Tier",
-      "Elastic Beanstalk"
+      "Sim"
     ],
     "correct": 1,
     "dica": "",
@@ -2407,12 +2379,22 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "NAT gateway permite que seus recursos sejam acessados <span style=\"color: rgb(255, 85, 0);\">externamente</span> através da internet (de fora para dentro):<br><br>Sim ou Não?<br><br>_____.",
+    "question": "NAT gateway <b><font color=\"#ff5500\">privado </font></b>permite o acesso a internet de uma sub-rede privada?",
+    "answers": [
+      "Sim",
+      "Não"
+
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "NAT gateway permite que seus recursos sejam acessados <span style=\"color: rgb(255, 85, 0);\">externamente</span> através da internet (de fora para dentro)?",
     "answers": [
       "Não",
-      "CloudTrail",
-      "Cognito",
-      "AWS Config"
+      "Sim"
     ],
     "correct": 0,
     "dica": "",
@@ -2420,40 +2402,35 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Com NAT gateway <b><font color=\"#ff5500\">público</font></b> posso me conectar a outras VPCs ou rede on-premise:<br><br>Sim ou Não?<br><br>_____.",
+    "question": "Com NAT gateway <b><font color=\"#ff5500\">público</font></b> posso me conectar a outras VPCs ou rede on-premise?",
     "answers": [
       "Sim",
-      "Lambda",
-      "CloudFront",
-      "VPC (Virtual Private Cloud)"
-    ],
-    "correct": 0,
-    "dica": "",
-    "icone_dica": "💡"
-  },
-  {
-    "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Com NAT gateway <span style=\"color: rgb(255, 85, 0);\">privado </span>é possível se conectar a outras VPCs ou rede on-premise:&nbsp;<br><br>Sim ou Não?<br><br>_____.",
-    "answers": [
-      "Budgets",
-      "EBS",
-      "Sim",
-      "AWS Config"
-    ],
-    "correct": 2,
-    "dica": "",
-    "icone_dica": "💡"
-  },
-  {
-    "titulo": "Redes e Entrega de Conteúdo",
-    "question": "A VPC possuí custo: Sim ou Não? <br><br>_____",
-    "answers": [
-      "Budgets",
-      "VPC (Virtual Private Cloud)",
-      "Lightsail",
       "Não"
     ],
-    "correct": 3,
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Com NAT gateway <span style=\"color: rgb(255, 85, 0);\">privado </span>é possível se conectar a outras VPCs ou rede on-premise:&nbsp;<br><br>?",
+    "answers": [
+      "Não",
+      "Sim"
+   
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "A VPC possuí custo?",
+    "answers": [
+      "Sim",
+      "Não"
+    ],
+    "correct": 1,
     "dica": "",
     "icone_dica": "💡"
   },
@@ -2537,14 +2514,13 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Há cobranças por uso de endpoint na VPC:<br><br>Sim ou Não?<br><br>_____.",
+    "question": "Há cobranças por uso de endpoint na VPC:<br><br>?",
     "answers": [
-      "ACL (Access Control List)",
-      "CloudTrail",
-      "Sim",
-      "KMS"
+      "Não",
+      "Sim"
+ 
     ],
-    "correct": 2,
+    "correct": 1,
     "dica": "",
     "icone_dica": "💡"
   },
@@ -2940,12 +2916,10 @@
   },
   {
     "titulo": "Computação",
-    "question": "Um endereço IP público atribuído a uma instância EC2 por se mantem quando a instância é <b><span style=\"color: rgb(255, 85, 0);\">desligada ou reiniciada</span></b>:<br><br>Sim ou Não?<br><br>_____",
+    "question": "Um endereço IP público atribuído a uma instância EC2 por se mantem quando a instância é <b><span style=\"color: rgb(255, 85, 0);\">desligada ou reiniciada</span></b>:<br><br>?",
     "answers": [
-      "Outposts",
-      "Não",
-      "Auto Scaling",
-      "Lightsail"
+      "Sim",
+      "Não"
     ],
     "correct": 1,
     "dica": "",
@@ -3330,12 +3304,10 @@
   },
   {
     "titulo": "Sem Servidor",
-    "question": "Uma Lambda pode ser acionada através do Amazon Kinesis? <br><br>Sim ou Não?<br><br>_____",
+    "question": "Uma Lambda pode ser acionada através do Amazon Kinesis? <br><br>?",
     "answers": [
       "Sim.",
-      "Trusted Advisor",
-      "Transit Gateway",
-      "Storage Gateway"
+      "Não"
     ],
     "correct": 0,
     "dica": "",
@@ -3395,12 +3367,12 @@
   },
   {
     "titulo": "Integração de Aplicações",
-    "question": "Re_________ é o processo de <font color=\"#ff5500\">reestruturar</font> um código/sistema existente em microsserviços.",
+    "question": "_______ é o processo de <font color=\"#ff5500\">reestruturar</font> um código/sistema existente em microsserviços.",
     "answers": [
       "Billing Dashboard",
       "Outposts",
       "CloudTrail",
-      "efatoração"
+      "Refatoração"
     ],
     "correct": 3,
     "dica": "",
@@ -3408,12 +3380,10 @@
   },
   {
     "titulo": "Contêineres",
-    "question": "O ECS aceita aplicações monoliticas:<br><br>Sim ou Não?<br><br>_____",
+    "question": "O ECS aceita aplicações monoliticas:<br><br>?",
     "answers": [
-      "Outposts",
-      "Sim",
-      "Cost Explorer",
-      "AWS Config"
+      "Não",
+      "Sim"
     ],
     "correct": 1,
     "dica": "",
@@ -3525,14 +3495,13 @@
   },
   {
     "titulo": "Gerenciamento, Monitoramento e Governança",
-    "question": "O AWS Trusted Advisor está disponível somente a partir do plano Enterprise On-Ramp:<br><br>Sim ou Não?<br><br>_____.<br><br><img src=\"paste-62c01160ae8c1b1b71f80461a1df5613e2c572f2.jpg\">",
+    "question": "O AWS Trusted Advisor está disponível somente a partir do plano Enterprise On-Ramp?",
     "answers": [
-      "Outposts",
-      "S3",
-      "Não",
-      "Cognito"
+      "Sim",
+      "Não"
+ 
     ],
-    "correct": 2,
+    "correct": 1,
     "dica": "",
     "icone_dica": "💡"
   },
