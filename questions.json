@@ -1,7 +1,7 @@
 [
   {
     "titulo": "Conceitos",
-    "question": "Cada região da AWS consiste em várias Zonas de ____________________ isoladas e separadas fisicamente em uma área geográfica.",
+    "question": "Cada região da AWS consiste em várias Zonas de ______________ isoladas e separadas fisicamente em uma área geográfica.",
     "answers": [
       "Disponibilidades (AZ)",
       "Conectividade (CZ)",
@@ -14,7 +14,7 @@
   },
   {
     "titulo": "Conceitos",
-    "question": "Uma Zona de ___________________ é um ou mais datacenters distintos, com energia, rede e conectividade redundantes em uma região da AWS.",
+    "question": "Uma Zona de _______________ é um ou mais datacenters distintos, com energia, rede e conectividade redundantes em uma região da AWS.",
     "answers": [
       "Transferência (TZ)",
       "Disponibilidade (AZ)",
@@ -184,7 +184,11 @@
   },
   {
     "titulo": "Armazenamento",
+<<<<<<< HEAD
     "question": "S3 Glacier I_____ ________, é a classe criada para armazenamento de <span style=\"color: rgb(0, 0, 0);\"><b>longa duração</b>, que <b>raramente são acessados</b></span>, mas que exigem <span style=\"color: rgb(255, 85, 0);\"><b>recuperação rápida</b></span>.",
+=======
+    "question": "S3 Glacier ________, é a classe criada para armazenamento de <span style=\"color: rgb(0, 0, 0);\"><b>longa duração</b>, que <b>raramente são acessados</b></span>, mas que exigem <span style=\"color: rgb(255, 85, 0);\"><b>recuperação rápida</b></span>.",
+>>>>>>> 0315243b8fc4c71d9e8e2f77ade390300b7a4d35
     "answers": [
       "Intelligent Tiering",
       "Instant Retrieval",
@@ -392,25 +396,26 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "No storage gateway temos 3 tipos de armazenamento, F_____, V_____ e T_____.;",
+    "question": "Quais são os três tipos de armazenamento suportados pelo AWS Storage Gateway?",
     "answers": [
-      "Armazenamento | File | Volume",
-      "File Volume | Tape",
-      "File | Storage  | Tape",
-      "Armazenamento | Volume | Tape"
+    "File | Volume | Tape",
+    "Armazenamento | File | Volume",
+    "File | Storage | Tape",
+    "Block | Object | Tape"
+    
     ],
-    "correct": 1,
+    "correct": 0,
     "dica": "",
     "icone_dica": "💡"
   },
   {
     "titulo": "Migração e Transferência",
-    "question": "O Snow Family é composta pelo Snow _____, Snow B_____ e Snow M_____.",
+    "question": "Quais dispositivos compõem a Snow Family?",
     "answers": [
-    "Core | Box | Machine",
-    "Cone | Ball | Mobile",
-    "Cube | Bucket | Motion",
-    "Cold | Brick | Module"
+    "Snow Core | Snow Box | Snow Machine",
+    "Snow Cone | Snow Ball | Snow Mobile",
+    "Snow Cube | Snow Bucket | Snow Motion",
+    "Snow Cold | Snow Brick | Snow Module"
     ],
     "correct": 1,
     "dica": "",
@@ -420,10 +425,10 @@
     "titulo": "Migração e Transferência",
     "question": "O Snowball <b>Edge</b> possui entre 40 e _____ terabytes.;",
     "answers": [
-      "Savings Plans",
-      "Cost Explorer",
+      "50",
+      "60",
       "80",
-      "EBS"
+      "90"
     ],
     "correct": 2,
     "dica": "",
@@ -434,8 +439,8 @@
     "question": "O Snow _____;é um cointainer em um <span style=\"color: rgb(255, 85, 0);\">caminhão</span>, capaz de armazenar até _____ PB.;",
     "answers": [
       "Mobile | 100",
-      "Route53 | 50",
-      "S3 | 100 ",
+      "Cone | 50",
+      "Ball| 100 ",
       "Mobile | 50"
     ],
     "correct": 0,
@@ -470,7 +475,11 @@
   },
   {
     "titulo": "Computação",
+<<<<<<< HEAD
     "question": "No EC2, o modelo de preço S_____ Plans é uma categoria que oferece preços baixos,\nmas com <b><font color=\"#ff5500\">compromisso de 1 a 3 anos</font></b>.",
+=======
+    "question": "No EC2, o modelo de preço _____ Plans é uma categoria que oferece preços baixos,\nmas com <b><font color=\"#ff5500\">compromisso de 1 a 3 anos</font></b>.",
+>>>>>>> 0315243b8fc4c71d9e8e2f77ade390300b7a4d35
     "answers": [
       "Saving",
       "Auto Scaling",
@@ -496,12 +505,16 @@
   },
   {
     "titulo": "Computação",
+<<<<<<< HEAD
     "question": "No <b><font color=\"#ff5500\">EC2,</font></b> temos diversos tipos de ins_______, otimizadas para\ndiferentes cenários.",
+=======
+    "question": "No <b><font color=\"#ff5500\">EC2,</font></b> temos diversos tipos de _______, otimizadas para\ndiferentes cenários.",
+>>>>>>> 0315243b8fc4c71d9e8e2f77ade390300b7a4d35
     "answers": [
       "Lambda",
       "EC2",
       "Outposts",
-      "stâncias"
+      "instâncias"
     ],
     "correct": 3,
     "dica": "",
@@ -535,20 +548,20 @@
   },
   {
     "titulo": "Computação",
-    "question": "O\nque significa AMI?<br><br>Amazon M______ I_____",
+    "question": "O\nque significa AMI?",
     "answers": [
-      "Auto Scaling",
-      "Lambda",
-      "Machine | Image.",
-      "Elastic Beanstalk"
+    "Amazon Machine Image",
+    "Amazon Managed Instance",
+    "AWS Machine Interface",
+    "Amazon Modular Infrastructure"
     ],
-    "correct": 2,
+    "correct": 0,
     "dica": "",
     "icone_dica": "💡"
   },
   {
     "titulo": "Computação",
-    "question": "É possível <span style=\"color: rgb(255, 85, 0);\">monitorar </span>instâncias EC2 e criar alarmes de alertas através do serviço de _____.",
+    "question": "É possível <span style=\"color: rgb(255, 85, 0);\">monitorar </span>instâncias EC2 e criar alarmes de alertas através de qual serviço?",
     "answers": [
       "CloudWatch",
       "Auto Scaling",
@@ -574,9 +587,13 @@
   },
   {
     "titulo": "Computação",
+<<<<<<< HEAD
     "question": "Através de um Snap_____ é possível criar uma AMI para criação de\ninstâncias.;",
+=======
+    "question": "Através de um _____ é possível criar uma AMI para criação de\ninstâncias.;",
+>>>>>>> 0315243b8fc4c71d9e8e2f77ade390300b7a4d35
     "answers": [
-      "pshot",
+      "Snapshot",
       "Auto Scaling",
       "Lambda",
       "EC2"
@@ -587,9 +604,13 @@
   },
   {
     "titulo": "Computação",
+<<<<<<< HEAD
     "question": "O AWS Mar_____ Pla_____ é um recurso da AWS que possuí um conjunto de serviços <span style=\"color: rgb(255, 85, 0);\">pré-prontos </span>para EC2, Redshift, SageMaker e outros.",
+=======
+    "question": "O Qual recurso da AWS que possuí um conjunto de serviços <span style=\"color: rgb(255, 85, 0);\">pré-prontos </span>para EC2, Redshift, SageMaker e outros.",
+>>>>>>> 0315243b8fc4c71d9e8e2f77ade390300b7a4d35
     "answers": [
-      "rket | ace",
+      "Market Place",
       "Auto Scaling",
       "EC2",
       "Outposts"
@@ -637,12 +658,10 @@
     "titulo": "Banco de Dados",
     "question": "No RDS (relation database service), qual recurso permite <span style=\"color: rgb(255, 85, 0);\">failover automático</span> de instância de banco de dados:;<br><u>Multi-AZ</u> ou <u>Read Replication</u>?<br>_________<br>",
     "answers": [
-      "Outposts",
-      "S3",
-      "Multi-AZ.",
-      "Glacier"
+      "Read Replication?",
+      "Multi-AZ."
     ],
-    "correct": 2,
+    "correct": 1,
     "dica": "",
     "icone_dica": "💡"
   },
@@ -672,23 +691,27 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "O\nque Significa Amazon RDS?;<br><br>R_________ D_______ Service",
+    "question": "O\nque Significa Amazon RDS?",
     "answers": [
-      "AWS Config",
-      "CloudTrail",
-      "Relational | Database",
-      "Outposts"
+      "Amazon Relational Database Service",
+      "Amazon Remote Data Sync",
+      "Amazon Real-time Database Solution",
+      "Amazon Repository Data Storage"
     ],
-    "correct": 2,
+    "correct": 0,
     "dica": "",
     "icone_dica": "💡"
   },
   {
     "titulo": "Banco de Dados",
+<<<<<<< HEAD
     "question": "O Dy______ é um banco de dados de <span style=\"color: rgb(255, 85, 0);\">chave-valor</span>;(não relacional) que é utilizado para aplicações de baixa latência.",
+=======
+    "question": "O ______ é um banco de dados de <span style=\"color: rgb(255, 85, 0);\">chave-valor</span>;(não relacional) que é utilizado para aplicações de baixa latência.",
+>>>>>>> 0315243b8fc4c71d9e8e2f77ade390300b7a4d35
     "answers": [
       "VPC (Virtual Private Cloud)",
-      "ynamoDB",
+      "DynamoDB",
       "EFS",
       "KMS"
     ],
@@ -700,10 +723,8 @@
     "titulo": "Banco de Dados",
     "question": "DynamoDB é um banco de dados <u><span style=\"color: rgb(0, 0, 0);\">relacional</span></u> ou <u>não relacional</u>?<br><br>______________",
     "answers": [
-      "CloudFront",
-      "Não relacional",
-      "VPC (Virtual Private Cloud)",
-      "Storage Gateway"
+      "Relacional",
+      "Não relacional"
     ],
     "correct": 1,
     "dica": "",
