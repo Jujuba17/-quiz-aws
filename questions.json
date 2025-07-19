@@ -1,7 +1,7 @@
 [
   {
     "titulo": "Conceitos",
-    "question": "Cada região da AWS consiste em várias Zonas de ____________________ isoladas e separadas fisicamente em uma área geográfica.",
+    "question": "Cada região da AWS consiste em várias Zonas de ______________ isoladas e separadas fisicamente em uma área geográfica.",
     "answers": [
       "Disponibilidades (AZ)",
       "Conectividade (CZ)",
@@ -14,7 +14,7 @@
   },
   {
     "titulo": "Conceitos",
-    "question": "Uma Zona de ___________________ é um ou mais datacenters distintos, com energia, rede e conectividade redundantes em uma região da AWS.",
+    "question": "Uma Zona de _______________ é um ou mais datacenters distintos, com energia, rede e conectividade redundantes em uma região da AWS.",
     "answers": [
       "Transferência (TZ)",
       "Disponibilidade (AZ)",
@@ -106,7 +106,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "<div>O S3 permite que;<font color=\"#ff5500\">1 único</font> arquivo tenha no máximo _____TB de tamanho.</div>",
+    "question": "O S3 permite que;<font color=\"#ff5500\">1 único</font> arquivo tenha no máximo _____TB de tamanho.",
     "answers": [
       "15",
       "10",
@@ -132,7 +132,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "<div>S3 ___________ é a classe de armazenamento que reduz <font color=\"#ff5500\"><b>automaticamente</b></font>\nos <font color=\"#ff5500\"><b>custos</b></font> de armazenamento.</div>",
+    "question": "S3 ___________ é a classe de armazenamento que reduz <font color=\"#ff5500\"><b>automaticamente</b></font>\nos <font color=\"#ff5500\"><b>custos</b></font> de armazenamento.",
     "answers": [
       "Intelligent-Tiering",
       "Glacier",
@@ -171,7 +171,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "<div>S3 _________ é a classe utilizada quando o acesso é\n<font color=\"#ff5500\"><b>infrequente</b></font>, mas que exige acesso rápido quando necessário. Armazenamento em <font color=\"#ff5500\"><b>1\nAZ</b></font>.</div>",
+    "question": "S3 _________ é a classe utilizada quando o acesso é\n<font color=\"#ff5500\"><b>infrequente</b></font>, mas que exige acesso rápido quando necessário. Armazenamento em <font color=\"#ff5500\"><b>1\nAZ</b></font>.",
     "answers": [
       "Standard",
       "One-zone-IA",
@@ -184,7 +184,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "<div>S3 Glacier I_____ ________, é a classe criada para armazenamento de <span style=\"color: rgb(0, 0, 0);\"><b>longa duração</b>, que <b>raramente são acessados</b></span>, mas que exigem <span style=\"color: rgb(255, 85, 0);\"><b>recuperação rápida</b></span>.</div>",
+    "question": "S3 Glacier ________, é a classe criada para armazenamento de <span style=\"color: rgb(0, 0, 0);\"><b>longa duração</b>, que <b>raramente são acessados</b></span>, mas que exigem <span style=\"color: rgb(255, 85, 0);\"><b>recuperação rápida</b></span>.",
     "answers": [
       "Intelligent Tiering",
       "Instant Retrieval",
@@ -210,7 +210,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "<div>S3 Glacier ___________ é projetada para clientes que\nmantêm conjuntos de dados por <font color=\"#ff5500\"><b>7 a 10 anos </b></font>ou mais para cumprir requisitos de\nconformidade regulatória.</div>",
+    "question": "S3 Glacier ___________ é projetada para clientes que\nmantêm conjuntos de dados por <font color=\"#ff5500\"><b>7 a 10 anos </b></font>ou mais para cumprir requisitos de\nconformidade regulatória.",
     "answers": [
       "EBS",
       "Deep Archive",
@@ -223,7 +223,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "<div>S3 Glacier _____ Archie é a classe de armazenamento <b><font color=\"#ff5500\">mais acessível (custo)</font></b> do Amazon S3 e oferece suporte à retenção e preservação digital de longo prazo.</div>",
+    "question": "S3 Glacier _____ Archie é a classe de armazenamento <b><font color=\"#ff5500\">mais acessível (custo)</font></b> do Amazon S3 e oferece suporte à retenção e preservação digital de longo prazo.",
     "answers": [
       "EFS",
       "Instant",
@@ -249,7 +249,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "<div>O Amazon S3 _____ oferece armazenamento de objetos para seu ambiente de AWS <font color=\"#ff5500\"><b>local</b></font>.</div>",
+    "question": "O Amazon S3 _____ oferece armazenamento de objetos para seu ambiente de AWS <font color=\"#ff5500\"><b>local</b></font>.",
     "answers": [
       "Glacier",
       "Outboxes",
@@ -262,7 +262,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "<div>O que significa ARN?</div>",
+    "question": "O que significa ARN?",
     "answers": [
       "Amazon Resource Name",
       "AWS Resource Network",
@@ -276,7 +276,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "<div>Um bucket do S3, possuí classe de armazenamento?<br></div>",
+    "question": "Um bucket do S3, possuí classe de armazenamento?<br>",
     "answers": [
       "Sim",
       "Não"
@@ -288,7 +288,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "<div>Para ser possível <span style=\"color: rgb(255, 85, 0);\">restaurar</span> um arquivo do S3,\nquando o mesmo for deletado ou alterado, é necessário estar habilitado o recurso de ____.</div>",
+    "question": "Para ser possível <span style=\"color: rgb(255, 85, 0);\">restaurar</span> um arquivo do S3,\nquando o mesmo for deletado ou alterado, é necessário estar habilitado o recurso de ____.",
     "answers": [
       "versionamento",
       "VPC",
@@ -301,7 +301,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "<div>Através do _______ no S3 é possível <font color=\"#ff5500\">transitar</font> arquivos entre\n<font color=\"#ff5500\">classes</font>.</div>",
+    "question": "Através do _______ no S3 é possível <font color=\"#ff5500\">transitar</font> arquivos entre\n<font color=\"#ff5500\">classes</font>.",
     "answers": [
       "EBS",
       "Storage Gateway",
@@ -314,7 +314,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "<div>Através do _______ é possível <font color=\"#ff5500\"><b>programar</b></font> a exclusão de\narquivos no S3.</div>",
+    "question": "Através do _______ é possível <font color=\"#ff5500\"><b>programar</b></font> a exclusão de\narquivos no S3.",
     "answers": [
       "EBS",
       "Glacier",
@@ -392,25 +392,26 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "No storage gateway temos 3 tipos de armazenamento, F_____, V_____ e T_____.;",
+    "question": "Quais são os três tipos de armazenamento suportados pelo AWS Storage Gateway?",
     "answers": [
-      "Armazenamento | File | Volume",
-      "File Volume | Tape",
-      "File | Storage  | Tape",
-      "Armazenamento | Volume | Tape"
+    "File | Volume | Tape",
+    "Armazenamento | File | Volume",
+    "File | Storage | Tape",
+    "Block | Object | Tape"
+    
     ],
-    "correct": 1,
+    "correct": 0,
     "dica": "",
     "icone_dica": "💡"
   },
   {
     "titulo": "Migração e Transferência",
-    "question": "O Snow Family é composta pelo Snow _____, Snow B_____ e Snow M_____.",
+    "question": "Quais dispositivos compõem a Snow Family?",
     "answers": [
-    "Core | Box | Machine",
-    "Cone | Ball | Mobile",
-    "Cube | Bucket | Motion",
-    "Cold | Brick | Module"
+    "Snow Core | Snow Box | Snow Machine",
+    "Snow Cone | Snow Ball | Snow Mobile",
+    "Snow Cube | Snow Bucket | Snow Motion",
+    "Snow Cold | Snow Brick | Snow Module"
     ],
     "correct": 1,
     "dica": "",
@@ -420,10 +421,10 @@
     "titulo": "Migração e Transferência",
     "question": "O Snowball <b>Edge</b> possui entre 40 e _____ terabytes.;",
     "answers": [
-      "Savings Plans",
-      "Cost Explorer",
+      "50",
+      "60",
       "80",
-      "EBS"
+      "90"
     ],
     "correct": 2,
     "dica": "",
@@ -434,8 +435,8 @@
     "question": "O Snow _____;é um cointainer em um <span style=\"color: rgb(255, 85, 0);\">caminhão</span>, capaz de armazenar até _____ PB.;",
     "answers": [
       "Mobile | 100",
-      "Route53 | 50",
-      "S3 | 100 ",
+      "Cone | 50",
+      "Ball| 100 ",
       "Mobile | 50"
     ],
     "correct": 0,
@@ -457,7 +458,7 @@
   },
   {
     "titulo": "Computação",
-    "question": "<div>No EC2, o modelo de preço <u>Sob ______</u>;<font color=\"#ff5500\"><b>não há</b></font> compromisso de longo prazo ou pagamentos antecipados.</div>",
+    "question": "No EC2, o modelo de preço <u>Sob ______</u>;<font color=\"#ff5500\"><b>não há</b></font> compromisso de longo prazo ou pagamentos antecipados.",
     "answers": [
       "Demanda",
       "Reserva",
@@ -470,7 +471,7 @@
   },
   {
     "titulo": "Computação",
-    "question": "<div>No EC2, o modelo de preço S_____ Plans é uma categoria que oferece preços baixos,\nmas com <b><font color=\"#ff5500\">compromisso de 1 a 3 anos</font></b>.</div>",
+    "question": "No EC2, o modelo de preço _____ Plans é uma categoria que oferece preços baixos,\nmas com <b><font color=\"#ff5500\">compromisso de 1 a 3 anos</font></b>.",
     "answers": [
       "Saving",
       "Auto Scaling",
@@ -483,7 +484,7 @@
   },
   {
     "titulo": "Computação",
-    "question": "<div>No EC2, o modelo de preço Instância _____ é um tipo de modelo utilizado para <font color=\"#ff5500\">testes\ncomputacionais</font> ou serviços que suportam interrupções.;</div>",
+    "question": "No EC2, o modelo de preço Instância _____ é um tipo de modelo utilizado para <font color=\"#ff5500\">testes\ncomputacionais</font> ou serviços que suportam interrupções.;",
     "answers": [
       "Elastic Beanstalk",
       "Spot",
@@ -496,12 +497,12 @@
   },
   {
     "titulo": "Computação",
-    "question": "<div>No <b><font color=\"#ff5500\">EC2,</font></b> temos diversos tipos de ins_______, otimizadas para\ndiferentes cenários.</div>",
+    "question": "No <b><font color=\"#ff5500\">EC2,</font></b> temos diversos tipos de _______, otimizadas para\ndiferentes cenários.",
     "answers": [
       "Lambda",
       "EC2",
       "Outposts",
-      "stâncias"
+      "instâncias"
     ],
     "correct": 3,
     "dica": "",
@@ -535,20 +536,20 @@
   },
   {
     "titulo": "Computação",
-    "question": "O\nque significa AMI?<br><br>Amazon M______ I_____",
+    "question": "O\nque significa AMI?",
     "answers": [
-      "Auto Scaling",
-      "Lambda",
-      "Machine | Image.",
-      "Elastic Beanstalk"
+    "Amazon Machine Image",
+    "Amazon Managed Instance",
+    "AWS Machine Interface",
+    "Amazon Modular Infrastructure"
     ],
-    "correct": 2,
+    "correct": 0,
     "dica": "",
     "icone_dica": "💡"
   },
   {
     "titulo": "Computação",
-    "question": "É possível <span style=\"color: rgb(255, 85, 0);\">monitorar </span>instâncias EC2 e criar alarmes de alertas através do serviço de _____.",
+    "question": "É possível <span style=\"color: rgb(255, 85, 0);\">monitorar </span>instâncias EC2 e criar alarmes de alertas através de qual serviço?",
     "answers": [
       "CloudWatch",
       "Auto Scaling",
@@ -561,7 +562,7 @@
   },
   {
     "titulo": "Computação",
-    "question": "<div>Pelo EC2 _________ é possível ver <span style=\"color: rgb(255, 85, 0);\">todas </span>as instâncias EC2 de\ntodas as regiões.</div>",
+    "question": "Pelo EC2 _________ é possível ver <span style=\"color: rgb(255, 85, 0);\">todas </span>as instâncias EC2 de\ntodas as regiões.",
     "answers": [
       "Global View",
       "EC2",
@@ -574,9 +575,9 @@
   },
   {
     "titulo": "Computação",
-    "question": "<div>Através de um Snap_____ é possível criar uma AMI para criação de\ninstâncias.;</div>",
+    "question": "Através de um _____ é possível criar uma AMI para criação de\ninstâncias.;",
     "answers": [
-      "pshot",
+      "Snapshot",
       "Auto Scaling",
       "Lambda",
       "EC2"
@@ -587,9 +588,9 @@
   },
   {
     "titulo": "Computação",
-    "question": "<div>O AWS Mar_____ Pla_____ é um recurso da AWS que possuí um conjunto de serviços <span style=\"color: rgb(255, 85, 0);\">pré-prontos </span>para EC2, Redshift, SageMaker e outros.</div>",
+    "question": "O Qual recurso da AWS que possuí um conjunto de serviços <span style=\"color: rgb(255, 85, 0);\">pré-prontos </span>para EC2, Redshift, SageMaker e outros.",
     "answers": [
-      "rket | ace",
+      "Market Place",
       "Auto Scaling",
       "EC2",
       "Outposts"
@@ -600,7 +601,7 @@
   },
   {
     "titulo": "Computação",
-    "question": "<div>Você pode usar o \"User Data\" na criação de uma instância EC2 para executar um script no momento da criação da instância.</div><div><br></div><div>Esse script é executado<u> somente na criação</u> da instância ou <u>todas as vezes</u> que ela iniciar?</div>",
+    "question": "Você pode usar o \"User Data\" na criação de uma instância EC2 para executar um script no momento da criação da instância.<br>Esse script é executado<u> somente na criação</u> da instância ou <u>todas as vezes</u> que ela iniciar?",
     "answers": [
       "Uma vez por dia",
       "Somente na criação da instância",
@@ -613,7 +614,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "<div>É possível conectar 2 instâncias EC2 a um único volume EBS? </div>",
+    "question": "É possível conectar 2 instâncias EC2 a um único volume EBS? ",
     "answers": [
       "Não",
       "Sim."
@@ -624,7 +625,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "<div>É possível conectar 2 instancias a um volume EFS?</div>",
+    "question": "É possível conectar 2 instancias a um volume EFS?",
     "answers": [
       "Não",
       "Sim."
@@ -635,14 +636,12 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "<div>No RDS (relation database service), qual recurso permite <span style=\"color: rgb(255, 85, 0);\">failover automático</span> de instância de banco de dados:;</div><div><br></div><div><u>Multi-AZ</u> ou <u>Read Replication</u>?</div><div><br></div><div>_________<br></div>",
+    "question": "No RDS (relation database service), qual recurso permite <span style=\"color: rgb(255, 85, 0);\">failover automático</span> de instância de banco de dados:;<br><u>Multi-AZ</u> ou <u>Read Replication</u>?<br>_________<br>",
     "answers": [
-      "Outposts",
-      "S3",
-      "Multi-AZ.",
-      "Glacier"
+      "Read Replication?",
+      "Multi-AZ."
     ],
-    "correct": 2,
+    "correct": 1,
     "dica": "",
     "icone_dica": "💡"
   },
@@ -661,7 +660,7 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "<div>O Read Replication do RDS (relational database service) serve como estratégia de Failover ou Desaster Recovery <span style=\"color: rgb(255, 85, 0);\">automático:</span></div><div><span style=\"color: rgb(255, 85, 0);\"><br></span></div><div><span style=\"color: rgb(0, 0, 0);\">?</span></div><div><br></div>",
+    "question": "O Read Replication do RDS (relational database service) serve como estratégia de Failover ou Desaster Recovery <span style=\"color: rgb(255, 85, 0);\">automático:</span><span style=\"color: rgb(255, 85, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\">?</span><br>",
     "answers": [
       "Sim",
       "Não"
@@ -672,23 +671,23 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "O\nque Significa Amazon RDS?;<br><br>R_________ D_______ Service",
+    "question": "O\nque Significa Amazon RDS?",
     "answers": [
-      "AWS Config",
-      "CloudTrail",
-      "Relational | Database",
-      "Outposts"
+      "Amazon Relational Database Service",
+      "Amazon Remote Data Sync",
+      "Amazon Real-time Database Solution",
+      "Amazon Repository Data Storage"
     ],
-    "correct": 2,
+    "correct": 0,
     "dica": "",
     "icone_dica": "💡"
   },
   {
     "titulo": "Banco de Dados",
-    "question": "<div>O Dy______ é um banco de dados de <span style=\"color: rgb(255, 85, 0);\">chave-valor</span>;(não relacional) que é utilizado para aplicações de baixa latência.</div>",
+    "question": "O ______ é um banco de dados de <span style=\"color: rgb(255, 85, 0);\">chave-valor</span>;(não relacional) que é utilizado para aplicações de baixa latência.",
     "answers": [
       "VPC (Virtual Private Cloud)",
-      "ynamoDB",
+      "DynamoDB",
       "EFS",
       "KMS"
     ],
@@ -698,12 +697,10 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "<div>DynamoDB é um banco de dados <u><span style=\"color: rgb(0, 0, 0);\">relacional</span></u> ou <u>não relacional</u>?<br><br>______________</div>",
+    "question": "DynamoDB é um banco de dados <u><span style=\"color: rgb(0, 0, 0);\">relacional</span></u> ou <u>não relacional</u>?<br><br>______________",
     "answers": [
-      "CloudFront",
-      "Não relacional",
-      "VPC (Virtual Private Cloud)",
-      "Storage Gateway"
+      "Relacional",
+      "Não relacional"
     ],
     "correct": 1,
     "dica": "",
@@ -724,7 +721,7 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "<div>O Elasti_____ é um serviço de <span style=\"color: rgb(255, 85, 0);\">cache</span>, que é utilizado em aplicações que precisam de uma\nresposta <span style=\"color: rgb(0, 0, 0);\">extremamente</span> rápida do banco de dados.</div>",
+    "question": "O Elasti_____ é um serviço de <span style=\"color: rgb(255, 85, 0);\">cache</span>, que é utilizado em aplicações que precisam de uma\nresposta <span style=\"color: rgb(0, 0, 0);\">extremamente</span> rápida do banco de dados.",
     "answers": [
       "Cost Explorer",
       "iCache",
@@ -737,7 +734,7 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "<div>Nos banco de dados RDS (relacionais), as ré______ são recursos usados para <span style=\"color: rgb(255, 85, 0);\">melhorar</span> o tempo de <span style=\"color: rgb(255, 85, 0);\">resposta </span>dos bancos de dados (baixa latência).;</div>",
+    "question": "Nos banco de dados RDS (relacionais), as ré______ são recursos usados para <span style=\"color: rgb(255, 85, 0);\">melhorar</span> o tempo de <span style=\"color: rgb(255, 85, 0);\">resposta </span>dos bancos de dados (baixa latência).;",
     "answers": [
       "Transit Gateway",
       "Trusted Advisor",
@@ -750,7 +747,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "<div>O R______ é o serviço utilizado para gerenciamento de\n<font color=\"#ff5500\"><b>domínio</b></font>.;</div>",
+    "question": "O R______ é o serviço utilizado para gerenciamento de\n<font color=\"#ff5500\"><b>domínio</b></font>.;",
     "answers": [
       "ACL (Access Control List)",
       "Lambda",
@@ -776,7 +773,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "<div>Route 53 possui _____% de disponibilidade.</div>",
+    "question": "Route 53 possui _____% de disponibilidade.",
     "answers": [
       "100",
       "Storage Gateway",
@@ -1682,7 +1679,7 @@
   },
   {
     "titulo": "Integração de Aplicações",
-    "question": "<div><div>O _____;é um serviço de mensageria utilizado para <font color=\"#ff5500\">desacoplar</font> microsserviços.</div></div>",
+    "question": "O _____;é um serviço de mensageria utilizado para <font color=\"#ff5500\">desacoplar</font> microsserviços.",
     "answers": [
       "SQS",
       "Trusted Advisor",
