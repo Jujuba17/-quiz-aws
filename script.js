@@ -1,9 +1,16 @@
+// Adicione este evento antes da função loadQuestions
+document.getElementById('start-btn').addEventListener('click', () => {
+  document.getElementById('start-screen').style.display = 'none';
+  document.getElementById('quiz-content').style.display = 'block';
+  loadQuestions();
+});
 
 let questions = [];
 let selectedQuestions = [];
 let currentQuestion = 0;
 let score = 0;
-const TOTAL_QUESTIONS = 10;
+const TOTAL_QUESTIONS = 20;
+
 
 async function loadQuestions() {
   const res = await fetch('questions.json');
@@ -90,4 +97,3 @@ function showResult() {
   `;
 }
 
-loadQuestions();

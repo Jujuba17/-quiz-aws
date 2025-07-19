@@ -83,3 +83,38 @@ body {
 #next-btn:hover {
   background-color: #e68a00;
 }
+/* Tela inicial */
+.start-screen {
+  display: block;
+}
+.start-screen h1 {
+  color: #ff9900;
+  margin-bottom: 20px;
+}
+.start-screen p {
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Quiz (inicialmente oculto) */
+.quiz-content {
+  display: none;
+}
+
+#start-btn {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+#start-btn:hover {
+  background-color: #e68a00;
+}

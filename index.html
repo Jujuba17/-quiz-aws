@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -10,29 +9,43 @@
 </head>
 <body>
   <div class="quiz-container">
-    <h1>Quiz AWS Cloud</h1>
-
-    <div id="question-container">
-      <p id="question">Carregando pergunta...</p>
-      <div id="answers"></div>
+    
+    <!-- TELA INICIAL -->
+    <div id="start-screen" class="start-screen">
+      <h1>Quiz AWS Cloud</h1>
+      <p>Teste seus conhecimentos sobre <br>Amazon Web Services.</p>
+      <p>Boa sorte! 🚀</p>
+      <button id="start-btn">Iniciar Quiz</button>
     </div>
 
-    <!-- Exibição de progresso -->
-    <div class="quiz-footer">
-      <p>Pergunta <span id="current">1</span>/<span id="total">10</span></p>
-      <p>Acertos: <span id="score">0</span></p>
+    <!-- CONTEÚDO DO QUIZ (inicialmente oculto) -->
+    <div id="quiz-content" class="quiz-content">
+      <h1>Quiz AWS Cloud</h1>
+
+      <div id="question-container">
+        <p id="question">Carregando pergunta...</p>
+        <div id="answers"></div>
+      </div>
+
+      <!-- Exibição de progresso -->
+      <div class="quiz-footer">
+        <p>Pergunta <span id="current">1</span>/<span id="total">10</span></p>
+        <p>Acertos: <span id="score">0</span></p>
+      </div>
+
+      <!-- Botões: Dica + Próxima -->
+      <div class="quiz-buttons">
+        <button id="hint-btn" title="Ver dica">💡</button>
+        <button id="next-btn" disabled>Próxima</button>
+      </div>
+
+      <!-- Dica exibida após clicar -->
+      <p id="hint-text" style="display: none; font-style: italic; color: #555;"></p>
     </div>
-<!-- Botões: Dica + Próxima -->
-<div class="quiz-buttons">
-  <button id="hint-btn" title="Ver dica">💡</button>
-  <button id="next-btn" disabled>Próxima</button>
-  
-</div>
 
-<!-- Dica exibida após clicar -->
-<p id="hint-text" style="display: none; font-style: italic; color: #555;"></p>
+  </div>
 
-<!-- script deve vir depois de todos os elementos -->
-<script src="script.js"></script>
+  <!-- script deve vir depois de todos os elementos -->
+  <script src="script.js"></script>
 </body>
 </html>

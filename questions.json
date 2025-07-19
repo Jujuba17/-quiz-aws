@@ -40,7 +40,7 @@
   },
   {
     "titulo": "Segurança, Identidade e Conformidade",
-    "question": "A criação de usuários, grupos e gerenciamento de políticas de acesso são feitas no serviço ___________________________.",
+    "question": "A criação de usuários, grupos e gerenciamento de políticas de acesso são feitas no serviço?",
     "answers": [
       "IAM (Identity Access Management)",
       "ACL (Access Control List)",
@@ -92,7 +92,7 @@
   },
   {
     "titulo": "Gerenciamento de Custos",
-    "question": "Para evitar problemas com cobranças ou surpresas no orçamento, é possível utilizarmos o Bu_____, para nos alertar quando o orçamento da AWS atingir determinados níveis ou valores.",
+    "question": "Para evitar problemas com cobranças ou surpresas no orçamento, é possível utilizarmos o _____, para nos alertar quando o orçamento da AWS atingir determinados níveis ou valores.",
     "answers": [
       "Budgets",
       "Free Tier",
@@ -431,7 +431,7 @@
   },
   {
     "titulo": "Migração e Transferência",
-    "question": "O Snow M_____&nbsp;é um cointainer em um <span style=\"color: rgb(255, 85, 0);\">caminhão</span>, capaz de armazenar até _____ PB.&nbsp;",
+    "question": "O Snow _____&nbsp;é um cointainer em um <span style=\"color: rgb(255, 85, 0);\">caminhão</span>, capaz de armazenar até _____ PB.&nbsp;",
     "answers": [
       "Mobile | 100",
       "Route53",
