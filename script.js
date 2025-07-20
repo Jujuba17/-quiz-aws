@@ -2,30 +2,124 @@ let questions = [];
 let selectedQuestions = [];
 let currentQuestion = 0;
 let score = 0;
+let userAnswers = [];
 const TOTAL_QUESTIONS = 20;
 
-// Evento do botão Iniciar
-document.getElementById('start-btn').addEventListener('click', () => {
-  document.getElementById('start-screen').style.display = 'none';
-  document.getElementById('quiz-content').style.display = 'block';
-  loadQuestions();
-});
+let answeredQuestions = JSON.parse(localStorage.getItem('quizProgress')) || [];
+let repeatQuestions = [];
+
+// ✅ FUNÇÃO PARA CONECTAR TODOS OS EVENT LISTENERS
+function connectEventListeners() {
+  // Botão Iniciar
+  const startBtn = document.getElementById('start-btn');
+  if (startBtn) {
+    startBtn.onclick = () => {
+      document.getElementById('start-screen').style.display = 'none';
+      document.getElementById('quiz-content').style.display = 'block';
+      loadQuestions();
+    };
+  }
+
+  // Botão Próxima
+  const nextBtn = document.getElementById('next-btn');
+  if (nextBtn) {
+    nextBtn.onclick = () => {
+      currentQuestion++;
+      if (currentQuestion < TOTAL_QUESTIONS) {
+        showQuestion();
+      } else {
+        showResult();
+      }
+    };
+  }
+}
+
+// ✅ CHAMA QUANDO A PÁGINA CARREGA
+document.addEventListener('DOMContentLoaded', connectEventListeners);
 
 async function loadQuestions() {
   const res = await fetch('questions.json');
-  const allQuestions = await res.json();
-  selectedQuestions = allQuestions.sort(() => 0.5 - Math.random()).slice(0, TOTAL_QUESTIONS);
+  questions = await res.json();
+  
+  selectedQuestions = selectQuestionsWithRepeat();
+  userAnswers = new Array(TOTAL_QUESTIONS).fill(-1);
+  
   document.getElementById('total').textContent = TOTAL_QUESTIONS;
   showQuestion();
+}
+
+function selectQuestionsWithRepeat() {
+  let finalQuestions = [];
+  
+  if (answeredQuestions.length < 3) {
+    const availableQuestions = questions.filter((_, index) => 
+      !answeredQuestions.includes(index)
+    );
+    
+    const shuffled = availableQuestions.sort(() => 0.5 - Math.random());
+    finalQuestions = shuffled.slice(0, TOTAL_QUESTIONS);
+    
+    finalQuestions.forEach(q => {
+      const originalIndex = questions.indexOf(q);
+      if (!answeredQuestions.includes(originalIndex)) {
+        answeredQuestions.push(originalIndex);
+      }
+    });
+    
+    localStorage.setItem('quizProgress', JSON.stringify(answeredQuestions));
+    
+  } else {
+    const numRepeat = Math.min(2, answeredQuestions.length);
+    const numNew = TOTAL_QUESTIONS - numRepeat;
+    
+    const questionsToRepeat = [];
+    const shuffledAnswered = [...answeredQuestions].sort(() => 0.5 - Math.random());
+    
+    for (let i = 0; i < numRepeat && i < shuffledAnswered.length; i++) {
+      questionsToRepeat.push(questions[shuffledAnswered[i]]);
+    }
+    
+    const unansweredQuestions = questions.filter((_, index) => 
+      !answeredQuestions.includes(index)
+    );
+    
+    const shuffledNew = unansweredQuestions.sort(() => 0.5 - Math.random());
+    const newQuestions = shuffledNew.slice(0, numNew);
+    
+    newQuestions.forEach(q => {
+      const originalIndex = questions.indexOf(q);
+      answeredQuestions.push(originalIndex);
+    });
+    
+    localStorage.setItem('quizProgress', JSON.stringify(answeredQuestions));
+    
+    finalQuestions = [...questionsToRepeat, ...newQuestions].sort(() => 0.5 - Math.random());
+    
+    if (unansweredQuestions.length === 0) {
+      console.log("🔄 Todas as perguntas foram respondidas! Resetando...");
+      answeredQuestions = [];
+      localStorage.setItem('quizProgress', JSON.stringify(answeredQuestions));
+      
+      const shuffled = questions.sort(() => 0.5 - Math.random());
+      finalQuestions = shuffled.slice(0, TOTAL_QUESTIONS);
+      
+      finalQuestions.forEach(q => {
+        const originalIndex = questions.indexOf(q);
+        answeredQuestions.push(originalIndex);
+      });
+      
+      localStorage.setItem('quizProgress', JSON.stringify(answeredQuestions));
+    }
+  }
+  
+  return finalQuestions;
 }
 
 function showQuestion() {
   const q = selectedQuestions[currentQuestion];
 
-  // Exibe a pergunta
   document.getElementById('question').innerHTML = q.question;
 
-  // Gerencia a dica
   const hintBtn = document.getElementById('hint-btn');
   const hintText = document.getElementById('hint-text');
 
@@ -44,11 +138,9 @@ function showQuestion() {
     hintText.textContent = '';
   }
 
-  // Gera alternativas SEM EMBARALHAR
   const answersEl = document.getElementById('answers');
   answersEl.innerHTML = '';
 
-  // Cria botões na ordem original do JSON
   q.answers.forEach((ans, index) => {
     const btn = document.createElement('button');
     btn.textContent = ans;
@@ -64,38 +156,142 @@ function selectAnswer(button, index) {
   const correct = selectedQuestions[currentQuestion].correct;
   const buttons = document.querySelectorAll('#answers button');
   
-  // Desabilita todos os botões
+  userAnswers[currentQuestion] = index;
+  
   buttons.forEach((btn) => {
     btn.disabled = true;
   });
 
-  // Verifica se acertou
   if (index === correct) {
     button.classList.add('correct');
     score++;
     document.getElementById('score').textContent = score;
   } else {
     button.classList.add('wrong');
-    // Destaca a resposta correta
     buttons[correct].classList.add('correct');
   }
   
   document.getElementById('next-btn').disabled = false;
 }
 
-document.getElementById('next-btn').addEventListener('click', () => {
-  currentQuestion++;
-  if (currentQuestion < TOTAL_QUESTIONS) {
-    showQuestion();
-  } else {
-    showResult();
-  }
-});
-
 function showResult() {
+  const areaStats = {};
+  selectedQuestions.forEach((q, index) => {
+    const area = q.titulo || 'Geral';
+    if (!areaStats[area]) {
+      areaStats[area] = { total: 0, acertos: 0 };
+    }
+    areaStats[area].total++;
+    
+    if (userAnswers[index] === q.correct) {
+      areaStats[area].acertos++;
+    }
+  });
+
+  // ✅ CRIA O HTML DO DESEMPENHO POR ÁREA (OCULTO INICIALMENTE)
+  let statsHTML = '';
+  for (const area in areaStats) {
+    const { total, acertos } = areaStats[area];
+    const percent = Math.round((acertos / total) * 100);
+    statsHTML += `<p><strong>${area}:</strong> ${acertos}/${total} (${percent}%)</p>`;
+  }
+
+  const totalAnswered = answeredQuestions.length;
+  const totalQuestions = questions.length;
+  const progress = Math.min(100, Math.round((totalAnswered / totalQuestions) * 100));
+  
+  let progressHTML = `
+    <div style="margin-top: 20px; padding: 15px; background: #f0f8ff; border-radius: 8px;">
+      <h4>📈 Progresso Geral:</h4>
+      <p><strong>Perguntas únicas respondidas:</strong> ${totalAnswered}/${totalQuestions} (${progress}%)</p>
+      ${totalAnswered >= totalQuestions ? 
+        '<p style="color: green;">🎉 <strong>Parabéns! Você respondeu todas as perguntas!</strong></p>' : 
+        '<p style="color: #666;">💡 <em>Algumas perguntas podem se repetir para fixar o aprendizado</em></p>'
+      }
+    </div>
+  `;
+
   document.querySelector('.quiz-container').innerHTML = `
     <h2>Quiz finalizado!</h2>
     <p>Você acertou <strong>${score}</strong> de <strong>${TOTAL_QUESTIONS}</strong> perguntas.</p>
-    <button onclick="location.reload()">Tentar novamente</button>
+    
+    <!-- ✅ BOTÃO PARA MOSTRAR/OCULTAR DESEMPENHO POR ÁREA -->
+    <div style="margin: 20px 0;">
+      <button id="toggle-stats" style="background: #007bff; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">
+        📊 Ver Desempenho por Área
+      </button>
+      <div id="area-stats" style="display: none; margin-top: 15px; padding: 15px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #007bff;">
+        <h3>📊 Desempenho por Área:</h3>
+        ${statsHTML}
+      </div>
+    </div>
+
+    ${progressHTML}
+    <button onclick="resetQuiz()" style="margin-right: 10px;">Novo Quiz</button>
+    <button onclick="resetCompleteQuiz()" style="background-color: #dc3545; color: white;">🔄 Zerar Progresso Completo</button>
   `;
+
+  // ✅ ADICIONA FUNCIONALIDADE PARA MOSTRAR/OCULTAR AS ESTATÍSTICAS
+  document.getElementById('toggle-stats').onclick = function() {
+    const statsDiv = document.getElementById('area-stats');
+    const button = document.getElementById('toggle-stats');
+    
+    if (statsDiv.style.display === 'none') {
+      statsDiv.style.display = 'block';
+      button.textContent = '📊 Ocultar Desempenho por Área';
+      button.style.background = '#6c757d';
+    } else {
+      statsDiv.style.display = 'none';
+      button.textContent = '📊 Ver Desempenho por Área';
+      button.style.background = '#007bff';
+    }
+  };
+}
+
+// ✅ FUNÇÃO PARA RESETAR APENAS O QUIZ ATUAL
+function resetQuiz() {
+  currentQuestion = 0;
+  score = 0;
+  userAnswers = [];
+  selectedQuestions = [];
+  
+  document.querySelector('.quiz-container').innerHTML = `
+    <div id="start-screen" class="start-screen">
+      <h1>Quiz AWS Cloud</h1>
+      <p>Teste seus conhecimentos sobre <br>Amazon Web Services.</p>
+      <p>Boa sorte! 🚀</p>
+      <button id="start-btn">Iniciar Quiz</button>
+    </div>
+
+    <div id="quiz-content" class="quiz-content" style="display: none;">
+      <h1>Quiz AWS Cloud</h1>
+
+      <div id="question-container">
+        <p id="question">Carregando pergunta...</p>
+        <div id="answers"></div>
+      </div>
+
+      <div class="quiz-footer">
+        <p>Pergunta <span id="current">1</span>/<span id="total">10</span></p>
+        <p>Acertos: <span id="score">0</span></p>
+      </div>
+
+      <div class="quiz-buttons">
+        <button id="hint-btn" title="Ver dica">💡</button>
+        <button id="next-btn" disabled>Próxima</button>
+      </div>
+
+      <p id="hint-text" style="display: none; font-style: italic; color: #555;"></p>
+    </div>
+  `;
+  
+  // ✅ RECONECTA OS EVENT LISTENERS APÓS RECRIAR O HTML
+  connectEventListeners();
+}
+
+// ✅ FUNÇÃO PARA ZERAR TUDO
+function resetCompleteQuiz() {
+  localStorage.removeItem('quizProgress');
+  answeredQuestions = [];
+  location.reload();
 }

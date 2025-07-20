@@ -947,7 +947,7 @@
   },
   {
     "titulo": "Interação com os Clientes",
-    "question": "Uma empresa precisa de ajuda com seu de <span style=\"color: rgb(255, 85, 0);\">faturamento</span> na AWS.<br><br><u>A partir</u> de qual plano de support está disponível um assistente de faturamento (<span style=\"color: rgb(255, 85, 0);\">Concierge</span> Engineer)?<br><br><img src=\"paste-1a5ae1181326e4f8e2f30e62950aec03efec2eb7.jpg\"><br><br>__________________",
+    "question": "Uma empresa precisa de ajuda com seu de <span style=\"color: rgb(255, 85, 0);\">faturamento</span> na AWS.<br><br><u>A partir</u> de qual plano de support está disponível um assistente de faturamento (<span style=\"color: rgb(255, 85, 0);\">Concierge</span> Engineer)?",
     "answers": [
       "Enterprise On-Ramp",
       "Billing Dashboard",
