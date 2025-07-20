@@ -158,7 +158,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "S3 Standard e Standard-IA armazenam os dados em quantas AZ’s (Zonas de Disponibilidade)?<br><br>_____.",
+    "question": "S3 Standard e Standard-IA armazenam os dados em quantas AZ’s (Zonas de Disponibilidade)?",
     "answers": [
       "Dois",
       "Um",
@@ -236,7 +236,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "O S3 Glacier _____ Archive oferece duas opções de recuperação, variando de <font color=\"#ff5500\"><b>12 a 48;horas.</b></font>",
+    "question": "O S3 Glacier _____ Archive oferece duas opções de recuperação, variando de <font color=\"#ff5500\"><b>12 a 48 horas.</b></font>",
     "answers": [
       "Deep",
       "Storage Gateway",
@@ -327,12 +327,12 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "O Storage _____ é um serviço para fazer a replicação dos dados do data center on-premise para AWS.;",
+    "question": "É um serviço para fazer a replicação dos dados do data center on-premise para AWS.",
     "answers": [
       "EFS",
       "S3",
       "EBS",
-      "Gateway"
+      "Storage Gateway"
     ],
     "correct": 3,
     "dica": "",
@@ -1046,15 +1046,15 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Route 53 é o serviço para D_____.",
+    "question": "Qual serviço da AWS é usado para gerenciamento de DNS (Domain Name System)?",
     "answers": [
       "EC2",
-      "DNS",
+      "Route 53",
       "Secrets Manager",
       "STS (Security Token Service)"
     ],
     "correct": 1,
-    "dica": "",
+    "dica": "Esse serviço permite configurar domínios, zonas hospedadas e políticas de roteamento de tráfego.",
     "icone_dica": "💡"
   },
   {
@@ -1072,12 +1072,12 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Na política de DNS _____ routing metric, cada usuário acessa um servidor diferente de forma aleatória dentro da lista de ips dos servidores.",
+    "question": "Qual política de roteamento do Route 53 envia cada usuário aleatoriamente para um dos IPs disponíveis na lista de servidores?",
     "answers": [
       "S3",
       "Storage Gateway",
       "KMS",
-      "Simple"
+      "Simple routing metric"
     ],
     "correct": 3,
     "dica": "",
@@ -1154,12 +1154,10 @@
     "titulo": "Redes e Entrega de Conteúdo",
     "question": "Qual politica de roteamento (Route53) permite direcionar o tráfego por <span style=\"color: rgb(255, 85, 0);\">peso </span>(20% por um caminho, 80% por outro):<br><br><u>Latency</u> ou <u>Weighted</u>?",
     "answers": [
-      "Secrets Manager",
-      "EC2",
-      "Weighted Routing Policy",
-      "AWS Config"
+      "Latency",
+      "Weighted Routing Policy"
     ],
-    "correct": 2,
+    "correct": 1,
     "dica": "",
     "icone_dica": "💡"
   },
