@@ -930,7 +930,7 @@
   },
   {
     "titulo": "Gerenciamento, Monitoramento e Governança",
-    "question": "Através de S_____, é possível <span style=\"color: rgb(255, 85, 0);\">definir diretrizer</span> para suas contas na AWS, como por exemplo, exigir o uso de tags em recursos, negar acesso a recursos especificos, entre outras definições.",
+    "question": "Através de _____, é possível <span style=\"color: rgb(255, 85, 0);\">definir diretrizer</span> para suas contas na AWS, como por exemplo, exigir o uso de tags em recursos, negar acesso a recursos especificos, entre outras definições.",
     "answers": [
       "KMS",
       "SCPs",
