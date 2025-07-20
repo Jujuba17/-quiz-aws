@@ -991,5 +991,352 @@
     "correct": 3,
     "dica": "",
     "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "DynamoDB por padrão utiliza discos do tipo _____, para baixa latência.",
+    "answers": [
+      "Cognito",
+      "SSD",
+      "KMS",
+      "AWS Config"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "É um serviço de <span style=\"color: rgb(255, 85, 0);\">cache</span>, que é utilizado em aplicações que precisam de uma\nresposta <span style=\"color: rgb(0, 0, 0);\">extremamente</span> rápida do banco de dados.",
+    "answers": [
+      "Cost Explorer",
+      "ElastiCache",
+      "Transit Gateway",
+      "Trusted Advisor"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "Nos banco de dados RDS (relacionais), são recursos usados para <span style=\"color: rgb(255, 85, 0);\">melhorar</span> o tempo de <span style=\"color: rgb(255, 85, 0);\">resposta </span>dos bancos de dados (baixa latência).;",
+    "answers": [
+      "Transit Gateway",
+      "Trusted Advisor",
+      "Lambda",
+      "Réplicas"
+    ],
+    "correct": 3,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "É o serviço utilizado para gerenciamento de\n<font color=\"#ff5500\"><b>domínio</b></font>.;",
+    "answers": [
+      "ACL (Access Control List)",
+      "Lambda",
+      "Route53",
+      "Billing Dashboard"
+    ],
+    "correct": 2,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Route 53 é o serviço para D_____.",
+    "answers": [
+      "EC2",
+      "DNS",
+      "Secrets Manager",
+      "STS (Security Token Service)"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Route 53 possui _____ de disponibilidade.",
+    "answers": [
+      "100%",
+      "50%",
+      "10%",
+      "5%"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Na política de DNS _____ routing metric, cada usuário acessa um servidor diferente de forma aleatória dentro da lista de ips dos servidores.",
+    "answers": [
+      "S3",
+      "Storage Gateway",
+      "KMS",
+      "Simple"
+    ],
+    "correct": 3,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual política de roteamento do Amazon Route 53 permite o uso de Health Check para verificar a disponibilidade de um servidor?",
+    "answers": [
+      "Simple",
+      "EC2",
+      "Glacier",
+      "CloudTrail"
+    ],
+    "correct": 0,
+    "dica": "É a política de roteamento padrão no Route 53 e pode ser usada com verificações de integridade."
+
+  },
+  {
+    
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual política de roteamento do Amazon Route 53 muda automaticamente o tráfego para outro destino quando um servidor se torna indisponível?",
+    "answers": [
+      "Simple",
+      "Latency",
+      "Failover",
+      "CloudFront"
+    ],
+    "correct": 2,
+    "dica": "Essa política é usada para criar alta disponibilidade, alternando entre um servidor principal e um de backup.",
+    "icone_dica": "💡"
+
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual política de roteamento do Amazon Route 53 permite direcionar o tráfego com base na localização geográfica do usuário?",
+    "answers": [
+      "S3",
+      "Geolocation",
+      "VPC (Virtual Private Cloud)",
+      "STS (Security Token Service)"
+    ],
+    "correct": 1,
+    "dica": "Essa política permite direcionar usuários de diferentes países para servidores específicos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual política de roteamento do Amazon Route 53 direciona os usuários para a região com menor latência de rede?",
+    "answers": [
+      "EBS",
+      "Latency-based",
+      "Glacier",
+      "Free Tier"
+    ],
+    "correct": 1,
+    "dica": "Essa política melhora a performance percebida pelo usuário ao reduzir o tempo de resposta.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual política de roteamento do Amazon Route 53 permite configurar vários endereços IP como resposta a uma única consulta DNS?",
+    "answers": [
+      "Outposts",
+      "Cost Explorer",
+      "Multivalue Answer",
+      "EFS"
+    ],
+    "correct": 2,
+    "dica": "Essa política oferece uma forma simples de balanceamento de carga sem usar um ELB.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual politica de roteamento (Route53) permite direcionar o tráfego por <span style=\"color: rgb(255, 85, 0);\">peso </span>(20% por um caminho, 80% por outro):<br><br><u>Latency</u> ou <u>Weighted</u>?",
+    "answers": [
+      "Secrets Manager",
+      "EC2",
+      "Weighted Routing Policy",
+      "AWS Config"
+    ],
+    "correct": 2,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "O que significa a sigla VPC no contexto da AWS?",
+    "answers": [
+      "Virtual Public Cloud",
+      "Virtual Private Cloud",
+      "Value Performance Cache",
+      "Visual Packet Controller"
+    ],
+    "correct": 1,
+    "dica": "VPC é um ambiente isolado dentro da nuvem onde você pode lançar recursos como instâncias EC2.",
+    "icone_dica": "💡"
+
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual recurso da AWS permite a conexão entre duas VPCs, mesmo que estejam em contas diferentes?",
+    "answers": [
+      "Route53",
+      "Peering",
+      "VPC (Virtual Private Cloud)",
+      "Storage Gateway"
+    ],
+    "correct": 1,
+    "dica": "Esse recurso permite que VPCs se comuniquem como se estivessem na mesma rede.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "VPC Peering permite conexões de VPC's entre contas diferentes da AWS?.",
+    "answers": [
+      "Não",
+      "Sim"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual tipo de conexão VPC **não permite** o tráfego de uma VPC vizinha através de uma conexão já existente (sem suporte a transição de rede)?",
+    "answers": [
+      "Peering",
+      "Gateway",
+      "Direct Connect",
+      "Endpoint"
+    ],
+    "correct": 0,
+    "dica": "Esse tipo de conexão é ponto a ponto, e não permite o uso como intermediário para outras VPCs.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Na VPC, qual componente é responsável por permitir que os recursos (como EC2) acessem a internet?",
+    "answers": [
+      "EC2",
+      "CloudTrail",
+      "Free Tier",
+      "Internet Gateway"
+    ],
+    "correct": 3,
+    "dica": "É necessário anexar este componente à VPC para habilitar a comunicação pública.",
+    "icone_dica": "💡"
+  },
+  {
+  "titulo": "Redes e Entrega de Conteúdo",
+  "question": "Na VPC, qual é a ordem correta de avaliação de regras de segurança para tráfego de rede?",
+  "answers": [
+    "ACL | Security Group",
+    "ACL | Storage Gateway",
+    "Transit Gateway",
+    "ACL (Access Control List)"
+  ],
+  "correct": 0,
+  "dica": "As listas de controle de acesso atuam no nível da sub-rede, antes dos grupos de segurança que atuam na instância.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Na VPC (Virtual Private Cloud), quantos primeiros endereços IP de uma sub-rede são reservados pela AWS?",
+    "answers": [
+      "2",
+      "3",
+      "7",
+      "1"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual recurso da AWS permite capturar informações sobre o tráfego de entrada e saída em interfaces de rede da VPC?",
+    "answers": [
+      "Flow",
+      "EFS",
+      "STS (Security Token Service)",
+      "AWS Config"
+    ],
+    "correct": 0,
+    "dica": "Esse recurso é útil para auditoria, análise de segurança e solução de problemas de rede.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual serviço da AWS permite conectar diretamente a sua rede local (on-premises) à nuvem da AWS?",
+    "answers": [
+      "CloudFront",
+      "IAM (Identity Access Management)",
+      "Direct Connect",
+      "Auto Scaling"
+    ],
+    "correct": 2,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Integração de Aplicações",
+    "question": "O que significa SQS?",
+    "answers": [
+      "Simple Queue Service",
+      "Secure Query System",
+      "Scalable Quick Storage",
+      "Shared Queue Scheduler"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Integração de Aplicações",
+    "question": "Através de qual recurso é possível enviar;<b><font color=\"#ff5500\">notificações</font></b> através de Email:<br><br><u>SNS</u> ou <u>SQS</u>?<br><br>_____",
+    "answers": [
+      "SQS",
+      "SNS."
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "CloudFormation é gratuito?;",
+    "answers": [
+      "Sim.",
+      "Não"
+
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Contêineres",
+    "question": "O que significa ECS?;",
+    "answers": [
+      "Elastic Load Service",
+      "Elastic Container Service",
+      "Elastic Beanstalk Service",
+      "Elastic Balancer Service"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Contêineres",
+    "question": "O ECS aceita aplicações monoliticas?",
+    "answers": [
+      "Não",
+      "Sim"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
   }
 ]
