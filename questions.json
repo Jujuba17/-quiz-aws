@@ -379,7 +379,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "No <font color=\"#ff5500\"><b>storage Gateway</b></font><font color=\"#55ff00\"> </font>qual o <font color=\"#ff5500\"><b>tipo</b> </font>de armazenemento indicado para arquivos de backup?",
+    "question": "No <font color=\"#ff5500\"><b>storage Gateway</b></font><font color=\"#55ff00\"> </font>qual o <font color=\"#ff5500\"><b>tipo</b> </font>de armazenamento indicado para arquivos de backup?",
     "answers": [
       "Tape Gateway",
       "File Gateway",
@@ -523,7 +523,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "Para finalidade de armazenamento de;<span style=\"color: rgb(255, 85, 0);\"><b>arquivos</b></span>;e pensando no <b><span style=\"color: rgb(255, 85, 0);\">menor custo</span></b>, qual tipo de volume no EBS é mais indicado?",
+    "question": "Para finalidade de armazenamento de <span style=\"color: rgb(255, 85, 0);\"><b>arquivos</b></span> e pensando no <b><span style=\"color: rgb(255, 85, 0);\">menor custo</span></b>, qual tipo de volume no EBS é mais indicado?",
     "answers": [
       "SSD gp2",
       "Storage Gateway",
@@ -565,7 +565,7 @@
     "question": "Pelo EC2 _________ é possível ver <span style=\"color: rgb(255, 85, 0);\">todas </span>as instâncias EC2 de\ntodas as regiões.",
     "answers": [
       "Global View",
-      "EC2",
+      "CloudWatch",
       "Lightsail",
       "Auto Scaling"
     ],
@@ -637,7 +637,7 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "No RDS (relation database service), qual recurso permite <span style=\"color: rgb(255, 85, 0);\">failover automático</span> de instância de banco de dados:;<br><u>Multi-AZ</u> ou <u>Read Replication</u>?<br>_________<br>",
+    "question": "No RDS (relation database service), qual recurso permite <span style=\"color: rgb(255, 85, 0);\">failover automático</span> de instância de banco de dados:;<br><u>Multi-AZ</u> ou <u>Read Replication</u>?",
     "answers": [
       "Read Replication?",
       "Multi-AZ."
@@ -648,12 +648,10 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "No RDS (relation database service), qual recurso permite a criação de <span style=\"color: rgb(255, 85, 0);\">réplicas de leitura</span>:<br><br><u>Multi-AZ</u> ou <u>Read Replication</u>?<br><br>_________________",
+    "question": "No RDS (relation database service), qual recurso permite a criação de <span style=\"color: rgb(255, 85, 0);\">réplicas de leitura</span>:<br><br><u>Multi-AZ</u> ou <u>Read Replication</u>?",
     "answers": [
-      "Lightsail",
-      "Read-Replication.",
-      "Elastic Beanstalk",
-      "Free Tier"
+      "Multi-AZ",
+      "Read-Replication."
     ],
     "correct": 1,
     "dica": "",
@@ -661,7 +659,7 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "O Read Replication do RDS (relational database service) serve como estratégia de Failover ou Desaster Recovery <span style=\"color: rgb(255, 85, 0);\">automático:</span><span style=\"color: rgb(255, 85, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\">?</span><br>",
+    "question": "O Read Replication do RDS (relational database service) serve como estratégia de Failover ou Desaster Recovery <span style=\"color: rgb(255, 85, 0);\">automático</span><span style=\"color: rgb(255, 85, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\">?</span><br>",
     "answers": [
       "Sim",
       "Não"
@@ -699,7 +697,7 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "DynamoDB é um banco de dados <u><span style=\"color: rgb(0, 0, 0);\">relacional</span></u> ou <u>não relacional</u>?<br><br>______________",
+    "question": "DynamoDB é um banco de dados <u><span style=\"color: rgb(0, 0, 0);\">relacional</span></u> ou <u>não relacional</u>?",
     "answers": [
       "Relacional",
       "Não relacional"
@@ -801,7 +799,7 @@
   },
   {
     "titulo": "Analytics",
-    "question": "Uma empresa deseja integrar processamento de linguagem natural (NLP) em <span style=\"color: rgb(255, 85, 0);\">painéis de inteligência</span> empresarial (BI).<br><br>Qual serviço mais indicado: <u>Amazon Macie</u> ou <u>Amazon QuickSight</u>?<br><br>__________",
+    "question": "Uma empresa deseja integrar processamento de linguagem natural (NLP) em <span style=\"color: rgb(255, 85, 0);\">painéis de inteligência</span> empresarial (BI).<br><br>Qual serviço mais indicado: <u>Amazon Macie</u> ou <u>Amazon QuickSight</u>?",
     "answers": [
       "Amazon Macie",
       "Amazon QuickSight"
@@ -812,7 +810,7 @@
   },
   {
     "titulo": "Conceitos",
-    "question": "Uma empresa deseja monitorar o <span style=\"color: rgb(255, 85, 0);\">desempenho </span>de sua carga de trabalho para garantir que os recursos atendam as necessidades.<br><br>Qual pilar do AWS CAF aborda esse requisito: <u>Plataformas</u> ou <u>Operações</u>?<br><br>_________",
+    "question": "Uma empresa deseja monitorar o <span style=\"color: rgb(255, 85, 0);\">desempenho </span>de sua carga de trabalho para garantir que os recursos atendam as necessidades.<br><br>Qual pilar do AWS CAF aborda esse requisito: <u>Plataformas</u> ou <u>Operações</u>?",
     "answers": [
       "Plataforma",
       "Operações"
@@ -836,7 +834,7 @@
   },
   {
     "titulo": "Gerenciamento, Monitoramento e Governança",
-    "question": "Qual serviço da AWS uma empresa pode usar para encontrar <span style=\"color: rgb(255, 85, 0);\">relatórios de segurança e conformidade</span> (como relatório ISO, SOC e outros): <br><br><u>AWS Artifact</u> ou AWS <u>Audit Manager</u>?<br><br>____________",
+    "question": "Qual serviço da AWS uma empresa pode usar para encontrar <span style=\"color: rgb(255, 85, 0);\">relatórios de segurança e conformidade</span> (como relatório ISO, SOC e outros): <br><br><u>AWS Artifact</u> ou AWS <u>Audit Manager</u>?",
     "answers": [
       "AWS Audit Manager",
       "AWS Artifact"
@@ -847,7 +845,7 @@
   },
   {
     "titulo": "Conceitos",
-    "question": "Utilizar o ECS (Container) para decompor uma arquitetura monolítica em <span style=\"color: rgb(255, 85, 0);\">microsserviços</span> é um exemplo de arquitetura:<br><br>Fortemente acoplada ou Fracamente acoplada?<br><br>___________________",
+    "question": "Utilizar o ECS (Container) para decompor uma arquitetura monolítica em <span style=\"color: rgb(255, 85, 0);\">microsserviços</span> é um exemplo de arquitetura:<br><br>Fortemente acoplada ou Fracamente acoplada?",
     "answers": [
       "Fortemente acoplada",
       "Fracamente acoplada"
@@ -910,20 +908,18 @@
   },
   {
     "titulo": "Gerenciamento de Custos",
-    "question": "Qual serviço ou ferramenta da AWS fornece aos usuários a capacidade de <span style=\"color: rgb(255, 85, 0);\">monitorar quotas</span> de serviços AWS:<br><br><u>AWS Trusted Advisor</u> ou <u>AWS Budgets</u>?<br><br>_______________",
+    "question": "Qual serviço ou ferramenta da AWS fornece aos usuários a capacidade de <span style=\"color: rgb(255, 85, 0);\">monitorar quotas</span> de serviços AWS:<br><br><u>AWS Trusted Advisor</u> ou <u>AWS Budgets</u>?",
     "answers": [
       "AWS Budgets",
-      "AWS Cost Explorer",
-      "AWS Trusted Advisor",
-      "AWS Free Tier"
+      "AWS Trusted Advisor"
     ],
-    "correct": 2,
+    "correct": 1,
     "dica": "",
     "icone_dica": "💡"
   },
   {
     "titulo": "Gerenciamento, Monitoramento e Governança",
-    "question": "Uma empresa deseja garantir que todas as suas instâncias Amazon EC2 tenham <span style=\"color: rgb(255, 85, 0);\">patches</span> de sistema operacional atualizados.<br><br>Qual serviço atenderá esse requisito: AWS <u>System Manager</u> ou AWS <u>Computer Optmizer</u>?<br><br>______________",
+    "question": "Uma empresa deseja garantir que todas as suas instâncias Amazon EC2 tenham <span style=\"color: rgb(255, 85, 0);\">patches</span> de sistema operacional atualizados.<br><br>Qual serviço atenderá esse requisito: AWS <u>System Manager</u> ou AWS <u>Computer Optmizer</u>?",
     "answers": [
       "AWS Computer Optmizer",
       "AWS System Manager"
@@ -960,7 +956,7 @@
   },
   {
     "titulo": "Segurança, Identidade e Conformidade",
-    "question": "Uma empresa precisa de um serviço automatizado de gerenciamento de vulnerabilidades que faça <span style=\"color: rgb(255, 85, 0);\">varreduras</span> contínuas em busca de <span style=\"color: rgb(255, 85, 0);\">vulnerabilidades</span>.<br><br>Qual serviço atenderá a esses requisitos: AWS <u>Inspector</u> ou AWS <u>Shield</u>?<br><br>_________",
+    "question": "Uma empresa precisa de um serviço automatizado de gerenciamento de vulnerabilidades que faça <span style=\"color: rgb(255, 85, 0);\">varreduras</span> contínuas em busca de <span style=\"color: rgb(255, 85, 0);\">vulnerabilidades</span>.<br><br>Qual serviço atenderá a esses requisitos: AWS <u>Inspector</u> ou AWS <u>Shield</u>?",
     "answers": [
       "AWS Inspector",
       "AWS Shield"
