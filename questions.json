@@ -1336,5 +1336,148 @@
     "correct": 1,
     "dica": "",
     "icone_dica": "💡"
+  },
+  {
+    "titulo": "Machine Learning e AI",
+    "question": "Qual serviço da AWS pode ser usado para criar, treinar e implantar modelos de machine learning em escala?",
+    "answers": [
+      "Amazon Polly",
+      "Amazon SageMaker",
+      "Amazon Rekognition",
+      "Amazon Translate"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Machine Learning e AI",
+    "question": "Qual serviço da AWS é usado para analisar sentimentos em texto?",
+    "answers": [
+      "Amazon Comprehend",
+      "Amazon Lex",
+      "Amazon Polly",
+      "Amazon Translate"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Machine Learning e AI",
+    "question": "Você precisa extrair texto e dados de documentos digitalizados. Qual serviço da AWS deve usar?",
+    "answers": [
+      "Amazon Rekognition",
+      "Amazon Textract",
+      "Amazon Polly",
+      "AWS Lambda"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Fundamentos de Segurança",
+    "question": "Qual serviço da AWS permite gerenciar identidades e permissões de forma centralizada?",
+    "answers": [
+      "AWS IAM",
+      "Amazon Cognito",
+      "AWS Shield",
+      "AWS KMS"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Fundamentos de Segurança",
+    "question": "Você quer aplicar criptografia a dados em repouso. Qual serviço da AWS fornece chaves de criptografia gerenciadas?",
+    "answers": [
+      "AWS KMS",
+      "Amazon Macie",
+      "AWS Secrets Manager",
+      "Amazon CloudHSM"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Fundamentos de Faturamento",
+    "question": "Qual ferramenta da AWS permite definir alertas com base em orçamentos personalizados?",
+    "answers": [
+      "AWS Budgets",
+      "Cost Explorer",
+      "AWS Organizations",
+      "Billing Dashboard"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Fundamentos de Faturamento",
+    "question": "Você quer explorar visualmente os custos e uso da AWS. Qual ferramenta é mais adequada?",
+    "answers": [
+      "AWS Config",
+      "Cost Explorer",
+      "Billing Alerts",
+      "AWS CloudTrail"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos de Nuvem",
+    "question": "Qual é um dos principais benefícios da computação em nuvem?",
+    "answers": [
+      "Maior latência",
+      "Pagamento antecipado obrigatório",
+      "Elasticidade",
+      "Contratos fixos"
+    ],
+    "correct": 2,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Serviços Essenciais",
+    "question": "Qual serviço da AWS fornece computação escalável na nuvem?",
+    "answers": [
+      "Amazon EC2",
+      "Amazon RDS",
+      "Amazon S3",
+      "Amazon VPC"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Serviços AWS Mistos",
+    "question": "O que é responsabilidade do cliente no modelo de responsabilidade compartilhada da AWS?",
+    "answers": [
+      "Segurança da nuvem",
+      "Manutenção de data centers físicos",
+      "Gerenciar usuários e permissões no IAM",
+      "Gerenciar a segurança das zonas de disponibilidade"
+    ],
+    "correct": 2,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Serviços AWS Mistos",
+    "question": "O que é responsabilidade do cliente no modelo de responsabilidade compartilhada da AWS?",
+    "answers": [
+      "Segurança da nuvem",
+      "Manutenção de data centers físicos",
+      "Gerenciar usuários e permissões no IAM",
+      "Gerenciar a segurança das zonas de disponibilidade"
+    ],
+    "correct": 2,
+    "dica": "",
+    "icone_dica": "💡"
   }
 ]
