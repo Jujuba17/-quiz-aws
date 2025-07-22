@@ -1479,5 +1479,313 @@
     "correct": 2,
     "dica": "",
     "icone_dica": "💡"
+  },
+  {
+    "titulo": "Integração de Aplicações",
+    "question": "SQS é utilizado como serviço de reprocessamento e fila de mensagens entre aplicações.",
+    "answers": [
+      "Outposts",
+      "Lightsail",
+      "SQS (Simple Queue Service)",
+      "Cost Explorer"
+    ],
+    "correct": 2,
+    "dica": "Permite comunicação assíncrona e desacoplada entre sistemas.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Integração de Aplicações",
+    "question": "Qual <span style=\"color: rgb(0, 0, 0);\">fila do SQS</span> <b><span style=\"color: rgb(255, 85, 0);\">não</span> </b>entrega as requisições em ordem (requisições são recebidas e enviadas em <b><span style=\"color: rgb(255, 85, 0);\">diferentes </span></b>ordens):<br><br>Fifo ou Standard?",
+    "answers": [
+      "Fifo",
+      "Standard"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Integração de Aplicações",
+    "question": "Qual fila do SQS sempre garante a entrega, porém a requisição pode ser duplicada:<br><br><u>Standard</u> ou <u>FIFO</u>?",
+    "answers": [
+      "Standard",
+      "FIFO"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Analytics",
+    "question": "Realiza;<b><font color=\"#ff5500\">análises;</font></b>do kinesis streams e/ou kinesis firehose.",
+    "answers": [
+      "Route53",
+      "Kinesis Analytics",
+      "Glacier",
+      "Outposts"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Qual recurso faz o Web Identity <font color=\"#ff5500\"><b>Federation</b></font>;(WIF) na AWS.;",
+    "answers": [
+      "AWS Config",
+      "STS (Security Token Service)",
+      "KMS",
+      "Cognito"
+    ],
+    "correct": 3,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Integração de Aplicações",
+    "question": "O que significa SNS?",
+    "answers": [
+      "Simple Network Storage",
+      "Secure Notification System",
+      "Service Notification System",
+      "Simple Notification Service"
+    ],
+    "correct": 3,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Integração de Aplicações",
+    "question": "Qual serviço da AWS é usado para enviar notificações por SMS, e-mail e protocolos HTTP/S entre aplicações distribuídas?",
+    "answers": [
+      "AWS AppSync",
+      "Amazon MQ",
+      "Amazon EventBridge",
+      "Simple Notification Service (SNS)"
+    ],
+    "correct": 3,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Integração de Aplicações",
+    "question": "Qual serviço da AWS permite enviar notificações para sistemas HTTPS, tópicos e filas?",
+    "answers": [
+      "AWS Step Functions",
+      "Amazon SQS",
+      "Amazon SNS",
+      "AWS Config"
+    ],
+    "correct": 2,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Integração de Aplicações",
+    "question": "Qual serviço da AWS permite o envio de mensagens por SMS como parte de um sistema de notificação?",
+    "answers": [
+      "AWS Systems Manager",
+      "Amazon SES",
+      "Amazon SNS",
+      "Amazon Inspector"
+    ],
+    "correct": 2,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Integração de Aplicações",
+    "question": "Qual serviço da AWS permite o envio de mensagens para múltiplos canais, como e-mail, SMS e protocolos de rede?",
+    "answers": [
+      "Amazon SNS",
+      "AWS Budgets",
+      "Amazon CloudWatch",
+      "AWS Secrets Manager"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Analytics",
+    "question": "Qual serviço da AWS permite realizar consultas em dados armazenados no Amazon S3 usando SQL padrão, sem a necessidade de mover os dados?",
+    "answers": [
+      "Amazon Athena",
+      "Amazon Redshift",
+      "AWS Glue",
+      "Amazon QuickSight"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Analytics",
+    "question": "Como é feito o modelo de cobrança do serviço Amazon Athena?",
+    "answers": [
+      "Por número de jobs agendados",
+      "Por tempo de execução das consultas",
+      "Por quantidade de armazenamento usado",
+      "Por volume de dados escaneados nas consultas"
+    ],
+    "correct": 3,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual serviço da AWS atua como uma CDN (Content Delivery Network), armazenando conteúdo em edge locations para reduzir a latência de entrega?",
+    "answers": [
+      "Amazon CloudFront",
+      "Amazon EFS",
+      "AWS CloudFormation",
+      "Amazon Route 53"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Contêineres",
+    "question": "É um <span style=\"color: rgb(0, 0, 0);\">serviço </span>de gerenciamento de <span style=\"color: rgb(255, 85, 0);\">contêineres </span>altamente rápido e escalável.;",
+      "answers": [
+      "AWS Fargate",
+      "Amazon CloudWatch",
+      "Amazon S3",
+      "Amazon Elastic Container Service (ECS)"
+    ],
+    "correct": 3,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "O que significa SCPs?",
+    "answers": [
+      "Systems Compliance Protocols",
+      "Storage Connection Points",
+      "Service Control Policies",
+      "Security Control Profiles"
+    ],
+    "correct": 2,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "O que são Roles (papéis) no contexto da AWS?",
+    "answers": [
+      "Secrets Manager",
+      "IAM User Groups",
+      "CloudTrail",
+      "Permissões temporárias atribuídas a entidades confiáveis"
+    ],
+    "correct": 3,
+    "dica": "Roles permitem atribuir permissões a serviços ou usuários temporariamente.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Qual serviço permite consolidar e gerenciar várias contas da AWS de forma centralizada?",
+    "answers": [
+      "AWS Organizations",
+      "Amazon S3",
+      "AWS Config",
+      "Savings Plans"
+    ],
+    "correct": 0,
+    "dica": "Útil para empresas com múltiplas contas na nuvem.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "O que significa EFA?",
+    "answers": [
+      "Elastic File Access",
+      "Enhanced Flow Architecture",
+      "Elastic Fabric Adapter",
+      "Edge Forwarding Appliance"
+    ],
+    "correct": 2,
+    "dica": "Usado para aplicações HPC que exigem alta performance de rede.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Você pode acelerar aplicações de computação e <b><font color=\"#ff5500\">machine learning</font></b> de alta performance usando qual adaptador de rede:<br><br>ENA, EFA ou ENI?",
+    "answers": [
+      "ENA",
+      "STS",
+      "EFA.",
+      "ENI"
+    ],
+    "correct": 2,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "No Amazon RDS, um cluster Multi-AZ permite que instâncias em espera forneçam suporte para failover e também para tráfego de leitura.",
+    "answers": [
+      "ACL (Access Control List)",
+      "Multi-AZ",
+      "Glacier",
+      "Route 53"
+    ],
+    "correct": 1,
+    "dica": "Ajuda a garantir alta disponibilidade e escalabilidade de leitura.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "O que significa ENI?",
+    "answers": [
+      "Elastic Node Integration",
+      "Elastic Network Insight",
+      "Elastic Network Interface",
+      "Elastic Namespace Identifier"
+    ],
+    "correct": 2,
+    "dica": "Permite que instâncias EC2 tenham mais de um endereço IP privado.",
+    "icone_dica": "💡"
+  },
+  { 
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "O que significa ENA?",
+    "answers": [
+      "Elastic Network Adapter",
+      "Elastic Node Accelerator",
+      "Elastic Namespace Adapter",
+      "Elastic NAT Agent"
+    ],
+    "correct": 0,
+    "dica": "Oferece alto desempenho de rede para instâncias EC2.",
+    "icone_dica": "💡" 
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "Quais serviços são considerados resilientes globalmente, por serem hospedados automaticamente em várias regiões da AWS ao mesmo tempo?",
+    "answers": [
+      "IAM e Route 53",
+      "CloudTrail e EC2",
+      "Auto Scaling e RDS",
+      "Elastic Beanstalk e S3"
+    ],
+    "correct": 0,
+    "dica": "Serviços globais não dependem de uma região específica.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "Quais serviços são considerados resilientes na região, por serem hospedados automaticamente em múltiplas zonas de disponibilidade dentro de uma mesma região?",
+    "answers": [
+     "Glacier e EBS",
+     "API Gateway e S3",
+     "IAM e CloudFront",
+     "Secrets Manager e Config"
+    ],
+    "correct": 1,
+    "dica": "S3, por exemplo, replica os dados automaticamente em diferentes AZs da mesma região.",
+    "icone_dica": "💡"
   }
 ]
