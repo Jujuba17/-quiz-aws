@@ -786,12 +786,12 @@
   },
   {
     "titulo": "Gerenciamento de Custos",
-    "question": "O _____ ______ é um serviço da AWS que permite automaticamente <span style=\"color: rgb(255, 85, 0);\">ajustar a capacidade</span> de computação para cima ou para baixo com base na demanda do aplicativo.",
+    "question": "É um serviço da AWS que permite automaticamente <span style=\"color: rgb(255, 85, 0);\">ajustar a capacidade</span> de computação para cima ou para baixo com base na demanda do aplicativo.",
     "answers": [
-      "S3 | bucket",
-      "Cost Explorer | IAM",
-      "Trusted | Advisor",
-      "Auto | Scaling"
+      "S3 bucket",
+      "Cost Explorer",
+      "Trusted Advisor",
+      "Auto Scaling"
     ],
     "correct": 3,
     "dica": "",
@@ -1725,7 +1725,7 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "No Amazon RDS, um cluster Multi-AZ permite que instâncias em espera forneçam suporte para failover e também para tráfego de leitura.",
+    "question": "No Amazon RDS, um cluster _______ permite que instâncias em espera forneçam suporte para failover e também para tráfego de leitura.",
     "answers": [
       "ACL (Access Control List)",
       "Multi-AZ",
