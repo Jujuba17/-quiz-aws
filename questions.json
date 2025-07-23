@@ -1482,7 +1482,7 @@
   },
   {
     "titulo": "Integração de Aplicações",
-    "question": "SQS é utilizado como serviço de reprocessamento e fila de mensagens entre aplicações.",
+    "question": "É utilizado como serviço de reprocessamento e fila de mensagens entre aplicações.",
     "answers": [
       "Outposts",
       "Lightsail",
