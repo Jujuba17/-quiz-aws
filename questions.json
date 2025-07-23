@@ -1790,7 +1790,7 @@
   },
   {
     "titulo": "Conceitos",
-    "question": "Serviços resilientes na zona de disponibilidade, por padrão, são hospedados em <font color=\"#ff5500\">uma única zona</font> de disponibilidade.<br><br><i>Ex. EBS (Elastic Block Store), EC2 (Elastic Cloud Compute) e RDS (Relational Database Service).</i>",
+    "question": "Serviços resilientes, por padrão, são hospedados em <font color=\"#ff5500\">uma única?",
     "answers": [
       "Auto Scaling",
       "Elastic Beanstalk",
@@ -1803,7 +1803,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "O Amazon S3 permite habilitar o MFA Delete para proteger arquivos contra exclusões. Para excluir um objeto (arquivo), será necessário confirmação em <span style=\"color: rgb(255, 85, 0);\">duas etapas.</span>",
+    "question": "O Amazon S3 permite habilitar o ______ para proteger arquivos contra exclusões. Para excluir um objeto (arquivo), será necessário confirmação em <span style=\"color: rgb(255, 85, 0);\">duas etapas.</span>",
     "answers": [
       "MFA Delete",
       "Glacier",
@@ -1816,7 +1816,7 @@
   },
   {
     "titulo": "Conceitos",
-    "question": "A nuvem pública é quando utilizamos exclusivamente serviços de provedores como <font color=\"#ff5500\">AWS, Azure ou Oracle Cloud</font>.",
+    "question": "Qual conceito quando utilizamos exclusivamente serviços de provedores como <font color=\"#ff5500\">AWS, Azure ou Oracle Cloud</font>.",
     "answers": [
       "Savings Plans",
       "Nuvem Pública",
@@ -1920,7 +1920,7 @@
   },
   {
     "titulo": "Integração de Aplicações",
-    "question": "O serviço <b>AWS Step Functions</b> permite que você crie e coordene facilmente <span style=\"color: rgb(255, 85, 0);\">fluxos de trabalho</span> (workflows) por meio de uma <span style=\"color: rgb(255, 85, 0);\">abordagem visual</span>.<br><br>Qual serviço atende essa descrição?<br><br>_______________________",
+    "question": "Qual serviço da <b>AWS </b> permite que você crie e coordene facilmente <span style=\"color: rgb(255, 85, 0);\">fluxos de trabalho</span> (workflows) por meio de uma <span style=\"color: rgb(255, 85, 0);\">abordagem visual</span>.<br><br>Qual serviço atende essa descrição?<br><br>_______________________",
     "answers": [
       "Step Functions",
       "Lambda",
