@@ -1787,5 +1787,200 @@
     "correct": 1,
     "dica": "S3, por exemplo, replica os dados automaticamente em diferentes AZs da mesma região.",
     "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "Serviços resilientes na zona de disponibilidade, por padrão, são hospedados em <font color=\"#ff5500\">uma única zona</font> de disponibilidade.<br><br><i>Ex. EBS (Elastic Block Store), EC2 (Elastic Cloud Compute) e RDS (Relational Database Service).</i>",
+    "answers": [
+      "Auto Scaling",
+      "Elastic Beanstalk",
+      "CloudFront",
+      "Zona de Disponibilidade"
+    ],
+    "correct": 3,
+    "dica": "São serviços que operam dentro de uma única AZ, podendo exigir configuração extra para alta disponibilidade.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "O Amazon S3 permite habilitar o MFA Delete para proteger arquivos contra exclusões. Para excluir um objeto (arquivo), será necessário confirmação em <span style=\"color: rgb(255, 85, 0);\">duas etapas.</span>",
+    "answers": [
+      "MFA Delete",
+      "Glacier",
+      "S3",
+      "Storage Gateway"
+    ],
+    "correct": 0,
+    "dica": "O MFA Delete adiciona uma camada de segurança exigindo autenticação multifator para exclusão de objetos no S3.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "A nuvem pública é quando utilizamos exclusivamente serviços de provedores como <font color=\"#ff5500\">AWS, Azure ou Oracle Cloud</font>.",
+    "answers": [
+      "Savings Plans",
+      "Nuvem Pública",
+      "Free Tier",
+      "Trusted Advisor"
+    ],
+    "correct": 1,
+    "dica": "A nuvem pública oferece recursos compartilhados por meio da internet, sem necessidade de infraestrutura local.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "Quando utilizamos a cloud pública integrada com um ambiente <font color=\"#ff5500\">on-premise (não cloud)</font>, isso configura uma nuvem do tipo:",
+    "answers": [
+      "Híbrida",
+      "Privada",
+      "Pública",
+      "Multinuvem"
+    ],
+    "correct": 0,
+    "dica": "Uma nuvem híbrida combina infraestrutura local (on-premise) com recursos de nuvem pública.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Na ACL, ao liberar ICMP somente na <font color=\"#ff5500\"><b>entrada</b></font> para permitir ping, o ping <u>já funcionará</u> ou será <u>necessário liberar o tráfego também na saída</u> da ACL?",
+    "answers": [
+      "Já funcionará apenas com a entrada.",
+      "Necessário liberar também na saída.",
+      "Só é necessário liberar na rota.",
+      "ICMP não precisa de permissão na saída."
+    ],
+    "correct": 1,
+    "dica": "As ACLs são *estaduais*, ou seja, precisam de regras específicas para entrada e saída.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "Qual o modelo onde o cliente <b><font color=\"#ff5500\">apenas utiliza</font></b> os recursos de infraestrutura e fica responsável pela instalação, manutenção, atualização e segurança dos recursos:<br><br><u>IaaS</u> ou <u>SaaS</u>?<br><br>__________________________________",
+    "answers": [
+      "SaaS (Software as a Service)",
+      "IaaS (Infraestrutura as a Service)",
+      "PaaS (Platform as a Service)",
+      "DaaS (Desktop as a Service)"
+    ],
+    "correct": 1,
+    "dica": "No modelo IaaS, o provedor entrega a infraestrutura e o cliente gerencia todo o resto.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Contêineres",
+    "question": "O que significa EKS?<br><br>Elastic _________ Service",
+    "answers": [
+      "Kafka",
+      "Kinesis",
+      "Kibana",
+      "Kubernetes"
+    ],
+    "correct": 3,
+    "dica": "EKS é o serviço gerenciado de orquestração de contêineres com Kubernetes na AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "O <b>Internet Gateway</b> se enquadra na <font color=\"#ff5500\"><b>resiliência</b></font> de qual nível?<br><br>Global, Regional ou de Zona de Disponibilidade (AZ)?<br><br>_______________________",
+    "answers": [
+      "Regional",
+      "Global",
+      "De Zona de Disponibilidade (AZ)",
+      "Multirregional"
+    ],
+    "correct": 0,
+    "dica": "O Internet Gateway está vinculado à VPC, que é um recurso regional.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "No serviço <b>IAM</b>, os grupos de usuários <b>não podem ser aninhados</b>.<br><br>Ou seja, um grupo <b>não pode conter outro grupo</b>, apenas usuários individuais.<br><br>_______________________",
+    "answers": [
+      "IAM (Identity and Access Management)",
+      "Organizations",
+      "STS (Security Token Service)",
+      "KMS (Key Management Service)"
+    ],
+    "correct": 0,
+    "dica": "No IAM, a estrutura de permissões é simples e direta: grupos contêm apenas usuários.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Sem Servidor",
+    "question": "O serviço <b>AWS Lambda</b> é um exemplo de <span style=\"color: rgb(255, 85, 0);\">computação sem servidor</span>, adequado para cargas de trabalho curtas e orientadas a eventos. Suas funções podem ser executadas por até <b>15 minutos</b> por invocação.<br><br>Qual serviço estamos descrevendo?<br><br>_______________________",
+    "answers": [
+      "CloudFront",
+      "Lambda",
+      "Cost Explorer",
+      "EFS"
+    ],
+    "correct": 1,
+    "dica": "É o serviço mais comum para computação serverless na AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Integração de Aplicações",
+    "question": "O serviço <b>AWS Step Functions</b> permite que você crie e coordene facilmente <span style=\"color: rgb(255, 85, 0);\">fluxos de trabalho</span> (workflows) por meio de uma <span style=\"color: rgb(255, 85, 0);\">abordagem visual</span>.<br><br>Qual serviço atende essa descrição?<br><br>_______________________",
+    "answers": [
+      "Step Functions",
+      "Lambda",
+      "S3",
+      "Billing Dashboard"
+    ],
+    "correct": 0,
+    "dica": "É ideal para orquestrar serviços como Lambda, ECS, DynamoDB, etc.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "O Amazon Macie é um serviço de <b><font color=\"#ff5500\">proteção</font></b> e privacidade de <font color=\"#ff5500\"><b>dados</b></font> que pode ser utilizado para monitorar e gerar alertas.",
+    "answers": [
+      "Macie",
+      "IAM (Identity Access Management)",
+      "Secrets Manager",
+      "AWS Config"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "O Amazon Inspector é um serviço automatizado de gerenciamento de <span style=\"color: rgb(255, 85, 0);\">vulnerabilidades</span> que verifica continuamente seus recursos da AWS.",
+    "answers": [
+      "Cognito",
+      "AWS Config",
+      "KMS",
+      "Inspector"
+    ],
+    "correct": 3,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Ferramenta de Desenvolvedor",
+    "question": "O AWS X-Ray ajuda desenvolvedores a <span style=\"color: rgb(255, 85, 0);\">analisar e depurar</span> aplicações distribuídas (arquitetura de microsserviços).",
+    "answers": [
+      "Auto Scaling",
+      "Billing Dashboard",
+      "Trusted Advisor",
+      "X-Ray"
+    ],
+    "correct": 3,
+    "dica": "Permite visualizar chamadas entre serviços e diagnosticar problemas em aplicações distribuídas.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "O AWS Shield é um serviço de proteção contra ataques DDoS que protege os aplicativos executados na AWS.",
+    "answers": [
+      "AWS Config",
+      "KMS",
+      "Shield",
+      "Secrets Manager"
+    ],
+    "correct": 2,
+    "dica": "Shield oferece proteção automática e avançada para aplicações contra ataques de negação de serviço.",
+    "icone_dica": "💡"
   }
 ]
