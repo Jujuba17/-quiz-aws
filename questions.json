@@ -1855,7 +1855,7 @@
   },
   {
     "titulo": "Conceitos",
-    "question": "Qual o modelo onde o cliente <b><font color=\"#ff5500\">apenas utiliza</font></b> os recursos de infraestrutura e fica responsável pela instalação, manutenção, atualização e segurança dos recursos:<br><br><u>IaaS</u> ou <u>SaaS</u>?<br><br>__________________________________",
+    "question": "Qual o modelo onde o cliente <b><font color=\"#ff5500\">utiliza</font></b> os recursos de infraestrutura e fica responsável pela instalação, manutenção, atualização e segurança dos recursos?",
     "answers": [
       "SaaS (Software as a Service)",
       "IaaS (Infraestrutura as a Service)",
@@ -1881,7 +1881,7 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "O <b>Internet Gateway</b> se enquadra na <font color=\"#ff5500\"><b>resiliência</b></font> de qual nível?<br><br>Global, Regional ou de Zona de Disponibilidade (AZ)?<br><br>_______________________",
+    "question": "O <b>Internet Gateway</b> se enquadra na <font color=\"#ff5500\"><b>resiliência</b></font> de qual nível?",
     "answers": [
       "Regional",
       "Global",
@@ -1894,7 +1894,7 @@
   },
   {
     "titulo": "Segurança, Identidade e Conformidade",
-    "question": "No serviço <b>IAM</b>, os grupos de usuários <b>não podem ser aninhados</b>.<br><br>Ou seja, um grupo <b>não pode conter outro grupo</b>, apenas usuários individuais.<br><br>_______________________",
+    "question": "Qual serviço os grupos de usuários <b>não podem ser aninhados</b>.<br><br>Ou seja, um grupo <b>não pode conter outro grupo</b>, apenas usuários individuais",
     "answers": [
       "IAM (Identity and Access Management)",
       "Organizations",
@@ -1907,7 +1907,7 @@
   },
   {
     "titulo": "Sem Servidor",
-    "question": "O serviço <b>AWS Lambda</b> é um exemplo de <span style=\"color: rgb(255, 85, 0);\">computação sem servidor</span>, adequado para cargas de trabalho curtas e orientadas a eventos. Suas funções podem ser executadas por até <b>15 minutos</b> por invocação.<br><br>Qual serviço estamos descrevendo?<br><br>_______________________",
+    "question": "É um exemplo de <span style=\"color: rgb(255, 85, 0);\">computação sem servidor</span>, adequado para cargas de trabalho curtas e orientadas a eventos. Suas funções podem ser executadas por até <b>15 minutos</b> por invocação.<br><br>Qual serviço estamos descrevendo?",
     "answers": [
       "CloudFront",
       "Lambda",
@@ -1933,9 +1933,9 @@
   },
   {
     "titulo": "Segurança, Identidade e Conformidade",
-    "question": "O Amazon Macie é um serviço de <b><font color=\"#ff5500\">proteção</font></b> e privacidade de <font color=\"#ff5500\"><b>dados</b></font> que pode ser utilizado para monitorar e gerar alertas.",
+    "question": "É um serviço de <b><font color=\"#ff5500\">proteção</font></b> e privacidade de <font color=\"#ff5500\"><b>dados</b></font> que pode ser utilizado para monitorar e gerar alertas.",
     "answers": [
-      "Macie",
+      "Amazon Macie",
       "IAM (Identity Access Management)",
       "Secrets Manager",
       "AWS Config"
@@ -1946,7 +1946,7 @@
   },
   {
     "titulo": "Segurança, Identidade e Conformidade",
-    "question": "O Amazon Inspector é um serviço automatizado de gerenciamento de <span style=\"color: rgb(255, 85, 0);\">vulnerabilidades</span> que verifica continuamente seus recursos da AWS.",
+    "question": "É um serviço automatizado de gerenciamento de <span style=\"color: rgb(255, 85, 0);\">vulnerabilidades</span> que verifica continuamente seus recursos da AWS.",
     "answers": [
       "Cognito",
       "AWS Config",
@@ -1959,7 +1959,7 @@
   },
   {
     "titulo": "Ferramenta de Desenvolvedor",
-    "question": "O AWS X-Ray ajuda desenvolvedores a <span style=\"color: rgb(255, 85, 0);\">analisar e depurar</span> aplicações distribuídas (arquitetura de microsserviços).",
+    "question": "O AWS ______ ajuda desenvolvedores a <span style=\"color: rgb(255, 85, 0);\">analisar e depurar</span> aplicações distribuídas (arquitetura de microsserviços).",
     "answers": [
       "Auto Scaling",
       "Billing Dashboard",
@@ -1972,7 +1972,7 @@
   },
   {
     "titulo": "Segurança, Identidade e Conformidade",
-    "question": "O AWS Shield é um serviço de proteção contra ataques DDoS que protege os aplicativos executados na AWS.",
+    "question": "É um serviço de proteção contra ataques DDoS que protege os aplicativos executados na AWS.",
     "answers": [
       "AWS Config",
       "KMS",
