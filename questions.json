@@ -1982,5 +1982,186 @@
     "correct": 2,
     "dica": "Shield oferece proteção automática e avançada para aplicações contra ataques de negação de serviço.",
     "icone_dica": "💡"
+  },
+ {
+    "titulo": "Migração e Transferência",
+    "question": "Qual serviço da AWS é utilizado para migração de banco de dados (relacionais, não relacionais, data warehouse e outros)?",
+    "answers": [
+      "AWS Database Migration Service",
+      "AWS Trusted Advisor",
+      "AWS Migration Hub",
+      "AWS Snowball"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "O NAT gateway possui resiliência em qual escopo?",
+    "answers": [
+      "Armazenamento em rede (EFS)",
+      "Zona de disponibilidade (AZ)",
+      "Inventário de recursos (AWS Config)",
+      "Funções serverless (Lambda)"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Analytics",
+    "question": "Qual serviço serverless de BI da AWS permite criar dashboards e relatórios interativos?",
+    "answers": [
+      "Amazon QuickSight",
+      "AWS IAM",
+      "AWS STS",
+      "Elastic Load Balancer"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Web e Dispositivos Modeis de Front End",
+    "question": "Qual serviço da AWS é utilizado para acelerar o desenvolvimento de aplicações com ferramentas integradas de front-end?",
+    "answers": [
+      "Cost Explorer",
+      "Lambda",
+      "Amazon S3",
+      "AWS Amplify"
+    ],
+    "correct": 3,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "O AWS KMS fornece uma trilha de auditoria que mostra quando a chave foi usada e por quem. Esta afirmação é:",
+    "answers": [
+      "Verdadeiro",
+      "Falso"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Qual tipo de chave de criptografia fornece maior proteção contra acesso não autorizado no Amazon S3?",
+    "answers": [
+      "Secrets Manager",
+      "Access Control List (ACL)",
+      "AWS Key Management Service (KMS)",
+      "Virtual Private Cloud (VPC)"
+    ],
+    "correct": 2,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Os dados são criptografados automaticamente no Direct Connect, serviço que conecta sua rede física à nuvem AWS?",
+    "answers": [
+      "Não",
+      "Sim"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "O VPC Peering permite a comunicação entre VPCs conectadas diretamente, mas não entre conexões transitivas. Isso significa que uma VPC não pode encaminhar tráfego entre outras duas por meio dela. Esta afirmação é:",
+    "answers": [
+      "Verdadeiro",
+      "Falso"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "SSL/TLS é um protocolo de criptografia usado em dados em trânsito ou em repouso?",
+    "answers": [
+      "Repouso",
+      "Trânsito"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "O AWS KMS realiza criptografia de dados em repouso?",
+    "answers": [
+      "Sim",
+      "Não"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "O Amazon EFS é compatível com o protocolo SMB usado por sistemas Windows?",
+    "answers": [
+      "Sim",
+      "Não"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Integração de Aplicações",
+    "question": "Qual serviço da AWS é usado para desacoplar microsserviços com envio e recebimento de mensagens?",
+    "answers": [
+      "Amazon SQS",
+      "Trusted Advisor",
+      "CloudTrail",
+      "Cost Explorer"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Um volume EFS pode ser montado diretamente em sistemas operacionais Windows?",
+    "answers": [
+      "Sim",
+      "Não"
+    ],
+    "correct": 1,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Qual serviço da AWS oferece armazenamento escalável que cresce automaticamente conforme a demanda, sem interrupção dos serviços?",
+    "answers": [
+      "Amazon EFS",
+      "Storage Gateway",
+      "Amazon Glacier",
+      "Amazon EBS"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Qual recurso do Amazon S3 divide arquivos em partes para upload eficiente de grandes volumes?",
+    "answers": [
+      "Multipart Upload",
+      "Amazon EFS",
+      "Amazon S3",
+      "AWS Storage Gateway"
+    ],
+    "correct": 0,
+    "dica": "",
+    "icone_dica": "💡"
   }
 ]
