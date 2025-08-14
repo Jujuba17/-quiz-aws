@@ -2163,5 +2163,5103 @@
     "correct": 0,
     "dica": "",
     "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Qual serviço da AWS permite dividir um arquivo grande em partes menores para otimizar o upload e, em caso de falha, retomar o processo de onde parou?",
+    "answers": [
+      "Glacier",
+      "MultiPart Upload",
+      "EFS",
+      "EBS"
+    ],
+    "correct": 1,
+    "dica": "Pense em um método de upload que lida com arquivos grandes de forma eficiente.",
+    "icone_dica": "💡"
+  },
+    {
+    "titulo": "Armazenamento",
+    "question": "Qual o nome do processo de upload padrão no S3, onde o arquivo é enviado em um único stream de dados?",
+    "answers": [
+      "EFS",
+      "Glacier",
+      "S3 MultiPart Upload",
+      "Single Put Upload"
+    ],
+    "correct": 3,
+    "dica": "Analise a forma como os dados são enviados para o S3",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Qual recurso da AWS fornece uma visão detalhada das configurações dos recursos da AWS?",
+    "answers": [
+      "AWS Config",
+      "Savings Plans",
+      "Secrets Manager",
+      "Cost Explorer"
+    ],
+    "correct": 0,
+    "dica": "Este serviço ajuda a rastrear as mudanças na sua infraestrutura.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Qual serviço da AWS permite receber uma notificação sempre que um recurso é criado, modificado ou excluído (auditoria)?",
+    "answers": [
+      "Route53",
+      "Lightsail",
+      "Cost Explorer",
+      "AWS Config"
+    ],
+    "correct": 3,
+    "dica": "Pense em um serviço que 'configura' e acompanha as mudanças.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Qual serviço da AWS monitora, registra logs e notifica sobre alterações nos recursos, sem impedir que elas sejam feitas?",
+    "answers": [
+      "Auto Scaling",
+      "Route53",
+      "CloudTrail",
+      "AWS Config"
+    ],
+    "correct": 3,
+    "dica": "Este serviço te ajuda a manter a conformidade.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Produtividade Empresarial",
+    "question": "Qual o significado da sigla SES?",
+    "answers": [
+      "CloudTrail",
+      "Trusted Advisor",
+      "CloudFront",
+      "Simple Email Service"
+    ],
+    "correct": 3,
+    "dica": "Está relacionado ao envio de e-mails.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Qual serviço da AWS permite gerenciar suas próprias chaves de criptografia usando HSMs que atendem a padrões rigorosos de segurança?",
+    "answers": [
+      "CloudHSM",
+      "STS (Security Token Service)",
+      "IAM (Identity Access Management)",
+      "KMS"
+    ],
+    "correct": 0,
+    "dica": "Pense em 'Hardware Security Module'.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Qual serviço da AWS permite provisionar, gerenciar e implantar facilmente certificados SSL/TLS?",
+    "answers": [
+      "CloudTrail",
+      "AWS Config",
+      "AWS Certificate Manager (ACM)",
+      "STS (Security Token Service)"
+    ],
+    "correct": 2,
+    "dica": "O nome do serviço indica a sua função.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "No EBS, qual tipo de volume fornece alta performance para workloads de missão crítica de baixa latência ou de alta taxa de transferência?",
+    "answers": [
+      "EFS",
+      "EBS",
+      "IOPS SSD",
+      "Storage Gateway"
+    ],
+    "correct": 2,
+    "dica": "Está relacionado a operações de entrada/saída por segundo.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "O Lifecycle no S3 possui 2 tipos de ação para objetos (arquivos). Quais são elas?",
+    "answers": [
+      "Transição e Expiração",
+      "EBS",
+      "Glacier",
+      "S3"
+    ],
+    "correct": 0,
+    "dica": "Uma move o objeto para outra classe de armazenamento, a outra remove o objeto.",
+    "icone_dica": "💡"
+  },
+    {
+    "titulo": "Armazenamento",
+    "question": "Qual tipo de volume EBS é recomendado para bancos de dados com baixa volumetria e ambientes de desenvolvimento?",
+    "answers": [
+      "EBS",
+      "SSD gp2",
+      "Glacier",
+      "Storage Gateway"
+    ],
+    "correct": 1,
+    "dica": "Este volume oferece um bom equilíbrio entre custo e performance.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "O que acontece com um volume EBS durante a criação de um snapshot?",
+    "answers": [
+      "EFS",
+      "Pode ser usado normalmente",
+      "EBS",
+      "Storage Gateway"
+    ],
+    "correct": 1,
+    "dica": "A criação de snapshots não impede o uso do volume.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Analytics",
+    "question": "O Amazon EMR (Elastic MapReduce) é um serviço gerenciado para qual área?",
+    "answers": [
+      "Budgets",
+      "Elastic Beanstalk",
+      "Big Data",
+      "CloudTrail"
+    ],
+    "correct": 2,
+    "dica": "Pense em processamento de grandes volumes de dados.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "Em bancos de dados relacionais (RDS), qual recurso é mais indicado para alta disponibilidade?",
+    "answers": [
+      "Storage Gateway",
+      "Cognito",
+      "Multi-AZ",
+      "Transit Gateway"
+    ],
+    "correct": 2,
+    "dica": "Este recurso replica os dados em outra zona de disponibilidade.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "Qual recurso do RDS é mais indicado para escalabilidade de leitura?",
+    "answers": [
+      "Read Replicas",
+      "Storage Gateway",
+      "Lambda",
+      "Savings Plans"
+    ],
+    "correct": 0,
+    "dica": "Este recurso cria cópias somente leitura do banco de dados.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "Em bancos de dados relacionais (RDS), é possível utilizar o recurso Multi-AZ para replicar dados em diferentes regiões?",
+    "answers": [
+      "AWS Config",
+      "Não",
+      "ACL (Access Control List)",
+      "Billing Dashboard"
+    ],
+    "correct": 1,
+    "dica": "Multi-AZ replica dados dentro da mesma região.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "Qual tipo de replicação de banco de dados não é realizada em tempo real?",
+    "answers": [
+      "KMS",
+      "EBS",
+      "CloudFront",
+      "Assíncrona"
+    ],
+    "correct": 3,
+    "dica": "Neste tipo de replicação, a cópia é feita em um momento posterior.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "Qual tipo de replicação de banco de dados é realizada em tempo real?",
+    "answers": [
+      "Storage Gateway",
+      "Síncrona",
+      "IAM (Identity Access Management)",
+      "EBS"
+    ],
+    "correct": 1,
+    "dica": "Neste tipo de replicação, a cópia é feita simultaneamente.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Quais são os dois tipos de usuários que podem ser criados no IAM?",
+    "answers": [
+      "AWS Config",
+      "Cognito",
+      "Console e Programático",
+      "KMS"
+    ],
+    "correct": 2,
+    "dica": "Um tipo de usuário acessa o console, o outro usa a API.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Qual tipo de upload minimiza o impacto de reiniciar um upload com falha devido a erros de rede?",
+    "answers": [
+      "MultiPart Upload",
+      "S3",
+      "Storage Gateway",
+      "Glacier"
+    ],
+    "correct": 0,
+    "dica": "Este método divide o arquivo em partes menores.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Em uma rede estável, qual tipo de upload pode aprimorar o upload de arquivos no S3?",
+    "answers": [
+      "Storage Gateway",
+      "MultiPart Upload",
+      "S3",
+      "EBS"
+    ],
+    "correct": 1,
+    "dica": "Este método permite enviar partes do arquivo em paralelo.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "Qual serviço da AWS permite implantar e gerenciar aplicativos sem precisar se preocupar com a infraestrutura subjacente?",
+    "answers": [
+      "Outposts",
+      "Auto Scaling",
+      "Lightsail",
+      "Elastic Beanstalk"
+    ],
+    "correct": 3,
+    "dica": "Este serviço cuida da implantação e gerenciamento do seu aplicativo.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Analytics",
+    "question": "Qual serviço da AWS permite consumir dados em tempo real, como vídeo, áudio, logs e clickstreams?",
+    "answers": [
+      "STS (Security Token Service)",
+      "Route53",
+      "VPC (Virtual Private Cloud)",
+      "Kinesis"
+    ],
+    "correct": 3,
+    "dica": "Este serviço processa grandes volumes de dados em tempo real.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Analytics",
+    "question": "O que significa a sigla EMR?",
+    "answers": [
+      "IAM (Identity Access Management)",
+      "Cognito",
+      "Elastic MapReduce",
+      "Trusted Advisor"
+    ],
+    "correct": 2,
+    "dica": "Está relacionado ao processamento de Big Data.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Qual serviço da AWS identifica formas de otimizar sua infraestrutura, aumentar a segurança, melhorar o desempenho e reduzir custos?",
+    "answers": [
+      "Auto Scaling",
+      "Elastic Load Balancer",
+      "Trusted Advisor",
+      "KMS"
+    ],
+    "correct": 2,
+    "dica": "Este serviço oferece recomendações para otimizar sua conta.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "Por padrão, as tags são atribuídas automaticamente aos seus recursos na AWS?",
+    "answers": [
+      "Sim",
+      "Não"
+    ],
+    "correct": 1,
+    "dica": "As tags precisam ser criadas e atribuídas manualmente.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "No IAM, é possível aplicar permissões em recursos através de tags?",
+    "answers": [
+      "Não",
+      "Sim"
+    ],
+    "correct": 1,
+    "dica": "As tags podem ser usadas para controlar o acesso aos recursos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "Qual o número máximo de tags que podem ser adicionadas a um recurso da AWS?",
+    "answers": [
+      "50",
+      "KMS",
+      "Free Tier",
+      "Trusted Advisor"
+    ],
+    "correct": 0,
+    "dica": "Há um limite para o número de tags por recurso.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Qual serviço da AWS pode ser utilizado para realizar auditorias em sua conta?",
+    "answers": [
+      "CloudTrail",
+      "Glacier",
+      "CloudFront",
+      "Free Tier"
+    ],
+    "correct": 0,
+    "dica": "Este serviço registra as chamadas de API feitas na sua conta.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual tipo de failover é mais indicado quando é necessário que todos os seus recursos estejam disponíveis na maior parte do tempo?",
+    "answers": [
+      "Elastic Beanstalk",
+      "Auto Scaling",
+      "Cost Explorer",
+      "Ativo-Ativo"
+    ],
+    "correct": 3,
+    "dica": "Neste tipo de failover, ambos os ambientes estão ativos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual tipo de failover é utilizado quando o recurso primário está disponível e o secundário fica em espera?",
+    "answers": [
+      "Ativo-Ativo",
+      "Ativo-Passivo"
+    ],
+    "correct": 1,
+    "dica": "Neste tipo de failover, o ambiente secundário só entra em ação se o primário falhar.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Ferramenta de Desenvolvedor",
+    "question": "Qual serviço da AWS automatiza as implantações de aplicativos em instâncias do Amazon EC2?",
+    "answers": [
+      "Elastic Load Balancer",
+      "Cost Explorer",
+      "CodeDeploy",
+      "Lambda"
+    ],
+    "correct": 2,
+    "dica": "Este serviço facilita a implantação contínua de aplicativos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual tipo de Internet Gateway pode ser usado somente para liberar tráfego de saída para a internet, impedindo a comunicação de fora para dentro?",
+    "answers": [
+      "Elastic Beanstalk",
+      "CloudTrail",
+      "Egress-only Internet Gateway",
+      "KMS"
+    ],
+    "correct": 2,
+    "dica": "Este gateway restringe o acesso externo à sua VPC.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "Para realizar o aumento ou diminuição de instâncias em um grupo, o Auto Scaling utiliza métricas de qual serviço para saber se a demanda aumentou ou diminuiu?",
+    "answers": [
+      "CloudTrail",
+      "Outposts",
+      "Auto Scaling",
+      "CloudWatch"
+    ],
+    "correct": 3,
+    "dica": "Este serviço monitora as métricas da sua infraestrutura.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "Qual o serviço de banco de dados em grafo da AWS?",
+    "answers": [
+      "Secrets Manager",
+      "Glacier",
+      "Amazon Neptune",
+      "IAM (Identity Access Management)"
+    ],
+    "correct": 2,
+    "dica": "Este serviço é otimizado para armazenar e consultar relacionamentos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "O que são os metadados da instância?",
+    "answers": [
+      "Dados sobre sua instância",
+      "Auto Scaling",
+      "Lambda",
+      "Lightsail"
+    ],
+    "correct": 0,
+    "dica": "São informações sobre a instância que podem ser usadas para configurá-la.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "O que identificam os Amazon Resource Names (ARNs)?",
+    "answers": [
+      "EFS",
+      "Secrets Manager",
+      "Recursos da AWS",
+      "Transit Gateway"
+    ],
+    "correct": 2,
+    "dica": "Eles identificam recursos de forma única e global.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento de Custos",
+    "question": "Qual serviço da AWS pode ser usado para adquirir Savings Plans do EC2?",
+    "answers": [
+      "Cost Explorer",
+      "Budgets",
+      "Billing Dashboard",
+      "Compute Optimizer"
+    ],
+    "correct": 0,
+    "dica": "Este serviço ajuda a analisar e otimizar seus custos na AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Failover Routing Policy do Route 53 é um tipo de failover Ativo-Passivo ou Ativo-Ativo?",
+    "answers": [
+      "Billing Dashboard",
+      "Ativo-Passivo",
+      "ACL (Access Control List)",
+      "CloudFront"
+    ],
+    "correct": 1,
+    "dica": "Neste tipo de política, o tráfego é roteado para um recurso de backup em caso de falha.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Qual serviço da AWS é utilizado para observabilidade, capturando métricas da CPU, memória, disco e aplicações?",
+    "answers": [
+      "Elastic Beanstalk",
+      "CloudWatch",
+      "STS (Security Token Service)",
+      "VPC (Virtual Private Cloud)"
+    ],
+    "correct": 1,
+    "dica": "Este serviço permite monitorar a performance dos seus recursos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "O Auto Scaling do EC2 possui custo?",
+    "answers": [
+      "Sim",
+      "Não"
+    ],
+    "correct": 1,
+    "dica": "O Auto Scaling em si não tem custo, mas os recursos que ele provisiona sim.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Qual serviço da AWS distribui automaticamente o tráfego de entrada entre as instâncias do Auto Scaling Group (ASG)?",
+    "answers": [
+      "EFS",
+      "ELB",
+      "Route53",
+      "Savings Plans"
+    ],
+    "correct": 1,
+    "dica": "Este serviço garante que o tráfego seja distribuído de forma equilibrada.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Quantos tipos de Elastic Load Balancer (ELB) existem atualmente na AWS?",
+    "answers": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": 2,
+    "dica": "Existem diferentes tipos de ELB para diferentes casos de uso.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Se você precisa balancear o tráfego HTTP/HTTPS, qual Elastic Load Balancer (ELB) é o mais recomendado?",
+    "answers": [
+      "Gateway Load Balancer",
+      "Application Load Balancer",
+      "Network Load Balancer",
+      "Classic Load Balancer"
+    ],
+    "correct": 1,
+    "dica": "Este ELB é otimizado para aplicações web.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Qual Elastic Load Balancer (ELB) é recomendado para balanceamento de carga baseado em endereços IP?",
+    "answers": [
+      "Application Load Balancer",
+      "Classic Load Balancer",
+      "Gateway Load Balancer",
+      "Network Load Balancer"
+    ],
+    "correct": 3,
+    "dica": "Este ELB oferece alta performance e baixa latência.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Qual tipo de Elastic Load Balancer (ELB) é considerado o mais antigo e oferece funcionalidades básicas de balanceamento?",
+    "answers": [
+      "Application Load Balancer",
+      "Network Load Balancer",
+      "Classic Load Balancer",
+      "Gateway Load Balancer"
+    ],
+    "correct": 2,
+    "dica": "Este ELB é recomendado apenas para compatibilidade com versões anteriores.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual serviço permite o acesso externo de fora da AWS para dentro da sua VPC?",
+    "answers": [
+      "Glacier",
+      "CloudFront",
+      "Internet Gateway",
+      "VPC (Virtual Private Cloud)"
+    ],
+    "correct": 2,
+    "dica": "Este serviço é essencial para permitir a comunicação com a internet.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "O NAT Gateway possui custo?",
+    "answers": [
+      "Não",
+      "Sim"
+    ],
+    "correct": 1,
+    "dica": "O NAT Gateway é um serviço pago.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Para transferir dados entre recursos da AWS (como S3 e EC2) de forma segura, qual recurso é mais indicado?",
+    "answers": [
+      "S3",
+      "Lightsail",
+      "VPC Endpoint",
+      "Storage Gateway"
+    ],
+    "correct": 2,
+    "dica": "Este recurso permite que o tráfego permaneça dentro da rede da AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Um NAT Gateway público permite o acesso à internet a partir de uma sub-rede privada?",
+    "answers": [
+      "Não",
+      "Sim"
+    ],
+    "correct": 1,
+    "dica": "O NAT Gateway público atua como um intermediário para o tráfego de saída.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Um NAT Gateway privado permite o acesso à internet a partir de uma sub-rede privada?",
+    "answers": [
+      "Sim",
+      "Não"
+    ],
+    "correct": 1,
+    "dica": "O NAT Gateway privado não permite o acesso direto à internet.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "O NAT Gateway permite que seus recursos sejam acessados externamente através da internet?",
+    "answers": [
+      "Não",
+      "Sim"
+    ],
+    "correct": 0,
+    "dica": "O NAT Gateway é usado para permitir que os recursos acessem a internet, não o contrário.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Com um NAT Gateway público, é possível se conectar a outras VPCs ou redes on-premises?",
+    "answers": [
+      "Sim",
+      "Não"
+    ],
+    "correct": 0,
+    "dica": "O NAT Gateway público pode ser usado para se conectar a outros recursos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Com um NAT Gateway privado, é possível se conectar a outras VPCs ou redes on-premises?",
+    "answers": [
+      "Não",
+      "Sim"
+    ],
+    "correct": 1,
+    "dica": "O NAT Gateway privado pode ser usado para se conectar a outros recursos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "A utilização da VPC tem custo?",
+    "answers": [
+      "Sim",
+      "Não"
+    ],
+    "correct": 1,
+    "dica": "A VPC em si não tem custo, mas os recursos que você provisiona dentro dela sim.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "Qual modelo de infraestrutura oferece um serviço pronto para uso, como um webmail?",
+    "answers": [
+      "SaaS (Software as a Service)",
+      "ACL (Access Control List)",
+      "Free Tier",
+      "EBS"
+    ],
+    "correct": 0,
+    "dica": "Neste modelo, o provedor gerencia toda a infraestrutura e o software.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "Qual modelo de infraestrutura oferece maior flexibilidade e controle sobre os recursos de TI?",
+    "answers": [
+      "IaaS (Infraestrutura as a Service)",
+      "Route53",
+      "Free Tier",
+      "Elastic Beanstalk"
+    ],
+    "correct": 0,
+    "dica": "Neste modelo, você gerencia a maior parte da infraestrutura.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual serviço da AWS permite estabelecer um túnel privado e seguro de sua rede ou dispositivo para a Nuvem AWS?",
+    "answers": [
+      "Lambda",
+      "IAM (Identity Access Management)",
+      "VPN",
+      "Budgets"
+    ],
+    "correct": 2,
+    "dica": "Este serviço garante a segurança da comunicação entre sua rede e a AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual política de roteamento do Route 53 roteia o tráfego com base na localização dos seus recursos (e não do usuário)?",
+    "answers": [
+      "EFS",
+      "Geoproximity Routing",
+      "Budgets",
+      "EBS"
+    ],
+    "correct": 1,
+    "dica": "Esta política permite otimizar o roteamento com base na proximidade geográfica dos recursos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "Qual recurso da AWS é um serviço de cache compatível com o DynamoDB?",
+    "answers": [
+      "Transit Gateway",
+      "Lightsail",
+      "EC2",
+      "DAX"
+    ],
+    "correct": 3,
+    "dica": "Este serviço melhora a performance do DynamoDB.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Migração e Transferência",
+    "question": "Qual serviço da AWS permite converter schemas de banco de dados de um mecanismo para outro?",
+    "answers": [
+      "AWS Config",
+      "Cognito",
+      "AWS Schema Conversion Tool (SCT)",
+      "EC2"
+    ],
+    "correct": 2,
+    "dica": "Este serviço facilita a migração de bancos de dados.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Há cobranças pelo uso de VPC Endpoints?",
+    "answers": [
+      "Não",
+      "Sim"
+    ],
+    "correct": 1,
+    "dica": "O uso de VPC Endpoints tem um custo associado.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Integração de Aplicações",
+    "question": "Qual opção do SQS garante que as mensagens sejam entregues na ordem correta?",
+    "answers": [
+      "IAM (Identity Access Management)",
+      "Lambda",
+      "FIFO (First-In-First-Out)",
+      "Elastic Load Balancer"
+    ],
+    "correct": 2,
+    "dica": "Esta opção é ideal para casos em que a ordem das mensagens é importante.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Integração de Aplicações",
+    "question": "Qual opção do SQS é mais indicada quando não se pode ter duplicidade na entrega de mensagens?",
+    "answers": [
+      "Free Tier",
+      "Budgets",
+      "Trusted Advisor",
+      "FIFO (First-In-First-Out)"
+    ],
+    "correct": 3,
+    "dica": "Esta opção garante que cada mensagem seja entregue apenas uma vez.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Migração e Transferência",
+    "question": "Qual é a capacidade de armazenamento do Snowball Edge?",
+    "answers": [
+      "Snowball Edge",
+      "CloudFront",
+      "Billing Dashboard",
+      "Secrets Manager"
+    ],
+    "correct": 0,
+    "dica": "Este dispositivo é usado para transferir grandes volumes de dados.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Qual o tempo de recuperação expressa do S3 Glacier?",
+    "answers": [
+      "EFS",
+      "1 a 5 minutos",
+      "EBS",
+      "S3"
+    ],
+    "correct": 1,
+    "dica": "Este é o tempo mais rápido para recuperar dados do Glacier.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Qual o tempo de recuperação padrão do S3 Glacier?",
+    "answers": [
+      "Storage Gateway",
+      "3 a 5 horas",
+      "S3",
+      "Glacier"
+    ],
+    "correct": 1,
+    "dica": "Este é o tempo de recuperação mais comum para o Glacier.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Qual tipo de recuperação do S3 Glacier é utilizada para recuperar grandes quantidades de arquivos?",
+    "answers": [
+      "Em massa",
+      "S3",
+      "Storage Gateway",
+      "Glacier"
+    ],
+    "correct": 0,
+    "dica": "Este tipo de recuperação é otimizado para grandes volumes de dados.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Qual o tempo de recuperação em massa do S3 Glacier?",
+    "answers": [
+      "5 a 12 horas",
+      "Storage Gateway",
+      "EFS",
+      "S3"
+    ],
+    "correct": 0,
+    "dica": "Este é o tempo de recuperação para grandes volumes de dados.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "É possível hospedar sites estáticos em buckets S3?",
+    "answers": [
+      "Storage Gateway",
+      "S3",
+      "Sim",
+      "Glacier"
+    ],
+    "correct": 2,
+    "dica": "O S3 pode ser usado para hospedar sites simples.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "O DynamoDB é um serviço serverless?",
+    "answers": [
+      "Lambda",
+      "STS (Security Token Service)",
+      "Sim",
+      "EFS"
+    ],
+    "correct": 2,
+    "dica": "Você não precisa gerenciar servidores com o DynamoDB.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual política de roteamento do Route 53 é mais indicada quando você quer encaminhar o tráfego para a região que oferece o menor tempo de ida e volta?",
+    "answers": [
+      "Latency Routing",
+      "Budgets",
+      "Storage Gateway",
+      "Outposts"
+    ],
+    "correct": 0,
+    "dica": "Esta política otimiza a experiência do usuário com base na latência.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual política de roteamento do Route 53 é mais indicada quando você quer encaminhar o tráfego com base na localização do usuário?",
+    "answers": [
+      "IAM (Identity Access Management)",
+      "Cognito",
+      "Geolocation Routing",
+      "Outposts"
+    ],
+    "correct": 2,
+    "dica": "Esta política permite personalizar o conteúdo com base na localização do usuário.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual política de roteamento do Route 53 permite que até 8 hosts respondam a uma solicitação de forma aleatória?",
+    "answers": [
+      "Cost Explorer",
+      "Storage Gateway",
+      "Multivalue Answer",
+      "Secrets Manager"
+    ],
+    "correct": 2,
+    "dica": "Esta política é usada para balancear a carga entre vários recursos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "Onde são armazenados os backups dos bancos de dados RDS?",
+    "answers": [
+      "IAM (Identity Access Management)",
+      "S3",
+      "Free Tier",
+      "Transit Gateway"
+    ],
+    "correct": 1,
+    "dica": "Este serviço é usado para armazenar objetos de forma escalável e segura.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Para Disaster Recovery (DR), é recomendado gravar o backup no S3 de outra região ou outra Availability Zone (AZ)?",
+    "answers": [
+      "Região",
+      "S3",
+      "Storage Gateway",
+      "Glacier"
+    ],
+    "correct": 0,
+    "dica": "A replicação em outra região oferece maior proteção contra desastres.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "Instâncias de uso geral fornecem qual característica principal?",
+    "answers": [
+      "Auto Scaling",
+      "Equilíbrio de recursos de computação",
+      "Lightsail",
+      "Outposts"
+    ],
+    "correct": 1,
+    "dica": "Estas instâncias são adequadas para uma ampla variedade de cargas de trabalho.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "As instâncias otimizadas para qual recurso são projetadas para fornecer desempenho rápido para cargas de trabalho que utilizam muita memória?",
+    "answers": [
+      "Elastic Beanstalk",
+      "Outposts",
+      "Auto Scaling",
+      "Memória"
+    ],
+    "correct": 3,
+    "dica": "Estas instâncias são ideais para bancos de dados e aplicações de alta performance.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "Para quais casos de uso os bancos de dados de grafo são especialmente vantajosos?",
+    "answers": [
+      "Mecanismos de recomendação e detecção de fraudes",
+      "Elastic Beanstalk",
+      "Glacier",
+      "Route53"
+    ],
+    "correct": 0,
+    "dica": "Pense em cenários onde as relações entre os dados são importantes.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "Qual a principal característica dos bancos de dados em grafo que os torna adequados para armazenar e navegar pelas informações?",
+    "answers": [
+      "Armazenamento de relacionamentos",
+      "ACL (Access Control List)",
+      "Cognito",
+      "Savings Plans"
+    ],
+    "correct": 0,
+    "dica": "Pense em como os dados são conectados uns aos outros.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual serviço da AWS é utilizado para criar, publicar, manter, monitorar e proteger APIs?",
+    "answers": [
+      "Glacier",
+      "API Gateway",
+      "EBS",
+      "Cost Explorer"
+    ],
+    "correct": 1,
+    "dica": "Este serviço atua como uma porta de entrada para seus serviços.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual tipo de API estabelece e mantém uma conexão persistente entre o cliente e o servidor?",
+    "answers": [
+      "Cognito",
+      "S3",
+      "WebSocket",
+      "Cost Explorer"
+    ],
+    "correct": 2,
+    "dica": "Este tipo de API permite comunicação em tempo real.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual tipo de API permite que serviços no backend enviem informações para o cliente sem que requisições adicionais sejam feitas?",
+    "answers": [
+      "WebSocket",
+      "Cognito",
+      "Secrets Manager",
+      "S3"
+    ],
+    "correct": 0,
+    "dica": "Este tipo de API é ideal para notificações push.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Como as APIs (HTTP, REST ou WebSocket) são geralmente faturadas?",
+    "answers": [
+      "Cognito",
+      "EBS",
+      "Número de solicitações",
+      "Free Tier"
+    ],
+    "correct": 2,
+    "dica": "A fatura é baseada no uso da API.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Qual tipo de volume EBS é recomendado para Big Data, Data Warehouse e processamento de logs?",
+    "answers": [
+      "Throughput Optimized HDD",
+      "EBS",
+      "Glacier",
+      "S3"
+    ],
+    "correct": 0,
+    "dica": "Este volume oferece alta taxa de transferência para cargas de trabalho sequenciais.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Qual tipo de volume EBS de baixo custo é recomendado para armazenamento de arquivos?",
+    "answers": [
+      "EFS",
+      "Storage Gateway",
+      "Cold HDD",
+      "EBS"
+    ],
+    "correct": 2,
+    "dica": "Este volume é otimizado para armazenamento de dados acessados com pouca frequência.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Qual tipo de volume EBS é otimizado para bancos de dados grandes, com alta volumetria e tráfego de entrada e saída?",
+    "answers": [
+      "EBS",
+      "Provisioned IOPS SSD",
+      "Glacier",
+      "Storage Gateway"
+    ],
+    "correct": 1,
+    "dica": "Este volume oferece alta performance para cargas de trabalho com IOPS intensivo.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Qual tipo de volume EBS oferece um bom equilíbrio entre preço e performance e é recomendado para a maioria das workloads?",
+    "answers": [
+      "Storage Gateway",
+      "General Purpose SSD",
+      "EBS",
+      "EFS"
+    ],
+    "correct": 1,
+    "dica": "Este volume é adequado para uma ampla variedade de cargas de trabalho.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Qual tipo de volume EBS é recomendado para bancos de dados com alto consumo de E/S?",
+    "answers": [
+      "EFS",
+      "EBS",
+      "Provisioned IOPS SSD",
+      "Storage Gateway"
+    ],
+    "correct": 2,
+    "dica": "Este volume oferece alta performance para cargas de trabalho com IOPS intensivo.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Qual tipo de volume EBS é recomendado para cenários nos quais o menor custo de armazenamento é o fator mais importante?",
+    "answers": [
+      "S3",
+      "Cold HDD",
+      "Glacier",
+      "EBS"
+    ],
+    "correct": 1,
+    "dica": "Este volume é otimizado para armazenamento de dados acessados com pouca frequência.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Volumes EBS do tipo Provisioned IOPS SSD podem ser usados como volume de boot para sistemas operacionais?",
+    "answers": [
+      "Sim",
+      "Storage Gateway",
+      "Glacier",
+      "S3"
+    ],
+    "correct": 0,
+    "dica": "Este volume oferece alta performance para cargas de trabalho com IOPS intensivo.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Volumes EBS do tipo Cold HDD podem ser usados como volume de boot para sistemas operacionais?",
+    "answers": [
+      "EBS",
+      "Não",
+      "Glacier",
+      "Storage Gateway"
+    ],
+    "correct": 1,
+    "dica": "Este volume é otimizado para armazenamento de dados acessados com pouca frequência.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "Um endereço IP público atribuído a uma instância EC2 se mantém quando a instância é desligada ou reiniciada?",
+    "answers": [
+      "Sim",
+      "Não"
+    ],
+    "correct": 1,
+    "dica": "O IP público é dinâmico e pode mudar ao reiniciar a instância.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "Qual serviço da AWS estende a infraestrutura para a borda da rede de telecomunicações, permitindo baixíssima latência para dispositivos 5G?",
+    "answers": [
+      "Lightsail",
+      "EC2",
+      "Auto Scaling",
+      "Wavelength"
+    ],
+    "correct": 3,
+    "dica": "Este serviço é ideal para aplicações que exigem baixa latência.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "O S3 se enquadra em qual zona da AWS?",
+    "answers": [
+      "Zona pública",
+      "Storage Gateway",
+      "S3",
+      "EFS"
+    ],
+    "correct": 0,
+    "dica": "Este serviço é acessível pela internet.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "O Route 53 se enquadra em qual zona da AWS?",
+    "answers": [
+      "EC2",
+      "VPC (Virtual Private Cloud)",
+      "Zona pública",
+      "Billing Dashboard"
+    ],
+    "correct": 2,
+    "dica": "Este serviço é acessível pela internet.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "O DynamoDB se enquadra em qual zona da AWS?",
+    "answers": [
+      "EC2",
+      "Outposts",
+      "Zona pública",
+      "CloudFront"
+    ],
+    "correct": 2,
+    "dica": "Este serviço é acessível pela internet.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "O EC2 se enquadra em qual zona da AWS?",
+    "answers": [
+      "Zona privada",
+      "Lambda",
+      "Lightsail",
+      "Auto Scaling"
+    ],
+    "correct": 0,
+    "dica": "Este serviço reside dentro da sua VPC.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "O Security Group se enquadra em qual zona da AWS?",
+    "answers": [
+      "Zona privada",
+      "CloudFront",
+      "Elastic Beanstalk",
+      "ACL (Access Control List)"
+    ],
+    "correct": 0,
+    "dica": "Este serviço reside dentro da sua VPC.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "Qual a função do DAX em relação ao DynamoDB?",
+    "answers": [
+      "Cognito",
+      "DAX",
+      "Trusted Advisor",
+      "Outposts"
+    ],
+    "correct": 1,
+    "dica": "Este serviço melhora o tempo de resposta do DynamoDB.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "No Storage Gateway, qual tipo de gateway armazena os dados mais utilizados localmente e envia o restante para a AWS?",
+    "answers": [
+      "Gateway-Cached",
+      "Glacier",
+      "EBS",
+      "S3"
+    ],
+    "correct": 0,
+    "dica": "Este gateway oferece acesso rápido aos dados mais importantes.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "No Storage Gateway, qual tipo de gateway armazena todos os dados localmente e também os envia para a AWS?",
+    "answers": [
+      "Glacier",
+      "EFS",
+      "S3",
+      "Gateway-Stored"
+    ],
+    "correct": 3,
+    "dica": "Este gateway oferece backup local e na nuvem.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "No EC2, com as instâncias On-Demand, você paga pela capacidade computacional por hora ou por segundo?",
+    "answers": [
+      "Auto Scaling",
+      "Outposts",
+      "Hora ou segundo",
+      "Lambda"
+    ],
+    "correct": 2,
+    "dica": "O modelo de cobrança depende do tipo de instância.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "Com o recurso de Cluster Multi-AZ do RDS, além de alta disponibilidade, as instâncias em espera podem ser usadas para qual finalidade?",
+    "answers": [
+      "Budgets",
+      "Elastic Load Balancer",
+      "AWS Config",
+      "Instâncias de consulta"
+    ],
+    "correct": 3,
+    "dica": "Este recurso melhora a performance e a disponibilidade do banco de dados.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "O que acontece quando você hiberna uma instância EC2?",
+    "answers": [
+      "Elastic Beanstalk",
+      "EC2",
+      "As informações da memória RAM são salvas",
+      "Auto Scaling"
+    ],
+    "correct": 2,
+    "dica": "Este recurso permite retomar a instância do ponto onde ela parou.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Sem Servidor",
+    "question": "Qual recurso é um mecanismo de computação sem servidor para contêineres?",
+    "answers": [
+      "Elastic Beanstalk",
+      "S3",
+      "Outposts",
+      "Fargate"
+    ],
+    "correct": 3,
+    "dica": "Este serviço permite executar contêineres sem gerenciar servidores.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Integração de Aplicações",
+    "question": "Além do EventBridge, qual outro serviço da AWS pode tomar ações a partir de eventos que ocorrem no ambiente?",
+    "answers": [
+      "Lambda",
+      "AWS Config",
+      "CloudWatch Events",
+      "EFS"
+    ],
+    "correct": 2,
+    "dica": "Este serviço permite monitorar e responder a eventos na sua infraestrutura.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Qual ferramenta da AWS é utilizada para gerenciar recursos de forma centralizada e automatizada?",
+    "answers": [
+      "AWS Config",
+      "AWS Systems Manager",
+      "VPC (Virtual Private Cloud)",
+      "EC2"
+    ],
+    "correct": 1,
+    "dica": "Esta ferramenta oferece uma visão unificada dos seus recursos na AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Migração e Transferência",
+    "question": "Qual serviço da AWS centraliza e simplifica o planejamento, acompanhamento e gerenciamento de migrações?",
+    "answers": [
+      "CloudFront",
+      "Free Tier",
+      "Trusted Advisor",
+      "AWS Migration Hub"
+    ],
+    "correct": 3,
+    "dica": "Este serviço facilita a migração para a nuvem.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Migração e Transferência",
+    "question": "Qual serviço da AWS realiza migrações de aplicações on-premises para a nuvem?",
+    "answers": [
+      "EC2",
+      "AWS Application Migration Service",
+      "KMS",
+      "Cognito"
+    ],
+    "correct": 1,
+    "dica": "Este serviço automatiza a migração de aplicações para a AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Migração e Transferência",
+    "question": "Qual serviço da AWS é utilizado para transferências de arquivos utilizando os protocolos SFTP, FTPS, FTP e AS2?",
+    "answers": [
+      "AWS Config",
+      "Outposts",
+      "CloudTrail",
+      "AWS Transfer Family"
+    ],
+    "correct": 3,
+    "dica": "Este serviço oferece uma maneira segura e escalável de transferir arquivos.",
+    "icone_dica": "💡"
+  },
+  {  
+    "titulo": "Banco de Dados",  
+    "question": "Quais tipos de bancos de dados são vantajosos para mecanismos de recomendação e detecção de fraudes?",  
+    "answers": [  
+      "Bancos de dados de grafos",  
+      "Elastic Beanstalk",  
+      "Glacier",  
+      "Route53"  
+    ],  
+    "correct": 0,  
+    "dica": "Pense em um tipo de banco de dados que é otimizado para relacionamentos complexos.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Banco de Dados",  
+    "question": "Qual tipo de banco de dados foi criado especificamente para possibilitar o armazenamento de relacionamentos e a navegação pelas informações?",  
+    "answers": [  
+      "Bancos de dados de grafos",  
+      "ACL (Access Control List)",  
+      "Cognito",  
+      "Savings Plans"  
+    ],  
+    "correct": 0,  
+    "dica": "Pense em um tipo de banco de dados que representa dados como nós e arestas.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Redes e Entrega de Conteúdo",  
+    "question": "Qual serviço da AWS é utilizado para criação, publicação, manutenção, monitoramento e proteção de APIs?",  
+    "answers": [  
+      "Glacier",  
+      "API Gateway",  
+      "EBS",  
+      "Cost Explorer"  
+    ],  
+    "correct": 1,  
+    "dica": "Este serviço permite criar APIs para diferentes tipos de aplicações.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Redes e Entrega de Conteúdo",  
+    "question": "Qual tipo de API estabelece (mantém) uma conexão persistente entre o cliente e o servidor?",  
+    "answers": [  
+      "Cognito",  
+      "S3",  
+      "API WebSocket",  
+      "Cost Explorer"  
+    ],  
+    "correct": 2,  
+    "dica": "Este tipo de API permite a comunicação em tempo real.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Redes e Entrega de Conteúdo",  
+    "question": "Qual tipo de API pode ser utilizada para que serviços no backend enviem informações para o cliente sem que requisições adicionais sejam feitas?",  
+    "answers": [  
+      "API WebSocket",  
+      "Cognito",  
+      "Secrets Manager",  
+      "S3"  
+    ],  
+    "correct": 0,  
+    "dica": "Este tipo de API permite a comunicação unidirecional do servidor para o cliente.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Redes e Entrega de Conteúdo",  
+    "question": "Como são faturadas as APIs (HTTP, REST ou WebSocket) no API Gateway?",  
+    "answers": [  
+      "Cognito",  
+      "EBS",  
+      "Pelo número de solicitações",  
+      "Free Tier"  
+    ],  
+    "correct": 2,  
+    "dica": "A cobrança é baseada no uso da API.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Armazenamento",  
+    "question": "Qual tipo de volume EBS é recomendado para Big Data, Data Warehouse e processamento de logs?",  
+    "answers": [  
+      "Throughput Optimized HDD (st1)",  
+      "EBS",  
+      "Glacier",  
+      "S3"  
+    ],  
+    "correct": 0,  
+    "dica": "Este volume oferece alta taxa de transferência para grandes volumes de dados.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Armazenamento",  
+    "question": "Qual tipo de volume EBS de baixo custo é recomendado para armazenamento de arquivos?",  
+    "answers": [  
+      "EFS",  
+      "Storage Gateway",  
+      "Cold HDD (sc1)",  
+      "EBS"  
+    ],  
+    "correct": 2,  
+    "dica": "Este volume é otimizado para dados acessados com pouca frequência.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Armazenamento",  
+    "question": "Qual tipo de volume EBS é otimizado para bancos de dados grandes, com alta volumetria e tráfego de entrada e saída?",  
+    "answers": [  
+      "EBS",  
+      "Provisioned IOPS SSD (io1/io2)",  
+      "Glacier",  
+      "Storage Gateway"  
+    ],  
+    "correct": 1,  
+    "dica": "Este volume oferece alta performance para aplicações críticas.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Armazenamento",  
+    "question": "Qual tipo de volume EBS fornece um equilíbrio entre preço e performance, sendo recomendado para a maioria das workloads?",  
+    "answers": [  
+      "Storage Gateway",  
+      "General Purpose SSD (gp2/gp3)",  
+      "EBS",  
+      "EFS"  
+    ],  
+    "correct": 1,  
+    "dica": "Este volume é uma boa opção para diversas aplicações.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Armazenamento",  
+    "question": "Qual tipo de volume EBS é recomendado para bancos de dados com alto consumo de E/S?",  
+    "answers": [  
+      "EFS",  
+      "EBS",  
+      "Provisioned IOPS SSD (io1/io2)",  
+      "Storage Gateway"  
+    ],  
+    "correct": 2,  
+    "dica": "Este volume oferece alta performance para aplicações que exigem muitas operações de leitura/escrita.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Armazenamento",  
+    "question": "Qual tipo de volume EBS é recomendado para cenários nos quais o menor custo de armazenamento é o fator mais importante?",  
+    "answers": [  
+      "S3",  
+      "Cold HDD (sc1)",  
+      "Glacier",  
+      "EBS"  
+    ],  
+    "correct": 1,  
+    "dica": "Este volume é ideal para arquivamento de dados.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Armazenamento",  
+    "question": "Volumes EBS do tipo Provisioned IOPS SSD (io1/io2) possuem suporte para inicialização (volume boot) de sistema operacional?",  
+    "answers": [  
+      "Sim",  
+      "Storage Gateway",  
+      "Glacier",  
+      "S3"  
+    ],  
+    "correct": 0,  
+    "dica": "Este tipo de volume pode ser usado como disco de boot.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Armazenamento",  
+    "question": "Volumes EBS do tipo Cold HDD (sc1) possuem suporte para inicialização (volume boot) de sistema operacional?",  
+    "answers": [  
+      "EBS",  
+      "Não",  
+      "Glacier",  
+      "Storage Gateway"  
+    ],  
+    "correct": 1,  
+    "dica": "Este tipo de volume não pode ser usado como disco de boot.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Computação",  
+    "question": "Um endereço IP público atribuído a uma instância EC2 se mantém quando a instância é desligada ou reiniciada?",  
+    "answers": [  
+      "Sim",  
+      "Não"  
+    ],  
+    "correct": 1,  
+    "dica": "O IP público é dinâmico e muda a cada ciclo de start/stop.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Computação",  
+    "question": "As zonas do Wavelength estendem a infraestrutura da AWS para qual local?",  
+    "answers": [  
+      "Lightsail",  
+      "EC2",  
+      "Auto Scaling",  
+      "Borda da rede de telecomunicações"  
+    ],  
+    "correct": 3,  
+    "dica": "Pense em um local que permite baixíssima latência para dispositivos 5G.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Armazenamento",  
+    "question": "O S3 se enquadra na zona pública ou privada da AWS?",  
+    "answers": [  
+      "Pública",  
+      "Storage Gateway",  
+      "S3",  
+      "EFS"  
+    ],  
+    "correct": 0,  
+    "dica": "Este serviço é acessível pela internet.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Redes e Entrega de Conteúdo",  
+    "question": "O Route 53 se enquadra na zona pública ou privada da AWS?",  
+    "answers": [  
+      "EC2",  
+      "VPC (Virtual Private Cloud)",  
+      "Zona pública",  
+      "Billing Dashboard"  
+    ],  
+    "correct": 2,  
+    "dica": "Este serviço é usado para resolver nomes de domínio na internet.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Banco de Dados",  
+    "question": "O DynamoDB se enquadra na zona pública ou privada da AWS?",  
+    "answers": [  
+      "EC2",  
+      "Outposts",  
+      "Pública",  
+      "CloudFront"  
+    ],  
+    "correct": 2,  
+    "dica": "Este serviço é acessível pela internet.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Computação",  
+    "question": "O EC2 se enquadra na zona pública ou privada da AWS?",  
+    "answers": [  
+      "Privada",  
+      "Lambda",  
+      "Lightsail",  
+      "Auto Scaling"  
+    ],  
+    "correct": 0,  
+    "dica": "Este serviço é provisionado dentro de uma VPC.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Redes e Entrega de Conteúdo",  
+    "question": "O Security Group se enquadra na zona pública ou privada da AWS?",  
+    "answers": [  
+      "Privada",  
+      "CloudFront",  
+      "Elastic Beanstalk",  
+      "ACL (Access Control List)"  
+    ],  
+    "correct": 0,  
+    "dica": "Este serviço controla o tráfego de entrada e saída de uma instância EC2.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Banco de Dados",  
+    "question": "Qual é a função do DAX (DynamoDB Accelerator)?",  
+    "answers": [  
+      "Cognito",  
+      "Acelerar o tempo de resposta ao DynamoDB",  
+      "Trusted Advisor",  
+      "Outposts"  
+    ],  
+    "correct": 1,  
+    "dica": "Este serviço melhora a performance do DynamoDB.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Armazenamento",  
+    "question": "No Storage Gateway, qual tipo de gateway armazena os dados mais utilizados no storage gateway e envia o restante para a AWS?",  
+    "answers": [  
+      "Gateway-Cached",  
+      "Glacier",  
+      "EBS",  
+      "S3"  
+    ],  
+    "correct": 0,  
+    "dica": "Este gateway oferece acesso rápido aos dados mais importantes.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Armazenamento",  
+    "question": "No Storage Gateway, qual tipo de gateway armazena todos os dados localmente e também os envia para a AWS?",  
+    "answers": [  
+      "Glacier",  
+      "EFS",  
+      "S3",  
+      "Gateway-Stored"  
+    ],  
+    "correct": 3,  
+    "dica": "Este gateway garante que todos os dados sejam armazenados localmente e na nuvem.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Computação",  
+    "question": "No EC2, com as instâncias no modelo Sob Demanda (On-Demand), você paga pela capacidade computacional por qual unidade de tempo?",  
+    "answers": [  
+      "Auto Scaling",  
+      "Outposts",  
+      "Hora ou segundo",  
+      "Lambda"  
+    ],  
+    "correct": 2,  
+    "dica": "O pagamento é flexível e baseado no uso.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Banco de Dados",  
+    "question": "Com o recurso de Cluster Multi-AZ do RDS, além de alta disponibilidade nas instâncias em espera (failover), elas podem servir como instância de consulta?",  
+    "answers": [  
+      "Budgets",  
+      "Elastic Load Balancer",  
+      "AWS Config",  
+      "Sim"  
+    ],  
+    "correct": 3,  
+    "dica": "Este recurso oferece alta disponibilidade e escalabilidade de leitura.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Computação",  
+    "question": "O que acontece quando você hiberna uma instância EC2?",  
+    "answers": [  
+      "Elastic Beanstalk",  
+      "EC2",  
+      "As informações da memória RAM são salvas",  
+      "Auto Scaling"  
+    ],  
+    "correct": 2,  
+    "dica": "Este recurso permite que você retome o trabalho de onde parou.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Sem Servidor",  
+    "question": "Qual recurso é um mecanismo de computação sem servidor para contêineres?",  
+    "answers": [  
+      "Elastic Beanstalk",  
+      "S3",  
+      "Outposts",  
+      "Fargate"  
+    ],  
+    "correct": 3,  
+    "dica": "Este serviço permite executar contêineres sem gerenciar servidores.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Integração de Aplicações",  
+    "question": "Além do EventBridge, qual outro serviço da AWS também toma ações a partir de eventos que ocorrem no ambiente?",  
+    "answers": [  
+      "Lambda",  
+      "AWS Config",  
+      "CloudWatch Events",  
+      "EFS"  
+    ],  
+    "correct": 2,  
+    "dica": "Este serviço permite monitorar e responder a eventos na sua infraestrutura.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Gerenciamento, Monitoramento e Governança",  
+    "question": "Qual serviço da AWS é uma ferramenta poderosa para gerenciar recursos da AWS de forma centralizada e automatizada?",  
+    "answers": [  
+      "AWS Config",  
+      "AWS Systems Manager",  
+      "VPC (Virtual Private Cloud)",  
+      "EC2"  
+    ],  
+    "correct": 1,  
+    "dica": "Este serviço facilita o gerenciamento da sua infraestrutura na AWS.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Migração e Transferência",  
+    "question": "Qual serviço da AWS centraliza e simplifica o planejamento, acompanhamento e gerenciamento de migrações?",  
+    "answers": [  
+      "CloudFront",  
+      "Free Tier",  
+      "Trusted Advisor",  
+      "AWS Migration Hub"  
+    ],  
+    "correct": 3,  
+    "dica": "Este serviço facilita a migração para a AWS.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Migração e Transferência",  
+    "question": "Qual serviço da AWS realiza migrações de suas aplicações on-premises para a nuvem?",  
+    "answers": [  
+      "EC2",  
+      "AWS Application Migration Service (MGN)",  
+      "KMS",  
+      "Cognito"  
+    ],  
+    "correct": 1,  
+    "dica": "Este serviço automatiza o processo de migração.",  
+    "icone_dica": "💡"  
+  },  
+   
+  {
+    "titulo": "Migração e Transferência",
+    "question": "Qual serviço da AWS é utilizado para realizar migrações de aplicações on-premises para a nuvem?",
+    "answers": [
+      "EC2",
+      "AWS Application Migration Service",
+      "KMS",
+      "Cognito"
+    ],
+    "correct": 1,
+    "dica": "Este serviço simplifica a migração de aplicações para a AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Migração e Transferência",
+    "question": "Qual serviço da AWS é utilizado para transferências de arquivos utilizando os protocolos SFTP, FTPS, FTP e AS2?",
+    "answers": [
+      "AWS Config",
+      "Outposts",
+      "CloudTrail",
+      "AWS Transfer Family"
+    ],
+    "correct": 3,
+    "dica": "Este serviço oferece uma forma segura e escalável de transferir arquivos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Qual serviço da AWS é um serviço de detecção de ameaças que monitora continuamente suas contas e workloads?",
+    "answers": [
+      "ACL (Access Control List)",
+      "STS (Security Token Service)",
+      "KMS",
+      "Amazon GuardDuty"
+    ],
+    "correct": 3,
+    "dica": "Este serviço ajuda a proteger sua infraestrutura na AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Qual serviço da AWS oferece gerenciamento de acesso centralizado para todas as contas AWS dentro de uma organização?",
+    "answers": [
+      "STS (Security Token Service)",
+      "Secrets Manager",
+      "IAM (Identity Access Management)",
+      "AWS IAM Identity Center"
+    ],
+    "correct": 3,
+    "dica": "Este serviço simplifica o gerenciamento de acesso em ambientes multi-conta.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "É possível habilitar o cache de API no API Gateway para melhorar as respostas do seu endpoint?",
+    "answers": [
+      "KMS",
+      "Trusted Advisor",
+      "Billing Dashboard",
+      "Cache"
+    ],
+    "correct": 3,
+    "dica": "O cache de API melhora a performance e reduz a latência.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Volumes EBS do tipo SSD gp2 podem ser anexados a quantas instâncias EC2?",
+    "answers": [
+      "Glacier",
+      "Somente 1 instância",
+      "EFS",
+      "Storage Gateway"
+    ],
+    "correct": 1,
+    "dica": "Um volume EBS só pode ser anexado a uma instância por vez.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Através de qual serviço é feita a autenticação via federação na AWS?",
+    "answers": [
+      "KMS",
+      "Cognito",
+      "ACL (Access Control List)",
+      "AWS Config"
+    ],
+    "correct": 1,
+    "dica": "Este serviço permite que usuários de fora da AWS acessem recursos na AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Integração de Aplicações",
+    "question": "Qual serviço da AWS é um barramento de eventos que permite tomar ações ou orquestrar comunicações entre componentes em ambientes distribuídos?",
+    "answers": [
+      "CloudTrail",
+      "Lambda",
+      "EventBridge",
+      "Auto Scaling"
+    ],
+    "correct": 2,
+    "dica": "Este serviço permite construir aplicações baseadas em eventos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "APIs REST são stateless ou stateful?",
+    "answers": [
+      "Auto Scaling",
+      "STS (Security Token Service)",
+      "APIs REST são stateless",
+      "Route53"
+    ],
+    "correct": 2,
+    "dica": "Em APIs stateless, cada requisição é independente.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "A utilização da criptografia SSE-KMS no S3 possui custo?",
+    "answers": [
+      "Lambda",
+      "Budgets",
+      "Route53",
+      "Sim"
+    ],
+    "correct": 3,
+    "dica": "A utilização do KMS para criptografia tem um custo associado.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Sem Servidor",
+    "question": "O Lambda@Edge é executado em uma rede pública ou privada?",
+    "answers": [
+      "Elastic Beanstalk",
+      "Trusted Advisor",
+      "Rede pública",
+      "KMS"
+    ],
+    "correct": 2,
+    "dica": "O Lambda@Edge é executado na infraestrutura global da AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "Por padrão, ao reiniciar ou desligar uma instância EC2, seu IPv4 público é alterado. Qual recurso pode ser habilitado para evitar essa mudança?",
+    "answers": [
+      "Elastic Beanstalk",
+      "Reserva de Elastic IP",
+      "EC2",
+      "Auto Scaling"
+    ],
+    "correct": 1,
+    "dica": "Este recurso permite associar um IP fixo à sua instância.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Sem Servidor",
+    "question": "Uma função Lambda pode ser acionada pelo AWS S3?",
+    "answers": [
+      "Sim",
+      "Cognito",
+      "EC2",
+      "Free Tier"
+    ],
+    "correct": 0,
+    "dica": "O S3 pode invocar uma função Lambda quando um objeto é criado ou modificado.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Sem Servidor",
+    "question": "Uma função Lambda pode ser acionada pelo Amazon Kinesis?",
+    "answers": [
+      "Sim",
+      "Não"
+    ],
+    "correct": 0,
+    "dica": "O Kinesis pode invocar uma função Lambda para processar dados em tempo real.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Integração de Aplicações",
+    "question": "Qual serviço da AWS é utilizado para enfileirar mensagens e desacoplar serviços e sistemas?",
+    "answers": [
+      "Transit Gateway",
+      "Outposts",
+      "Savings Plans",
+      "SQS"
+    ],
+    "correct": 3,
+    "dica": "Este serviço permite criar aplicações mais escaláveis e resilientes.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Integração de Aplicações",
+    "question": "Qual serviço da AWS é um serviço gerenciado de eventos e integração, que permite tomar ações a partir de eventos que acontecem no ambiente?",
+    "answers": [
+      "Budgets",
+      "Free Tier",
+      "EventBridge",
+      "VPC (Virtual Private Cloud)"
+    ],
+    "correct": 2,
+    "dica": "Este serviço permite construir aplicações reativas a eventos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação de Usuário Final",
+    "question": "Com qual serviço da AWS é possível provisionar um grande número de máquinas virtuais para uso como desktops (usuário final)?",
+    "answers": [
+      "Lambda",
+      "WorkSpaces",
+      "EC2",
+      "Route53"
+    ],
+    "correct": 1,
+    "dica": "Este serviço oferece uma solução de desktop virtual na nuvem.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Ferramenta de Desenvolvedor",
+    "question": "Qual é a sequência esperada em uma pipeline de CI/CD?",
+    "answers": [
+      "CodeCommit, CodeBuild, CodeDeploy",
+      "S3",
+      "Transit Gateway",
+      "Secrets Manager"
+    ],
+    "correct": 0,
+    "dica": "Esta sequência representa as etapas de um processo de entrega contínua.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Integração de Aplicações",
+    "question": "Qual é o processo de reestruturar um código/sistema existente em microsserviços?",
+    "answers": [
+      "Billing Dashboard",
+      "Outposts",
+      "CloudTrail",
+      "Refatoração"
+    ],
+    "correct": 3,
+    "dica": "Este processo envolve a decomposição de um sistema monolítico em serviços menores e independentes.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Interação com os Clientes",
+    "question": "Quais são os 4 tipos de planos de suporte da AWS?",
+    "answers": [
+      "Storage Gateway",
+      "Lambda",
+      "ACL (Access Control List)",
+      "Developer, Business, Enterprise On-Ramp, Enterprise"
+    ],
+    "correct": 3,
+    "dica": "Cada plano oferece diferentes níveis de suporte e recursos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Sem Servidor",
+    "question": "Apesar do ECS e EKS fornecerem serviços para contêineres, qual serviço fornece os recursos para rodar em uma arquitetura sem servidor?",
+    "answers": [
+      "STS (Security Token Service)",
+      "Billing Dashboard",
+      "Elastic Beanstalk",
+      "Fargate"
+    ],
+    "correct": 3,
+    "dica": "Este serviço permite executar contêineres sem precisar gerenciar servidores.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Qual serviço da AWS facilita o gerenciamento de suas licenças de software?",
+    "answers": [
+      "Route53",
+      "Trusted Advisor",
+      "Secrets Manager",
+      "AWS License Manager"
+    ],
+    "correct": 3,
+    "dica": "Este serviço ajuda a controlar e otimizar o uso de licenças de software.",
+    "icone_dica": "💡"
+  },
+{
+    "titulo": "Conceitos",
+    "question": "Para proteger o tráfego em sua infraestrutura global, a AWS realiza criptografia na camada lógica ou física?",
+    "answers": [
+      "Camada lógica",
+      "Camada física"
+    ],
+    "correct": 1,
+    "dica": "A criptografia nesta camada garante a segurança dos dados em trânsito.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "Qual serviço da AWS oferece instâncias de servidor privado virtual (VPS)?",
+    "answers": [
+      "Lightsail",
+      "Outposts",
+      "EC2",
+      "Lightsail"
+    ],
+    "correct": 0,
+    "dica": "Este serviço é ideal para projetos menores e com baixo custo.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "Qual serviço da AWS pode ser utilizado para criar aplicações web simples (LAMP, Nginx, MEAN e Node.js)?",
+    "answers": [
+      "EC2",
+      "Auto Scaling",
+      "Lightsail",
+      "Lightsail"
+    ],
+    "correct": 2,
+    "dica": "Este serviço oferece templates pré-configurados para facilitar a criação de aplicações web.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "Qual serviço da AWS pode ser utilizado para criar sites, como WordPress?",
+    "answers": [
+      "EC2",
+      "Elastic Beanstalk",
+      "Outposts",
+      "Lightsail"
+    ],
+    "correct": 3,
+    "dica": "Este serviço oferece um plano otimizado para WordPress com baixo custo.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Qual serviço da AWS é utilizado para registrar as ações de serviços da AWS, como Start/Stop de uma instância EC2?",
+    "answers": [
+      "EBS",
+      "CloudTrail",
+      "EC2",
+      "Transit Gateway"
+    ],
+    "correct": 1,
+    "dica": "Este serviço permite monitorar e auditar as atividades na sua conta AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "O AWS Trusted Advisor está disponível somente a partir do plano Enterprise On-Ramp?",
+    "answers": [
+      "Sim",
+      "Não"
+    ],
+    "correct": 1,
+    "dica": "O AWS Trusted Advisor está disponível em diversos planos de suporte, incluindo o Basic.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Ferramenta de Desenvolvedor",
+    "question": "Qual serviço da AWS Code Suite serve para compilar e realizar testes?",
+    "answers": [
+      "CodeBuild",
+      "STS (Security Token Service)",
+      "Storage Gateway",
+      "Savings Plans"
+    ],
+    "correct": 0,
+    "dica": "Este serviço permite automatizar o processo de build e teste da sua aplicação.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "Qual serviço da AWS é de fácil utilização para implantação e escalabilidade de aplicações e serviços em instâncias EC2?",
+    "answers": [
+      "Outposts",
+      "Elastic Beanstalk",
+      "Lambda",
+      "Elastic Beanstalk"
+    ],
+    "correct": 3,
+    "dica": "Este serviço abstrai a complexidade da infraestrutura, permitindo focar no desenvolvimento da aplicação.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Qual serviço da AWS é um serviço de detecção de ameaças que monitora continuamente atividades mal-intencionadas e comportamentos não autorizados?",
+    "answers": [
+      "ACL (Access Control List)",
+      "AWS Config",
+      "CloudTrail",
+      "GuardDuty"
+    ],
+    "correct": 3,
+    "dica": "Este serviço utiliza inteligência de ameaças e machine learning para identificar anomalias na sua conta AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Ferramenta de Desenvolvedor",
+    "question": "Qual serviço da AWS Code Suite permite que você desenvolva, compile e implante rapidamente aplicações na AWS?",
+    "answers": [
+      "Route53",
+      "Storage Gateway",
+      "CodeStar",
+      "Budgets"
+    ],
+    "correct": 2,
+    "dica": "Este serviço oferece um painel unificado para gerenciar todo o ciclo de vida da sua aplicação.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Ferramenta de Desenvolvedor",
+    "question": "Qual serviço da AWS Code Suite é utilizado para gerenciar dependências e artefatos no desenvolvimento de software?",
+    "answers": [
+      "S3",
+      "Trusted Advisor",
+      "CloudTrail",
+      "CodeArtifact"
+    ],
+    "correct": 3,
+    "dica": "Este serviço permite armazenar e compartilhar artefatos de software de forma segura e confiável.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Sem Servidor",
+    "question": "Qual serviço da AWS é um serviço de computação sem servidor?",
+    "answers": [
+      "Secrets Manager",
+      "KMS",
+      "IAM (Identity Access Management)",
+      "Lambda"
+    ],
+    "correct": 3,
+    "dica": "Este serviço permite executar código sem precisar provisionar ou gerenciar servidores.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Sem Servidor",
+    "question": "O EKS é um serviço serverless para execução de contêineres Kubernetes ou um serviço de orquestração de contêineres com Kubernetes?",
+    "answers": [
+      "Auto Scaling",
+      "Orquestração de contêineres com Kubernetes",
+      "Cost Explorer",
+      "Serverless"
+    ],
+    "correct": 1,
+    "dica": "O EKS simplifica a implantação e o gerenciamento de clusters Kubernetes na AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Qual serviço da AWS facilita a análise, a investigação e a identificação rápida da causa raiz de potenciais problemas de segurança?",
+    "answers": [
+      "Detective",
+      "KMS",
+      "CloudTrail",
+      "AWS Config"
+    ],
+    "correct": 0,
+    "dica": "Este serviço utiliza machine learning para analisar dados de logs e identificar padrões suspeitos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Qual serviço da AWS é utilizado para segurança e privacidade de dados?",
+    "answers": [
+      "CloudTrail",
+      "Macie",
+      "Secrets Manager",
+      "AWS Config"
+    ],
+    "correct": 1,
+    "dica": "Este serviço ajuda a descobrir, classificar e proteger dados confidenciais na AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Interação com os Clientes",
+    "question": "Com qual serviço da AWS é possível criar uma central de atendimento (chat) na nuvem?",
+    "answers": [
+      "KMS",
+      "Billing Dashboard",
+      "Amazon Connect",
+      "CloudTrail"
+    ],
+    "correct": 2,
+    "dica": "Este serviço oferece uma solução completa para criar uma central de atendimento omnichannel.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Um volume EFS é armazenado somente em 1 zona de disponibilidade?",
+    "answers": [
+      "Sim",
+      "Depende",
+      "Não"
+    ],
+    "correct": 1,
+    "dica": "O EFS pode ser armazenado em várias Availability Zones, dependendo da configuração.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Através do Lifecycle é possível fazer transições de classe no S3?",
+    "answers": [
+      "Sim",
+      "EFS",
+      "S3",
+      "Storage Gateway"
+    ],
+    "correct": 0,
+    "dica": "O Lifecycle permite mover objetos para diferentes classes de armazenamento com base em regras definidas.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "O S3 Intelligent-Tiering após 30 dias move os arquivos para qual classe?",
+    "answers": [
+      "S3 Intelligent-Tiering - Infrequent Access",
+      "EBS",
+      "EFS",
+      "Glacier"
+    ],
+    "correct": 0,
+    "dica": "Esta classe é ideal para dados acessados com pouca frequência.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "O S3 Intelligent-Tiering após 90 dias move os arquivos para qual classe?",
+    "answers": [
+      "Glacier",
+      "S3",
+      "Storage Gateway",
+      "S3 Intelligent-Tiering - Archive Instant Access"
+    ],
+    "correct": 3,
+    "dica": "Esta classe é ideal para arquivamento de longo prazo com acesso rápido.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "O S3 Intelligent-Tiering após 180 dias move os arquivos para qual classe?",
+    "answers": [
+      "Glacier",
+      "Storage Gateway",
+      "S3",
+      "S3 Intelligent-Tiering - Deep Archive Access"
+    ],
+    "correct": 3,
+    "dica": "Esta classe é a mais econômica para arquivamento de longo prazo com acesso menos frequente.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "No S3 Intelligent-Tiering, se um objeto está em uma classe inferior, por exemplo Archive Instance, ao ser acessado, para qual classe ele é movido automaticamente?",
+    "answers": [
+      "S3",
+      "Frequent Access",
+      "EFS",
+      "Storage Gateway"
+    ],
+    "correct": 1,
+    "dica": "O objeto é movido para a classe de acesso mais frequente para otimizar o custo.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "Nos bancos de dados relacionais, o recurso de Multi-AZ cria instâncias para failover em outras regiões?",
+    "answers": [
+      "Auto Scaling",
+      "Trusted Advisor",
+      "Não",
+      "Billing Dashboard"
+    ],
+    "correct": 2,
+    "dica": "O Multi-AZ cria instâncias de failover na mesma região, em diferentes Availability Zones.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "Pensando em uma possível indisponibilidade total de uma região da AWS, qual recurso do RDS seria o mais indicado para essa situação (Disaster Recovery)?",
+    "answers": [
+      "Cognito",
+      "KMS",
+      "Read Replicas",
+      "CloudTrail"
+    ],
+    "correct": 2,
+    "dica": "Este recurso permite replicar os dados para outra região para garantir a disponibilidade em caso de desastre.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Analytics",
+    "question": "Qual banco de dados da AWS é utilizado para Data Warehouse?",
+    "answers": [
+      "CloudTrail",
+      "Billing Dashboard",
+      "AWS Config",
+      "Redshift"
+    ],
+    "correct": 3,
+    "dica": "Este banco de dados é otimizado para análise de grandes volumes de dados.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "Os bancos de dados são cobrados normalmente pelo armazenamento e qual outro fator?",
+    "answers": [
+      "Armazenamento e Throughput de dados (entrada e saída)",
+      "EBS",
+      "STS (Security Token Service)",
+      "ACL (Access Control List)"
+    ],
+    "correct": 0,
+    "dica": "O throughput de dados se refere à quantidade de dados transferidos para dentro e para fora do banco de dados.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "Qual recurso do DynamoDB faz o ajuste de capacidade (Throughput) dinamicamente?",
+    "answers": [
+      "Billing Dashboard",
+      "AWS Config",
+      "Auto Scaling",
+      "Savings Plans"
+    ],
+    "correct": 2,
+    "dica": "Este recurso permite que o DynamoDB escale automaticamente a capacidade com base na demanda.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "O que é nuvem privada?",
+    "answers": [
+      "ACL (Access Control List)",
+      "Auto Scaling",
+      "Nuvem utilizada em data center privado/exclusivo",
+      "Secrets Manager"
+    ],
+    "correct": 2,
+    "dica": "Neste modelo, a infraestrutura é dedicada a um único cliente.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "O que é nuvem híbrida?",
+    "answers": [
+      "Glacier",
+      "Free Tier",
+      "Savings Plans",
+      "Nuvem que combina nuvem privada e pública"
+    ],
+    "correct": 3,
+    "dica": "Neste modelo, a infraestrutura é uma combinação de recursos on-premises e na nuvem.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Integração de Aplicações",
+    "question": "CloudWatch Events e EventBridge são serviços com a mesma finalidade, porém qual deles oferece mais recursos?",
+    "answers": [
+      "Billing Dashboard",
+      "EventBridge",
+      "CloudTrail",
+      "Lambda"
+    ],
+    "correct": 1,
+    "dica": "Este serviço oferece mais funcionalidades para roteamento e transformação de eventos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual serviço da AWS envia o conteúdo para a região mais próxima do usuário (Edge Locations) para aumentar a performance de acesso?",
+    "answers": [
+      "CloudFront",
+      "VPC (Virtual Private Cloud)",
+      "Secrets Manager",
+      "Savings Plans"
+    ],
+    "correct": 0,
+    "dica": "Este serviço oferece uma forma rápida e escalável de entregar conteúdo aos usuários.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual recurso da VPC registra os IPs do tráfego da VPC?",
+    "answers": [
+      "Elastic Beanstalk",
+      "VPC Flow Logs",
+      "Transit Gateway",
+      "Secrets Manager"
+    ],
+    "correct": 1,
+    "dica": "Este recurso permite monitorar e analisar o tráfego de rede na sua VPC.",
+    "icone_dica": "💡"
+  },
+  {  
+    "titulo": "Computação",  
+    "question": "Qual serviço da AWS oferece instâncias de servidor privado virtual (VPS)?",  
+    "answers": [  
+      "Lightsail",  
+      "Outposts",  
+      "EC2",  
+      "Lightsail"  
+    ],  
+    "correct": 0,  
+    "dica": "Este serviço é ideal para projetos menores e com orçamento limitado.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Computação",  
+    "question": "Qual recurso pode ser utilizado para a criação de aplicações web simples (LAMP, Nginx, MEAN e Node.js)?",  
+    "answers": [  
+      "EC2",  
+      "Auto Scaling",  
+      "Lightsail",  
+      "Lightsail"  
+    ],  
+    "correct": 2,  
+    "dica": "Este serviço oferece templates pré-configurados para facilitar a criação de aplicações web.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Computação",  
+    "question": "Qual serviço da AWS pode ser utilizado para a criação de sites, como WordPress?",  
+    "answers": [  
+      "EC2",  
+      "Elastic Beanstalk",  
+      "Outposts",  
+      "Lightsail"  
+    ],  
+    "correct": 3,  
+    "dica": "Este serviço oferece planos otimizados para WordPress.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Gerenciamento, Monitoramento e Governança",  
+    "question": "Qual serviço da AWS é utilizado para registrar as ações de outros serviços, como Start/Stop de uma instância EC2?",  
+    "answers": [  
+      "EBS",  
+      "CloudTrail",  
+      "EC2",  
+      "Transit Gateway"  
+    ],  
+    "correct": 1,  
+    "dica": "Este serviço permite auditar e monitorar as atividades na sua conta AWS.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Gerenciamento, Monitoramento e Governança",  
+    "question": "O AWS Trusted Advisor está disponível somente a partir do plano Enterprise On-Ramp?",  
+    "answers": [  
+      "Sim",  
+      "Não"  
+    ],  
+    "correct": 1,  
+    "dica": "Este serviço oferece recomendações para otimizar sua infraestrutura, independentemente do plano de suporte.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Ferramenta de Desenvolvedor",  
+    "question": "Qual serviço da AWS serve para compilar e realizar testes de código?",  
+    "answers": [  
+      "CodeBuild",  
+      "STS (Security Token Service)",  
+      "Storage Gateway",  
+      "Savings Plans"  
+    ],  
+    "correct": 0,  
+    "dica": "Este serviço automatiza o processo de build e teste do seu código.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Computação",  
+    "question": "Qual serviço da AWS é de fácil utilização para implantação e escalabilidade de aplicações e serviços em instâncias EC2?",  
+    "answers": [  
+      "Outposts",  
+      "Elastic Beanstalk",  
+      "Lambda",  
+      "Elastic Beanstalk"  
+    ],  
+    "correct": 1,  
+    "dica": "Este serviço simplifica o processo de implantação e gerenciamento de aplicações.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Segurança, Identidade e Conformidade",  
+    "question": "Qual serviço da AWS é um serviço de detecção de ameaças que monitora continuamente atividades mal-intencionadas e comportamentos não autorizados?",  
+    "answers": [  
+      "ACL (Access Control List)",  
+      "AWS Config",  
+      "CloudTrail",  
+      "GuardDuty"  
+    ],  
+    "correct": 3,  
+    "dica": "Este serviço utiliza machine learning para identificar ameaças em potencial.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Ferramenta de Desenvolvedor",  
+    "question": "Qual serviço da AWS permite que você desenvolva, compile e implante rapidamente aplicativos na AWS?",  
+    "answers": [  
+      "Route53",  
+      "Storage Gateway",  
+      "CodeStar",  
+      "Budgets"  
+    ],  
+    "correct": 2,  
+    "dica": "Este serviço oferece um ambiente de desenvolvimento integrado na nuvem.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Ferramenta de Desenvolvedor",  
+    "question": "Qual serviço da AWS é utilizado para gerenciar dependências e artefatos no desenvolvimento de software?",  
+    "answers": [  
+      "S3",  
+      "Trusted Advisor",  
+      "CloudTrail",  
+      "CodeArtifact"  
+    ],  
+    "correct": 3,  
+    "dica": "Este serviço permite armazenar e compartilhar artefatos de software de forma segura.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Sem Servidor",  
+    "question": "Qual serviço da AWS é um serviço de computação sem servidor?",  
+    "answers": [  
+      "Secrets Manager",  
+      "KMS",  
+      "IAM (Identity Access Management)",  
+      "Lambda"  
+    ],  
+    "correct": 3,  
+    "dica": "Este serviço permite executar código sem precisar provisionar ou gerenciar servidores.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Sem Servidor",  
+    "question": "O EKS é um serviço serverless para execução de contêineres Kubernetes ou um serviço de orquestração de contêineres com Kubernetes?",  
+    "answers": [  
+      "Auto Scaling",  
+      "Orquestração",  
+      "Cost Explorer",  
+      "Serverless"  
+    ],  
+    "correct": 1,  
+    "dica": "O EKS simplifica o gerenciamento de clusters Kubernetes na AWS.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Segurança, Identidade e Conformidade",  
+    "question": "Qual serviço da AWS facilita a análise, a investigação e a identificação rápida da causa raiz de potenciais problemas de segurança?",  
+    "answers": [  
+      "Detective",  
+      "KMS",  
+      "CloudTrail",  
+      "AWS Config"  
+    ],  
+    "correct": 0,  
+    "dica": "Este serviço utiliza machine learning para analisar dados de segurança e identificar padrões suspeitos.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Segurança, Identidade e Conformidade",  
+    "question": "Qual serviço da AWS é utilizado para segurança e privacidade de dados, como a descoberta e classificação de dados confidenciais?",  
+    "answers": [  
+      "CloudTrail",  
+      "Macie",  
+      "Secrets Manager",  
+      "AWS Config"  
+    ],  
+    "correct": 1,  
+    "dica": "Este serviço ajuda a proteger seus dados confidenciais na AWS.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Interação com os Clientes",  
+    "question": "Com qual serviço da AWS é possível criar uma central de atendimento (chat) na nuvem?",  
+    "answers": [  
+      "KMS",  
+      "Billing Dashboard",  
+      "Connect",  
+      "CloudTrail"  
+    ],  
+    "correct": 2,  
+    "dica": "Este serviço oferece uma solução completa para criar e gerenciar centrais de atendimento na nuvem.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Armazenamento",  
+    "question": "Um volume EFS é armazenado somente em 1 Availability Zone (AZ)?",  
+    "answers": [  
+      "Sim",  
+      "Depende",  
+      "Não"  
+    ],  
+    "correct": 1,  
+    "dica": "O EFS pode ser armazenado em várias AZs para alta disponibilidade.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Armazenamento",  
+    "question": "Através do Life Cycle é possível fazer transições de classe de armazenamento no S3?",  
+    "answers": [  
+      "Sim",  
+      "EFS",  
+      "S3",  
+      "Storage Gateway"  
+    ],  
+    "correct": 0,  
+    "dica": "O Life Cycle permite mover objetos para diferentes classes de armazenamento com base em regras definidas.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Armazenamento",  
+    "question": "O S3 Intelligent-Tiering após quantos dias move os arquivos para a classe Infrequent Access?",  
+    "answers": [  
+      "30 dias",  
+      "EBS",  
+      "EFS",  
+      "Glacier"  
+    ],  
+    "correct": 0,  
+    "dica": "Esta classe de armazenamento é ideal para dados acessados com pouca frequência.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Armazenamento",  
+    "question": "O S3 Intelligent-Tiering após quantos dias move os arquivos para a classe Archive Instant Access?",  
+    "answers": [  
+      "Glacier",  
+      "S3",  
+      "Storage Gateway",  
+      "90 dias"  
+    ],  
+    "correct": 3,  
+    "dica": "Esta classe de armazenamento é ideal para dados raramente acessados, mas que precisam de acesso rápido.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Armazenamento",  
+    "question": "O S3 Intelligent-Tiering após quantos dias move os arquivos para a classe Deep Archive Access?",  
+    "answers": [  
+      "Glacier",  
+      "Storage Gateway",  
+      "S3",  
+      "180 dias"  
+    ],  
+    "correct": 3,  
+    "dica": "Esta classe de armazenamento é ideal para arquivamento de longo prazo com o menor custo.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Armazenamento",  
+    "question": "No S3 Intelligent-Tiering, se um objeto está em uma classe inferior, por exemplo, Archive Instance, ao ser acessado ele é movido automaticamente para qual classe?",  
+    "answers": [  
+      "S3",  
+      "Frequent Access",  
+      "EFS",  
+      "Storage Gateway"  
+    ],  
+    "correct": 1,  
+    "dica": "Esta é a classe de armazenamento padrão para acesso frequente.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Banco de Dados",  
+    "question": "Nos bancos de dados relacionais, o recurso de Multi-AZ cria instâncias para failover em outras regiões?",  
+    "answers": [  
+      "Auto Scaling",  
+      "Trusted Advisor",  
+      "Não",  
+      "Billing Dashboard"  
+    ],  
+    "correct": 2,  
+    "dica": "O Multi-AZ replica os dados dentro da mesma região, em diferentes Availability Zones.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Banco de Dados",  
+    "question": "Pensando em uma possível indisponibilidade total de uma região da AWS, qual recurso do RDS seria o mais indicado para disaster recovery?",  
+    "answers": [  
+      "Cognito",  
+      "KMS",  
+      "Read Replicas",  
+      "CloudTrail"  
+    ],  
+    "correct": 2,  
+    "dica": "Este recurso permite criar cópias do banco de dados em outras regiões.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Analytics",  
+    "question": "Qual banco de dados da AWS é utilizado para Data Warehouse?",  
+    "answers": [  
+      "CloudTrail",  
+      "Billing Dashboard",  
+      "AWS Config",  
+      "Redshift"  
+    ],  
+    "correct": 3,  
+    "dica": "Este banco de dados é otimizado para análise de grandes volumes de dados.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Banco de Dados",  
+    "question": "Os bancos de dados são cobrados normalmente pelo armazenamento e por qual outro fator?",  
+    "answers": [  
+      "Armazenamento e Throughput",  
+      "EBS",  
+      "STS (Security Token Service)",  
+      "ACL (Access Control List)"  
+    ],  
+    "correct": 0,  
+    "dica": "Este fator está relacionado à quantidade de dados transferidos para dentro e para fora do banco de dados.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Banco de Dados",  
+    "question": "O DynamoDB possui o recurso de Auto Scaling, que ajusta a capacidade (Throughput) dinamicamente. Como também é conhecido esse recurso?",  
+    "answers": [  
+      "Billing Dashboard",  
+      "AWS Config",  
+      "Auto Scaling",  
+      "Savings Plans"  
+    ],  
+    "correct": 2,  
+    "dica": "Este recurso garante que o banco de dados tenha capacidade suficiente para lidar com a demanda.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Conceitos",  
+    "question": "O que é nuvem privada?",  
+    "answers": [  
+      "ACL (Access Control List)",  
+      "Auto Scaling",  
+      "Nuvem em data center privado/exclusivo",  
+      "Secrets Manager"  
+    ],  
+    "correct": 2,  
+    "dica": "Este tipo de nuvem é utilizado por empresas que precisam de maior controle sobre a infraestrutura.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Conceitos",  
+    "question": "O que é nuvem híbrida?",  
+    "answers": [  
+      "Glacier",  
+      "Free Tier",  
+      "Savings Plans",  
+      "Nuvem privada e pública"  
+    ],  
+    "correct": 3,  
+    "dica": "Este tipo de nuvem combina o melhor dos dois mundos: a flexibilidade da nuvem pública e o controle da nuvem privada.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Integração de Aplicações",  
+    "question": "O CloudWatch Events e o EventBridge são serviços com a mesma finalidade. Qual deles oferece mais recursos?",  
+    "answers": [  
+      "Billing Dashboard",  
+      "EventBridge",  
+      "CloudTrail",  
+      "Lambda"  
+    ],  
+    "correct": 1,  
+    "dica": "Este serviço oferece recursos avançados de roteamento e transformação de eventos.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Redes e Entrega de Conteúdo",  
+    "question": "No serviço CloudFront, o conteúdo é enviado para qual local para aumentar a performance de acesso para os usuários?",  
+    "answers": [  
+      "Edge Locations",  
+      "VPC (Virtual Private Cloud)",  
+      "Secrets Manager",  
+      "Savings Plans"  
+    ],  
+    "correct": 0,  
+    "dica": "Estes locais estão distribuídos globalmente para garantir baixa latência.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Redes e Entrega de Conteúdo",  
+    "question": "Qual recurso da VPC registra os endereços IP do tráfego da VPC?",  
+    "answers": [  
+      "Elastic Beanstalk",  
+      "Flow Logs",  
+      "Transit Gateway",  
+      "Secrets Manager"  
+    ],  
+    "correct": 1,  
+    "dica": "Este recurso permite monitorar e analisar o tráfego de rede na sua VPC.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Redes e Entrega de Conteúdo",  
+    "question": "Qual tipo de Internet Gateway permite o tráfego de saída (IPV6), mas impede o tráfego de entrada?",  
+    "answers": [  
+      "Lambda",  
+      "CloudTrail",  
+      "Savings Plans",  
+      "Egress-Only Internet Gateway"  
+    ],  
+    "correct": 3,  
+    "dica": "Este gateway oferece maior segurança para suas instâncias na VPC.",  
+    "icone_dica": "💡"  
+  },  
+  {
+    "titulo": "Conceitos",
+    "question": "Qual modelo define as responsabilidades compartilhadas entre a AWS e o cliente em relação à segurança e gerenciamento da infraestrutura na nuvem?",
+    "answers": [
+      "STS (Security Token Service)",
+      "Modelo de responsabilidade compartilhada",
+      "Free Tier",
+      "Secrets Manager"
+    ],
+    "correct": 1,
+    "dica": "Este modelo estabelece as responsabilidades de cada parte em relação à segurança na nuvem.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "Qual o tempo máximo em dias que uma instância EC2 pode ser hibernada utilizando o recurso de hibernação?",
+    "answers": [
+      "Lightsail",
+      "Outposts",
+      "EC2",
+      "60"
+    ],
+    "correct": 3,
+    "dica": "O recurso de hibernação tem um limite de tempo para manter a instância hibernada.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Quantos adaptadores de rede podem ser utilizados em uma instância EC2?",
+    "answers": [
+      "Auto Scaling",
+      "3",
+      "Lambda",
+      "Budgets"
+    ],
+    "correct": 1,
+    "dica": "O número de adaptadores de rede é limitado em uma instância EC2.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Quais são os fatores que influenciam o preço de um volume EBS?",
+    "answers": [
+      "S3",
+      "Armazenamento, IOPS e throughput",
+      "EFS",
+      "Storage Gateway"
+    ],
+    "correct": 1,
+    "dica": "O preço de um volume EBS é influenciado por diferentes fatores de performance e capacidade.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Qual serviço da AWS pode ser utilizado para armazenar chaves e senhas de forma segura, evitando que sejam armazenadas diretamente no código de programação?",
+    "answers": [
+      "Elastic Load Balancer",
+      "Secrets Manager",
+      "Billing Dashboard",
+      "Route53"
+    ],
+    "correct": 1,
+    "dica": "Este serviço ajuda a proteger informações confidenciais utilizadas em suas aplicações.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "O CloudWatch cobra pelo uso de qual recurso?",
+    "answers": [
+      "KMS",
+      "Métricas",
+      "Elastic Beanstalk",
+      "Route53"
+    ],
+    "correct": 1,
+    "dica": "O CloudWatch é um serviço de monitoramento que cobra pelo uso de um determinado recurso.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Qual tipo de criptografia oferece maior proteção contra acessos não autorizados no S3?",
+    "answers": [
+      "SSE-KMS",
+      "EBS",
+      "Storage Gateway",
+      "Transit Gateway"
+    ],
+    "correct": 0,
+    "dica": "Este tipo de criptografia utiliza chaves gerenciadas pelo KMS para proteger os dados.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Interação com os Clientes",
+    "question": "Qual serviço da AWS é uma solução de central de atendimento ao cliente baseada na nuvem?",
+    "answers": [
+      "Amazon Connect",
+      "Free Tier",
+      "Storage Gateway",
+      "Elastic Load Balancer"
+    ],
+    "correct": 0,
+    "dica": "Este serviço permite criar uma central de atendimento personalizada e escalável.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "O serviço EC2 é um exemplo de qual modelo de serviço na nuvem?",
+    "answers": [
+      "Lambda",
+      "IaaS (Infraestrutura como Serviço)",
+      "EC2",
+      "Elastic Beanstalk"
+    ],
+    "correct": 1,
+    "dica": "Neste modelo, o cliente tem controle sobre a infraestrutura, como servidores e máquinas virtuais.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "O serviço de armazenamento S3 é um exemplo de qual modelo de serviço na nuvem?",
+    "answers": [
+      "IaaS (Infraestrutura como Serviço)",
+      "VPC (Virtual Private Cloud)",
+      "IAM (Identity Access Management)",
+      "Cognito"
+    ],
+    "correct": 0,
+    "dica": "Neste modelo, o provedor gerencia a infraestrutura e o cliente utiliza o serviço para armazenar dados.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Sem Servidor",
+    "question": "O serviço Lambda é um exemplo de qual modelo de serviço na nuvem?",
+    "answers": [
+      "PaaS (Plataforma como Serviço)",
+      "Transit Gateway",
+      "Budgets",
+      "Savings Plans"
+    ],
+    "correct": 0,
+    "dica": "Neste modelo, o cliente se concentra no desenvolvimento e execução do código, sem se preocupar com a infraestrutura.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "Qual é o endereço IP utilizado para acessar os metadados de uma instância EC2?",
+    "answers": [
+      "Auto Scaling",
+      "http://169.254.169.254/latest/meta-data/",
+      "Outposts",
+      "Lightsail"
+    ],
+    "correct": 1,
+    "dica": "Este endereço IP é utilizado para acessar informações sobre a instância em execução.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Qual o tamanho máximo de um único arquivo que pode ser armazenado no S3?",
+    "answers": [
+      "Storage Gateway",
+      "5 TB",
+      "Glacier",
+      "S3"
+    ],
+    "correct": 1,
+    "dica": "O S3 permite armazenar arquivos grandes, mas há um limite para o tamanho de um único objeto.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Produtividade Empresarial",
+    "question": "Qual serviço da AWS é mais indicado para enviar e-mails em massa para realizar um comunicado em sua empresa?",
+    "answers": [
+      "Budgets",
+      "SES (Simple Email Service)",
+      "EFS",
+      "Auto Scaling"
+    ],
+    "correct": 1,
+    "dica": "Este serviço é otimizado para enviar grandes volumes de e-mails de forma confiável e escalável.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "Para criar uma instância EC2 visando economia, qual modelo de compra oferece o menor custo?",
+    "answers": [
+      "Outposts",
+      "EC2",
+      "Savings Plans",
+      "Elastic Beanstalk"
+    ],
+    "correct": 2,
+    "dica": "Este modelo oferece descontos significativos em troca de um compromisso de uso a longo prazo.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual recurso permite que recursos da VPC acessem a internet, mas impede que esses recursos sejam acessados externamente?",
+    "answers": [
+      "Budgets",
+      "Lambda",
+      "IAM (Identity Access Management)",
+      "Egress-Only Internet Gateway"
+    ],
+    "correct": 3,
+    "dica": "Este recurso oferece uma camada extra de segurança, impedindo o acesso não autorizado aos recursos da VPC.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Analytics",
+    "question": "Qual serviço da AWS permite aos clientes encontrar, assinar e trocar dados de terceiros de maneira segura e simplificada?",
+    "answers": [
+      "AWS Data Exchange",
+      "Savings Plans",
+      "Elastic Beanstalk",
+      "Route53"
+    ],
+    "correct": 0,
+    "dica": "Este serviço facilita o compartilhamento de dados entre diferentes organizações.",
+    "icone_dica": "💡"
+  },
+    {
+    "titulo": "Analytics",
+    "question": "Qual serviço da AWS permite assinar e usar conjuntos de dados confiáveis fornecidos por terceiros para enriquecer suas análises de negócio?",
+    "answers": [
+      "Outposts",
+      "AWS Data Exchange",
+      "IAM (Identity Access Management)",
+      "VPC (Virtual Private Cloud)"
+    ],
+    "correct": 1,
+    "dica": "Este serviço facilita o acesso a dados de terceiros para análises.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Analytics",
+    "question": "O AWS Glue é um serviço de ETL da AWS. O que significa a sigla ETL?",
+    "answers": [
+      "Budgets",
+      "EBS",
+      "Extract (Extrair), Transform (Transformar), Load (Carregar)",
+      "Route53"
+    ],
+    "correct": 2,
+    "dica": "ETL é um processo essencial para preparar dados para análise.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Machine Learning",
+    "question": "Qual serviço da AWS permite a implementação de clusters do Apache Kafka?",
+    "answers": [
+      "Auto Scaling",
+      "Route53",
+      "Savings Plans",
+      "Amazon MSK (Managed Streaming for Kafka)"
+    ],
+    "correct": 3,
+    "dica": "Este serviço simplifica a criação e gerenciamento de clusters Kafka.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Analytics",
+    "question": "Qual serviço da AWS é utilizado para pesquisa, análise e visualização de dados?",
+    "answers": [
+      "Elastic Beanstalk",
+      "Trusted Advisor",
+      "Savings Plans",
+      "Amazon OpenSearch Service"
+    ],
+    "correct": 3,
+    "dica": "Este serviço permite explorar e analisar dados de diversas fontes.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Analytics",
+    "question": "AWS Glue é um serviço de qual tipo?",
+    "answers": [
+      "Lambda",
+      "Billing Dashboard",
+      "Cost Explorer",
+      "ETL"
+    ],
+    "correct": 3,
+    "dica": "Este tipo de serviço é fundamental para preparar dados para análise.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Produtividade Empresarial",
+    "question": "Qual serviço da AWS é projetado para ajudar empresas e desenvolvedores a enviar e-mails em grande escala de forma rápida, segura e confiável?",
+    "answers": [
+      "Cognito",
+      "Route53",
+      "SES (Simple Email Service)",
+      "ACL (Access Control List)"
+    ],
+    "correct": 2,
+    "dica": "Este serviço é ideal para campanhas de marketing e notificações em massa.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "Em qual nível o serviço S3 é considerado resiliente?",
+    "answers": [
+      "EBS",
+      "Lambda",
+      "KMS",
+      "Região"
+    ],
+    "correct": 3,
+    "dica": "A resiliência neste nível garante que os dados estejam disponíveis mesmo em caso de falhas em zonas de disponibilidade.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "Em qual nível o serviço EC2 é considerado resiliente?",
+    "answers": [
+      "CloudTrail",
+      "Elastic Load Balancer",
+      "Zona de disponibilidade",
+      "KMS"
+    ],
+    "correct": 2,
+    "dica": "A resiliência neste nível garante que as instâncias estejam disponíveis mesmo em caso de falhas em uma zona específica.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "Em qual nível o serviço Route 53 é considerado resiliente?",
+    "answers": [
+      "Global",
+      "Auto Scaling",
+      "Budgets",
+      "Route53"
+    ],
+    "correct": 0,
+    "dica": "A resiliência neste nível garante que o serviço esteja disponível em todo o mundo.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "Você precisa migrar servidores físicos para EC2 na AWS. Esses servidores serão usados por pelo menos 1 ou 2 anos e não podem ser interrompidos repentinamente. Qual modelo de preço é mais adequado visando menor custo?",
+    "answers": [
+      "Lightsail",
+      "Lambda",
+      "Savings Plans",
+      "Elastic Beanstalk"
+    ],
+    "correct": 2,
+    "dica": "Este modelo oferece descontos em troca de um compromisso de uso a longo prazo.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "Qual serviço da AWS facilita a execução de trabalhos intensivos e em larga escala, usando EC2, EKS ou Fargate?",
+    "answers": [
+      "EC2",
+      "Elastic Beanstalk",
+      "AWS Batch",
+      "Auto Scaling"
+    ],
+    "correct": 2,
+    "dica": "Este serviço permite processar grandes volumes de dados de forma eficiente.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "Você tem um lote de imagens e precisa fazer um processamento nelas. Qual serviço da AWS seria o mais adequado?",
+    "answers": [
+      "Lightsail",
+      "AWS Batch",
+      "Elastic Beanstalk",
+      "EC2"
+    ],
+    "correct": 1,
+    "dica": "Este serviço permite executar tarefas de processamento em lote de forma escalável e eficiente.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Contêineres",
+    "question": "O que significa a sigla ECR?",
+    "answers": [
+      "Outposts",
+      "Elastic Container Registry",
+      "S3",
+      "Elastic Load Balancer"
+    ],
+    "correct": 1,
+    "dica": "Este serviço é utilizado para armazenar e gerenciar imagens de contêineres.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Contêineres",
+    "question": "Qual serviço permite armazenar, gerenciar e distribuir imagens de contêineres Docker?",
+    "answers": [
+      "Elastic Beanstalk",
+      "ECR (Elastic Container Registry)",
+      "Outposts",
+      "AWS Config"
+    ],
+    "correct": 1,
+    "dica": "Este serviço facilita o gerenciamento de imagens de contêineres para suas aplicações.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento de Custos",
+    "question": "Caso você seja um provedor de serviços, qual recurso da AWS permite cobrar seus clientes pelos serviços utilizados na AWS?",
+    "answers": [
+      "Savings Plans",
+      "Free Tier",
+      "AWS Billing Conductor",
+      "Budgets"
+    ],
+    "correct": 2,
+    "dica": "Este recurso permite definir preços personalizados para seus clientes.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Interação com os Clientes",
+    "question": "Qual programa da AWS permite que startups desenvolvam suas ideias com recursos, suporte e ferramentas gratuitas?",
+    "answers": [
+      "S3",
+      "EFS",
+      "Cost Explorer",
+      "AWS Activate"
+    ],
+    "correct": 3,
+    "dica": "Este programa é ideal para startups que estão começando na AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Interação com os Clientes",
+    "question": "Qual serviço da AWS permite que clientes encontrem especialistas certificados para trabalhos sob demanda em um projeto?",
+    "answers": [
+      "Lightsail",
+      "VPC (Virtual Private Cloud)",
+      "AWS IQ",
+      "Budgets"
+    ],
+    "correct": 2,
+    "dica": "Este serviço conecta clientes a especialistas para projetos específicos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Interação com os Clientes",
+    "question": "Qual serviço da AWS auxilia no gerenciamento da sua infraestrutura na AWS (suporte)?",
+    "answers": [
+      "ACL (Access Control List)",
+      "Free Tier",
+      "EFS",
+      "AWS Managed Services (AMS)"
+    ],
+    "correct": 3,
+    "dica": "Este serviço oferece suporte especializado para gerenciar sua infraestrutura na AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Ferramenta de Desenvolvedor",
+    "question": "Qual serviço da AWS permite que você gerencie de forma centralizada as configurações de suas aplicações?",
+    "answers": [
+      "VPC (Virtual Private Cloud)",
+      "Secrets Manager",
+      "KMS",
+      "AWS AppConfig"
+    ],
+    "correct": 3,
+    "dica": "Este serviço facilita o gerenciamento de configurações em diferentes ambientes.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Ferramenta de Desenvolvedor",
+    "question": "Em vez de codificar configurações no código da aplicação ou arquivos de configurações, qual serviço da AWS pode ser usado para armazenar, monitorar e gerenciar essas configurações?",
+    "answers": [
+      "CloudTrail",
+      "AWS AppConfig",
+      "Storage Gateway",
+      "Billing Dashboard"
+    ],
+    "correct": 1,
+    "dica": "Este serviço permite gerenciar configurações de forma centralizada e segura.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Ferramenta de Desenvolvedor",
+    "question": "Qual serviço da AWS é um IDE (Integrated Development Environment) que permite escrever, executar e depurar código usando apenas um navegador?",
+    "answers": [
+      "Free Tier",
+      "Outposts",
+      "Billing Dashboard",
+      "AWS Cloud9"
+    ],
+    "correct": 3,
+    "dica": "Este serviço oferece um ambiente de desenvolvimento completo na nuvem.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Ferramenta de Desenvolvedor",
+    "question": "Qual serviço da AWS é um shell pré-autenticado baseado em navegador que você pode iniciar diretamente do AWS Management Console?",
+    "answers": [
+      "S3",
+      "Outposts",
+      "AWS CloudShell",
+      "EFS"
+    ],
+    "correct": 2,
+    "dica": "Este serviço oferece acesso rápido e fácil à linha de comando da AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação de Usuário Final",
+    "question": "Amazon AppStream 2.0 é um serviço de qual tipo?",
+    "answers": [
+      "Billing Dashboard",
+      "Computação de usuário final",
+      "Auto Scaling",
+      "Lambda"
+    ],
+    "correct": 1,
+    "dica": "Este tipo de serviço permite transmitir aplicações para os usuários.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação de Usuário Final",
+    "question": "O AppStream 2.0 possui um modelo de cobrança similar a qual serviço da AWS, que também oferece diferentes tipos de instâncias (uso geral, computação, memória, etc.)?",
+    "answers": [
+      "Transit Gateway",
+      "Glacier",
+      "EC2",
+      "CloudFront"
+    ],
+    "correct": 2,
+    "dica": "Este serviço oferece instâncias com diferentes configurações para atender a diversas necessidades.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação de Usuário Final",
+    "question": "Qual serviço da AWS permite provisionar desktops virtuais Microsoft Windows, Amazon Linux ou Ubuntu Linux baseados em nuvem para seus usuários?",
+    "answers": [
+      "Storage Gateway",
+      "Billing Dashboard",
+      "Amazon WorkSpaces",
+      "Auto Scaling"
+    ],
+    "correct": 2,
+    "dica": "Este serviço oferece uma solução de desktop virtual na nuvem.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Quantos Internet Gateways podem ser anexados a uma única VPC?",
+    "answers": [
+      "Outposts",
+      "Savings Plans",
+      "1",
+      "VPC (Virtual Private Cloud)"
+    ],
+    "correct": 2,
+    "dica": "Uma VPC pode ter apenas um Internet Gateway anexado a ela.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "O frontend da sua aplicação está em uma sub-rede pública, e o backend em uma sub-rede privada. Você precisa que seu backend tenha acesso à internet de forma segura, sem expô-lo diretamente. Qual recurso permite esse acesso?",
+    "answers": [
+      "S3",
+      "Budgets",
+      "Cost Explorer",
+      "NAT Gateway"
+    ],
+    "correct": 3,
+    "dica": "Este recurso permite que instâncias em sub-redes privadas acessem a internet sem receber tráfego da internet.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Web e Dispositivos Móveis de Front End",
+    "question": "Qual serviço da AWS facilita a criação de APIs usando GraphQL?",
+    "answers": [
+      "STS (Security Token Service)",
+      "VPC (Virtual Private Cloud)",
+      "AWS AppSync",
+      "Trusted Advisor"
+    ],
+    "correct": 2,
+    "dica": "Este serviço permite criar APIs flexíveis e eficientes para aplicações web e móveis.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Web e Dispositivos Móveis de Front End",
+    "question": "Qual serviço da AWS permite testar aplicativos móveis e web em uma ampla variedade de navegadores e dispositivos móveis reais?",
+    "answers": [
+      "IAM (Identity Access Management)",
+      "AWS Device Farm",
+      "Budgets",
+      "Secrets Manager"
+    ],
+    "correct": 1,
+    "dica": "Este serviço permite garantir que suas aplicações funcionem corretamente em diferentes dispositivos e navegadores.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Internet das Coisas (IoT)",
+    "question": "Qual serviço da AWS permite conectar dispositivos da Internet das Coisas (IoT) à nuvem e interagir com eles de maneira segura e escalável?",
+    "answers": [
+      "Free Tier",
+      "VPC (Virtual Private Cloud)",
+      "AWS IoT Core",
+      "CloudTrail"
+    ],
+    "correct": 2,
+    "dica": "Este serviço oferece uma plataforma completa para construir aplicações IoT.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Internet das Coisas (IoT)",
+    "question": "Qual serviço da AWS ajuda a criar, implementar e gerenciar softwares de dispositivos IoT, com execução de código na borda?",
+    "answers": [
+      "EC2",
+      "AWS Config",
+      "Glacier",
+      "AWS IoT Greengrass"
+    ],
+    "correct": 3,
+    "dica": "Este serviço permite executar código localmente em dispositivos IoT.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Machine Learning",
+    "question": "Qual serviço da AWS oferece processamento de linguagem natural (NLP) para extrair informações e insights a partir de textos não estruturados?",
+    "answers": [
+      "AWS Config",
+      "Lambda",
+      "S3",
+      "Amazon Comprehend"
+    ],
+    "correct": 3,
+    "dica": "Este serviço permite analisar sentimentos, identificar entidades e extrair informações de textos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Machine Learning",
+    "question": "Qual serviço da AWS utiliza machine learning e linguagem natural para encontrar respostas mais rápidas em pesquisas corporativas inteligentes (pesquisas internas)?",
+    "answers": [
+      "IAM (Identity Access Management)",
+      "Lightsail",
+      "Amazon Kendra",
+      "Outposts"
+    ],
+    "correct": 2,
+    "dica": "Este serviço permite criar um motor de busca inteligente para sua empresa.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Machine Learning",
+    "question": "Qual serviço da AWS permite que desenvolvedores construam interfaces de conversação interativas baseadas em voz para aplicativos e serviços?",
+    "answers": [
+      "Route53",
+      "Billing Dashboard",
+      "AWS Config",
+      "Amazon Lex"
+    ],
+    "correct": 3,
+    "dica": "Este serviço permite criar chatbots e assistentes virtuais.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Machine Learning",
+    "question": "Qual serviço da AWS converte texto em fala realista e natural?",
+    "answers": [
+      "Amazon Polly",
+      "AWS Config",
+      "Trusted Advisor",
+      "EFS"
+    ],
+    "correct": 0,
+    "dica": "Este serviço permite criar áudio a partir de texto para diversas aplicações.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Machine Learning",
+    "question": "Qual serviço da AWS oferece recursos de análise e reconhecimento de imagem e vídeo por meio de tecnologia de visão computacional e machine learning?",
+    "answers": [
+      "Billing Dashboard",
+      "Amazon Rekognition",
+      "EBS",
+      "IAM (Identity Access Management)"
+    ],
+    "correct": 1,
+    "dica": "Este serviço permite identificar objetos, pessoas e cenas em imagens e vídeos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Machine Learning",
+    "question": "Qual serviço da AWS é projetado para simplificar e acelerar o processo de construção, treinamento e implantação de modelos de aprendizado de máquina (Machine Learning)?",
+    "answers": [
+      "Amazon SageMaker",
+      "Route53",
+      "ACL (Access Control List)",
+      "EBS"
+    ],
+    "correct": 0,
+    "dica": "Este serviço oferece um ambiente completo para o desenvolvimento de modelos de machine learning.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Machine Learning",
+    "question": "Qual serviço da AWS extrai texto de documentos impressos ou manuscritos através de Machine Learning?",
+    "answers": [
+      "Lightsail",
+      "Cognito",
+      "Amazon Textract",
+      "EFS"
+    ],
+    "correct": 2,
+    "dica": "Este serviço permite digitalizar documentos e extrair informações relevantes.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Machine Learning",
+    "question": "Qual serviço da AWS converte gravações de áudio em texto, como por exemplo entrevistas, palestras, chamadas telefônicas e outras?",
+    "answers": [
+      "Storage Gateway",
+      "Trusted Advisor",
+      "Amazon Transcribe",
+      "Transit Gateway"
+    ],
+    "correct": 2,
+    "dica": "Este serviço permite transcrever áudio para texto de forma precisa e eficiente.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Machine Learning",
+    "question": "Qual serviço da AWS é um serviço de tradução automática neural que fornece traduções de idiomas com rapidez, alta qualidade, acessíveis e personalizáveis?",
+    "answers": [
+      "KMS",
+      "Amazon Translate",
+      "Free Tier",
+      "Lightsail"
+    ],
+    "correct": 1,
+    "dica": "Este serviço permite traduzir textos entre diferentes idiomas.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Qual serviço da AWS analisa suas instâncias EC2 para avaliar o desempenho e recursos, e fornece recomendações para otimizá-las?",
+    "answers": [
+      "EFS",
+      "Lightsail",
+      "AWS Compute Optimizer",
+      "Cognito"
+    ],
+    "correct": 2,
+    "dica": "Este serviço ajuda a otimizar o uso de recursos e reduzir custos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Qual serviço da AWS é voltado para governança, facilitando a conformidade na nuvem e implementação de boas práticas?",
+    "answers": [
+      "AWS Control Tower",
+      "Elastic Beanstalk",
+      "EFS",
+      "Cognito"
+    ],
+    "correct": 0,
+    "dica": "Este serviço ajuda a criar um ambiente de nuvem seguro e bem gerenciado.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Qual serviço da AWS oferece informações em tempo real sobre o status de saúde dos serviços da AWS em diferentes regiões do mundo?",
+    "answers": [
+      "AWS Health Dashboard",
+      "Cost Explorer",
+      "Trusted Advisor",
+      "Route53"
+    ],
+    "correct": 0,
+    "dica": "Este serviço permite monitorar a disponibilidade e performance dos serviços da AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Qual serviço da AWS é projetado para simplificar e automatizar o processo de implantação e dimensionamento de aplicativos Windows, SQL Server e SAP na nuvem da AWS?",
+    "answers": [
+      "AWS Launch Wizard",
+      "Lambda",
+      "AWS Config",
+      "EC2"
+    ],
+    "correct": 0,
+    "dica": "Este serviço facilita a migração e implantação de aplicações Windows na AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Através de qual serviço da AWS é possível agrupar serviços ou recursos da AWS em grupos, utilizando tags ou pilhas do CloudFormation, e executar operações em massa nesses grupos de recursos?",
+    "answers": [
+      "VPC (Virtual Private Cloud)",
+      "AWS Resource Groups",
+      "Cost Explorer",
+      "CloudFront"
+    ],
+    "correct": 1,
+    "dica": "Este serviço permite gerenciar e automatizar tarefas em vários recursos de forma eficiente.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento, Monitoramento e Governança",
+    "question": "Qual serviço da AWS permite às organizações criar e gerenciar catálogos de serviços de TI internos?",
+    "answers": [
+      "EBS",
+      "Outposts",
+      "AWS Config",
+      "AWS Service Catalog"
+    ],
+    "correct": 3,
+    "dica": "Este serviço permite padronizar e controlar o acesso a serviços de TI dentro da organização.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "O EFS é um serviço de armazenamento escalável, não compatível com servidores Windows. Qual serviço da AWS oferece armazenamento compartilhado para servidores Windows?",
+    "answers": [
+      "AWS FSx for Windows File Server",
+      "EFS",
+      "Storage Gateway",
+      "S3"
+    ],
+    "correct": 0,
+    "dica": "Este serviço oferece um sistema de arquivos compartilhado otimizado para servidores Windows.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "Qual serviço da AWS permite criar um ambiente para Disaster Recovery (DR) para seus recursos on-premises ou baseados em nuvem?",
+    "answers": [
+      "S3",
+      "Storage Gateway",
+      "EFS",
+      "AWS Elastic Disaster Recovery (DRS)"
+    ],
+    "correct": 3,
+    "dica": "Este serviço simplifica a implementação de uma estratégia de DR para seus recursos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Migração e Transferência",
+    "question": "Qual serviço da AWS ajuda a planejar projetos de migração para a nuvem, coletando informações sobre seus datacenters on-premises?",
+    "answers": [
+      "IAM (Identity Access Management)",
+      "AWS Application Discovery Service",
+      "Glacier",
+      "Lightsail"
+    ],
+    "correct": 1,
+    "dica": "Este serviço fornece informações detalhadas sobre seu ambiente on-premises para facilitar a migração.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Qual serviço da AWS ajuda a proteger informações confidenciais, como senhas, chaves de API, certificados e outros dados sensíveis?",
+    "answers": [
+      "KMS",
+      "ACL (Access Control List)",
+      "AWS Config",
+      "AWS Secrets Manager"
+    ],
+    "correct": 3,
+    "dica": "Este serviço permite armazenar, rotacionar e gerenciar segredos de forma segura.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Qual recurso da AWS ajuda a proteger informações confidenciais como senhas e chaves de API, e também é capaz de rotacionar as senhas e auditar quando elas foram usadas?",
+    "answers": [
+      "AWS Secrets Manager",
+      "Secrets Manager",
+      "Cognito",
+      "AWS Config"
+    ],
+    "correct": 0,
+    "dica": "Este recurso oferece uma forma segura de gerenciar e proteger segredos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Qual serviço da AWS oferece uma visão centralizada de segurança da sua infraestrutura na AWS, possibilitando identificar vulnerabilidades, ameaças ou problemas de segurança?",
+    "answers": [
+      "Secrets Manager",
+      "AWS Config",
+      "AWS Security Hub",
+      "CloudTrail"
+    ],
+    "correct": 2,
+    "dica": "Este serviço permite monitorar e responder a alertas de segurança de forma eficiente.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Qual serviço da AWS é projetado para simplificar e automatizar o processo de auditoria de recursos na AWS?",
+    "answers": [
+      "Secrets Manager",
+      "ACL (Access Control List)",
+      "IAM (Identity Access Management)",
+      "AWS Audit Manager"
+    ],
+    "correct": 3,
+    "dica": "",
+    "icone_dica": "💡"
+  },
+  {  
+    "titulo": "Computação de Usuário Final",  
+    "question": "O AppStream 2.0 possui um modelo de cobrança similar a qual serviço da AWS, onde também existem tipos de instâncias para diferentes necessidades (uso geral, computação, memória, etc.)?",  
+    "answers": [  
+      "Transit Gateway",  
+      "Glacier",  
+      "EC2",  
+      "CloudFront"  
+    ],  
+    "correct": 2,  
+    "dica": "Este serviço oferece instâncias virtuais com diferentes configurações de hardware.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Computação de Usuário Final",  
+    "question": "Qual serviço da AWS permite que você provisione desktops virtuais Microsoft Windows, Amazon Linux ou Ubuntu Linux baseados em nuvem para seus usuários?",  
+    "answers": [  
+      "Storage Gateway",  
+      "Billing Dashboard",  
+      "Amazon WorkSpaces",  
+      "Auto Scaling"  
+    ],  
+    "correct": 2,  
+    "dica": "Este serviço oferece uma solução de desktop virtual na nuvem.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Redes e Entrega de Conteúdo",  
+    "question": "Quantos Internet Gateways podem ser associados a uma única VPC?",  
+    "answers": [  
+      "Outposts",  
+      "Savings Plans",  
+      "1",  
+      "VPC (Virtual Private Cloud)"  
+    ],  
+    "correct": 2,  
+    "dica": "Uma VPC só pode ter um Internet Gateway associado.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Redes e Entrega de Conteúdo",  
+    "question": "O frontend de sua aplicação está em uma sub-rede pública e o backend em uma sub-rede privada. Você precisa que seu backend tenha acesso à internet de forma segura, sem expô-lo diretamente. Qual recurso permite isso?",  
+    "answers": [  
+      "S3",  
+      "Budgets",  
+      "Cost Explorer",  
+      "NAT Gateway"  
+    ],  
+    "correct": 3,  
+    "dica": "Este recurso permite que instâncias em sub-redes privadas acessem a internet sem receber tráfego de entrada.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Web e Dispositivos Móveis de Front End",  
+    "question": "Qual serviço da AWS facilita a criação de APIs usando GraphQL?",  
+    "answers": [  
+      "STS (Security Token Service)",  
+      "VPC (Virtual Private Cloud)",  
+      "AWS AppSync",  
+      "Trusted Advisor"  
+    ],  
+    "correct": 2,  
+    "dica": "Este serviço oferece uma forma eficiente de criar APIs para aplicações web e móveis.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Web e Dispositivos Móveis de Front End",  
+    "question": "Qual serviço da AWS permite testar aplicativos móveis e web em uma ampla variedade de navegadores e dispositivos móveis reais?",  
+    "answers": [  
+      "IAM (Identity Access Management)",  
+      "AWS Device Farm",  
+      "Budgets",  
+      "Secrets Manager"  
+    ],  
+    "correct": 1,  
+    "dica": "Este serviço permite garantir a compatibilidade e o bom funcionamento de seus aplicativos em diferentes dispositivos.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Internet das Coisas (IoT)",  
+    "question": "Qual serviço da AWS permite conectar dispositivos da Internet das Coisas (IoT) à nuvem e interagir com eles de maneira segura e escalável?",  
+    "answers": [  
+      "Free Tier",  
+      "VPC (Virtual Private Cloud)",  
+      "AWS IoT Core",  
+      "CloudTrail"  
+    ],  
+    "correct": 2,  
+    "dica": "Este serviço oferece uma plataforma completa para construir soluções de IoT.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Internet das Coisas (IoT)",  
+    "question": "Qual serviço da AWS ajuda a criar, implementar e gerenciar softwares de dispositivos IoT, com execução de código na borda?",  
+    "answers": [  
+      "EC2",  
+      "AWS Config",  
+      "Glacier",  
+      "AWS IoT Greengrass"  
+    ],  
+    "correct": 3,  
+    "dica": "Este serviço permite executar funções Lambda diretamente em dispositivos IoT.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Machine Learning",  
+    "question": "Qual serviço da AWS oferece processamento de linguagem natural (NLP) para extrair informações e insights de textos não estruturados?",  
+    "answers": [  
+      "AWS Config",  
+      "Lambda",  
+      "S3",  
+      "Amazon Comprehend"  
+    ],  
+    "correct": 3,  
+    "dica": "Este serviço permite analisar sentimentos, identificar entidades e extrair informações de textos.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Machine Learning",  
+    "question": "Qual serviço da AWS utiliza machine learning e linguagem natural para encontrar respostas mais rápidas em pesquisas corporativas inteligentes (pesquisas internas)?",  
+    "answers": [  
+      "IAM (Identity Access Management)",  
+      "Lightsail",  
+      "Amazon Kendra",  
+      "Outposts"  
+    ],  
+    "correct": 2,  
+    "dica": "Este serviço permite criar um mecanismo de busca inteligente para documentos e informações internas.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Machine Learning",  
+    "question": "Qual serviço da AWS permite que desenvolvedores construam interfaces de conversação interativas baseadas em voz para aplicativos e serviços?",  
+    "answers": [  
+      "Route53",  
+      "Billing Dashboard",  
+      "AWS Config",  
+      "Amazon Lex"  
+    ],  
+    "correct": 3,  
+    "dica": "Este serviço oferece ferramentas para criar chatbots e assistentes virtuais.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Machine Learning",  
+    "question": "Qual serviço da AWS converte texto em fala realista e natural?",  
+    "answers": [  
+      "Amazon Polly",  
+      "AWS Config",  
+      "Trusted Advisor",  
+      "EFS"  
+    ],  
+    "correct": 0,  
+    "dica": "Este serviço permite criar locuções e narrativas para diferentes aplicações.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Machine Learning",  
+    "question": "Qual serviço da AWS oferece recursos de análise e reconhecimento de imagem e vídeo por meio de tecnologia de visão computacional e ML (machine learning)?",  
+    "answers": [  
+      "Billing Dashboard",  
+      "Amazon Rekognition",  
+      "EBS",  
+      "IAM (Identity Access Management)"  
+    ],  
+    "correct": 1,  
+    "dica": "Este serviço permite identificar objetos, pessoas e cenas em imagens e vídeos.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Machine Learning",  
+    "question": "Qual serviço da AWS é projetado para simplificar e acelerar o processo de construção, treinamento e implantação de modelos de aprendizado de máquina (Machine Learning)?",  
+    "answers": [  
+      "Amazon SageMaker",  
+      "Route53",  
+      "ACL (Access Control List)",  
+      "EBS"  
+    ],  
+    "correct": 0,  
+    "dica": "Este serviço oferece um ambiente completo para o desenvolvimento de modelos de machine learning.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Machine Learning",  
+    "question": "Qual serviço da AWS extrai texto de documentos impressos ou manuscritos através de Machine Learning?",  
+    "answers": [  
+      "Lightsail",  
+      "Cognito",  
+      "Amazon Textract",  
+      "EFS"  
+    ],  
+    "correct": 2,  
+    "dica": "Este serviço permite digitalizar documentos e extrair informações de forma automática.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Machine Learning",  
+    "question": "Qual serviço da AWS converte gravações de áudio em texto, como entrevistas, palestras, chamadas telefônicas e outras?",  
+    "answers": [  
+      "Storage Gateway",  
+      "Trusted Advisor",  
+      "Amazon Transcribe",  
+      "Transit Gateway"  
+    ],  
+    "correct": 2,  
+    "dica": "Este serviço oferece transcrição automática de áudio com alta precisão.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Machine Learning",  
+    "question": "Qual serviço da AWS oferece tradução automática neural, fornecendo traduções de idiomas com rapidez, alta qualidade, acessíveis e personalizáveis?",  
+    "answers": [  
+      "KMS",  
+      "Amazon Translate",  
+      "Free Tier",  
+      "Lightsail"  
+    ],  
+    "correct": 1,  
+    "dica": "Este serviço permite traduzir textos entre diferentes idiomas de forma automática.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Gerenciamento, Monitoramento e Governança",  
+    "question": "Qual serviço da AWS analisa suas instâncias EC2 para avaliar o desempenho e recursos, e fornece recomendações para otimizá-las?",  
+    "answers": [  
+      "EFS",  
+      "Lightsail",  
+      "AWS Compute Optimizer",  
+      "Cognito"  
+    ],  
+    "correct": 2,  
+    "dica": "Este serviço ajuda a identificar oportunidades de economia e melhoria de desempenho.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Gerenciamento, Monitoramento e Governança",  
+    "question": "Qual serviço da AWS é voltado para governança, facilitando a conformidade na nuvem e implementação de boas práticas?",  
+    "answers": [  
+      "AWS Control Tower",  
+      "Elastic Beanstalk",  
+      "EFS",  
+      "Cognito"  
+    ],  
+    "correct": 0,  
+    "dica": "Este serviço permite automatizar a configuração de ambientes AWS em conformidade com as políticas da empresa.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Gerenciamento, Monitoramento e Governança",  
+    "question": "Qual serviço da AWS oferece informações em tempo real sobre o status de saúde dos serviços da AWS em diferentes regiões do mundo?",  
+    "answers": [  
+      "AWS Health Dashboard",  
+      "Cost Explorer",  
+      "Trusted Advisor",  
+      "Route53"  
+    ],  
+    "correct": 0,  
+    "dica": "Este serviço permite monitorar a disponibilidade e o desempenho dos serviços da AWS.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Gerenciamento, Monitoramento e Governança",  
+    "question": "Qual serviço da AWS simplifica e automatiza o processo de implantação e dimensionamento de aplicativos Windows, SQL Server e SAP na nuvem da AWS?",  
+    "answers": [  
+      "AWS Launch Wizard",  
+      "Lambda",  
+      "AWS Config",  
+      "EC2"  
+    ],  
+    "correct": 0,  
+    "dica": "Este serviço facilita a migração e o gerenciamento de aplicações legadas na AWS.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Gerenciamento, Monitoramento e Governança",  
+    "question": "Qual serviço da AWS permite agrupar serviços ou recursos através de tags ou pilhas do CloudFormation e executar operações em massa nos grupos de recursos?",  
+    "answers": [  
+      "VPC (Virtual Private Cloud)",  
+      "AWS Resource Groups",  
+      "Cost Explorer",  
+      "CloudFront"  
+    ],  
+    "correct": 1,  
+    "dica": "Este serviço permite gerenciar e automatizar tarefas em múltiplos recursos de forma eficiente.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Gerenciamento, Monitoramento e Governança",  
+    "question": "Qual serviço da AWS permite às organizações criar e gerenciar catálogos de serviços de TI internos?",  
+    "answers": [  
+      "EBS",  
+      "Outposts",  
+      "AWS Config",  
+      "AWS Service Catalog"  
+    ],  
+    "correct": 3,  
+    "dica": "Este serviço permite padronizar e controlar o acesso aos serviços de TI.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Armazenamento",  
+    "question": "O EFS é um serviço de armazenamento escalável que não é compatível com servidores Windows. Qual serviço da AWS oferece um sistema de arquivos compatível com servidores Windows?",  
+    "answers": [  
+      "Amazon FSx",  
+      "EFS",  
+      "Storage Gateway",  
+      "S3"  
+    ],  
+    "correct": 0,  
+    "dica": "Este serviço oferece compatibilidade com o protocolo SMB para compartilhamento de arquivos em servidores Windows.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Armazenamento",  
+    "question": "Qual serviço da AWS permite que você tenha um ambiente para Disaster Recovery (DR) para seus recursos on-premise ou baseados na nuvem?",  
+    "answers": [  
+      "S3",  
+      "Storage Gateway",  
+      "EFS",  
+      "AWS Elastic Disaster Recovery (DRS)"  
+    ],  
+    "correct": 3,  
+    "dica": "Este serviço simplifica a implementação de estratégias de recuperação de desastres na AWS.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Migração e Transferência",  
+    "question": "Qual serviço da AWS ajuda a planejar projetos de migração para a nuvem por meio da coleta de informações sobre seus datacenters on-premise?",  
+    "answers": [  
+      "IAM (Identity Access Management)",  
+      "AWS Application Discovery Service",  
+      "Glacier",  
+      "Lightsail"  
+    ],  
+    "correct": 1,  
+    "dica": "Este serviço automatiza a descoberta e o mapeamento de recursos em seu ambiente on-premise.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Segurança, Identidade e Conformidade",  
+    "question": "Qual serviço da AWS ajuda a proteger informações confidenciais, como senhas, chaves de API, certificados e outros dados sensíveis?",  
+    "answers": [  
+      "KMS",  
+      "ACL (Access Control List)",  
+      "AWS Config",  
+      "AWS Secrets Manager"  
+    ],  
+    "correct": 3,  
+    "dica": "Este serviço permite armazenar e gerenciar segredos de forma segura e centralizada.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Segurança, Identidade e Conformidade",  
+    "question": "Qual recurso da AWS ajuda a proteger informações confidenciais, como senhas e chaves de API, e também é capaz de rotacionar as senhas e auditar quando elas foram usadas?",  
+    "answers": [  
+      "AWS Secrets Manager",  
+      "Secrets Manager",  
+      "Cognito",  
+      "AWS Config"  
+    ],  
+    "correct": 0,  
+    "dica": "Este serviço oferece um gerenciamento completo do ciclo de vida dos segredos.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Segurança, Identidade e Conformidade",  
+    "question": "Qual serviço da AWS oferece uma visão centralizada de segurança da sua infraestrutura na AWS, possibilitando identificar vulnerabilidades, ameaças ou problemas de segurança?",  
+    "answers": [  
+      "Secrets Manager",  
+      "AWS Config",  
+      "AWS Security Hub",  
+      "CloudTrail"  
+    ],  
+    "correct": 2,  
+    "dica": "Este serviço agrega informações de segurança de diferentes fontes para facilitar a identificação e correção de problemas.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Segurança, Identidade e Conformidade",  
+    "question": "Qual serviço da AWS é projetado para simplificar e automatizar o processo de auditoria de recursos na AWS?",  
+    "answers": [  
+      "Secrets Manager",  
+      "ACL (Access Control List)",  
+      "IAM (Identity Access Management)",  
+      "AWS Audit Manager"  
+    ],  
+    "correct": 3,  
+	  "dica": "",  
+    "icone_dica": "💡"  
+	},
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Qual serviço oferece acesso a módulos de segurança de hardware (HSMs) na nuvem AWS, que atuam como um cofre seguro para gerenciar chaves criptográficas e operações sensíveis?",
+    "answers": [
+      "Cognito",
+      "CloudTrail",
+      "CloudHSM",
+      "ACL (Access Control List)"
+    ],
+    "correct": 2,
+    "dica": "Este serviço oferece um alto nível de segurança para chaves criptográficas.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Qual serviço permite criar e gerenciar diretórios de identidades, como Microsoft Active Directory (AD)?",
+    "answers": [
+      "AWS Directory Service",
+      "KMS",
+      "IAM (Identity Access Management)",
+      "ACL (Access Control List)"
+    ],
+    "correct": 0,
+    "dica": "Este serviço facilita o gerenciamento de usuários e grupos na AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Qual serviço oferece recursos avançados de gerenciamento e controle de segurança para implementação de firewalls em ambientes AWS?",
+    "answers": [
+      "AWS Firewall Manager",
+      "STS (Security Token Service)",
+      "Cognito",
+      "CloudTrail"
+    ],
+    "correct": 0,
+    "dica": "Este serviço simplifica o gerenciamento de firewalls em toda a sua infraestrutura AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Qual serviço permite implementar segurança de firewall de rede em suas VPCs?",
+    "answers": [
+      "AWS Network Firewall",
+      "Cognito",
+      "CloudTrail",
+      "ACL (Access Control List)"
+    ],
+    "correct": 0,
+    "dica": "Este serviço oferece proteção avançada contra ameaças na sua rede.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Armazenamento",
+    "question": "No S3, quem é que possui a classe de armazenamento (Standard, Glacier, Standard-IA...)?",
+    "answers": [
+      "EFS",
+      "Storage Gateway",
+      "Glacier",
+      "Objeto"
+    ],
+    "correct": 3,
+    "dica": "A classe de armazenamento define o custo e a disponibilidade dos dados.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Machine Learning",
+    "question": "Qual serviço da AWS converte texto em falas realistas e naturais?",
+    "answers": [
+      "STS (Security Token Service)",
+      "EFS",
+      "AWS Polly",
+      "Glacier"
+    ],
+    "correct": 2,
+    "dica": "Este serviço é ideal para criar aplicações de voz.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Migração e Transferência",
+    "question": "Para qual país a AWS envia dispositivos da Família Snow (cone, edge e mobile)?",
+    "answers": [
+      "Estados Unidos",
+      "Route53",
+      "VPC (Virtual Private Cloud)",
+      "Lambda"
+    ],
+    "correct": 0,
+    "dica": "Este serviço de transferência de dados tem restrições geográficas.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "O que é o AWS Cloud Adoption Framework (CAF)?",
+    "answers": [
+      "KMS",
+      "VPC (Virtual Private Cloud)",
+      "Um framework de melhores práticas para implantação de nuvem",
+      "Cost Explorer"
+    ],
+    "correct": 2,
+    "dica": "Este framework auxilia na adoção da nuvem de forma estratégica.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "O que significa o termo BYOL (Bring Your Own License)?",
+    "answers": [
+      "CloudFront",
+      "STS (Security Token Service)",
+      "Bring Your Own License",
+      "Lightsail"
+    ],
+    "correct": 2,
+    "dica": "Esta prática permite utilizar licenças existentes no ambiente de nuvem.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "O que é a AWS Partner Network (APN)?",
+    "answers": [
+      "Secrets Manager",
+      "STS (Security Token Service)",
+      "EC2",
+      "Um programa de parceiros da AWS"
+    ],
+    "correct": 3,
+    "dica": "Este programa permite que empresas colaborem com a AWS para oferecer soluções na nuvem.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "O que inclui o AWS re:Post?",
+    "answers": [
+      "AWS Config",
+      "EBS",
+      "Artigos e vídeos do AWS Official Knowledge Center",
+      "EFS"
+    ],
+    "correct": 2,
+    "dica": "Este recurso oferece respostas para perguntas frequentes sobre a AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Qual serviço fornece acesso a documentos e recursos de conformidade relacionados à segurança e à privacidade da AWS?",
+    "answers": [
+      "STS (Security Token Service)",
+      "IAM (Identity Access Management)",
+      "AWS Artifact",
+      "AWS Config"
+    ],
+    "correct": 2,
+    "dica": "Este serviço facilita a auditoria e a conformidade com regulamentos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "Qual serviço de banco de dados da AWS é um serviço de grafo?",
+    "answers": [
+      "Amazon Neptune",
+      "Route53",
+      "Billing Dashboard",
+      "CloudTrail"
+    ],
+    "correct": 0,
+    "dica": "Este serviço é otimizado para armazenar e consultar relacionamentos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "Para uma empresa que busca economia de custos, qual modelo de pagamento é mais interessante?",
+    "answers": [
+      "Elastic Beanstalk",
+      "Auto Scaling",
+      "Lightsail",
+      "Savings Plans"
+    ],
+    "correct": 3,
+    "dica": "Este modelo oferece descontos em troca de compromisso de uso.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Analytics",
+    "question": "Qual serviço da AWS é utilizado para ingestão, processamento e análise de dados em tempo real (streaming)?",
+    "answers": [
+      "Lambda",
+      "EC2",
+      "Trusted Advisor",
+      "Kinesis"
+    ],
+    "correct": 3,
+    "dica": "Este serviço permite analisar dados em movimento.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Qual serviço da AWS fornece proteção contra ataques HTTP(S)?",
+    "answers": [
+      "ACL (Access Control List)",
+      "STS (Security Token Service)",
+      "KMS",
+      "AWS WAF"
+    ],
+    "correct": 3,
+    "dica": "Este serviço protege aplicações web contra explorações comuns.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "Qual serviço da AWS é um serviço de armazenamento de dados em memória?",
+    "answers": [
+      "ElastiCache",
+      "Outposts",
+      "Trusted Advisor",
+      "Lambda"
+    ],
+    "correct": 0,
+    "dica": "Este serviço melhora a performance de aplicações com acesso rápido a dados.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "Qual serviço da AWS é um serviço de armazenamento em cache na memória, compatível com Memcached e Redis?",
+    "answers": [
+      "Outposts",
+      "EC2",
+      "ElastiCache",
+      "Cognito"
+    ],
+    "correct": 2,
+    "dica": "Este serviço acelera o acesso a dados frequentemente utilizados.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Banco de Dados",
+    "question": "Como um banco de dados relacional pode ser implementado na AWS?",
+    "answers": [
+      "RDS e instâncias EC2",
+      "Cognito",
+      "IAM (Identity Access Management)",
+      "Glacier"
+    ],
+    "correct": 0,
+    "dica": "Existem diferentes formas de implementar bancos de dados relacionais na AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "Qual recurso do EC2 ajusta automaticamente o número de instâncias em um grupo em escala automática?",
+    "answers": [
+      "Elastic Beanstalk",
+      "Auto Scaling",
+      "Lightsail",
+      "Auto Scaling"
+    ],
+    "correct": 1,
+    "dica": "Este recurso garante que a aplicação tenha recursos suficientes para lidar com a demanda.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Computação",
+    "question": "O recurso de Reserva de Elastic IP é cobrado quando a instância está em qual estado?",
+    "answers": [
+      "Lightsail",
+      "Outposts",
+      "Desligada",
+      "Lambda"
+    ],
+    "correct": 2,
+    "dica": "Este recurso tem um custo associado quando não está em uso.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "O AWS CAF (Cloud Adoption Framework) auxilia as organizações na criação de uma estratégia de adoção de qual tecnologia?",
+    "answers": [
+      "VPC (Virtual Private Cloud)",
+      "Budgets",
+      "STS (Security Token Service)",
+      "Nuvem"
+    ],
+    "correct": 3,
+    "dica": "Este framework ajuda a alinhar a estratégia de nuvem aos objetivos de negócios.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "Qual pilar do AWS CAF concentra-se na criação de valor através da nuvem?",
+    "answers": [
+      "Lightsail",
+      "CloudFront",
+      "IAM (Identity Access Management)",
+      "Negócios"
+    ],
+    "correct": 3,
+    "dica": "Este pilar garante que a adoção da nuvem gere resultados positivos para a organização.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "Qual pilar do AWS CAF refere-se à arquitetura, design e melhores práticas de implantação?",
+    "answers": [
+      "Plataformas",
+      "EBS",
+      "EFS",
+      "Trusted Advisor"
+    ],
+    "correct": 0,
+    "dica": "Este pilar garante que a infraestrutura na nuvem seja bem projetada e implementada.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "Qual pilar do AWS CAF aborda a proteção de dados e sistemas na nuvem?",
+    "answers": [
+      "Segurança",
+      "S3",
+      "Cognito",
+      "Lightsail"
+    ],
+    "correct": 0,
+    "dica": "Este pilar garante que os dados e sistemas estejam protegidos contra ameaças.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "Qual pilar do AWS CAF envolve a criação de políticas e controles para gerenciar recursos na nuvem?",
+    "answers": [
+      "Billing Dashboard",
+      "Lightsail",
+      "Governança",
+      "Cognito"
+    ],
+    "correct": 2,
+    "dica": "Este pilar garante que os recursos na nuvem sejam gerenciados de forma eficiente e segura.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "Qual pilar do AWS CAF aborda práticas para operar eficientemente na nuvem?",
+    "answers": [
+      "EFS",
+      "Free Tier",
+      "Operações",
+      "CloudTrail"
+    ],
+    "correct": 2,
+    "dica": "Este pilar garante que as operações na nuvem sejam executadas de forma eficiente e confiável.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "Qual pilar do AWS CAF envolve a capacidade de liderar e gerenciar as mudanças culturais necessárias para adotar e otimizar soluções em nuvem?",
+    "answers": [
+      "Secrets Manager",
+      "Trusted Advisor",
+      "Free Tier",
+      "Pessoas"
+    ],
+    "correct": 3,
+    "dica": "Este pilar garante que a equipe esteja preparada para adotar e utilizar as soluções em nuvem.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Integração de Aplicações",
+    "question": "Qual tipo de aplicação é uma única aplicação de software em um único programa, onde uma falha compromete todo o sistema?",
+    "answers": [
+      "Storage Gateway",
+      "CloudFront",
+      "Elastic Beanstalk",
+      "Aplicação monolítica"
+    ],
+    "correct": 3,
+    "dica": "Este tipo de aplicação pode ser difícil de escalar e manter.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Integração de Aplicações",
+    "question": "Em qual tipo de arquitetura cada função é um serviço e pode ser criada e implantada de maneira independente, permitindo que um serviço falhe sem comprometer os demais?",
+    "answers": [
+      "EBS",
+      "ACL (Access Control List)",
+      "Arquitetura de microsserviços",
+      "Cost Explorer"
+    ],
+    "correct": 2,
+    "dica": "Este tipo de arquitetura oferece maior flexibilidade e resiliência.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento de Custos",
+    "question": "Quais serviços da AWS fazem parte do Billing and Cost Management?",
+    "answers": [
+      "Cost Explorer e Budgets",
+      "Billing Dashboard",
+      "Free Tier",
+      "Cost Explorer"
+    ],
+    "correct": 0,
+    "dica": "Estes serviços auxiliam no controle e otimização de custos na AWS.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Gerenciamento de Custos",
+    "question": "Através de qual serviço é possível obter relatórios de faturamento detalhados sobre o seu consumo na AWS?",
+    "answers": [
+      "Trusted Advisor",
+      "Billing Dashboard",
+      "Cost Explorer",
+      "Savings Plans"
+    ],
+    "correct": 2,
+    "dica": "Este serviço permite analisar e entender seus custos na AWS.",
+    "icone_dica": "💡"
+  },
+  {  
+    "titulo": "Segurança, Identidade e Conformidade",  
+    "question": "Qual serviço da AWS oferece acesso a módulos de segurança de hardware (HSMs) na nuvem, atuando como um cofre seguro para gerenciar chaves criptográficas e operações sensíveis?",  
+    "answers": [  
+      "Cognito",  
+      "CloudTrail",  
+      "AWS CloudHSM",  
+      "ACL (Access Control List)"  
+    ],  
+    "correct": 2,  
+    "dica": "Este serviço oferece um alto nível de segurança para chaves criptográficas.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Segurança, Identidade e Conformidade",  
+    "question": "Qual serviço da AWS permite criar e gerenciar diretórios de identidades, como Microsoft Active Directory (AD)?",  
+    "answers": [  
+      "AWS Directory Service",  
+      "KMS",  
+      "IAM (Identity Access Management)",  
+      "ACL (Access Control List)"  
+    ],  
+    "correct": 0,  
+    "dica": "Este serviço facilita a integração de diretórios existentes com a AWS.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Segurança, Identidade e Conformidade",  
+    "question": "Qual serviço da AWS oferece recursos avançados de gerenciamento e controle de segurança para implementação de firewalls em ambientes AWS?",  
+    "answers": [  
+      "AWS Firewall Manager",  
+      "STS (Security Token Service)",  
+      "Cognito",  
+      "CloudTrail"  
+    ],  
+    "correct": 0,  
+    "dica": "Este serviço centraliza o gerenciamento de firewalls em várias contas e VPCs.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Segurança, Identidade e Conformidade",  
+    "question": "Qual serviço da AWS permite implementar segurança de firewall de rede em suas VPCs?",  
+    "answers": [  
+      "AWS Network Firewall",  
+      "Cognito",  
+      "CloudTrail",  
+      "ACL (Access Control List)"  
+    ],  
+    "correct": 0,  
+    "dica": "Este serviço oferece proteção de rede para suas aplicações na AWS.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Armazenamento",  
+    "question": "No S3, quem define a classe de armazenamento (standard, glacier, standard-ia...): o Bucket ou o Objeto?",  
+    "answers": [  
+      "EFS",  
+      "Storage Gateway",  
+      "Glacier",  
+      "Objeto"  
+    ],  
+    "correct": 3,  
+    "dica": "A classe de armazenamento é definida individualmente para cada arquivo armazenado no S3.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Machine Learning",  
+    "question": "Qual serviço da AWS converte texto em falas realistas e naturais?",  
+    "answers": [  
+      "STS (Security Token Service)",  
+      "EFS",  
+      "AWS Polly",  
+      "Glacier"  
+    ],  
+    "correct": 2,  
+    "dica": "Este serviço é utilizado para criar aplicações que interagem com os usuários por meio de voz.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Migração e Transferência",  
+    "question": "Para qual país a AWS envia dispositivos da Família Snow (Snowcone, Snowball Edge e Snowmobile)?",  
+    "answers": [  
+      "Estados Unidos",  
+      "Route53",  
+      "VPC (Virtual Private Cloud)",  
+      "Lambda"  
+    ],  
+    "correct": 0,  
+    "dica": "O envio de dispositivos Snow é restrito a um único país.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Conceitos",  
+    "question": "O AWS Cloud Adoption Framework (CAF) é um framework de melhores práticas para qual finalidade?",  
+    "answers": [  
+      "KMS",  
+      "VPC (Virtual Private Cloud)",  
+      "Implantação de nuvem",  
+      "Cost Explorer"  
+    ],  
+    "correct": 2,  
+    "dica": "Este framework auxilia as organizações na jornada de adoção da nuvem.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Conceitos",  
+    "question": "Qual termo se refere à prática em que uma organização pode levar suas próprias licenças de software para o ambiente de nuvem?",  
+    "answers": [  
+      "CloudFront",  
+      "STS (Security Token Service)",  
+      "BYOL (Bring Your Own License)",  
+      "Lightsail"  
+    ],  
+    "correct": 2,  
+    "dica": "Esta prática permite utilizar licenças já existentes na nuvem.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Conceitos",  
+    "question": "O que é a AWS Partner Network (APN)?",  
+    "answers": [  
+      "Secrets Manager",  
+      "STS (Security Token Service)",  
+      "EC2",  
+      "Programa de parceiros da AWS"  
+    ],  
+    "correct": 3,  
+    "dica": "Este programa permite que empresas e indivíduos colaborem com a AWS.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Conceitos",  
+    "question": "O que é o AWS re:Post?",  
+    "answers": [  
+      "AWS Config",  
+      "EBS",  
+      "Comunidade online para perguntas e respostas sobre a AWS",  
+      "EFS"  
+    ],  
+    "correct": 2,  
+    "dica": "Este recurso oferece respostas para as perguntas mais frequentes sobre a AWS.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Segurança, Identidade e Conformidade",  
+    "question": "Qual serviço da AWS fornece acesso a documentos e recursos de conformidade relacionados à segurança e à privacidade da AWS?",  
+    "answers": [  
+      "STS (Security Token Service)",  
+      "IAM (Identity Access Management)",  
+      "AWS Artifact",  
+      "AWS Config"  
+    ],  
+    "correct": 2,  
+    "dica": "Este serviço facilita a auditoria e conformidade com regulamentações.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Banco de Dados",  
+    "question": "Qual serviço da AWS atende aos requisitos de uma empresa que precisa de um serviço de banco de dados de grafo?",  
+    "answers": [  
+      "Amazon Neptune",  
+      "Route53",  
+      "Billing Dashboard",  
+      "CloudTrail"  
+    ],  
+    "correct": 0,  
+    "dica": "Este serviço é otimizado para armazenar e consultar relacionamentos.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Computação",  
+    "question": "Para uma empresa que busca economia de custos, qual modelo de pagamento para instâncias EC2 é mais interessante?",  
+    "answers": [  
+      "Elastic Beanstalk",  
+      "Auto Scaling",  
+      "Lightsail",  
+      "Savings Plans"  
+    ],  
+    "correct": 3,  
+    "dica": "Este modelo oferece descontos em troca de um compromisso de uso.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Analytics",  
+    "question": "Qual serviço é utilizado para ingestão, processamento e análise de dados em tempo real (streaming)?",  
+    "answers": [  
+      "Lambda",  
+      "EC2",  
+      "Trusted Advisor",  
+      "Amazon Kinesis"  
+    ],  
+    "correct": 3,  
+    "dica": "Este serviço permite construir aplicações de streaming de dados em tempo real.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Segurança, Identidade e Conformidade",  
+    "question": "Qual serviço da AWS fornece proteção contra ataques HTTP(S)?",  
+    "answers": [  
+      "ACL (Access Control List)",  
+      "STS (Security Token Service)",  
+      "KMS",  
+      "AWS WAF (Web Application Firewall)"  
+    ],  
+    "correct": 3,  
+    "dica": "Este serviço protege aplicações web contra ataques comuns.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Banco de Dados",  
+    "question": "Qual serviço da AWS é um serviço de armazenamento de dados em memória?",  
+    "answers": [  
+      "Amazon ElastiCache",  
+      "Outposts",  
+      "Trusted Advisor",  
+      "Lambda"  
+    ],  
+    "correct": 0,  
+    "dica": "Este serviço melhora a performance de aplicações que exigem acesso rápido a dados.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Banco de Dados",  
+    "question": "Qual serviço da AWS é um serviço de armazenamento em cache na memória, compatível com Memcached e Redis?",  
+    "answers": [  
+      "Outposts",  
+      "EC2",  
+      "Amazon ElastiCache",  
+      "Cognito"  
+    ],  
+    "correct": 2,  
+    "dica": "Este serviço permite acelerar o acesso a dados frequentemente utilizados.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Banco de Dados",  
+    "question": "Como um banco de dados relacional pode ser implementado na AWS?",  
+    "answers": [  
+      "RDS ou instâncias EC2",  
+      "Cognito",  
+      "IAM (Identity Access Management)",  
+      "Glacier"  
+    ],  
+    "correct": 0,  
+    "dica": "Existem duas opções principais para implementar bancos de dados relacionais na AWS.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Computação",  
+    "question": "Qual recurso do EC2 ajusta automaticamente o número de instâncias em um grupo em escala automática?",  
+    "answers": [  
+      "Elastic Beanstalk",  
+      "Auto Scaling",  
+      "Lightsail",  
+      "Lambda"  
+    ],  
+    "correct": 1,  
+    "dica": "Este recurso garante que você tenha a capacidade de computação necessária para sua aplicação.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Computação",  
+    "question": "O recurso de Reserva de Elastic IP é cobrado quando a instância está em qual estado?",  
+    "answers": [  
+      "Lightsail",  
+      "Outposts",  
+      "Desligada",  
+      "Lambda"  
+    ],  
+    "correct": 2,  
+    "dica": "A cobrança é aplicada quando o Elastic IP não está associado a uma instância em execução.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Conceitos",  
+    "question": "O AWS CAF (Cloud Adoption Framework) auxilia as organizações na criação de uma estratégia de adoção de qual tecnologia?",  
+    "answers": [  
+      "VPC (Virtual Private Cloud)",  
+      "Budgets",  
+      "STS (Security Token Service)",  
+      "Nuvem"  
+    ],  
+    "correct": 3,  
+    "dica": "Este framework oferece um conjunto de melhores práticas para a adoção da nuvem.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Conceitos",  
+    "question": "Qual pilar do AWS CAF concentra-se na criação de valor através da nuvem?",  
+    "answers": [  
+      "Lightsail",  
+      "CloudFront",  
+      "IAM (Identity Access Management)",  
+      "Negócios"  
+    ],  
+    "correct": 3,  
+    "dica": "Este pilar explora como a nuvem pode impulsionar o crescimento e a inovação.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Conceitos",  
+    "question": "Qual pilar do AWS CAF refere-se à arquitetura, design e melhores práticas de implantação?",  
+    "answers": [  
+      "Plataforma",  
+      "EBS",  
+      "EFS",  
+      "Trusted Advisor"  
+    ],  
+    "correct": 0,  
+    "dica": "Este pilar aborda como construir e implantar soluções na nuvem de forma eficiente.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Conceitos",  
+    "question": "Qual pilar do AWS CAF aborda a proteção de dados e sistemas na nuvem?",  
+    "answers": [  
+      "Segurança",  
+      "S3",  
+      "Cognito",  
+      "Lightsail"  
+    ],  
+    "correct": 0,  
+    "dica": "Este pilar garante a confidencialidade, integridade e disponibilidade dos dados na nuvem.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Conceitos",  
+    "question": "Qual pilar do AWS CAF envolve a criação de políticas e controles para gerenciar recursos na nuvem?",  
+    "answers": [  
+      "Billing Dashboard",  
+      "Lightsail",  
+      "Governança",  
+      "Cognito"  
+    ],  
+    "correct": 2,  
+    "dica": "Este pilar estabelece as regras para gerenciar e controlar os recursos na nuvem.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Conceitos",  
+    "question": "Qual pilar do AWS CAF aborda práticas para operar eficientemente na nuvem?",  
+    "answers": [  
+      "EFS",  
+      "Free Tier",  
+      "Operações",  
+      "CloudTrail"  
+    ],  
+    "correct": 2,  
+    "dica": "Este pilar garante que as operações na nuvem sejam eficientes e confiáveis.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Conceitos",  
+    "question": "Qual pilar do AWS CAF envolve a capacidade de liderar e gerenciar as mudanças culturais necessárias para adotar e otimizar soluções em nuvem?",  
+    "answers": [  
+      "Secrets Manager",  
+      "Trusted Advisor",  
+      "Free Tier",  
+      "Pessoas"  
+    ],  
+    "correct": 3,  
+    "dica": "Este pilar reconhece a importância das pessoas no processo de adoção da nuvem.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Integração de Aplicações",  
+    "question": "Qual tipo de aplicação é caracterizada por ser um único programa de software, onde uma falha pode comprometer todo o sistema?",  
+    "answers": [  
+      "Storage Gateway",  
+      "CloudFront",  
+      "Elastic Beanstalk",  
+      "Aplicação monolítica"  
+    ],  
+    "correct": 3,  
+    "dica": "Este tipo de aplicação é tradicional e pode ser difícil de escalar e manter.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Integração de Aplicações",  
+    "question": "Em qual tipo de arquitetura de aplicação cada função é um serviço independente, que pode ser criado e implantado de forma independente, permitindo que um serviço falhe sem comprometer os demais?",  
+    "answers": [  
+      "EBS",  
+      "ACL (Access Control List)",  
+      "Microsserviços",  
+      "Cost Explorer"  
+    ],  
+    "correct": 2,  
+    "dica": "Este tipo de arquitetura oferece maior flexibilidade e resiliência.",  
+    "icone_dica": "💡"  
+  },  
+  {  
+    "titulo": "Gerenciamento de Custos",  
+    "question": "Quais serviços da AWS fazem parte do Billing and Cost Management?",  
+    "answers": [  
+      "Cost Explorer e Budgets",  
+      "Billing Dashboard",  
+      "Free Tier",  
+      "Cost Explorer"  
+    ],  
+    "correct": 0,  
+    "dica": "Esses serviços auxiliam no controle e otimização dos custos na AWS.",  
+    "icone_dica": "💡"  
+  }, 
+  {
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Qual serviço da AWS é um sistema de detecção de ameaças que monitora continuamente suas contas e workloads?",
+    "answers": [
+      "ACL (Access Control List)",
+      "STS (Security Token Service)",
+      "KMS",
+      "Amazon GuardDuty"
+    ],
+    "correct": 3,
+    "dica": "Este serviço ajuda a proteger seu ambiente AWS contra atividades maliciosas.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual tipo de Internet Gateway, através de IPv6, permite o tráfego de saída, mas impede o tráfego de entrada?",
+    "answers": [
+      "Lambda",
+      "CloudTrail",
+      "Savings Plans",
+      "Egress-Only Internet Gateway"
+    ],
+    "correct": 3,
+    "dica": "Este recurso oferece uma camada extra de segurança, impedindo o acesso não autorizado aos recursos da VPC.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Conceitos",
+    "question": "Quantos pilares possui o AWS Well-Architected Framework?",
+    "answers": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": 1,
+    "dica": "Este framework ajuda a construir sistemas seguros, confiáveis, eficientes e otimizados para a nuvem.",
+    "icone_dica": "💡"
   }
 ]
