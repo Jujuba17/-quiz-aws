@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,6 +15,7 @@
       <p>Teste seus conhecimentos sobre <br>Amazon Web Services.</p>
       <p>Boa sorte! 🚀</p>
       <button id="start-btn">Iniciar Quiz</button>
+      <button id="flashcard-btn">Flash Card</button> <!-- Botão para Flash Card -->
     </div>
 
     <!-- CONTEÚDO DO QUIZ (inicialmente oculto) -->
@@ -39,13 +39,31 @@
         <button id="next-btn" disabled>Próxima</button>
       </div>
 
-      <!-- Dica exibida após clicar -->
       <p id="hint-text" style="display: none; font-style: italic; color: #555;"></p>
+    </div>
+
+    <!-- FLASHCARD CONTENT (inicialmente oculto) -->
+    <div id="flashcard-content" class="flashcard-content" style="display: none;">
+      
+      <h1 style="color: #ff9900;">Flash Cards AWS</h1>
+   
+      <select id="tema-select">
+        <option value="todos">Todos</option>
+        <option value="analise">Análise</option>
+        <option value="integracao">Integração de aplicações</option>
+      </select>
+    
+      <div id="flashcard-container">
+        <h3 id="flashcard-pergunta">Carregando pergunta...</h3>
+        <button id="show-answer-btn">Clique para ver a resposta</button>
+        <p id="flashcard-resposta" style="display:none;"></p>
+        <button id="next-flashcard-btn">Próximo</button>
+        <button id="back-to-quiz-btn">Voltar ao Quiz</button> <!-- Novo botão para voltar ao quiz -->
+      </div>
     </div>
 
   </div>
 
-  <!-- script deve vir depois de todos os elementos -->
   <script src="script.js"></script>
 </body>
 </html>

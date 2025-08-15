@@ -2298,10 +2298,10 @@
     "titulo": "Armazenamento",
     "question": "Qual tipo de volume EBS é recomendado para bancos de dados com baixa volumetria e ambientes de desenvolvimento?",
     "answers": [
-      "EBS",
+      "HDD st1",
       "SSD gp2",
-      "Glacier",
-      "Storage Gateway"
+      "SSD gp3",
+      "SSD io1"   
     ],
     "correct": 1,
     "dica": "Este volume oferece um bom equilíbrio entre custo e performance.",
@@ -2402,10 +2402,10 @@
     "titulo": "Segurança, Identidade e Conformidade",
     "question": "Quais são os dois tipos de usuários que podem ser criados no IAM?",
     "answers": [
-      "AWS Config",
-      "Cognito",
+      "Console e Administrativo",
+      "Programático e de Serviço",
       "Console e Programático",
-      "KMS"
+      "Console e Temporário"
     ],
     "correct": 2,
     "dica": "Um tipo de usuário acessa o console, o outro usa a API.",
@@ -2516,9 +2516,9 @@
     "question": "Qual o número máximo de tags que podem ser adicionadas a um recurso da AWS?",
     "answers": [
       "50",
-      "KMS",
-      "Free Tier",
-      "Trusted Advisor"
+      "100",
+      "30",
+      "10"
     ],
     "correct": 0,
     "dica": "Há um limite para o número de tags por recurso.",
@@ -2656,12 +2656,11 @@
     "titulo": "Redes e Entrega de Conteúdo",
     "question": "Failover Routing Policy do Route 53 é um tipo de failover Ativo-Passivo ou Ativo-Ativo?",
     "answers": [
-      "Billing Dashboard",
       "Ativo-Passivo",
-      "ACL (Access Control List)",
-      "CloudFront"
+      "Ativo-Ativo"
+      
     ],
-    "correct": 1,
+    "correct": 0,
     "dica": "Neste tipo de política, o tráfego é roteado para um recurso de backup em caso de falha.",
     "icone_dica": "💡"
   },
