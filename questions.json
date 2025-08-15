@@ -2286,9 +2286,9 @@
     "question": "O Lifecycle no S3 possui 2 tipos de ação para objetos (arquivos). Quais são elas?",
     "answers": [
       "Transição e Expiração",
-      "EBS",
-      "Glacier",
-      "S3"
+      "Replicação e Compactação",
+      "Backup e Recuperação",
+      "Criptografia e Descriptografia"
     ],
     "correct": 0,
     "dica": "Uma move o objeto para outra classe de armazenamento, a outra remove o objeto.",
@@ -2467,10 +2467,10 @@
     "titulo": "Analytics",
     "question": "O que significa a sigla EMR?",
     "answers": [
-      "IAM (Identity Access Management)",
-      "Cognito",
+      "Elastic Managed Resources",
+      "Elastic Machine Routing",
       "Elastic MapReduce",
-      "Trusted Advisor"
+      "Elastic Memory Repository"
     ],
     "correct": 2,
     "dica": "Está relacionado ao processamento de Big Data.",
@@ -3908,12 +3908,10 @@
     "titulo": "Banco de Dados",  
     "question": "Com o recurso de Cluster Multi-AZ do RDS, além de alta disponibilidade nas instâncias em espera (failover), elas podem servir como instância de consulta?",  
     "answers": [  
-      "Budgets",  
-      "Elastic Load Balancer",  
-      "AWS Config",  
+      "Não",  
       "Sim"  
     ],  
-    "correct": 3,  
+    "correct": 1,  
     "dica": "Este recurso oferece alta disponibilidade e escalabilidade de leitura.",  
     "icone_dica": "💡"  
   },  
@@ -4065,10 +4063,10 @@
     "titulo": "Armazenamento",
     "question": "Volumes EBS do tipo SSD gp2 podem ser anexados a quantas instâncias EC2?",
     "answers": [
-      "Glacier",
-      "Somente 1 instância",
-      "EFS",
-      "Storage Gateway"
+      "4 instâncias",
+      "1 instância",
+      "3 instâncias",
+      "2 instâncias"
     ],
     "correct": 1,
     "dica": "Um volume EBS só pode ser anexado a uma instância por vez.",
@@ -4232,9 +4230,9 @@
     "titulo": "Integração de Aplicações",
     "question": "Qual é o processo de reestruturar um código/sistema existente em microsserviços?",
     "answers": [
-      "Billing Dashboard",
-      "Outposts",
-      "CloudTrail",
+      "Reengenharia",
+      "Reestruturação Modular",
+      "Reprojeto Arquitetural",
       "Refatoração"
     ],
     "correct": 3,
@@ -4371,9 +4369,9 @@
     "titulo": "Computação",
     "question": "Qual serviço da AWS é de fácil utilização para implantação e escalabilidade de aplicações e serviços em instâncias EC2?",
     "answers": [
-      "Outposts",
-      "Elastic Beanstalk",
-      "Lambda",
+      "Elastic Kubernetes Service",
+      "Elastic Application Manager",
+      "Elastic Container Service",
       "Elastic Beanstalk"
     ],
     "correct": 3,
@@ -4514,9 +4512,9 @@
     "question": "O S3 Intelligent-Tiering após 30 dias move os arquivos para qual classe?",
     "answers": [
       "S3 Intelligent-Tiering - Infrequent Access",
-      "EBS",
-      "EFS",
-      "Glacier"
+      "S3 Standard",
+      "S3 One Zone-Infrequent Access",
+      "S3 Glacier Instant Retrieval"
     ],
     "correct": 0,
     "dica": "Esta classe é ideal para dados acessados com pouca frequência.",
@@ -5121,9 +5119,9 @@
     "titulo": "Computação",
     "question": "Qual o tempo máximo em dias que uma instância EC2 pode ser hibernada utilizando o recurso de hibernação?",
     "answers": [
-      "Lightsail",
-      "Outposts",
-      "EC2",
+      "10",
+      "90",
+      "30",
       "60"
     ],
     "correct": 3,
@@ -5654,10 +5652,10 @@
     "titulo": "Redes e Entrega de Conteúdo",
     "question": "Quantos Internet Gateways podem ser anexados a uma única VPC?",
     "answers": [
-      "Outposts",
-      "Savings Plans",
+      "3",
+      "2",
       "1",
-      "VPC (Virtual Private Cloud)"
+      "4"
     ],
     "correct": 2,
     "dica": "Uma VPC pode ter apenas um Internet Gateway anexado a ela.",
@@ -6499,10 +6497,10 @@
     "titulo": "Conceitos",
     "question": "O que é o AWS Cloud Adoption Framework (CAF)?",
     "answers": [
-      "KMS",
-      "VPC (Virtual Private Cloud)",
+      "Um catálogo de serviços para gerenciar recursos na nuvem",
+      "Uma solução para controle e governança de múltiplas contas AWS",
       "Um framework de melhores práticas para implantação de nuvem",
-      "Cost Explorer"
+      "Uma ferramenta para organização e consolidação de contas AWS"
     ],
     "correct": 2,
     "dica": "Este framework auxilia na adoção da nuvem de forma estratégica.",
