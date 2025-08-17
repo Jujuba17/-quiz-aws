@@ -512,7 +512,7 @@
     "titulo": "Armazenamento",
     "question": "Qual EBS mais indicado para ser o <b><span style=\"color: rgb(255, 85, 0);\">volume de boot</span></b> de um sistema operacional?",
     "answers": [
-      "EFS",
+      "HDD Otimizado para Taxa de Transferência (st1)",
       "SSD gp2",
       "Storage Gateway",
       "Cold HDD"
@@ -526,12 +526,12 @@
     "question": "Para finalidade de armazenamento de <span style=\"color: rgb(255, 85, 0);\"><b>arquivos</b></span> e pensando no <b><span style=\"color: rgb(255, 85, 0);\">menor custo</span></b>, qual tipo de volume no EBS é mais indicado?",
     "answers": [
       "SSD gp2",
-      "Storage Gateway",
+      "SSD de Uso Geral (gp3",
       "Cold HDD",
-      "EFS"
+      "HDD Otimizado para Taxa de Transferência (st1)"
     ],
     "correct": 2,
-    "dica": "",
+    "dica": "Este tipo de volume é ideal para dados que você precisa manter armazenados, mas raramente acessa, como backups e dados arquivados",
     "icone_dica": "💡"
   },
   {
@@ -540,7 +540,7 @@
     "answers": [
     "Amazon Machine Image",
     "Amazon Managed Instance",
-    "AWS Machine Interface",
+    "Amazon Machine Interface",
     "Amazon Modular Infrastructure"
     ],
     "correct": 0,
@@ -686,10 +686,10 @@
  
     "question": "O ______ é um banco de dados de <span style=\"color: rgb(255, 85, 0);\">chave-valor</span>;(não relacional) que é utilizado para aplicações de baixa latência.",
     "answers": [
-      "VPC (Virtual Private Cloud)",
+      "Aurora",
       "DynamoDB",
-      "EFS",
-      "KMS"
+      "RDS",
+      "Redshift"
     ],
     "correct": 1,
     "dica": "",
@@ -710,7 +710,7 @@
     "titulo": "Conceitos",
     "question": "O Well-Architected Framework destaca a _________ Operacional como um pilar fundamental, incentivando a melhoria contínua nos processos e <span style=\"color: rgb(255, 85, 0);\">operações </span>para otimizar a entrega de valor.",
     "answers": [
-      "EBS",
+      "Confiabilidade ",
       "Excelência",
       "Sustentabilidade",
       "Segurança"
@@ -749,10 +749,10 @@
     "titulo": "Conceitos",
     "question": "O Well-Architected Framework destaca a _________ de Performance como um pilar vital, promovendo a <span style=\"color: rgb(255, 85, 0);\">otimização </span>de recursos para garantir desempenho <span style=\"color: rgb(255, 85, 0);\">eficiente</span>.",
     "answers": [
-      "EFS",
+      "Confiabilidade",
       "Eficiência",
-      "Eficácia",
-      "EC2"
+      "Excelência Operacional",
+      "Otimização de Custos"
     ],
     "correct": 1,
     "dica": "",
@@ -762,10 +762,10 @@
     "titulo": "Conceitos",
     "question": "O Well-Architected Framework coloca a Otimização de _____ como um pilar crucial, encorajando a gestão eficiente de recursos para maximizar o <span style=\"color: rgb(255, 85, 0);\">valor </span>dos investimentos em nuvem.",
     "answers": [
-      "KMS",
+      "Reservas e descontos",
       "Custos",
       "Resultados",
-      "Config"
+      "Análise de gastos"
     ],
     "correct": 1,
     "dica": "",
@@ -1150,15 +1150,17 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Qual politica de roteamento (Route53) permite direcionar o tráfego por <span style=\"color: rgb(255, 85, 0);\">peso </span>(20% por um caminho, 80% por outro):<br><br><u>Latency</u> ou <u>Weighted</u>?",
-    "answers": [
-      "Latency",
-      "Weighted Routing Policy"
-    ],
-    "correct": 1,
-    "dica": "",
-    "icone_dica": "💡"
-  },
+    "question": "Qual política de roteamento do Amazon Route 53 permite distribuir o tráfego para diferentes recursos com base em pesos que você define, como enviar 20% do tráfego para um recurso e 80% para outro?",
+    "answers":  [
+     "Política de Roteamento por Latência (Latency Routing Policy)",
+     "Política de Roteamento Ponderado (Weighted Routing Policy)",
+     "Política de Roteamento Geográfico (Geolocation Routing Policy)",
+     "Política de Roteamento de Failover (Failover Routing Policy)"
+  ],
+  "correct": 1,
+  "dica": "Essa política é útil para testes A/B, implantações graduais e balanceamento de carga customizado.",
+  "icone_dica": "💡"
+},
   {
     "titulo": "Redes e Entrega de Conteúdo",
     "question": "O que significa a sigla VPC no contexto da AWS?",
@@ -3012,10 +3014,10 @@
     "titulo": "Armazenamento",
     "question": "Qual tipo de recuperação do S3 Glacier é utilizada para recuperar grandes quantidades de arquivos?",
     "answers": [
-      "Em massa",
-      "S3",
-      "Storage Gateway",
-      "Glacier"
+      "Recuperação em Massa",
+      "Recuperação Rápida",
+      "Recuperação Imediata",
+      "Recuperação Normal"
     ],
     "correct": 0,
     "dica": "Este tipo de recuperação é otimizado para grandes volumes de dados.",
@@ -6637,10 +6639,10 @@
     "titulo": "Banco de Dados",
     "question": "Como um banco de dados relacional pode ser implementado na AWS?",
     "answers": [
-      "RDS e instâncias EC2",
-      "Cognito",
-      "IAM (Identity Access Management)",
-      "Glacier"
+      "Amazon RDS e Amazon EC2",
+      "Amazon DynamoDB e Amazon Redshift",
+      "Amazon S3 e Amazon Glacier",
+      "AWS Lambda e Amazon ECS"
     ],
     "correct": 0,
     "dica": "Existem diferentes formas de implementar bancos de dados relacionais na AWS.",
@@ -6653,7 +6655,7 @@
       "Elastic Beanstalk",
       "Auto Scaling",
       "Lightsail",
-      "Auto Scaling"
+      "AWS Lambda"
     ],
     "correct": 1,
     "dica": "Este recurso garante que a aplicação tenha recursos suficientes para lidar com a demanda.",
@@ -6663,10 +6665,10 @@
     "titulo": "Computação",
     "question": "O recurso de Reserva de Elastic IP é cobrado quando a instância está em qual estado?",
     "answers": [
-      "Lightsail",
-      "Outposts",
+      "Inativa",
+      "Ligada",
       "Desligada",
-      "Lambda"
+      "Pausada"
     ],
     "correct": 2,
     "dica": "Este recurso tem um custo associado quando não está em uso.",
@@ -6676,9 +6678,9 @@
     "titulo": "Conceitos",
     "question": "O AWS CAF (Cloud Adoption Framework) auxilia as organizações na criação de uma estratégia de adoção de qual tecnologia?",
     "answers": [
-      "VPC (Virtual Private Cloud)",
+      "Plataformas",
       "Budgets",
-      "STS (Security Token Service)",
+      "Pessoas",
       "Nuvem"
     ],
     "correct": 3,
@@ -6689,9 +6691,9 @@
     "titulo": "Conceitos",
     "question": "Qual pilar do AWS CAF concentra-se na criação de valor através da nuvem?",
     "answers": [
-      "Lightsail",
-      "CloudFront",
-      "IAM (Identity Access Management)",
+      "Pessoas",
+      "Governança",
+      "Segurança",
       "Negócios"
     ],
     "correct": 3,
@@ -6703,9 +6705,9 @@
     "question": "Qual pilar do AWS CAF refere-se à arquitetura, design e melhores práticas de implantação?",
     "answers": [
       "Plataformas",
-      "EBS",
-      "EFS",
-      "Trusted Advisor"
+      "Segurança",
+      "Governança",
+      "Negócios"
     ],
     "correct": 0,
     "dica": "Este pilar garante que a infraestrutura na nuvem seja bem projetada e implementada.",
@@ -6716,9 +6718,9 @@
     "question": "Qual pilar do AWS CAF aborda a proteção de dados e sistemas na nuvem?",
     "answers": [
       "Segurança",
-      "S3",
-      "Cognito",
-      "Lightsail"
+      "Governança",
+      "Plataforma",
+      "Pessoas"
     ],
     "correct": 0,
     "dica": "Este pilar garante que os dados e sistemas estejam protegidos contra ameaças.",
@@ -6728,10 +6730,10 @@
     "titulo": "Conceitos",
     "question": "Qual pilar do AWS CAF envolve a criação de políticas e controles para gerenciar recursos na nuvem?",
     "answers": [
-      "Billing Dashboard",
-      "Lightsail",
+      "Pessoas",
+      "Plataforma",
       "Governança",
-      "Cognito"
+      "Plataforma"
     ],
     "correct": 2,
     "dica": "Este pilar garante que os recursos na nuvem sejam gerenciados de forma eficiente e segura.",
@@ -6741,10 +6743,10 @@
     "titulo": "Conceitos",
     "question": "Qual pilar do AWS CAF aborda práticas para operar eficientemente na nuvem?",
     "answers": [
-      "EFS",
-      "Free Tier",
+      "Segurança",
+      "Pessoas",
       "Operações",
-      "CloudTrail"
+      "Negócios"
     ],
     "correct": 2,
     "dica": "Este pilar garante que as operações na nuvem sejam executadas de forma eficiente e confiável.",
@@ -6754,9 +6756,9 @@
     "titulo": "Conceitos",
     "question": "Qual pilar do AWS CAF envolve a capacidade de liderar e gerenciar as mudanças culturais necessárias para adotar e otimizar soluções em nuvem?",
     "answers": [
-      "Secrets Manager",
-      "Trusted Advisor",
-      "Free Tier",
+      "Segurança da nuvem",
+      "Negócios",
+      "Governança",
       "Pessoas"
     ],
     "correct": 3,
