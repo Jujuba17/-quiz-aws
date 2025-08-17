@@ -1072,82 +1072,80 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Qual política de roteamento do Route 53 envia cada usuário aleatoriamente para um dos IPs disponíveis na lista de servidores?",
+    "question": "Qual política de roteamento do Route 53 distribui o tráfego aleatoriamente entre vários recursos, como servidores web?",
     "answers": [
-      "S3",
-      "Storage Gateway",
-      "KMS",
-      "Simple routing metric"
+      "Roteamento Simples",
+      "Roteamento de Latência",
+      "Roteamento de Failover",
+      "Roteamento Ponderado"
     ],
     "correct": 3,
-    "dica": "",
+    "dica": "Essa política permite distribuir o tráfego de forma uniforme entre vários recursos.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Qual política de roteamento do Amazon Route 53 permite o uso de Health Check para verificar a disponibilidade de um servidor?",
+    "question": "Qual política de roteamento do Amazon Route 53 permite monitorar a saúde de seus recursos e direcionar o tráfego apenas para os saudáveis?",
     "answers": [
-      "Simple",
-      "EC2",
-      "Glacier",
-      "CloudTrail"
+      "Roteamento Simples",
+      "Roteamento de Geolocation",
+      "Roteamento de Failover",
+      "Roteamento de Multi Valor"
     ],
     "correct": 0,
-    "dica": "É a política de roteamento padrão no Route 53 e pode ser usada com verificações de integridade."
-
+    "dica": "Esta política é essencial para garantir alta disponibilidade e evitar direcionar tráfego para recursos indisponíveis.",
+    "icone_dica": "💡"
   },
   {
-    
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Qual política de roteamento do Amazon Route 53 muda automaticamente o tráfego para outro destino quando um servidor se torna indisponível?",
+    "question": "Qual política de roteamento do Amazon Route 53 é utilizada para automaticamente redirecionar o tráfego para um recurso de backup em caso de falha no recurso primário?",
     "answers": [
-      "Simple",
-      "Latency",
-      "Failover",
-      "CloudFront"
+      "Roteamento Geográfico",
+      "Roteamento de Latência",
+      "Roteamento de Failover",
+      "Roteamento Ponderado"
     ],
     "correct": 2,
-    "dica": "Essa política é usada para criar alta disponibilidade, alternando entre um servidor principal e um de backup.",
+    "dica": "Essa política é fundamental para manter a disponibilidade da aplicação em cenários de desastre ou falha.",
     "icone_dica": "💡"
-
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Qual política de roteamento do Amazon Route 53 permite direcionar o tráfego com base na localização geográfica do usuário?",
+    "question": "Qual política de roteamento do Amazon Route 53 permite direcionar usuários para diferentes recursos com base em sua localização geográfica?",
     "answers": [
-      "S3",
-      "Geolocation",
-      "VPC (Virtual Private Cloud)",
-      "STS (Security Token Service)"
+      "Roteamento Simples",
+      "Roteamento de Geolocation",
+      "Roteamento de Latência",
+      "Roteamento Ponderado"
     ],
     "correct": 1,
-    "dica": "Essa política permite direcionar usuários de diferentes países para servidores específicos.",
+    "dica": "Essa política permite personalizar a experiência do usuário com base em sua localização.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Qual política de roteamento do Amazon Route 53 direciona os usuários para a região com menor latência de rede?",
+    "question": "Qual política de roteamento do Amazon Route 53 direciona os usuários para o recurso que oferece a menor latência de rede, melhorando o tempo de resposta?",
     "answers": [
-      "EBS",
-      "Latency-based",
-      "Glacier",
-      "Free Tier"
-    ],
-    "correct": 1,
-    "dica": "Essa política melhora a performance percebida pelo usuário ao reduzir o tempo de resposta.",
-    "icone_dica": "💡"
-  },
-  {
-    "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Qual política de roteamento do Amazon Route 53 permite configurar vários endereços IP como resposta a uma única consulta DNS?",
-    "answers": [
-      "Outposts",
-      "Cost Explorer",
-      "Multivalue Answer",
-      "EFS"
+      "Roteamento Simples",
+      "Roteamento de Geolocation",
+      "Roteamento de Latência",
+      "Roteamento Ponderado"
     ],
     "correct": 2,
-    "dica": "Essa política oferece uma forma simples de balanceamento de carga sem usar um ELB.",
+    "dica": "Essa política otimiza a experiência do usuário, garantindo o acesso mais rápido aos recursos.",
+    "icone_dica": "💡"
+  },
+  {
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual política de roteamento do Amazon Route 53 retorna vários endereços IP para uma única consulta DNS, permitindo balanceamento de carga no lado do cliente?",
+    "answers": [
+      "Roteamento Simples",
+      "Roteamento de Geolocation",
+      "Roteamento de Latência",
+      "Roteamento de Multi Valor"
+    ],
+    "correct": 3,
+    "dica": "Essa política oferece uma forma simples de balancear a carga sem a necessidade de um load balancer dedicado.",
     "icone_dica": "💡"
   },
   {
@@ -1227,16 +1225,16 @@
   },
   {
   "titulo": "Redes e Entrega de Conteúdo",
-  "question": "Na VPC, qual é a ordem correta de avaliação de regras de segurança para tráfego de rede?",
+  "question": "Na VPC, qual é a ordem em que as regras de segurança de um Security Group e de uma ACL (Access Control List) são avaliadas para determinar se o tráfego de rede é permitido?",
   "answers": [
-    "ACL | Security Group",
-    "ACL | Storage Gateway",
-    "Transit Gateway",
-    "ACL (Access Control List)"
+    "Security Group (primeiro) -> ACL (depois)",
+    "ACL (primeiro) -> Security Group (depois)",
+    "Apenas Security Groups são avaliados",
+    "Apenas ACLs são avaliadas"
   ],
-  "correct": 0,
-  "dica": "As listas de controle de acesso atuam no nível da sub-rede, antes dos grupos de segurança que atuam na instância.",
-    "icone_dica": "💡"
+  "correct": 1,
+  "dica": "As ACLs atuam como um firewall na sub-rede, enquanto os Security Groups atuam como um firewall na instância.",
+  "icone_dica": "💡"
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
@@ -2988,10 +2986,10 @@
     "titulo": "Armazenamento",
     "question": "Qual o tempo de recuperação expressa do S3 Glacier?",
     "answers": [
-      "EFS",
+      "5 a 10 minutos",
       "1 a 5 minutos",
-      "EBS",
-      "S3"
+      "10 a 15 minutos",
+      "15 a 20 minutos"
     ],
     "correct": 1,
     "dica": "Este é o tempo mais rápido para recuperar dados do Glacier.",
@@ -3364,9 +3362,9 @@
     "question": "O S3 se enquadra em qual zona da AWS?",
     "answers": [
       "Zona pública",
-      "Storage Gateway",
-      "S3",
-      "EFS"
+      "Zona privada",
+      "Zona de gerenciamento",
+      "Zona de dados"
     ],
     "correct": 0,
     "dica": "Este serviço é acessível pela internet.",
@@ -3376,10 +3374,10 @@
     "titulo": "Redes e Entrega de Conteúdo",
     "question": "O Route 53 se enquadra em qual zona da AWS?",
     "answers": [
-      "EC2",
-      "VPC (Virtual Private Cloud)",
+      "Zona privada",
+      "Zona de gerenciamento",
       "Zona pública",
-      "Billing Dashboard"
+      "Zona de dados"
     ],
     "correct": 2,
     "dica": "Este serviço é acessível pela internet.",
@@ -3389,10 +3387,10 @@
     "titulo": "Banco de Dados",
     "question": "O DynamoDB se enquadra em qual zona da AWS?",
     "answers": [
-      "EC2",
-      "Outposts",
+      "Zona privada",
+      "Zona de gerenciamento",
       "Zona pública",
-      "CloudFront"
+      "Zona de dados"
     ],
     "correct": 2,
     "dica": "Este serviço é acessível pela internet.",
@@ -3403,9 +3401,9 @@
     "question": "O EC2 se enquadra em qual zona da AWS?",
     "answers": [
       "Zona privada",
-      "Lambda",
-      "Lightsail",
-      "Auto Scaling"
+      "Zona pública",
+      "Zona de gerenciamento",
+      "Zona de dados"
     ],
     "correct": 0,
     "dica": "Este serviço reside dentro da sua VPC.",
@@ -3416,9 +3414,9 @@
     "question": "O Security Group se enquadra em qual zona da AWS?",
     "answers": [
       "Zona privada",
-      "CloudFront",
-      "Elastic Beanstalk",
-      "ACL (Access Control List)"
+      "Zona pública",
+      "Zona de gerenciamento",
+      "Zona de dados"
     ],
     "correct": 0,
     "dica": "Este serviço reside dentro da sua VPC.",
@@ -3426,54 +3424,54 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "Qual a função do DAX em relação ao DynamoDB?",
+    "question": "Qual a principal função do DAX (DynamoDB Accelerator)?",
     "answers": [
-      "Cognito",
-      "DAX",
-      "Trusted Advisor",
-      "Outposts"
+      "Gerenciar a segurança e o acesso ao DynamoDB.",
+      "Acelerar as leituras no DynamoDB, fornecendo um cache em memória.",
+      "Automatizar o provisionamento de instâncias do DynamoDB.",
+      "Realizar backups e restaurações do DynamoDB."
     ],
     "correct": 1,
-    "dica": "Este serviço melhora o tempo de resposta do DynamoDB.",
+    "dica": "Este serviço melhora o tempo de resposta do DynamoDB através do uso de cache.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Armazenamento",
-    "question": "No Storage Gateway, qual tipo de gateway armazena os dados mais utilizados localmente e envia o restante para a AWS?",
+    "question": "Qual tipo de gateway do AWS Storage Gateway mantém os dados acessados com frequência localmente, enquanto armazena o restante na AWS?",
     "answers": [
-      "Gateway-Cached",
-      "Glacier",
-      "EBS",
-      "S3"
+      "Gateway de Arquivo",
+      "Gateway de Fita",
+      "Gateway de Cache",
+      "Gateway de Volume"
     ],
-    "correct": 0,
-    "dica": "Este gateway oferece acesso rápido aos dados mais importantes.",
+    "correct": 2,
+    "dica": "Este gateway prioriza o acesso rápido aos dados mais utilizados.",
     "icone_dica": "💡"
+
   },
   {
     "titulo": "Armazenamento",
-    "question": "No Storage Gateway, qual tipo de gateway armazena todos os dados localmente e também os envia para a AWS?",
+    "question": "Qual tipo de gateway do AWS Storage Gateway armazena todos os dados localmente e também os replica de forma assíncrona para a AWS?",
     "answers": [
-      "Glacier",
-      "EFS",
-      "S3",
-      "Gateway-Stored"
+      "Gateway de Arquivo",
+      "Gateway de Fita",
+      "Gateway de Volume"
     ],
-    "correct": 3,
-    "dica": "Este gateway oferece backup local e na nuvem.",
+    "correct": 2,
+    "dica": "Este gateway oferece durabilidade dos dados com uma cópia local e outra na nuvem.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Computação",
-    "question": "No EC2, com as instâncias On-Demand, você paga pela capacidade computacional por hora ou por segundo?",
+    "question": "Com instâncias On-Demand do EC2, o pagamento pela capacidade computacional é feito por hora ou por segundo, dependendo do tipo de instância?",
     "answers": [
-      "Auto Scaling",
-      "Outposts",
-      "Hora ou segundo",
-      "Lambda"
+      "Somente por hora",
+      "Somente por segundo",
+      "Por hora para instâncias Windows e por segundo para instâncias Linux",
+      "Por segundo, independente do sistema operacional"
     ],
     "correct": 2,
-    "dica": "O modelo de cobrança depende do tipo de instância.",
+    "dica": "O modelo de cobrança pode variar de acordo com o sistema operacional.",
     "icone_dica": "💡"
   },
   {
@@ -3649,10 +3647,10 @@
     "titulo": "Redes e Entrega de Conteúdo",  
     "question": "Como são faturadas as APIs (HTTP, REST ou WebSocket) no API Gateway?",  
     "answers": [  
-      "Cognito",  
-      "EBS",  
+      "Por dados transferidos",  
+      "Por conexões ativas",  
       "Pelo número de solicitações",  
-      "Free Tier"  
+      "Por cache utilizado" 
     ],  
     "correct": 2,  
     "dica": "A cobrança é baseada no uso da API.",  
@@ -4523,9 +4521,9 @@
     "titulo": "Armazenamento",
     "question": "O S3 Intelligent-Tiering após 90 dias move os arquivos para qual classe?",
     "answers": [
-      "Glacier",
-      "S3",
-      "Storage Gateway",
+      "S3 Standard",
+      "S3 Intelligent-Tiering - Infrequent Access",
+      "S3 Glacier Instant Retrieval",
       "S3 Intelligent-Tiering - Archive Instant Access"
     ],
     "correct": 3,
@@ -4536,9 +4534,9 @@
     "titulo": "Armazenamento",
     "question": "O S3 Intelligent-Tiering após 180 dias move os arquivos para qual classe?",
     "answers": [
-      "Glacier",
-      "Storage Gateway",
-      "S3",
+      "S3 Intelligent-Tiering - Infrequent Access",
+      "S3 Glacier Instant Retrieval",
+      "S3 Intelligent-Tiering - Archive Instant Access",
       "S3 Intelligent-Tiering - Deep Archive Access"
     ],
     "correct": 3,
@@ -4911,9 +4909,9 @@
     "question": "O S3 Intelligent-Tiering após quantos dias move os arquivos para a classe Infrequent Access?",  
     "answers": [  
       "30 dias",  
-      "EBS",  
-      "EFS",  
-      "Glacier"  
+      "10 dias",  
+      "5 dias",  
+      "60 dias"  
     ],  
     "correct": 0,  
     "dica": "Esta classe de armazenamento é ideal para dados acessados com pouca frequência.",  
@@ -4923,9 +4921,9 @@
     "titulo": "Armazenamento",  
     "question": "O S3 Intelligent-Tiering após quantos dias move os arquivos para a classe Archive Instant Access?",  
     "answers": [  
-      "Glacier",  
-      "S3",  
-      "Storage Gateway",  
+      "100 dias",  
+      "30 dias",  
+      "60 dias",  
       "90 dias"  
     ],  
     "correct": 3,  
@@ -4936,9 +4934,9 @@
     "titulo": "Armazenamento",  
     "question": "O S3 Intelligent-Tiering após quantos dias move os arquivos para a classe Deep Archive Access?",  
     "answers": [  
-      "Glacier",  
-      "Storage Gateway",  
-      "S3",  
+      "30 dias",  
+      "60 dias",  
+      "90 dias",  
       "180 dias"  
     ],  
     "correct": 3,  
