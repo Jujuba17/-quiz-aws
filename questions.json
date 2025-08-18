@@ -4447,9 +4447,9 @@
     "question": "Qual serviço da AWS facilita a análise, a investigação e a identificação rápida da causa raiz de potenciais problemas de segurança?",
     "answers": [
       "Amazon Detective",
-      "AWS Key Management Service (KMS)",
+      "AWS Identity and Access Management (IAM)",
       "AWS CloudTrail",
-      "AWS Config"
+      "Amazon GuardDuty"
     ],
     "correct": 0,
     "dica": "Este serviço utiliza machine learning para analisar dados de logs e identificar padrões suspeitos.",
@@ -4459,10 +4459,10 @@
     "titulo": "Segurança, Identidade e Conformidade",
     "question": "Qual serviço da AWS é utilizado para segurança e privacidade de dados?",
     "answers": [
-      "AWS CloudTrail",
+      "AWS Shield",
       "Amazon Macie",
-      "AWS Secrets Manager",
-      "AWS Config"
+      "AWS Certificate Manager",
+      "AWS CloudHSM"
     ],
     "correct": 1,
     "dica": "Este serviço identifica e protege dados sensíveis em escala.",
