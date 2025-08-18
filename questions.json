@@ -1792,9 +1792,9 @@
     "titulo": "Conceitos",
     "question": "Serviços resilientes, por padrão, são hospedados em <font color=\"#ff5500\">uma única?",
     "answers": [
-      "Auto Scaling",
-      "Elastic Beanstalk",
-      "CloudFront",
+      "Região",
+      "VPC",
+      "Edge Location",
       "Zona de Disponibilidade"
     ],
     "correct": 3,
@@ -2207,9 +2207,9 @@
     "titulo": "Gerenciamento, Monitoramento e Governança",
     "question": "Qual serviço da AWS permite receber uma notificação sempre que um recurso é criado, modificado ou excluído (auditoria)?",
     "answers": [
-      "Route53",
-      "Lightsail",
-      "Cost Explorer",
+      "AWS CloudTrail",
+      "Amazon CloudWatch",
+      "AWS Trusted Advisor",
       "AWS Config"
     ],
     "correct": 3,
@@ -3623,10 +3623,10 @@
     "titulo": "Redes e Entrega de Conteúdo",  
     "question": "Qual tipo de API estabelece (mantém) uma conexão persistente entre o cliente e o servidor?",  
     "answers": [  
-      "Cognito",  
-      "S3",  
-      "API WebSocket",  
-      "Cost Explorer"  
+      "REST API",
+      "GraphQL API",
+      "API WebSocket",
+      "SOAP API"
     ],  
     "correct": 2,  
     "dica": "Este tipo de API permite a comunicação em tempo real.",  
@@ -3983,10 +3983,10 @@
     "titulo": "Migração e Transferência",  
     "question": "Qual serviço da AWS realiza migrações de suas aplicações on-premises para a nuvem?",  
     "answers": [  
-      "S3",
+      "AWS DataSync",
       "AWS Application Migration Service (MGN)",
-      "CloudEndure Migration",
-      "Storage Gateway"  
+      "AWS Transfer Family",
+      "Storage Gateway" 
     ],  
     "correct": 1,  
     "dica": "Este serviço automatiza o processo de migração.",  
