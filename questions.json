@@ -1779,13 +1779,13 @@
     "titulo": "Conceitos",
     "question": "Quais serviços são considerados resilientes na região, por serem hospedados automaticamente em múltiplas zonas de disponibilidade dentro de uma mesma região?",
     "answers": [
-     "Glacier e EBS",
-     "API Gateway e S3",
-     "IAM e CloudFront",
-     "Secrets Manager e Config"
+      "EC2 e EBS",
+      "API Gateway e S3",
+      "IAM e CloudFront",
+      "Lambda e RDS (Multi-AZ)"
     ],
     "correct": 1,
-    "dica": "S3, por exemplo, replica os dados automaticamente em diferentes AZs da mesma região.",
+    "dica": "Um destes serviços é um serviço de armazenamento de objetos e o outro, um serviço para criação de APIs.",
     "icone_dica": "💡"
   },
   {
@@ -2454,13 +2454,13 @@
     "titulo": "Analytics",
     "question": "Qual serviço da AWS permite consumir dados em tempo real, como vídeo, áudio, logs e clickstreams?",
     "answers": [
-      "STS (Security Token Service)",
-      "Route53",
-      "VPC (Virtual Private Cloud)",
-      "Kinesis"
+      "Amazon SQS",
+      "Amazon SNS",
+      "Amazon Athena",
+      "Amazon Kinesis"
     ],
     "correct": 3,
-    "dica": "Este serviço processa grandes volumes de dados em tempo real.",
+    "dica": "Este serviço possui várias opções para ingestão, processamento e análise de streams de dados.",
     "icone_dica": "💡"
   },
   {
@@ -2949,13 +2949,13 @@
     "titulo": "Integração de Aplicações",
     "question": "Qual opção do SQS garante que as mensagens sejam entregues na ordem correta?",
     "answers": [
-      "IAM (Identity Access Management)",
-      "Lambda",
-      "FIFO (First-In-First-Out)",
-      "Elastic Load Balancer"
+      "Standard Queues",
+      "Dead-Letter Queues",
+      "FIFO Queues (First-In-First-Out)",
+      "Delay Queues"
     ],
     "correct": 2,
-    "dica": "Esta opção é ideal para casos em que a ordem das mensagens é importante.",
+    "dica": "O acrônimo desta opção descreve a sua funcionalidade.",
     "icone_dica": "💡"
   },
   {
@@ -4268,13 +4268,13 @@
     "titulo": "Gerenciamento, Monitoramento e Governança",
     "question": "Qual serviço da AWS facilita o gerenciamento de suas licenças de software?",
     "answers": [
-      "Route53",
-      "Trusted Advisor",
-      "Secrets Manager",
+      "AWS Systems Manager",
+      "AWS Config",
+      "AWS CloudTrail",
       "AWS License Manager"
     ],
     "correct": 3,
-    "dica": "Este serviço ajuda a controlar e otimizar o uso de licenças de software.",
+    "dica": "O nome deste serviço é autoexplicativo.",
     "icone_dica": "💡"
   },
 {
@@ -4847,13 +4847,13 @@
     "titulo": "Segurança, Identidade e Conformidade",  
     "question": "Qual serviço da AWS facilita a análise, a investigação e a identificação rápida da causa raiz de potenciais problemas de segurança?",  
     "answers": [  
-      "Detective",  
-      "KMS",  
-      "CloudTrail",  
-      "AWS Config"  
+      "Amazon GuardDuty",
+      "AWS Security Hub",
+      "AWS Detective",
+      "AWS IAM Access Analyzer"
     ],  
-    "correct": 0,  
-    "dica": "Este serviço utiliza machine learning para analisar dados de segurança e identificar padrões suspeitos.",  
+    "correct": 2,  
+    "dica": "Este serviço ajuda você a 'investigar' a causa raiz de problemas de segurança.",  
     "icone_dica": "💡"  
   },  
   {  
@@ -5458,13 +5458,13 @@
     "titulo": "Computação",
     "question": "Qual serviço da AWS facilita a execução de trabalhos intensivos e em larga escala, usando EC2, EKS ou Fargate?",
     "answers": [
-      "EC2",
-      "Elastic Beanstalk",
+      "AWS Lambda",
+      "Amazon ECS",
       "AWS Batch",
-      "Auto Scaling"
+      "AWS Step Functions"
     ],
     "correct": 2,
-    "dica": "Este serviço permite processar grandes volumes de dados de forma eficiente.",
+    "dica": "Pense em 'lotes' de trabalho (jobs) sendo processados.",
     "icone_dica": "💡"
   },
   {
@@ -5679,13 +5679,13 @@
     "titulo": "Web e Dispositivos Móveis de Front End",
     "question": "Qual serviço da AWS facilita a criação de APIs usando GraphQL?",
     "answers": [
-      "STS (Security Token Service)",
-      "VPC (Virtual Private Cloud)",
+      "Amazon API Gateway",
+      "AWS Amplify",
       "AWS AppSync",
-      "Trusted Advisor"
+      "AWS Lambda"
     ],
     "correct": 2,
-    "dica": "Este serviço permite criar APIs flexíveis e eficientes para aplicações web e móveis.",
+    "dica": "Este serviço 'sincroniza' os dados para seus aplicativos em tempo real, usando GraphQL.",
     "icone_dica": "💡"
   },
   {
@@ -6199,13 +6199,13 @@
     "titulo": "Machine Learning",  
     "question": "Qual serviço da AWS extrai texto de documentos impressos ou manuscritos através de Machine Learning?",  
     "answers": [  
-      "Lightsail",  
-      "Cognito",  
-      "Amazon Textract",  
-      "EFS"  
+      "Amazon Comprehend",
+      "Amazon Rekognition",
+      "Amazon Textract",
+      "Amazon Translate" 
     ],  
     "correct": 2,  
-    "dica": "Este serviço permite digitalizar documentos e extrair informações de forma automática.",  
+    "dica": "Pense em 'extrair texto'.",  
     "icone_dica": "💡"  
   },  
   {  
@@ -6420,13 +6420,13 @@
     "titulo": "Segurança, Identidade e Conformidade",
     "question": "Qual serviço permite criar e gerenciar diretórios de identidades, como Microsoft Active Directory (AD)?",
     "answers": [
+      "AWS IAM",
+      "Amazon Cognito",
       "AWS Directory Service",
-      "KMS",
-      "IAM (Identity Access Management)",
-      "ACL (Access Control List)"
+      "AWS SSO"
     ],
-    "correct": 0,
-    "dica": "Este serviço facilita o gerenciamento de usuários e grupos na AWS.",
+    "correct": 2,
+    "dica": "Pense em um 'serviço de diretório' hospedado na AWS.",
     "icone_dica": "💡"
   },
   {
@@ -7148,26 +7148,26 @@
     "titulo": "Conceitos",  
     "question": "Qual pilar do AWS CAF envolve a criação de políticas e controles para gerenciar recursos na nuvem?",  
     "answers": [  
-      "Billing Dashboard",  
-      "Lightsail",  
-      "Governança",  
-      "Cognito"  
+      "Operações",
+      "Segurança",
+      "Governança",
+      "Plataforma" 
     ],  
     "correct": 2,  
-    "dica": "Este pilar estabelece as regras para gerenciar e controlar os recursos na nuvem.",  
+    "dica": "Este pilar garante que os recursos sejam utilizados de forma eficiente e em conformidade com as políticas da empresa.",  
     "icone_dica": "💡"  
   },  
   {  
     "titulo": "Conceitos",  
     "question": "Qual pilar do AWS CAF aborda práticas para operar eficientemente na nuvem?",  
     "answers": [  
-      "EFS",  
-      "Free Tier",  
-      "Operações",  
-      "CloudTrail"  
+      "Plataforma",
+      "Operações",
+      "Segurança",
+      "Governança" 
     ],  
-    "correct": 2,  
-    "dica": "Este pilar garante que as operações na nuvem sejam eficientes e confiáveis.",  
+    "correct": 1,  
+    "dica": "Este pilar define como você vai *rodar* as suas aplicações e workloads de forma consistente e escalável.",  
     "icone_dica": "💡"  
   },  
   {  
