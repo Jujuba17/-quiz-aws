@@ -3480,13 +3480,13 @@
     "titulo": "Banco de Dados",
     "question": "Com o recurso de Cluster Multi-AZ do RDS, além de alta disponibilidade, as instâncias em espera podem ser usadas para qual finalidade?",
     "answers": [
-      "Budgets",
-      "Elastic Load Balancer",
-      "AWS Config",
-      "Instâncias de consulta"
+      "Realizar backups automatizados",
+      "Escrita direta de dados",
+      "Instâncias de consulta somente leitura",
+      "Gerenciamento de logs de auditoria"
     ],
-    "correct": 3,
-    "dica": "Este recurso melhora a performance e a disponibilidade do banco de dados.",
+    "correct": 2,
+    "dica": "Pense em como você pode tirar proveito de uma instância em espera sem comprometer a integridade dos dados.",
     "icone_dica": "💡"
   },
   {
@@ -5731,39 +5731,39 @@
     "titulo": "Machine Learning",
     "question": "Qual serviço da AWS oferece processamento de linguagem natural (NLP) para extrair informações e insights a partir de textos não estruturados?",
     "answers": [
-      "AWS Config",
-      "Lambda",
-      "S3",
+      "Amazon Rekognition",
+      "Amazon Lex",
+      "Amazon Polly",
       "Amazon Comprehend"
     ],
     "correct": 3,
-    "dica": "Este serviço permite analisar sentimentos, identificar entidades e extrair informações de textos.",
+    "dica": "O nome do serviço sugere a sua capacidade de 'compreender' o texto.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Machine Learning",
     "question": "Qual serviço da AWS utiliza machine learning e linguagem natural para encontrar respostas mais rápidas em pesquisas corporativas inteligentes (pesquisas internas)?",
     "answers": [
-      "IAM (Identity Access Management)",
-      "Lightsail",
+      "Amazon SageMaker",
+      "Amazon Lex",
       "Amazon Kendra",
-      "Outposts"
+      "Amazon Comprehend"
     ],
     "correct": 2,
-    "dica": "Este serviço permite criar um motor de busca inteligente para sua empresa.",
+    "dica": "Pense em um serviço que 'centraliza' o conhecimento da sua empresa para facilitar a busca.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Machine Learning",
     "question": "Qual serviço da AWS permite que desenvolvedores construam interfaces de conversação interativas baseadas em voz para aplicativos e serviços?",
     "answers": [
-      "Route53",
-      "Billing Dashboard",
-      "AWS Config",
+      "Amazon Polly",
+      "Amazon Transcribe",
+      "Amazon Connect",
       "Amazon Lex"
     ],
     "correct": 3,
-    "dica": "Este serviço permite criar chatbots e assistentes virtuais.",
+    "dica": "Este serviço permite que você crie 'bots' que conversam com seus usuários.",
     "icone_dica": "💡"
   },
   {
@@ -5771,25 +5771,25 @@
     "question": "Qual serviço da AWS converte texto em fala realista e natural?",
     "answers": [
       "Amazon Polly",
-      "AWS Config",
-      "Trusted Advisor",
-      "EFS"
+      "Amazon Transcribe",
+      "Amazon Lex",
+      "Amazon Comprehend"
     ],
     "correct": 0,
-    "dica": "Este serviço permite criar áudio a partir de texto para diversas aplicações.",
+    "dica": "O nome deste serviço soa como um 'papagaio' que repete o que você diz em texto.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Machine Learning",
     "question": "Qual serviço da AWS oferece recursos de análise e reconhecimento de imagem e vídeo por meio de tecnologia de visão computacional e machine learning?",
     "answers": [
-      "Billing Dashboard",
+      "Amazon SageMaker",
       "Amazon Rekognition",
-      "EBS",
-      "IAM (Identity Access Management)"
+      "Amazon Comprehend",
+      "Amazon Textract"
     ],
     "correct": 1,
-    "dica": "Este serviço permite identificar objetos, pessoas e cenas em imagens e vídeos.",
+    "dica": "O nome do serviço sugere a capacidade de 'reconhecer' elementos em imagens e vídeos.",
     "icone_dica": "💡"
   },
   {
@@ -5797,51 +5797,51 @@
     "question": "Qual serviço da AWS é projetado para simplificar e acelerar o processo de construção, treinamento e implantação de modelos de aprendizado de máquina (Machine Learning)?",
     "answers": [
       "Amazon SageMaker",
-      "Route53",
-      "ACL (Access Control List)",
-      "EBS"
+      "Amazon EC2",
+      "AWS Lambda",
+      "Amazon ECS"
     ],
     "correct": 0,
-    "dica": "Este serviço oferece um ambiente completo para o desenvolvimento de modelos de machine learning.",
+    "dica": "Este serviço 'dá sabedoria' (em inglês) aos seus modelos de machine learning.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Machine Learning",
     "question": "Qual serviço da AWS extrai texto de documentos impressos ou manuscritos através de Machine Learning?",
     "answers": [
-      "Lightsail",
-      "Cognito",
+      "Amazon Rekognition",
+      "Amazon Comprehend",
       "Amazon Textract",
-      "EFS"
+      "Amazon Transcribe"
     ],
     "correct": 2,
-    "dica": "Este serviço permite digitalizar documentos e extrair informações relevantes.",
+    "dica": "Pense em um serviço que 'extrai' texto.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Machine Learning",
     "question": "Qual serviço da AWS converte gravações de áudio em texto, como por exemplo entrevistas, palestras, chamadas telefônicas e outras?",
     "answers": [
-      "Storage Gateway",
-      "Trusted Advisor",
+      "Amazon Polly",
+      "Amazon Translate",
       "Amazon Transcribe",
-      "Transit Gateway"
+      "Amazon Lex"
     ],
     "correct": 2,
-    "dica": "Este serviço permite transcrever áudio para texto de forma precisa e eficiente.",
+    "dica": "O nome do serviço lembra a palavra 'transcrição'.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Machine Learning",
     "question": "Qual serviço da AWS é um serviço de tradução automática neural que fornece traduções de idiomas com rapidez, alta qualidade, acessíveis e personalizáveis?",
     "answers": [
-      "KMS",
+      "Amazon Polly",
+      "Amazon Transcribe",
       "Amazon Translate",
-      "Free Tier",
-      "Lightsail"
+      "Amazon Comprehend"
     ],
-    "correct": 1,
-    "dica": "Este serviço permite traduzir textos entre diferentes idiomas.",
+    "correct": 2,
+    "dica": "O nome do serviço contém a palavra 'tradução'.",
     "icone_dica": "💡"
   },
   {
