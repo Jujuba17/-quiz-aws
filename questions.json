@@ -2541,9 +2541,9 @@
     "titulo": "Redes e Entrega de Conteúdo",
     "question": "Qual tipo de failover é mais indicado quando é necessário que todos os seus recursos estejam disponíveis na maior parte do tempo?",
     "answers": [
-      "Elastic Beanstalk",
-      "Auto Scaling",
-      "Cost Explorer",
+      "Backup e Restauração",
+      "Piloto Ligado (Pilot Light)",
+      "Ativo-Passivo",
       "Ativo-Ativo"
     ],
     "correct": 3,
@@ -2565,10 +2565,10 @@
     "titulo": "Ferramenta de Desenvolvedor",
     "question": "Qual serviço da AWS automatiza as implantações de aplicativos em instâncias do Amazon EC2?",
     "answers": [
-      "Elastic Load Balancer",
-      "Cost Explorer",
-      "CodeDeploy",
-      "Lambda"
+      "Amazon ECS",
+      "AWS CodePipeline",
+      "AWS CodeDeploy",
+      "AWS Elastic Beanstalk"
     ],
     "correct": 2,
     "dica": "Este serviço facilita a implantação contínua de aplicativos.",
@@ -4242,9 +4242,9 @@
     "titulo": "Interação com os Clientes",
     "question": "Quais são os 4 tipos de planos de suporte da AWS?",
     "answers": [
-      "Storage Gateway",
-      "Lambda",
-      "ACL (Access Control List)",
+      "Basic, Developer, Professional, Enterprise",
+      "Free, Standard, Premium, Unlimited",
+      "Bronze, Silver, Gold, Platinum",
       "Developer, Business, Enterprise On-Ramp, Enterprise"
     ],
     "correct": 3,
@@ -6639,25 +6639,25 @@
   },
   {
     "titulo": "Banco de Dados",
-    "question": "Como um banco de dados relacional pode ser implementado na AWS?",
+    "question": "Qual das seguintes opções representa a forma *mais simples e direta* de implementar um banco de dados relacional na AWS?",
     "answers": [
-      "Amazon RDS e Amazon EC2",
-      "Amazon DynamoDB e Amazon Redshift",
-      "Amazon S3 e Amazon Glacier",
-      "AWS Lambda e Amazon ECS"
+      "Instalar o banco de dados em uma instância EC2",
+      "Usar o Amazon RDS",
+      "Criar uma função Lambda para acessar dados relacionais",
+      "Armazenar os dados em um bucket S3 e usar consultas SQL"
     ],
-    "correct": 0,
-    "dica": "Existem diferentes formas de implementar bancos de dados relacionais na AWS.",
+    "correct": 1,
+    "dica": "Pense em qual serviço abstrai a maior parte do trabalho de administração do banco de dados.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Computação",
     "question": "Qual recurso do EC2 ajusta automaticamente o número de instâncias em um grupo em escala automática?",
     "answers": [
-      "Elastic Beanstalk",
+      "EC2 Fleet",
       "Auto Scaling",
-      "Lightsail",
-      "AWS Lambda"
+      "EC2 Image Builder",
+      "AWS Systems Manager"
     ],
     "correct": 1,
     "dica": "Este recurso garante que a aplicação tenha recursos suficientes para lidar com a demanda.",
@@ -6667,10 +6667,10 @@
     "titulo": "Computação",
     "question": "O recurso de Reserva de Elastic IP é cobrado quando a instância está em qual estado?",
     "answers": [
-      "Inativa",
-      "Ligada",
-      "Desligada",
-      "Pausada"
+      "Associada a uma instância em execução",
+      "Associada a uma instância parada",
+      "Não associada a nenhuma instância",
+      "Associada a um Load Balancer"
     ],
     "correct": 2,
     "dica": "Este recurso tem um custo associado quando não está em uso.",
