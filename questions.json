@@ -9,7 +9,7 @@
       "Zonas de Rede (ZN)"
     ],
     "correct": 0,
-    "dica": "",
+    "dica": "Pense em 'locais' dentro de uma região que garantem que sua aplicação continue rodando, mesmo se um local falhar",
     "icone_dica": "💡"
   },
   {
@@ -22,7 +22,7 @@
       "Backup Regional (BRZ)"
     ],
     "correct": 1,
-    "dica": "",
+    "dica": "É o 'local' onde você implanta sua aplicação para torná-la altamente disponível.",
     "icone_dica": "💡"
   },
   {
@@ -31,11 +31,11 @@
     "answers": [
       "EdgeLocations",
       "Outboxes (remotos)",
-      "ExternalHosts",
+      "External Hosts",
       "Outposts (colocation)"
     ],
     "correct": 3,
-    "dica": "",
+    "dica": "Pense em uma 'extensão' da AWS no seu próprio datacenter.",
     "icone_dica": "💡"
   },
   {
@@ -48,7 +48,7 @@
       "STS (Security Token Service)"
     ],
     "correct": 0,
-    "dica": "",
+    "dica": "Pense em como você 'gerencia o acesso' aos seus recursos na AWS.",
     "icone_dica": "💡"
   },
   {
@@ -61,7 +61,7 @@
       "Route53"
     ],
     "correct": 0,
-    "dica": "",
+    "dica": "Você usa este serviço para 'gerenciar usuários e seus acessos' com segurança.",
     "icone_dica": "💡"
   },
   {
@@ -74,7 +74,7 @@
       "S3 Policy"
     ],
     "correct": 1,
-    "dica": "",
+    "dica": "É o mesmo serviço que você usa para criar usuários e definir permissões.",
     "icone_dica": "💡"
   },
   {
@@ -87,7 +87,7 @@
       "Billing Dashboard"
     ],
     "correct": 2,
-    "dica": "",
+    "dica": "Pense em 'orçamentos' que te avisam quando você está gastando demais.",
     "icone_dica": "💡"
   },
   {
@@ -108,26 +108,26 @@
     "titulo": "Armazenamento",
     "question": "O S3 permite que;<font color=\"#ff5500\">1 único</font> arquivo tenha no máximo _____TB de tamanho.",
     "answers": [
-      "15",
+      "1",
       "10",
       "5",
       "3"
     ],
     "correct": 2,
-    "dica": "",
+    "dica": "Pense em um número que é 'relativamente grande', mas ainda 'razoável' para um único arquivo",
     "icone_dica": "💡"
   },
   {
     "titulo": "Armazenamento",
     "question": "S3 _______ é a <font color=\"#ff5500\">classe</font> que permite armazenamento com <font color=\"#ff5500\"><b>alto\nnível</b></font> de resiliência, <b><font color=\"#ff5500\">disponibilidade e performance</font></b> para dados acessados com\nfrequência.;",
     "answers": [
-      "EFS",
+      "Intelligent-Tiering",
       "Glacier",
       "Standard",
-      "EBS"
+      "One Zone-IA"
     ],
     "correct": 2,
-    "dica": "",
+    "dica": "Qual classe é o 'padrão' para a maioria dos objetos no S3?",
     "icone_dica": "💡"
   },
   {
@@ -147,13 +147,13 @@
     "titulo": "Armazenamento",
     "question": "S3 ________-IA é a classe utilizada quando o acesso é <font color=\"#ff5500\"><b>infrequente</b></font>, mas que\nexige acesso <font color=\"#ff5500\"><b>rápido quando necessário</b></font>. Armazenamento em 3 AZ's.",
     "answers": [
-      "EFS",
-      "Storage Gateway",
-      "S3",
+      "Glacier",
+      "Intelligent-Tiering",
+      "One Zone",
       "Standard"
     ],
     "correct": 3,
-    "dica": "",
+    "dica": "Pense na classe de armazenamento mais 'comum' para acesso infrequente",
     "icone_dica": "💡"
   },
   {
@@ -1688,13 +1688,13 @@
     "titulo": "Gerenciamento, Monitoramento e Governança",
     "question": "Qual serviço permite consolidar e gerenciar várias contas da AWS de forma centralizada?",
     "answers": [
+      "AWS Control Tower",
+      "AWS Systems Manager",
       "AWS Organizations",
-      "Amazon S3",
-      "AWS Config",
-      "Savings Plans"
+      "AWS CloudWatch"
     ],
-    "correct": 0,
-    "dica": "Útil para empresas com múltiplas contas na nuvem.",
+    "correct": 2,
+    "dica": "Pense em como você 'organiza' as suas contas AWS.",
     "icone_dica": "💡"
   },
   {
@@ -6524,12 +6524,12 @@
     "titulo": "Conceitos",
     "question": "O que é a AWS Partner Network (APN)?",
     "answers": [
-      "Secrets Manager",
-      "STS (Security Token Service)",
-      "EC2",
-      "Um programa de parceiros da AWS"
+      "Um serviço de armazenamento de dados",
+      "Um programa de certificação para profissionais de nuvem",
+      "Um programa de parceiros da AWS",
+      "Uma ferramenta de monitoramento de custos"
     ],
-    "correct": 3,
+    "correct": 2,
     "dica": "Este programa permite que empresas colaborem com a AWS para oferecer soluções na nuvem.",
     "icone_dica": "💡"
   },
@@ -6733,7 +6733,7 @@
     "question": "Qual pilar do AWS CAF envolve a criação de políticas e controles para gerenciar recursos na nuvem?",
     "answers": [
       "Pessoas",
-      "Plataforma",
+      "Segurança",
       "Governança",
       "Plataforma"
     ],
@@ -6771,13 +6771,13 @@
     "titulo": "Integração de Aplicações",
     "question": "Qual tipo de aplicação é uma única aplicação de software em um único programa, onde uma falha compromete todo o sistema?",
     "answers": [
-      "Storage Gateway",
-      "CloudFront",
-      "Elastic Beanstalk",
+      "Arquitetura Serverless",
+      "Microsserviços",
+      "Arquitetura Orientada a Eventos",
       "Aplicação monolítica"
     ],
     "correct": 3,
-    "dica": "Este tipo de aplicação pode ser difícil de escalar e manter.",
+    "dica": "Pense em algo 'único' e 'grande'.",
     "icone_dica": "💡"
   },
   {
@@ -7018,13 +7018,13 @@
     "titulo": "Segurança, Identidade e Conformidade",  
     "question": "Qual serviço da AWS fornece proteção contra ataques HTTP(S)?",  
     "answers": [  
-      "ACL (Access Control List)",  
-      "STS (Security Token Service)",  
-      "KMS",  
+      "Amazon Inspector",
+      "AWS Shield",
+      "AWS Firewall Manager",
       "AWS WAF (Web Application Firewall)"  
     ],  
     "correct": 3,  
-    "dica": "Este serviço protege aplicações web contra ataques comuns.",  
+    "dica": "Pense em um 'firewall' para aplicações 'web'.",  
     "icone_dica": "💡"  
   },  
   {  
@@ -7135,13 +7135,13 @@
     "titulo": "Conceitos",  
     "question": "Qual pilar do AWS CAF aborda a proteção de dados e sistemas na nuvem?",  
     "answers": [  
-      "Segurança",  
-      "S3",  
-      "Cognito",  
-      "Lightsail"  
+      "Excelência Operacional",
+      "Segurança",
+      "Otimização de Custos",
+      "Confiabilidade" 
     ],  
-    "correct": 0,  
-    "dica": "Este pilar garante a confidencialidade, integridade e disponibilidade dos dados na nuvem.",  
+    "correct": 1,  
+    "dica": "Este pilar se concentra em 'proteger' seus ativos na nuvem.",  
     "icone_dica": "💡"  
   },  
   {  
@@ -7174,9 +7174,9 @@
     "titulo": "Conceitos",  
     "question": "Qual pilar do AWS CAF envolve a capacidade de liderar e gerenciar as mudanças culturais necessárias para adotar e otimizar soluções em nuvem?",  
     "answers": [  
-      "Secrets Manager",  
-      "Trusted Advisor",  
-      "Free Tier",  
+      "Governança",
+      "Plataforma",
+      "Segurança",
       "Pessoas"  
     ],  
     "correct": 3,  
@@ -7213,26 +7213,26 @@
     "titulo": "Gerenciamento de Custos",  
     "question": "Quais serviços da AWS fazem parte do Billing and Cost Management?",  
     "answers": [  
-      "Cost Explorer e Budgets",  
-      "Billing Dashboard",  
-      "Free Tier",  
-      "Cost Explorer"  
+      "AWS Config e CloudTrail",
+      "CloudWatch e CloudTrail",
+      "Cost Explorer e Budgets",
+      "IAM e Organizations"  
     ],  
-    "correct": 0,  
-    "dica": "Esses serviços auxiliam no controle e otimização dos custos na AWS.",  
+    "correct": 2,  
+    "dica": "Pense nas ferramentas que ajudam a 'explorar' e 'limitar' os seus gastos na AWS.",  
     "icone_dica": "💡"  
   }, 
   {
     "titulo": "Segurança, Identidade e Conformidade",
     "question": "Qual serviço da AWS é um sistema de detecção de ameaças que monitora continuamente suas contas e workloads?",
     "answers": [
-      "ACL (Access Control List)",
-      "STS (Security Token Service)",
-      "KMS",
+      "AWS Inspector",
+      "AWS Shield",
+      "Amazon Macie",
       "Amazon GuardDuty"
     ],
     "correct": 3,
-    "dica": "Este serviço ajuda a proteger seu ambiente AWS contra atividades maliciosas.",
+    "dica": "Pense em um 'guarda' que está sempre de 'plantão' monitorando a sua conta.",
     "icone_dica": "💡"
   },
   {
