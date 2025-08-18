@@ -3790,10 +3790,10 @@
     "titulo": "Armazenamento",  
     "question": "O S3 se enquadra na zona pública ou privada da AWS?",  
     "answers": [  
-      "Pública",  
-      "Storage Gateway",  
-      "S3",  
-      "EFS"  
+      "Pública",
+      "Privada",
+      "Depende do bucket policy",
+      "Ambas" 
     ],  
     "correct": 0,  
     "dica": "Este serviço é acessível pela internet.",  
@@ -3803,12 +3803,12 @@
     "titulo": "Redes e Entrega de Conteúdo",  
     "question": "O Route 53 se enquadra na zona pública ou privada da AWS?",  
     "answers": [  
-      "EC2",  
-      "VPC (Virtual Private Cloud)",  
-      "Zona pública",  
-      "Billing Dashboard"  
+      "Pública",
+      "Privada",
+      "Depende do registro",
+      "Ambas" 
     ],  
-    "correct": 2,  
+    "correct": 0,  
     "dica": "Este serviço é usado para resolver nomes de domínio na internet.",  
     "icone_dica": "💡"  
   },  
@@ -3816,12 +3816,12 @@
     "titulo": "Banco de Dados",  
     "question": "O DynamoDB se enquadra na zona pública ou privada da AWS?",  
     "answers": [  
-      "EC2",  
-      "Outposts",  
-      "Pública",  
-      "CloudFront"  
+      "Privada",
+      "Pública",
+      "Depende da VPC",
+      "Ambas" 
     ],  
-    "correct": 2,  
+    "correct": 1,  
     "dica": "Este serviço é acessível pela internet.",  
     "icone_dica": "💡"  
   },  
@@ -3829,10 +3829,10 @@
     "titulo": "Computação",  
     "question": "O EC2 se enquadra na zona pública ou privada da AWS?",  
     "answers": [  
-      "Privada",  
-      "Lambda",  
-      "Lightsail",  
-      "Auto Scaling"  
+      "Privada",
+      "Pública",
+      "Depende da subnet",
+      "Ambas" 
     ],  
     "correct": 0,  
     "dica": "Este serviço é provisionado dentro de uma VPC.",  
@@ -3842,10 +3842,10 @@
     "titulo": "Redes e Entrega de Conteúdo",  
     "question": "O Security Group se enquadra na zona pública ou privada da AWS?",  
     "answers": [  
-      "Privada",  
-      "CloudFront",  
-      "Elastic Beanstalk",  
-      "ACL (Access Control List)"  
+      "Privada",
+      "Pública",
+      "Depende da regra",
+      "Ambas"
     ],  
     "correct": 0,  
     "dica": "Este serviço controla o tráfego de entrada e saída de uma instância EC2.",  
@@ -3894,10 +3894,10 @@
     "titulo": "Computação",  
     "question": "No EC2, com as instâncias no modelo Sob Demanda (On-Demand), você paga pela capacidade computacional por qual unidade de tempo?",  
     "answers": [  
-      "Auto Scaling",  
-      "Outposts",  
-      "Hora ou segundo",  
-      "Lambda"  
+      "Minuto ou hora",
+      "Hora ou segundo",
+      "Dia ou semana",
+      "Mês ou ano"  
     ],  
     "correct": 2,  
     "dica": "O pagamento é flexível e baseado no uso.",  
@@ -3918,10 +3918,10 @@
     "titulo": "Computação",  
     "question": "O que acontece quando você hiberna uma instância EC2?",  
     "answers": [  
-      "Elastic Beanstalk",  
-      "EC2",  
-      "As informações da memória RAM são salvas",  
-      "Auto Scaling"  
+      "A instância é encerrada e os dados são perdidos",
+      "A instância é interrompida e os dados na RAM são perdidos",
+      "As informações da memória RAM são salvas",
+      "A instância é reiniciada"  
     ],  
     "correct": 2,  
     "dica": "Este recurso permite que você retome o trabalho de onde parou.",  
@@ -3931,9 +3931,9 @@
     "titulo": "Sem Servidor",  
     "question": "Qual recurso é um mecanismo de computação sem servidor para contêineres?",  
     "answers": [  
-      "Elastic Beanstalk",  
-      "S3",  
-      "Outposts",  
+      "EC2",
+      "Lambda",
+      "ECS",
       "Fargate"  
     ],  
     "correct": 3,  
@@ -3944,10 +3944,10 @@
     "titulo": "Integração de Aplicações",  
     "question": "Além do EventBridge, qual outro serviço da AWS também toma ações a partir de eventos que ocorrem no ambiente?",  
     "answers": [  
-      "Lambda",  
-      "AWS Config",  
-      "CloudWatch Events",  
-      "EFS"  
+      "SNS",
+      "SQS",
+      "CloudWatch Events",
+      "S3"
     ],  
     "correct": 2,  
     "dica": "Este serviço permite monitorar e responder a eventos na sua infraestrutura.",  
@@ -3957,12 +3957,12 @@
     "titulo": "Gerenciamento, Monitoramento e Governança",  
     "question": "Qual serviço da AWS é uma ferramenta poderosa para gerenciar recursos da AWS de forma centralizada e automatizada?",  
     "answers": [  
-      "AWS Config",  
-      "AWS Systems Manager",  
-      "VPC (Virtual Private Cloud)",  
-      "EC2"  
+      "CloudTrail",
+      "CloudWatch",
+      "AWS Systems Manager",
+      "Trusted Advisor"  
     ],  
-    "correct": 1,  
+    "correct": 2,  
     "dica": "Este serviço facilita o gerenciamento da sua infraestrutura na AWS.",  
     "icone_dica": "💡"  
   },  
@@ -3983,10 +3983,10 @@
     "titulo": "Migração e Transferência",  
     "question": "Qual serviço da AWS realiza migrações de suas aplicações on-premises para a nuvem?",  
     "answers": [  
-      "EC2",  
-      "AWS Application Migration Service (MGN)",  
-      "KMS",  
-      "Cognito"  
+      "S3",
+      "AWS Application Migration Service (MGN)",
+      "CloudEndure Migration",
+      "Storage Gateway"  
     ],  
     "correct": 1,  
     "dica": "Este serviço automatiza o processo de migração.",  
@@ -3997,10 +3997,10 @@
     "titulo": "Migração e Transferência",
     "question": "Qual serviço da AWS é utilizado para realizar migrações de aplicações on-premises para a nuvem?",
     "answers": [
-      "EC2",
+      "S3",
       "AWS Application Migration Service",
-      "KMS",
-      "Cognito"
+      "Storage Gateway",
+      "Database Migration Service"
     ],
     "correct": 1,
     "dica": "Este serviço simplifica a migração de aplicações para a AWS.",
@@ -4037,7 +4037,7 @@
     "question": "Qual serviço da AWS oferece gerenciamento de acesso centralizado para todas as contas AWS dentro de uma organização?",
     "answers": [
       "STS (Security Token Service)",
-      "Secrets Manager",
+      "AWS Organizations",
       "IAM (Identity Access Management)",
       "AWS IAM Identity Center"
     ],
@@ -4075,10 +4075,10 @@
     "titulo": "Segurança, Identidade e Conformidade",
     "question": "Através de qual serviço é feita a autenticação via federação na AWS?",
     "answers": [
-      "KMS",
+      "IAM (Identity and Access Management)",
       "Cognito",
-      "ACL (Access Control List)",
-      "AWS Config"
+      "STS (Security Token Service)",
+      "GuardDuty"
     ],
     "correct": 1,
     "dica": "Este serviço permite que usuários de fora da AWS acessem recursos na AWS.",
@@ -4127,12 +4127,12 @@
     "titulo": "Sem Servidor",
     "question": "O Lambda@Edge é executado em uma rede pública ou privada?",
     "answers": [
-      "Elastic Beanstalk",
-      "Trusted Advisor",
-      "Rede pública",
-      "KMS"
+     "Rede pública",
+      "VPC (Virtual Private Cloud)",
+      "Subnets privadas",
+      "Dentro de instâncias EC2"
     ],
-    "correct": 2,
+    "correct": 0,
     "dica": "O Lambda@Edge é executado na infraestrutura global da AWS.",
     "icone_dica": "💡"
   },
