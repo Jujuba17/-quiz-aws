@@ -2363,12 +2363,12 @@
     "titulo": "Banco de Dados",
     "question": "Em bancos de dados relacionais (RDS), é possível utilizar o recurso Multi-AZ para replicar dados em diferentes regiões?",
     "answers": [
-      "AWS Config",
-      "Não",
-      "ACL (Access Control List)",
-      "Billing Dashboard"
+      "Sim, mas apenas para fins de backup e recuperação.",
+      "Sim, para aumentar a performance de leitura em regiões distantes.",
+      "Sim, automaticamente, se a região de destino estiver configurada como secundária.",
+      "Não, o Multi-AZ replica dados entre Availability Zones na mesma região."
     ],
-    "correct": 1,
+    "correct": 3,
     "dica": "Multi-AZ replica dados dentro da mesma região.",
     "icone_dica": "💡"
   },
@@ -3040,12 +3040,12 @@
     "titulo": "Armazenamento",
     "question": "É possível hospedar sites estáticos em buckets S3?",
     "answers": [
-      "Storage Gateway",
-      "S3",
-      "Sim",
-      "Glacier"
+      "Não, o S3 é apenas para armazenamento de objetos, não para hosting.",
+      "Sim, mas apenas se o site não usar JavaScript.",
+      "Depende da região da AWS; algumas regiões não suportam hosting estático no S3.",
+      "Sim, habilitando o recurso de 'Static Website Hosting' no bucket S3."
     ],
-    "correct": 2,
+    "correct": 3,
     "dica": "O S3 pode ser usado para hospedar sites simples.",
     "icone_dica": "💡"
   },
@@ -3053,12 +3053,12 @@
     "titulo": "Banco de Dados",
     "question": "O DynamoDB é um serviço serverless?",
     "answers": [
-      "Lambda",
-      "STS (Security Token Service)",
-      "Sim",
-      "EFS"
+      "Não, você precisa provisionar e gerenciar instâncias EC2 para o DynamoDB.",
+      "Não, o DynamoDB requer a configuração de um cluster de servidores.",
+      "Depende da região da AWS; algumas regiões exigem o provisionamento de servidores.",
+      "Sim, o DynamoDB gerencia automaticamente a infraestrutura subjacente."
     ],
-    "correct": 2,
+    "correct": 3,
     "dica": "Você não precisa gerenciar servidores com o DynamoDB.",
     "icone_dica": "💡"
   },
@@ -3740,12 +3740,12 @@
     "titulo": "Armazenamento",  
     "question": "Volumes EBS do tipo Provisioned IOPS SSD (io1/io2) possuem suporte para inicialização (volume boot) de sistema operacional?",  
     "answers": [  
-      "Sim",  
-      "Storage Gateway",  
-      "Glacier",  
-      "S3"  
+      "Não, apenas volumes EBS do tipo General Purpose SSD (gp2/gp3) podem ser usados para boot.",
+      "Não, volumes Provisioned IOPS são otimizados apenas para bancos de dados, não para sistemas operacionais.",
+      "Depende do sistema operacional; alguns sistemas não são compatíveis com volumes Provisioned IOPS.",
+      "Sim, volumes Provisioned IOPS SSD (io1/io2) podem ser usados como volumes de boot." 
     ],  
-    "correct": 0,  
+    "correct": 3,  
     "dica": "Este tipo de volume pode ser usado como disco de boot.",  
     "icone_dica": "💡"  
   },  
@@ -4114,10 +4114,10 @@
     "titulo": "Gerenciamento, Monitoramento e Governança",
     "question": "A utilização da criptografia SSE-KMS no S3 possui custo?",
     "answers": [
-      "Lambda",
-      "Budgets",
-      "Route53",
-      "Sim"
+      "Não, a criptografia SSE-KMS é gratuita no S3.",
+      "Não, o custo da criptografia já está incluído no preço do S3.",
+      "Depende da região da AWS; algumas regiões oferecem SSE-KMS gratuitamente.",
+      "Sim, há custos associados ao uso do AWS KMS para criptografar dados no S3."
     ],
     "correct": 3,
     "dica": "A utilização do KMS para criptografia tem um custo associado.",
@@ -4153,12 +4153,12 @@
     "titulo": "Sem Servidor",
     "question": "Uma função Lambda pode ser acionada pelo AWS S3?",
     "answers": [
-      "Sim",
-      "Cognito",
-      "EC2",
-      "Free Tier"
+      "Não, funções Lambda só podem ser acionadas por APIs do API Gateway.",
+      "Não, o S3 só pode acionar notificações para o SNS ou SQS.",
+      "Depende do tipo de arquivo armazenado no S3; alguns tipos não podem acionar o Lambda.",
+      "Sim, o S3 pode invocar uma função Lambda em resposta a eventos como uploads de objetos."
     ],
-    "correct": 0,
+    "correct": 3,
     "dica": "O S3 pode invocar uma função Lambda quando um objeto é criado ou modificado.",
     "icone_dica": "💡"
   },
@@ -4485,11 +4485,12 @@
     "titulo": "Armazenamento",
     "question": "Um volume EFS é armazenado somente em 1 zona de disponibilidade?",
     "answers": [
-      "Sim, o EFS Standard é armazenado em uma única AZ para otimizar a latência.",
-      "Depende da classe de armazenamento utilizada. O EFS Standard é multi-AZ, enquanto o EFS IA é armazenado em uma única AZ.",
+      "Sim, por padrão, o EFS é armazenado em uma única AZ para reduzir os custos.",
+      "Não, o EFS replica os dados entre todas as regiões da AWS para alta disponibilidade.",
+      "Depende da configuração; é possível escolher se o EFS será armazenado em uma ou várias AZs.",
       "Não, o EFS Standard é projetado para ser multi-AZ, replicando dados de forma síncrona entre várias Zonas de Disponibilidade."
     ],
-    "correct": 1,
+    "correct": 2,
     "dica": "Considere a durabilidade e a disponibilidade ao escolher entre as diferentes classes de armazenamento do EFS.",
     "icone_dica": "💡"
   },
@@ -4885,11 +4886,12 @@
     "titulo": "Armazenamento",  
     "question": "Um volume EFS é armazenado somente em 1 Availability Zone (AZ)?",  
     "answers": [  
-      "Sim",  
-      "Depende",  
-      "Não"  
+      "Sim, para otimizar custos em comparação com o S3.",
+      "Sim, a menos que você configure manualmente a replicação entre AZs.",
+      "Depende do tipo de instância EC2 que está acessando o EFS.",
+      "Não, o EFS é projetado para ser armazenado em várias AZs por padrão."
     ],  
-    "correct": 1,  
+    "correct": 3,  
     "dica": "O EFS pode ser armazenado em várias AZs para alta disponibilidade.",  
     "icone_dica": "💡"  
   },  
@@ -4897,12 +4899,12 @@
     "titulo": "Armazenamento",  
     "question": "Através do Life Cycle é possível fazer transições de classe de armazenamento no S3?",  
     "answers": [  
-      "Sim",  
-      "EFS",  
-      "S3",  
-      "Storage Gateway"  
+      "Não, o Life Cycle é usado apenas para expirar objetos.",
+      "Não, essa funcionalidade é gerenciada pelo AWS Storage Gateway.",
+      "Sim, mas apenas para transicionar para a classe Glacier.",
+      "Sim, para otimizar custos movendo objetos entre diferentes classes de armazenamento."
     ],  
-    "correct": 0,  
+    "correct": 3,  
     "dica": "O Life Cycle permite mover objetos para diferentes classes de armazenamento com base em regras definidas.",  
     "icone_dica": "💡"  
   },  
@@ -4962,12 +4964,12 @@
     "titulo": "Banco de Dados",  
     "question": "Nos bancos de dados relacionais, o recurso de Multi-AZ cria instâncias para failover em outras regiões?",  
     "answers": [  
-      "Auto Scaling",  
-      "Trusted Advisor",  
-      "Não",  
-      "Billing Dashboard"  
+      "Cria snapshots regulares para recuperação em caso de desastre.",
+      "Garante backups consistentes entre diferentes regiões.",
+      "Permite a criação de réplicas somente leitura em outras regiões.",
+      "Não, o failover ocorre em uma Availability Zone diferente dentro da mesma região."  
     ],  
-    "correct": 2,  
+    "correct": 3,  
     "dica": "O Multi-AZ replica os dados dentro da mesma região, em diferentes Availability Zones.",  
     "icone_dica": "💡"  
   },  
