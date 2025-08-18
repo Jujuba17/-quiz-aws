@@ -2376,26 +2376,26 @@
     "titulo": "Banco de Dados",
     "question": "Qual tipo de replicação de banco de dados não é realizada em tempo real?",
     "answers": [
-      "KMS",
-      "EBS",
-      "CloudFront",
+      "Síncrona",
+      "Semi-síncrona",
+      "Quorum",
       "Assíncrona"
     ],
     "correct": 3,
-    "dica": "Neste tipo de replicação, a cópia é feita em um momento posterior.",
+    "dica": "A replicação acontece após a transação original ser confirmada.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Banco de Dados",
     "question": "Qual tipo de replicação de banco de dados é realizada em tempo real?",
     "answers": [
-      "Storage Gateway",
+      "Assíncrona",
       "Síncrona",
-      "IAM (Identity Access Management)",
-      "EBS"
+      "Semi-Síncrona",
+      "Snapshot"
     ],
     "correct": 1,
-    "dica": "Neste tipo de replicação, a cópia é feita simultaneamente.",
+    "dica": "A confirmação da escrita só acontece após a replicação ser concluída.",
     "icone_dica": "💡"
   },
   {
@@ -2415,26 +2415,26 @@
     "titulo": "Armazenamento",
     "question": "Qual tipo de upload minimiza o impacto de reiniciar um upload com falha devido a erros de rede?",
     "answers": [
-      "MultiPart Upload",
-      "S3",
-      "Storage Gateway",
-      "Glacier"
+      "Multipart Upload",
+      "Single-part Upload",
+      "AWS DataSync",
+      "AWS Transfer Acceleration"
     ],
     "correct": 0,
-    "dica": "Este método divide o arquivo em partes menores.",
+    "dica": "O próprio nome indica que o arquivo é dividido em vários pedaços.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Armazenamento",
     "question": "Em uma rede estável, qual tipo de upload pode aprimorar o upload de arquivos no S3?",
     "answers": [
-      "Storage Gateway",
-      "MultiPart Upload",
-      "S3",
-      "EBS"
+      "S3 Transfer Acceleration",
+      "Multipart Upload",
+      "S3 Glacier",
+      "AWS DataSync"
     ],
     "correct": 1,
-    "dica": "Este método permite enviar partes do arquivo em paralelo.",
+    "dica": "Este serviço utiliza a rede global da AWS para otimizar a velocidade de transferência.",
     "icone_dica": "💡"
   },
   {
@@ -3261,13 +3261,13 @@
     "titulo": "Armazenamento",
     "question": "Qual tipo de volume EBS é otimizado para bancos de dados grandes, com alta volumetria e tráfego de entrada e saída?",
     "answers": [
-      "EBS",
-      "Provisioned IOPS SSD",
-      "Glacier",
-      "Storage Gateway"
+      "Throughput Optimized HDD (st1)",
+      "Provisioned IOPS SSD (io1 or io2)",
+      "Cold HDD (sc1)",
+      "General Purpose SSD (gp3)"
     ],
     "correct": 1,
-    "dica": "Este volume oferece alta performance para cargas de trabalho com IOPS intensivo.",
+    "dica": "Este volume EBS garante um número específico de IOPS (operações de entrada/saída por segundo).",
     "icone_dica": "💡"
   },
   {
@@ -3688,13 +3688,13 @@
     "titulo": "Armazenamento",  
     "question": "Qual tipo de volume EBS é otimizado para bancos de dados grandes, com alta volumetria e tráfego de entrada e saída?",  
     "answers": [  
-      "EBS",  
-      "Provisioned IOPS SSD (io1/io2)",  
-      "Glacier",  
-      "Storage Gateway"  
+      "Throughput Optimized HDD (st1)",
+      "Provisioned IOPS SSD (io1/io2)",
+      "Cold HDD (sc1)",
+      "General Purpose SSD (gp3)"
     ],  
     "correct": 1,  
-    "dica": "Este volume oferece alta performance para aplicações críticas.",  
+    "dica": "Escolha este volume se você precisa de desempenho consistente e previsível para operações de leitura/escrita.",  
     "icone_dica": "💡"  
   },  
   {  
@@ -5862,12 +5862,12 @@
     "question": "Qual serviço da AWS é voltado para governança, facilitando a conformidade na nuvem e implementação de boas práticas?",
     "answers": [
       "AWS Control Tower",
-      "Elastic Beanstalk",
-      "EFS",
-      "Cognito"
+      "AWS Organizations",
+      "AWS Config",
+      "AWS Systems Manager"
     ],
     "correct": 0,
-    "dica": "Este serviço ajuda a criar um ambiente de nuvem seguro e bem gerenciado.",
+    "dica": "Pense em um serviço que te ajuda a 'controlar' e 'gerenciar' o seu ambiente AWS.",
     "icone_dica": "💡"
   },
   {
@@ -5875,12 +5875,12 @@
     "question": "Qual serviço da AWS oferece informações em tempo real sobre o status de saúde dos serviços da AWS em diferentes regiões do mundo?",
     "answers": [
       "AWS Health Dashboard",
-      "Cost Explorer",
-      "Trusted Advisor",
-      "Route53"
+      "AWS CloudTrail",
+      "Amazon CloudWatch",
+      "AWS Config"
     ],
     "correct": 0,
-    "dica": "Este serviço permite monitorar a disponibilidade e performance dos serviços da AWS.",
+    "dica": "O nome do serviço contém a palavra 'saúde' (em inglês).",
     "icone_dica": "💡"
   },
   {
@@ -5888,38 +5888,38 @@
     "question": "Qual serviço da AWS é projetado para simplificar e automatizar o processo de implantação e dimensionamento de aplicativos Windows, SQL Server e SAP na nuvem da AWS?",
     "answers": [
       "AWS Launch Wizard",
-      "Lambda",
-      "AWS Config",
-      "EC2"
+      "AWS Systems Manager",
+      "AWS CloudFormation",
+      "AWS Service Catalog"
     ],
     "correct": 0,
-    "dica": "Este serviço facilita a migração e implantação de aplicações Windows na AWS.",
+    "dica": "Este serviço te ajuda a 'lançar' seus aplicativos de forma rápida e fácil.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Gerenciamento, Monitoramento e Governança",
     "question": "Através de qual serviço da AWS é possível agrupar serviços ou recursos da AWS em grupos, utilizando tags ou pilhas do CloudFormation, e executar operações em massa nesses grupos de recursos?",
     "answers": [
-      "VPC (Virtual Private Cloud)",
+      "AWS Systems Manager",
       "AWS Resource Groups",
-      "Cost Explorer",
-      "CloudFront"
+      "AWS Config",
+      "AWS CloudFormation"
     ],
     "correct": 1,
-    "dica": "Este serviço permite gerenciar e automatizar tarefas em vários recursos de forma eficiente.",
+    "dica": "O nome deste serviço contém a palavra 'grupos'.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Gerenciamento, Monitoramento e Governança",
     "question": "Qual serviço da AWS permite às organizações criar e gerenciar catálogos de serviços de TI internos?",
     "answers": [
-      "EBS",
-      "Outposts",
+      "AWS Systems Manager",
+      "AWS Marketplace",
       "AWS Config",
       "AWS Service Catalog"
     ],
     "correct": 3,
-    "dica": "Este serviço permite padronizar e controlar o acesso a serviços de TI dentro da organização.",
+    "dica": "O nome deste serviço contém a palavra 'catálogo'.",
     "icone_dica": "💡"
   },
   {
@@ -5927,9 +5927,9 @@
     "question": "O EFS é um serviço de armazenamento escalável, não compatível com servidores Windows. Qual serviço da AWS oferece armazenamento compartilhado para servidores Windows?",
     "answers": [
       "AWS FSx for Windows File Server",
-      "EFS",
-      "Storage Gateway",
-      "S3"
+      "Amazon S3",
+      "AWS Storage Gateway",
+      "Amazon EBS"
     ],
     "correct": 0,
     "dica": "Este serviço oferece um sistema de arquivos compartilhado otimizado para servidores Windows.",
@@ -5939,9 +5939,9 @@
     "titulo": "Armazenamento",
     "question": "Qual serviço da AWS permite criar um ambiente para Disaster Recovery (DR) para seus recursos on-premises ou baseados em nuvem?",
     "answers": [
-      "S3",
-      "Storage Gateway",
-      "EFS",
+      "Amazon S3",
+      "AWS Storage Gateway",
+      "Amazon EBS",
       "AWS Elastic Disaster Recovery (DRS)"
     ],
     "correct": 3,
@@ -5952,10 +5952,10 @@
     "titulo": "Migração e Transferência",
     "question": "Qual serviço da AWS ajuda a planejar projetos de migração para a nuvem, coletando informações sobre seus datacenters on-premises?",
     "answers": [
-      "IAM (Identity Access Management)",
+      "AWS Migration Hub",
       "AWS Application Discovery Service",
-      "Glacier",
-      "Lightsail"
+      "AWS DataSync",
+      "AWS Transfer Family"
     ],
     "correct": 1,
     "dica": "Este serviço fornece informações detalhadas sobre seu ambiente on-premises para facilitar a migração.",
