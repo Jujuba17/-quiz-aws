@@ -684,7 +684,7 @@
   {
     "titulo": "Banco de Dados",
  
-    "question": "O ______ é um banco de dados de <span style=\"color: rgb(255, 85, 0);\">chave-valor</span>;(não relacional) que é utilizado para aplicações de baixa latência.",
+    "question": "É um banco de dados de <span style=\"color: rgb(255, 85, 0);\">chave-valor</span>;(não relacional) que é utilizado para aplicações de baixa latência.",
     "answers": [
       "Aurora",
       "DynamoDB",
@@ -996,10 +996,10 @@
     "titulo": "Banco de Dados",
     "question": "DynamoDB por padrão utiliza discos do tipo _____, para baixa latência.",
     "answers": [
-      "Cognito",
+      "HDD",
       "SSD",
-      "KMS",
-      "AWS Config"
+      "Magnético",
+      "Fita"
     ],
     "correct": 1,
     "dica": "",
@@ -1948,9 +1948,9 @@
     "titulo": "Segurança, Identidade e Conformidade",
     "question": "É um serviço automatizado de gerenciamento de <span style=\"color: rgb(255, 85, 0);\">vulnerabilidades</span> que verifica continuamente seus recursos da AWS.",
     "answers": [
-      "Cognito",
+      "AWS Shield",
       "AWS Config",
-      "KMS",
+      "Amazon GuardDuty",
       "Inspector"
     ],
     "correct": 3,
@@ -1975,8 +1975,8 @@
     "question": "É um serviço de proteção contra ataques DDoS que protege os aplicativos executados na AWS.",
     "answers": [
       "AWS Config",
-      "KMS",
-      "Shield",
+      "Inspector",
+      "AWS Shield",
       "Secrets Manager"
     ],
     "correct": 2,
@@ -2861,9 +2861,9 @@
     "question": "Qual modelo de infraestrutura oferece um serviço pronto para uso, como um webmail?",
     "answers": [
       "SaaS (Software as a Service)",
-      "ACL (Access Control List)",
-      "Free Tier",
-      "EBS"
+      "IaaS (Infrastructure as a Service)",
+      "PaaS (Platform as a Service)",
+      "On-Premise"
     ],
     "correct": 0,
     "dica": "Neste modelo, o provedor gerencia toda a infraestrutura e o software.",
@@ -2874,9 +2874,9 @@
     "question": "Qual modelo de infraestrutura oferece maior flexibilidade e controle sobre os recursos de TI?",
     "answers": [
       "IaaS (Infraestrutura as a Service)",
-      "Route53",
-      "Free Tier",
-      "Elastic Beanstalk"
+      "SaaS (Software as a Service)",
+      "PaaS (Platform as a Service)",
+      "On-Premise"
     ],
     "correct": 0,
     "dica": "Neste modelo, você gerencia a maior parte da infraestrutura.",
@@ -2925,13 +2925,13 @@
     "titulo": "Migração e Transferência",
     "question": "Qual serviço da AWS permite converter schemas de banco de dados de um mecanismo para outro?",
     "answers": [
-      "AWS Config",
-      "Cognito",
-      "AWS Schema Conversion Tool (SCT)",
-      "EC2"
+      "AWS DMS (Database Migration Service)",
+      "AWS SCT (Schema Conversion Tool)",
+      "AWS DataSync",
+      "AWS Storage Gateway"
     ],
-    "correct": 2,
-    "dica": "Este serviço facilita a migração de bancos de dados.",
+    "correct": 1,
+    "dica": "O nome deste serviço indica sua principal função: 'converter' schemas.",
     "icone_dica": "💡"
   },
   {
@@ -3001,10 +3001,10 @@
     "titulo": "Armazenamento",
     "question": "Qual o tempo de recuperação padrão do S3 Glacier?",
     "answers": [
-      "Storage Gateway",
+      "3 a 5 minutos",
       "3 a 5 horas",
-      "S3",
-      "Glacier"
+      "3 a 5 dias",
+      "3 a 5 meses"
     ],
     "correct": 1,
     "dica": "Este é o tempo de recuperação mais comum para o Glacier.",
@@ -3028,9 +3028,9 @@
     "question": "Qual o tempo de recuperação em massa do S3 Glacier?",
     "answers": [
       "5 a 12 horas",
-      "Storage Gateway",
-      "EFS",
-      "S3"
+      "5 a 12 minutos",
+      "5 a 12 dias",
+      "5 a 12 meses"
     ],
     "correct": 0,
     "dica": "Este é o tempo de recuperação para grandes volumes de dados.",
@@ -3119,12 +3119,12 @@
     "question": "Para Disaster Recovery (DR), é recomendado gravar o backup no S3 de outra região ou outra Availability Zone (AZ)?",
     "answers": [
       "Região",
-      "S3",
-      "Storage Gateway",
-      "Glacier"
+      "Availability Zone (AZ)",
+      "Data Center Local",
+      "No mesmo bucket S3"
     ],
     "correct": 0,
-    "dica": "A replicação em outra região oferece maior proteção contra desastres.",
+    "dica": "Pense em qual local oferece a maior 'distância' e 'isolamento' do seu ambiente principal.",
     "icone_dica": "💡"
   },
   {
@@ -3660,16 +3660,16 @@
   },  
   {  
     "titulo": "Armazenamento",  
-    "question": "Qual tipo de volume EBS é recomendado para Big Data, Data Warehouse e processamento de logs?",  
-    "answers": [  
-      "Throughput Optimized HDD (st1)",  
-      "EBS",  
-      "Glacier",  
-      "S3"  
-    ],  
-    "correct": 0,  
-    "dica": "Este volume oferece alta taxa de transferência para grandes volumes de dados.",  
-    "icone_dica": "💡"  
+    "question": "Qual tipo de volume EBS é recomendado para Big Data, Data Warehouse e processamento de logs?",
+    "answers": [
+      "Throughput Optimized HDD (st1)",
+      "Cold HDD (sc1)",
+      "General Purpose SSD (gp3)",
+      "Provisioned IOPS SSD (io2)"
+    ],
+    "correct": 0,
+    "dica": "Considere o tipo de volume EBS que oferece um bom equilíbrio entre custo e 'throughput' (vazão) para grandes volumes de dados.",
+    "icone_dica": "💡"
   },  
   {  
     "titulo": "Armazenamento",  
@@ -3712,25 +3712,25 @@
   },  
   {  
     "titulo": "Armazenamento",  
-    "question": "Qual tipo de volume EBS é recomendado para bancos de dados com alto consumo de E/S?",  
-    "answers": [  
-      "EFS",  
-      "EBS",  
-      "Provisioned IOPS SSD (io1/io2)",  
-      "Storage Gateway"  
-    ],  
-    "correct": 2,  
-    "dica": "Este volume oferece alta performance para aplicações que exigem muitas operações de leitura/escrita.",  
-    "icone_dica": "💡"  
+    "question": "Qual tipo de volume EBS é recomendado para bancos de dados com alto consumo de E/S?",
+    "answers": [
+      "Throughput Optimized HDD (st1)",
+      "Cold HDD (sc1)",
+      "Provisioned IOPS SSD (io1/io2)",
+      "General Purpose SSD (gp3)"
+    ],
+    "correct": 2,
+    "dica": "Pense em qual tipo de volume EBS é projetado para oferecer o maior número de operações de entrada/saída por segundo (IOPS).",
+    "icone_dica": "💡"
   },  
   {  
     "titulo": "Armazenamento",  
     "question": "Qual tipo de volume EBS é recomendado para cenários nos quais o menor custo de armazenamento é o fator mais importante?",  
     "answers": [  
-      "S3",  
+      "Throughput Optimized HDD (st1)",  
       "Cold HDD (sc1)",  
-      "Glacier",  
-      "EBS"  
+      "General Purpose SSD (gp3)",  
+      "Provisioned IOPS SSD (io1/io2)"  
     ],  
     "correct": 1,  
     "dica": "Este volume é ideal para arquivamento de dados.",  
@@ -3855,10 +3855,10 @@
     "titulo": "Banco de Dados",  
     "question": "Qual é a função do DAX (DynamoDB Accelerator)?",  
     "answers": [  
-      "Cognito",  
-      "Acelerar o tempo de resposta ao DynamoDB",  
-      "Trusted Advisor",  
-      "Outposts"  
+      "Gerenciar a segurança do DynamoDB",
+      "Acelerar o tempo de resposta ao DynamoDB",
+      "Realizar backups do DynamoDB",
+      "Monitorar o desempenho do DynamoDB"
     ],  
     "correct": 1,  
     "dica": "Este serviço melhora a performance do DynamoDB.",  
@@ -3869,9 +3869,9 @@
     "question": "No Storage Gateway, qual tipo de gateway armazena os dados mais utilizados no storage gateway e envia o restante para a AWS?",  
     "answers": [  
       "Gateway-Cached",  
-      "Glacier",  
-      "EBS",  
-      "S3"  
+      "Gateway-Stored",
+      "Gateway-Transit",
+      "Gateway-Direct"
     ],  
     "correct": 0,  
     "dica": "Este gateway oferece acesso rápido aos dados mais importantes.",  
@@ -3881,14 +3881,14 @@
     "titulo": "Armazenamento",  
     "question": "No Storage Gateway, qual tipo de gateway armazena todos os dados localmente e também os envia para a AWS?",  
     "answers": [  
-      "Glacier",  
-      "EFS",  
-      "S3",  
-      "Gateway-Stored"  
-    ],  
-    "correct": 3,  
-    "dica": "Este gateway garante que todos os dados sejam armazenados localmente e na nuvem.",  
-    "icone_dica": "💡"  
+      "Gateway-Cached",
+      "Gateway-Stored",
+      "Gateway-Transit",
+      "Gateway-Direct"
+    ],
+    "correct": 1,
+    "dica": "Este gateway 'armazena' tudo localmente antes de enviar para a AWS.",
+    "icone_dica": "💡" 
   },  
   {  
     "titulo": "Computação",  
@@ -4306,12 +4306,12 @@
     "question": "Qual serviço da AWS pode ser utilizado para criar aplicações web simples (LAMP, Nginx, MEAN e Node.js)?",
     "answers": [
       "EC2",
-      "Auto Scaling",
+      "Elastic Beanstalk",
       "Lightsail",
-      "Lightsail"
+      "Lambda"
     ],
     "correct": 2,
-    "dica": "Este serviço oferece templates pré-configurados para facilitar a criação de aplicações web.",
+    "dica": "Este serviço é como um 'pacote completo' para começar rápido com aplicações web.",
     "icone_dica": "💡"
   },
   {
@@ -5133,10 +5133,10 @@
     "titulo": "Redes e Entrega de Conteúdo",
     "question": "Quantos adaptadores de rede podem ser utilizados em uma instância EC2?",
     "answers": [
-      "Auto Scaling",
+      "1",
       "3",
-      "Lambda",
-      "Budgets"
+      "5",
+      "10"
     ],
     "correct": 1,
     "dica": "O número de adaptadores de rede é limitado em uma instância EC2.",
@@ -5250,23 +5250,23 @@
     "titulo": "Computação",
     "question": "Qual é o endereço IP utilizado para acessar os metadados de uma instância EC2?",
     "answers": [
-      "Auto Scaling",
-      "http://169.254.169.254/latest/meta-data/",
-      "Outposts",
-      "Lightsail"
+      "10.0.0.0/16",
+      "192.168.0.0/24",
+      "169.254.169.254/latest/meta-data/", 
+      "127.0.0.1"
     ],
-    "correct": 1,
-    "dica": "Este endereço IP é utilizado para acessar informações sobre a instância em execução.",
+    "correct": 2,
+    "dica": "Este endereço IP é 'especial' e usado internamente pelas instâncias EC2.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Armazenamento",
     "question": "Qual o tamanho máximo de um único arquivo que pode ser armazenado no S3?",
     "answers": [
-      "Storage Gateway",
+      "10 TB",
       "5 TB",
-      "Glacier",
-      "S3"
+      "5 GB",
+      "10 MB"
     ],
     "correct": 1,
     "dica": "O S3 permite armazenar arquivos grandes, mas há um limite para o tamanho de um único objeto.",
@@ -5963,15 +5963,15 @@
   },
   {
     "titulo": "Segurança, Identidade e Conformidade",
-    "question": "Qual serviço da AWS ajuda a proteger informações confidenciais, como senhas, chaves de API, certificados e outros dados sensíveis?",
+     "question": "Qual recurso da AWS ajuda a proteger informações confidenciais como senhas e chaves de API, e também é capaz de rotacionar as senhas e auditar quando elas foram usadas?",
     "answers": [
-      "KMS",
-      "ACL (Access Control List)",
-      "AWS Config",
-      "AWS Secrets Manager"
+      "AWS Secrets Manager",
+      "AWS IAM Role",
+      "AWS KMS Key",
+      "AWS CloudTrail"
     ],
-    "correct": 3,
-    "dica": "Este serviço permite armazenar, rotacionar e gerenciar segredos de forma segura.",
+    "correct": 0,
+    "dica": "Este recurso 'gerencia segredos' e ajuda a manter suas credenciais seguras.",
     "icone_dica": "💡"
   },
   {
@@ -5979,39 +5979,40 @@
     "question": "Qual recurso da AWS ajuda a proteger informações confidenciais como senhas e chaves de API, e também é capaz de rotacionar as senhas e auditar quando elas foram usadas?",
     "answers": [
       "AWS Secrets Manager",
-      "Secrets Manager",
-      "Cognito",
-      "AWS Config"
+      "AWS KMS",
+      "AWS IAM",
+      "AWS CloudHSM"
     ],
     "correct": 0,
-    "dica": "Este recurso oferece uma forma segura de gerenciar e proteger segredos.",
+    "dica": "Pense em um serviço que 'gerencia' e 'protege' informações secretas.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Segurança, Identidade e Conformidade",
     "question": "Qual serviço da AWS oferece uma visão centralizada de segurança da sua infraestrutura na AWS, possibilitando identificar vulnerabilidades, ameaças ou problemas de segurança?",
     "answers": [
-      "Secrets Manager",
       "AWS Config",
+      "AWS CloudWatch",
       "AWS Security Hub",
-      "CloudTrail"
+      "Amazon Inspector"
     ],
     "correct": 2,
-    "dica": "Este serviço permite monitorar e responder a alertas de segurança de forma eficiente.",
+    "dica": "Este serviço atua como um 'painel de controle' para a segurança da sua AWS.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Segurança, Identidade e Conformidade",
     "question": "Qual serviço da AWS é projetado para simplificar e automatizar o processo de auditoria de recursos na AWS?",
     "answers": [
-      "Secrets Manager",
-      "ACL (Access Control List)",
-      "IAM (Identity Access Management)",
+      "AWS Trusted Advisor",
+      "AWS CloudTrail",
+      "AWS IAM Access Analyzer",
       "AWS Audit Manager"
     ],
     "correct": 3,
-    "dica": "",
+    "dica": "O nome deste serviço já indica sua função principal: 'auditoria'.",
     "icone_dica": "💡"
+
   },
   {  
     "titulo": "Computação de Usuário Final",  
@@ -6379,19 +6380,6 @@
   },  
   {  
     "titulo": "Segurança, Identidade e Conformidade",  
-    "question": "Qual serviço da AWS oferece uma visão centralizada de segurança da sua infraestrutura na AWS, possibilitando identificar vulnerabilidades, ameaças ou problemas de segurança?",  
-    "answers": [  
-      "Secrets Manager",  
-      "AWS Config",  
-      "AWS Security Hub",  
-      "CloudTrail"  
-    ],  
-    "correct": 2,  
-    "dica": "Este serviço agrega informações de segurança de diferentes fontes para facilitar a identificação e correção de problemas.",  
-    "icone_dica": "💡"  
-  },  
-  {  
-    "titulo": "Segurança, Identidade e Conformidade",  
     "question": "Qual serviço da AWS é projetado para simplificar e automatizar o processo de auditoria de recursos na AWS?",  
     "answers": [  
       "Secrets Manager",  
@@ -6537,10 +6525,9 @@
     "titulo": "Conceitos",
     "question": "O que inclui o AWS re:Post?",
     "answers": [
-      "AWS Config",
-      "EBS",
-      "Artigos e vídeos do AWS Official Knowledge Center",
-      "EFS"
+      "Documentação oficial da AWS",
+      "Treinamentos oficiais da AWS",
+      "Artigos e vídeos do AWS Official Knowledge Center"
     ],
     "correct": 2,
     "dica": "Este recurso oferece respostas para perguntas frequentes sobre a AWS.",
@@ -7058,9 +7045,9 @@
     "question": "Como um banco de dados relacional pode ser implementado na AWS?",  
     "answers": [  
       "RDS ou instâncias EC2",  
-      "Cognito",  
-      "IAM (Identity Access Management)",  
-      "Glacier"  
+      "DynamoDB",
+      "Redshift",
+      "Neptune"
     ],  
     "correct": 0,  
     "dica": "Existem duas opções principais para implementar bancos de dados relacionais na AWS.",  
