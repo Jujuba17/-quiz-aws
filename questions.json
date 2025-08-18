@@ -447,12 +447,12 @@
     "titulo": "Computação",
     "question": "O que significa EC2",
     "answers": [
-      "Elastic Two",
-      "Elastic Beanstalk",
-      "Elastic Cloud",
-      "Elastic Compute Cloud"
+      "Efficient Compute Container",
+      "Elastic Container Cluster",
+      "Elastic Compute Cloud",
+      "Enhanced Caching Component"
     ],
-    "correct": 3,
+    "correct": 2,
     "dica": "",
     "icone_dica": "💡"
   },
@@ -473,39 +473,39 @@
     "titulo": "Computação",
     "question": "No EC2, o modelo de preço _____ Plans é uma categoria que oferece preços baixos,\nmas com <b><font color=\"#ff5500\">compromisso de 1 a 3 anos</font></b>.",
     "answers": [
-      "Saving",
-      "Auto Scaling",
-      "Elastic Beanstalk",
-      "Lambda"
+      "Savings",
+      "Reservado",
+      "Capacidade sob demanda",
+      "Spot"
     ],
     "correct": 0,
-    "dica": "",
+    "dica": "Este modelo de preços oferece descontos significativos em troca de um compromisso de uso contínuo de computação.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Computação",
     "question": "No EC2, o modelo de preço Instância _____ é um tipo de modelo utilizado para <font color=\"#ff5500\">testes\ncomputacionais</font> ou serviços que suportam interrupções.;",
     "answers": [
-      "Elastic Beanstalk",
+      "Reservada",
       "Spot",
-      "Lightsail",
-      "EC2"
+      "Sob demanda",
+      "Dedicada"
     ],
     "correct": 1,
-    "dica": "",
+    "dica": "Este modelo de preços permite licitar a capacidade não utilizada do EC2 e pode ser interrompido com um aviso.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Computação",
     "question": "No <b><font color=\"#ff5500\">EC2,</font></b> temos diversos tipos de _______, otimizadas para\ndiferentes cenários.",
     "answers": [
-      "Lambda",
-      "EC2",
-      "Outposts",
+      "volumes",
+      "snapshots",
+      "security groups",
       "instâncias"
     ],
     "correct": 3,
-    "dica": "",
+    "dica": "Considere o recurso principal que você provisiona e dimensiona no EC2 para executar suas aplicações.",
     "icone_dica": "💡"
   },
   {
@@ -552,12 +552,12 @@
     "question": "É possível <span style=\"color: rgb(255, 85, 0);\">monitorar </span>instâncias EC2 e criar alarmes de alertas através de qual serviço?",
     "answers": [
       "CloudWatch",
-      "Auto Scaling",
-      "Elastic Beanstalk",
-      "Lightsail"
+      "CloudTrail",
+      "Config",
+      "Trusted Advisor"
     ],
     "correct": 0,
-    "dica": "",
+    "dica": "Este serviço coleta métricas de recursos da AWS, incluindo CPU, memória e utilização de disco.",
     "icone_dica": "💡"
   },
   {
@@ -2166,12 +2166,12 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "Qual serviço da AWS permite dividir um arquivo grande em partes menores para otimizar o upload e, em caso de falha, retomar o processo de onde parou?",
+    "question": "Qual recurso do S3 permite dividir um arquivo grande em partes menores para otimizar o upload e, em caso de falha, retomar o processo de onde parou?",
     "answers": [
-      "Glacier",
-      "MultiPart Upload",
-      "EFS",
-      "EBS"
+      "S3 Transfer Acceleration",
+      "S3 Multi-Part Upload",
+      "S3 Object Versioning",
+      "S3 Lifecycle Policies"
     ],
     "correct": 1,
     "dica": "Pense em um método de upload que lida com arquivos grandes de forma eficiente.",
@@ -2181,13 +2181,13 @@
     "titulo": "Armazenamento",
     "question": "Qual o nome do processo de upload padrão no S3, onde o arquivo é enviado em um único stream de dados?",
     "answers": [
-      "EFS",
-      "Glacier",
+      "PUT Object",
+      "GET Object",
       "S3 MultiPart Upload",
-      "Single Put Upload"
+      "S3 Transfer Acceleration"
     ],
-    "correct": 3,
-    "dica": "Analise a forma como os dados são enviados para o S3",
+    "correct": 0,
+    "dica": "Pense no verbo HTTP usado para enviar um objeto para o S3",
     "icone_dica": "💡"
   },
   {
@@ -2233,13 +2233,13 @@
     "titulo": "Produtividade Empresarial",
     "question": "Qual o significado da sigla SES?",
     "answers": [
-      "CloudTrail",
-      "Trusted Advisor",
-      "CloudFront",
+      "Simple Email Solution",
+      "Secure Email System",
+      "Scalable Email Service",
       "Simple Email Service"
     ],
     "correct": 3,
-    "dica": "Está relacionado ao envio de e-mails.",
+    "dica": "Pense na função principal do serviço: enviar e-mails de forma simples.",
     "icone_dica": "💡"
   },
   {
@@ -2247,24 +2247,24 @@
     "question": "Qual serviço da AWS permite gerenciar suas próprias chaves de criptografia usando HSMs que atendem a padrões rigorosos de segurança?",
     "answers": [
       "CloudHSM",
-      "STS (Security Token Service)",
-      "IAM (Identity Access Management)",
-      "KMS"
+      "KMS",
+      "IAM",
+      "Certificate Manager"
     ],
     "correct": 0,
-    "dica": "Pense em 'Hardware Security Module'.",
+    "dica": "Este serviço oferece controle total sobre suas chaves de criptografia, dentro de módulos de hardware seguros.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Segurança, Identidade e Conformidade",
     "question": "Qual serviço da AWS permite provisionar, gerenciar e implantar facilmente certificados SSL/TLS?",
     "answers": [
-      "CloudTrail",
-      "AWS Config",
+      "IAM (Identity and Access Management)",
       "AWS Certificate Manager (ACM)",
-      "STS (Security Token Service)"
+      "AWS KMS (Key Management Service)",
+      "AWS Shield"
     ],
-    "correct": 2,
+    "correct": 1,
     "dica": "O nome do serviço indica a sua função.",
     "icone_dica": "💡"
   },
@@ -7239,9 +7239,9 @@
     "titulo": "Redes e Entrega de Conteúdo",
     "question": "Qual tipo de Internet Gateway, através de IPv6, permite o tráfego de saída, mas impede o tráfego de entrada?",
     "answers": [
-      "Lambda",
-      "CloudTrail",
-      "Savings Plans",
+      "NAT Gateway",
+      "Virtual Private Gateway",
+      "Transit Gateway",
       "Egress-Only Internet Gateway"
     ],
     "correct": 3,
