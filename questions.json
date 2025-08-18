@@ -353,7 +353,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "No <span style=\"color: rgb(0, 0, 0);\">Storage Sateway</span>, qual o tipo de armazenamento indicado para <b style=\"color: rgb(255, 85, 0);\">arquivos estáticos</b>, como mp4, pdf ou docs?",
+    "question": "No <span style=\"color: rgb(0, 0, 0);\">Storage Gateway</span>, qual o tipo de armazenamento indicado para <b style=\"color: rgb(255, 85, 0);\">arquivos estáticos</b>, como mp4, pdf ou docs?",
     "answers": [
       "Volume Gateway",
       "File Gateway",
@@ -3313,10 +3313,10 @@
     "titulo": "Armazenamento",
     "question": "Volumes EBS do tipo Provisioned IOPS SSD podem ser usados como volume de boot para sistemas operacionais?",
     "answers": [
-      "Sim",
-      "Storage Gateway",
-      "Glacier",
-      "S3"
+      "Sim, se a instância for Nitro e o kernel for compatível com NVMe.",
+      "Storage Gateway sincronizado com um cache local em RAM.",
+      "Glacier para acesso imediato com restauração acelerada.",
+      "S3 com versionamento ativado e política de lifecycle para Standard_IA."
     ],
     "correct": 0,
     "dica": "Este volume oferece alta performance para cargas de trabalho com IOPS intensivo.",
@@ -3326,13 +3326,13 @@
     "titulo": "Armazenamento",
     "question": "Volumes EBS do tipo Cold HDD podem ser usados como volume de boot para sistemas operacionais?",
     "answers": [
-      "EBS",
-      "Não",
-      "Glacier",
-      "Storage Gateway"
+      "Sim, desde que a instância EC2 esteja otimizada para EBS e o parâmetro `ebsOptimized` esteja definido como `true`.",
+      "Não, volumes Cold HDD (sc1) são projetados para armazenamento de dados de baixa frequência e não atendem aos requisitos de IOPS para boot.",
+      "Sim, utilizando o EBS Fast Snapshot Restore (FSR) para restaurar um snapshot do volume sc1 para um volume gp3 antes do boot.",
+      "Sim, configurando um Storage Gateway no modo Volume Armazenado com um cache local em SSD para acelerar o processo de boot."
     ],
     "correct": 1,
-    "dica": "Este volume é otimizado para armazenamento de dados acessados com pouca frequência.",
+    "dica": "Considere as características de performance e custo dos diferentes tipos de volumes EBS ao selecionar a opção mais adequada para cada caso de uso.",
     "icone_dica": "💡"
   },
   {
@@ -3753,13 +3753,13 @@
     "titulo": "Armazenamento",  
     "question": "Volumes EBS do tipo Cold HDD (sc1) possuem suporte para inicialização (volume boot) de sistema operacional?",  
     "answers": [  
-      "EBS",  
-      "Não",  
-      "Glacier",  
-      "Storage Gateway"  
+      "Sim, desde que o atributo `DeleteOnTermination` esteja definido como `false` e o volume seja criptografado com AWS KMS.",
+      "Não, volumes Cold HDD (sc1) são otimizados para throughput e não fornecem as IOPS necessárias para a inicialização do sistema operacional.",
+      "Sim, utilizando um snapshot incremental do volume sc1 e restaurando-o para um volume EBS otimizado para IOPS provisionadas (io2).",
+      "Sim, através da configuração de um Storage Gateway no modo gateway de fitas virtuais (VTL) e realizando um restore para um volume EBS Standard."  
     ],  
     "correct": 1,  
-    "dica": "Este tipo de volume não pode ser usado como disco de boot.",  
+    "dica": "A escolha do tipo de volume EBS impacta diretamente no desempenho e nos custos da sua aplicação. Avalie cuidadosamente os requisitos de IOPS e throughput.",  
     "icone_dica": "💡"  
   },  
   {  
@@ -4433,22 +4433,22 @@
     "titulo": "Sem Servidor",
     "question": "O EKS é um serviço serverless para execução de contêineres Kubernetes ou um serviço de orquestração de contêineres com Kubernetes?",
     "answers": [
-      "Auto Scaling",
-      "Orquestração de contêineres com Kubernetes",
-      "Cost Explorer",
-      "Serverless"
+      "Auto Scaling dinâmico.",
+      "Orquestrador Kubernetes gerenciado.",
+      "Análise de custos.",
+      "Plataforma serverless."
     ],
     "correct": 1,
-    "dica": "O EKS simplifica a implantação e o gerenciamento de clusters Kubernetes na AWS.",
+    "dica": "Serverless = menos gerenciamento.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Segurança, Identidade e Conformidade",
     "question": "Qual serviço da AWS facilita a análise, a investigação e a identificação rápida da causa raiz de potenciais problemas de segurança?",
     "answers": [
-      "Detective",
-      "KMS",
-      "CloudTrail",
+      "Amazon Detective",
+      "AWS Key Management Service (KMS)",
+      "AWS CloudTrail",
       "AWS Config"
     ],
     "correct": 0,
@@ -4459,51 +4459,51 @@
     "titulo": "Segurança, Identidade e Conformidade",
     "question": "Qual serviço da AWS é utilizado para segurança e privacidade de dados?",
     "answers": [
-      "CloudTrail",
-      "Macie",
-      "Secrets Manager",
+      "AWS CloudTrail",
+      "Amazon Macie",
+      "AWS Secrets Manager",
       "AWS Config"
     ],
     "correct": 1,
-    "dica": "Este serviço ajuda a descobrir, classificar e proteger dados confidenciais na AWS.",
+    "dica": "Este serviço identifica e protege dados sensíveis em escala.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Interação com os Clientes",
     "question": "Com qual serviço da AWS é possível criar uma central de atendimento (chat) na nuvem?",
     "answers": [
-      "KMS",
-      "Billing Dashboard",
+      "AWS Key Management Service (KMS)",
+      "AWS Billing and Cost Management Dashboard",
       "Amazon Connect",
-      "CloudTrail"
+      "AWS CloudTrail"
     ],
     "correct": 2,
-    "dica": "Este serviço oferece uma solução completa para criar uma central de atendimento omnichannel.",
+    "dica": "Este serviço oferece roteamento inteligente de chamadas, análise de dados em tempo real e integração com outros serviços da AWS.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Armazenamento",
     "question": "Um volume EFS é armazenado somente em 1 zona de disponibilidade?",
     "answers": [
-      "Sim",
-      "Depende",
-      "Não"
+      "Sim, o EFS Standard é armazenado em uma única AZ para otimizar a latência.",
+      "Depende da classe de armazenamento utilizada. O EFS Standard é multi-AZ, enquanto o EFS IA é armazenado em uma única AZ.",
+      "Não, o EFS Standard é projetado para ser multi-AZ, replicando dados de forma síncrona entre várias Zonas de Disponibilidade."
     ],
     "correct": 1,
-    "dica": "O EFS pode ser armazenado em várias Availability Zones, dependendo da configuração.",
+    "dica": "Considere a durabilidade e a disponibilidade ao escolher entre as diferentes classes de armazenamento do EFS.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Armazenamento",
     "question": "Através do Lifecycle é possível fazer transições de classe no S3?",
     "answers": [
-      "Sim",
-      "EFS",
-      "S3",
-      "Storage Gateway"
+      "Sim, com regras.",
+      "Só expiração.",
+      "Mesma família só.",
+      "Manual apenas."
     ],
     "correct": 0,
-    "dica": "O Lifecycle permite mover objetos para diferentes classes de armazenamento com base em regras definidas.",
+    "dica": "Lifecycle = automatização.",
     "icone_dica": "💡"
   },
   {
@@ -4549,23 +4549,23 @@
     "titulo": "Armazenamento",
     "question": "No S3 Intelligent-Tiering, se um objeto está em uma classe inferior, por exemplo Archive Instance, ao ser acessado, para qual classe ele é movido automaticamente?",
     "answers": [
-      "S3",
+      "Standard",
       "Frequent Access",
-      "EFS",
-      "Storage Gateway"
+      "Intelligent-Tiering (acesso frequente)",
+      "Glacier"
     ],
     "correct": 1,
-    "dica": "O objeto é movido para a classe de acesso mais frequente para otimizar o custo.",
+    "dica": "Camada otimizada para acesso frequente.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Banco de Dados",
     "question": "Nos bancos de dados relacionais, o recurso de Multi-AZ cria instâncias para failover em outras regiões?",
     "answers": [
-      "Auto Scaling",
-      "Trusted Advisor",
-      "Não",
-      "Billing Dashboard"
+      "Sim, para aumentar a resiliência e reduzir a latência global.",
+      "Sim, e também replica os dados de forma assíncrona.",
+      "Não, o failover ocorre em outra Availability Zone na mesma região.",
+      "Depende da configuração do banco de dados."
     ],
     "correct": 2,
     "dica": "O Multi-AZ cria instâncias de failover na mesma região, em diferentes Availability Zones.",
@@ -4627,10 +4627,10 @@
     "titulo": "Conceitos",
     "question": "O que é nuvem privada?",
     "answers": [
-      "ACL (Access Control List)",
-      "Auto Scaling",
-      "Nuvem utilizada em data center privado/exclusivo",
-      "Secrets Manager"
+      "Uma partição isolada na nuvem pública, dedicada a um único cliente.",
+      "Um conjunto de serviços gerenciados por um provedor de nuvem, acessíveis apenas via VPN.",
+      "Uma infraestrutura de computação dedicada e operada exclusivamente para uma organização.",
+      "Uma nuvem pública com recursos de segurança adicionais, como criptografia e firewalls."
     ],
     "correct": 2,
     "dica": "Neste modelo, a infraestrutura é dedicada a um único cliente.",
@@ -4640,12 +4640,12 @@
     "titulo": "Conceitos",
     "question": "O que é nuvem híbrida?",
     "answers": [
-      "Glacier",
-      "Free Tier",
-      "Savings Plans",
-      "Nuvem que combina nuvem privada e pública"
+      "Uma infraestrutura que utiliza múltiplos provedores de nuvem pública simultaneamente.",
+      "Uma arquitetura que distribui dados e aplicações entre um data center local e a nuvem pública.",
+      "Uma estratégia de migração para a nuvem que envolve a replicação de dados em diferentes regiões.",
+      "Um modelo de precificação que combina instâncias reservadas e instâncias sob demanda."
     ],
-    "correct": 3,
+    "correct": 1,
     "dica": "Neste modelo, a infraestrutura é uma combinação de recursos on-premises e na nuvem.",
     "icone_dica": "💡"
   },
@@ -4653,12 +4653,12 @@
     "titulo": "Integração de Aplicações",
     "question": "CloudWatch Events e EventBridge são serviços com a mesma finalidade, porém qual deles oferece mais recursos?",
     "answers": [
-      "Billing Dashboard",
-      "EventBridge",
-      "CloudTrail",
-      "Lambda"
+      "CloudWatch Events (legado)",
+      "Ambos têm o mesmo conjunto de recursos atualmente.",
+      "Depende da região da AWS; alguns recursos são limitados.",
+      "EventBridge (integração e roteamento avançados)"
     ],
-    "correct": 1,
+    "correct": 3,
     "dica": "Este serviço oferece mais funcionalidades para roteamento e transformação de eventos.",
     "icone_dica": "💡"
   },
@@ -4705,12 +4705,12 @@
     "titulo": "Computação",  
     "question": "Qual recurso pode ser utilizado para a criação de aplicações web simples (LAMP, Nginx, MEAN e Node.js)?",  
     "answers": [  
-      "EC2",  
-      "Auto Scaling",  
-      "Lightsail",  
-      "Lightsail"  
+      "EC2 (customização total)",
+      "Auto Scaling (escalabilidade automática)",
+      "Serviço de balanceamento de carga (alta disponibilidade)",
+      "Lightsail (templates pré-configurados)"
     ],  
-    "correct": 2,  
+    "correct": 3,  
     "dica": "Este serviço oferece templates pré-configurados para facilitar a criação de aplicações web.",  
     "icone_dica": "💡"  
   },  
@@ -4731,9 +4731,9 @@
     "titulo": "Gerenciamento, Monitoramento e Governança",  
     "question": "Qual serviço da AWS é utilizado para registrar as ações de outros serviços, como Start/Stop de uma instância EC2?",  
     "answers": [  
-      "EBS",  
+      "CloudWatch Events",  
       "CloudTrail",  
-      "EC2",  
+      "EC2 Snapshots",  
       "Transit Gateway"  
     ],  
     "correct": 1,  
