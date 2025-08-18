@@ -5848,13 +5848,13 @@
     "titulo": "Gerenciamento, Monitoramento e Governança",
     "question": "Qual serviço da AWS analisa suas instâncias EC2 para avaliar o desempenho e recursos, e fornece recomendações para otimizá-las?",
     "answers": [
-      "EFS",
-      "Lightsail",
+      "AWS CloudWatch",
+      "AWS Trusted Advisor",
       "AWS Compute Optimizer",
-      "Cognito"
+      "AWS Config"
     ],
     "correct": 2,
-    "dica": "Este serviço ajuda a otimizar o uso de recursos e reduzir custos.",
+    "dica": "Pense em um serviço que ajuda a 'otimizar' seus recursos de computação.",
     "icone_dica": "💡"
   },
   {
