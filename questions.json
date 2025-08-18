@@ -2975,13 +2975,13 @@
     "titulo": "Migração e Transferência",
     "question": "Qual é a capacidade de armazenamento do Snowball Edge?",
     "answers": [
-      "Snowball Edge",
-      "CloudFront",
-      "Billing Dashboard",
-      "Secrets Manager"
+      "Alguns TBs",
+      "Alguns PBs",
+      "80 TB utilizáveis",
+      "1 TB"
     ],
-    "correct": 0,
-    "dica": "Este dispositivo é usado para transferir grandes volumes de dados.",
+    "correct": 2,
+    "dica": "Pense em um dispositivo físico que pode armazenar muitos dados, mas não é 'infinito'.",
     "icone_dica": "💡"
   },
   {
