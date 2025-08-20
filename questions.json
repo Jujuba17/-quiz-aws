@@ -1816,16 +1816,17 @@
   },
   {
     "titulo": "Conceitos",
-    "question": "Qual conceito quando utilizamos exclusivamente serviços de provedores como <font color=\"#ff5500\">AWS, Azure ou Oracle Cloud</font>.",
+    "question": "Qual conceito quando utilizamos exclusivamente serviços de provedores como AWS, Azure ou Oracle Cloud.",
     "answers": [
-      "Savings Plans",
-      "Nuvem Pública",
-      "Free Tier",
-      "Trusted Advisor"
-    ],
-    "correct": 1,
-    "dica": "A nuvem pública oferece recursos compartilhados por meio da internet, sem necessidade de infraestrutura local.",
-    "icone_dica": "💡"
+      "BYOL.",
+      "Nuvem Pública.",
+      "Free Tier.",
+      "Cloud Agnostic."
+  ],
+  "correct": 1,
+  "dica": "Recursos compartilhados via internet.",
+  "icone_dica": "💡"
+  
   },
   {
     "titulo": "Conceitos",
@@ -5408,16 +5409,16 @@
   },
   {
     "titulo": "Conceitos",
-    "question": "Em qual nível o serviço S3 é considerado resiliente?",
+    "question": "EC2 é resiliente em:",
     "answers": [
-      "EBS",
-      "Lambda",
-      "KMS",
-      "Região"
-    ],
-    "correct": 3,
-    "dica": "A resiliência neste nível garante que os dados estejam disponíveis mesmo em caso de falhas em zonas de disponibilidade.",
-    "icone_dica": "💡"
+      "CloudTrail.",
+      "ELB.",
+      "Zona de disponibilidade.",
+      "KMS."
+  ],
+  "correct": 2,
+  "dica": "Evita falha em zona única.",
+  "icone_dica": "💡"
   },
   {
     "titulo": "Conceitos",
@@ -6501,16 +6502,16 @@
   },
   {
     "titulo": "Conceitos",
-    "question": "O que significa o termo BYOL (Bring Your Own License)?",
+    "question": "BYOL significa:",
     "answers": [
-      "CloudFront",
-      "STS (Security Token Service)",
-      "Bring Your Own License",
-      "Lightsail"
-    ],
-    "correct": 2,
-    "dica": "Esta prática permite utilizar licenças existentes no ambiente de nuvem.",
-    "icone_dica": "💡"
+      "CloudFront.",
+      "STS.",
+      "Sua licença.",
+      "Lightsail."
+  ],
+  "correct": 2,
+  "dica": "Use licenças existentes.",
+  "icone_dica": "💡"
   },
   {
     "titulo": "Conceitos",
@@ -6554,14 +6555,15 @@
     "titulo": "Banco de Dados",
     "question": "Qual serviço de banco de dados da AWS é um serviço de grafo?",
     "answers": [
-      "Amazon Neptune",
-      "Route53",
-      "Billing Dashboard",
-      "CloudTrail"
-    ],
-    "correct": 0,
-    "dica": "Este serviço é otimizado para armazenar e consultar relacionamentos.",
-    "icone_dica": "💡"
+      "Amazon Neptune.",
+      "Amazon Keyspaces.",
+      "Amazon DocumentDB.",
+      "Amazon RDS."
+  ],
+  "correct": 0,
+  "dica": "Este serviço é otimizado para armazenar e consultar relacionamentos.",
+  "icone_dica": "💡"
+
   },
   {
     "titulo": "Computação",
@@ -6980,17 +6982,18 @@
     "icone_dica": "💡"  
   },  
   {  
-    "titulo": "Computação",  
-    "question": "Para uma empresa que busca economia de custos, qual modelo de pagamento para instâncias EC2 é mais interessante?",  
-    "answers": [  
-      "Elastic Beanstalk",  
-      "Auto Scaling",  
-      "Lightsail",  
-      "Savings Plans"  
-    ],  
-    "correct": 3,  
-    "dica": "Este modelo oferece descontos em troca de um compromisso de uso.",  
-    "icone_dica": "💡"  
+    "titulo": "Computação",
+    "question": "Para uma empresa que busca economia de custos, qual modelo de pagamento para instâncias EC2 é mais interessante?",
+    "answers": [
+      "Instâncias reservadas.",
+      "Instâncias spot.",
+      "Lightsail.",
+      "Savings Plans."
+  ],
+  "correct": 3,
+  "dica": "Este modelo oferece descontos em troca de um compromisso de uso.",
+  "icone_dica": "💡" 
+  
   },  
   {  
     "titulo": "Analytics",  
@@ -7087,9 +7090,9 @@
     "titulo": "Conceitos",  
     "question": "O AWS CAF (Cloud Adoption Framework) auxilia as organizações na criação de uma estratégia de adoção de qual tecnologia?",  
     "answers": [  
-      "VPC (Virtual Private Cloud)",  
-      "Budgets",  
-      "STS (Security Token Service)",  
+      "DevOps.",
+      "Big Data.",
+      "Containers.", 
       "Nuvem"  
     ],  
     "correct": 3,  
