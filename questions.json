@@ -983,9 +983,9 @@
     "titulo": "Computação",
     "question": "No EC2, o modelo de preço <u>Host ______</u> disponibiliza um <span style=\"color: rgb(255, 85, 0);\">servidor físico dedicado</span> exclusivamente ao seu uso.",
     "answers": [
-      "Elastic Beanstalk",
-      "EC2",
-      "Auto Scaling",
+      "Spot",
+      "Reservado",
+      "Sob Demanda",
       "Dedicado"
     ],
     "correct": 3,
@@ -3278,12 +3278,12 @@
     "titulo": "Armazenamento",
     "question": "Qual tipo de volume EBS oferece um bom equilíbrio entre preço e performance e é recomendado para a maioria das workloads?",
     "answers": [
-      "Storage Gateway",
-      "General Purpose SSD",
-      "EBS",
-      "EFS"
-    ],
-    "correct": 1,
+      "Provisioned IOPS SSD",
+     "Cold HDD",
+     "Throughput Optimized HDD",
+     "General Purpose SSD"
+  ],
+    "correct": 3,
     "dica": "Este volume é adequado para uma ampla variedade de cargas de trabalho.",
     "icone_dica": "💡"
   },
@@ -3291,14 +3291,14 @@
     "titulo": "Armazenamento",
     "question": "Qual tipo de volume EBS é recomendado para bancos de dados com alto consumo de E/S?",
     "answers": [
-      "EFS",
-      "EBS",
-      "Provisioned IOPS SSD",
-      "Storage Gateway"
-    ],
-    "correct": 2,
-    "dica": "Este volume oferece alta performance para cargas de trabalho com IOPS intensivo.",
-    "icone_dica": "💡"
+      "General Purpose SSD",
+      "Cold HDD",
+      "Throughput Optimized HDD",
+      "Provisioned IOPS SSD"
+  ],
+   "correct": 3,
+   "dica": "Este volume oferece o mais alto desempenho de IOPS.",
+   "icone_dica": "💡"
   },
   {
     "titulo": "Armazenamento",
@@ -3701,19 +3701,19 @@
     "dica": "Escolha este volume se você precisa de desempenho consistente e previsível para operações de leitura/escrita.",  
     "icone_dica": "💡"  
   },  
-  {  
-    "titulo": "Armazenamento",  
-    "question": "Qual tipo de volume EBS fornece um equilíbrio entre preço e performance, sendo recomendado para a maioria das workloads?",  
-    "answers": [  
-      "Storage Gateway",  
-      "General Purpose SSD (gp2/gp3)",  
-      "EBS",  
-      "EFS"  
-    ],  
-    "correct": 1,  
-    "dica": "Este volume é uma boa opção para diversas aplicações.",  
-    "icone_dica": "💡"  
-  },  
+  {
+    "titulo": "Armazenamento",
+    "question": "Qual tipo de volume EBS fornece um equilíbrio entre preço e performance, sendo recomendado para a maioria das workloads?",
+    "answers": [
+     "Cold HDD (sc1)",
+     "Provisioned IOPS SSD (io1/io2)",
+     "Throughput Optimized HDD (st1)",
+     "General Purpose SSD (gp2/gp3)"
+  ],
+  "correct": 3,
+  "dica": "Este volume é uma boa opção para diversas aplicações.",
+  "icone_dica": "💡"
+  },
   {  
     "titulo": "Armazenamento",  
     "question": "Qual tipo de volume EBS é recomendado para bancos de dados com alto consumo de E/S?",
@@ -4578,14 +4578,14 @@
     "titulo": "Banco de Dados",
     "question": "Pensando em uma possível indisponibilidade total de uma região da AWS, qual recurso do RDS seria o mais indicado para essa situação (Disaster Recovery)?",
     "answers": [
-      "Cognito",
-      "KMS",
-      "Read Replicas",
-      "CloudTrail"
-    ],
-    "correct": 2,
-    "dica": "Este recurso permite replicar os dados para outra região para garantir a disponibilidade em caso de desastre.",
-    "icone_dica": "💡"
+     "Multi-AZ Deployment",
+     "Read Replicas em Multi-AZ",
+     "Read Replicas em outra região",
+     "Backup e Restore para outra região"
+  ],
+  "correct": 2,
+  "dica": "Este recurso permite replicar os dados para outra região para garantir a disponibilidade em caso de desastre.",
+  "icone_dica": "💡"
   },
   {
     "titulo": "Analytics",
@@ -5450,10 +5450,10 @@
     "titulo": "Computação",
     "question": "Você precisa migrar servidores físicos para EC2 na AWS. Esses servidores serão usados por pelo menos 1 ou 2 anos e não podem ser interrompidos repentinamente. Qual modelo de preço é mais adequado visando menor custo?",
     "answers": [
-      "Lightsail",
-      "Lambda",
-      "Savings Plans",
-      "Elastic Beanstalk"
+      "Instâncias On-Demand",
+      "Instâncias Spot",
+      "Instâncias Reservadas",
+      "Savings Plans"
     ],
     "correct": 2,
     "dica": "Este modelo oferece descontos em troca de um compromisso de uso a longo prazo.",
@@ -6865,17 +6865,17 @@
     "icone_dica": "💡"  
   },  
   {  
-    "titulo": "Armazenamento",  
-    "question": "No S3, quem define a classe de armazenamento (standard, glacier, standard-ia...): o Bucket ou o Objeto?",  
-    "answers": [  
-      "EFS",  
-      "Storage Gateway",  
-      "Glacier",  
-      "Objeto"  
-    ],  
-    "correct": 3,  
-    "dica": "A classe de armazenamento é definida individualmente para cada arquivo armazenado no S3.",  
-    "icone_dica": "💡"  
+    "titulo": "Armazenamento",
+    "question": "No S3, quem define a classe de armazenamento (standard, glacier, standard-ia...): o Bucket ou o Objeto?",
+    "answers": [
+      "O Bucket.",
+      "A Conta AWS.",
+      "O IAM Role.",
+      "O Objeto."
+  ],
+    "correct": 3,
+    "dica": "A classe de armazenamento é definida individualmente para cada arquivo armazenado no S3.",
+    "icone_dica": "💡"
   },  
   {  
     "titulo": "Machine Learning",  
