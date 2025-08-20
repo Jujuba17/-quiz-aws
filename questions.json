@@ -5218,7 +5218,7 @@
     "answers": [
       "SaaS (Software como Serviço)",
       "IaaS (Infraestrutura como Serviço)",
-      "PaaS (Plataforma como Serviço)",
+      "PaaS (Plataforma como Serviço)"
   ],
   "correct": 1,
   "dica": "Neste modelo, o cliente tem controle sobre a infraestrutura, como servidores e máquinas virtuais.",
@@ -5230,7 +5230,7 @@
     "answers": [
       "IaaS (Infraestrutura como Serviço)",
       "PaaS (Plataforma como Serviço)",
-      "SaaS (Software como Serviço)",
+      "SaaS (Software como Serviço)"
   ],
   "correct": 0,
   "dica": "Neste modelo, o provedor gerencia a infraestrutura *física*, mas o cliente controla o uso e a organização dos recursos.",
@@ -5242,7 +5242,7 @@
     "answers": [
       "PaaS (Plataforma como Serviço)",
       "IaaS (Infraestrutura como Serviço)",
-      "SaaS (Software como Serviço)",
+      "SaaS (Software como Serviço)"
   ],
   "correct": 0,
   "dica": "Neste modelo, o cliente carrega o código e a plataforma cuida da execução, escalabilidade e gerenciamento da infraestrutura subjacente.",
