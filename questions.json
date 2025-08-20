@@ -2618,12 +2618,12 @@
     "question": "O que são os metadados da instância?",
     "answers": [
       "Dados sobre sua instância",
-      "Auto Scaling",
-      "Lambda",
-      "Lightsail"
+      "Logs de performance da instância",
+      "Alertas de segurança da instância",
+      "Informações de faturamento da instância"
     ],
     "correct": 0,
-    "dica": "São informações sobre a instância que podem ser usadas para configurá-la.",
+    "dica": "Essas informações podem ser acessadas de dentro da própria instância e são úteis para automatizar tarefas.",
     "icone_dica": "💡"
   },
   {
@@ -3129,28 +3129,28 @@
   },
   {
     "titulo": "Computação",
-    "question": "Instâncias de uso geral fornecem qual característica principal?",
+    "question": "Qual a principal característica das instâncias de uso geral (general purpose) da AWS?",
     "answers": [
-      "Auto Scaling",
-      "Equilíbrio de recursos de computação",
-      "Lightsail",
-      "Outposts"
+      "Alto poder de processamento para tarefas específicas",
+      "Equilíbrio entre recursos de computação, memória e rede",
+      "Custo otimizado para tarefas com picos de uso",
+      "Alta capacidade de armazenamento local"
     ],
     "correct": 1,
-    "dica": "Estas instâncias são adequadas para uma ampla variedade de cargas de trabalho.",
+    "dica": "Essas instâncias são versáteis e adequadas para uma ampla gama de aplicações.",
     "icone_dica": "💡"
   },
   {
     "titulo": "Computação",
     "question": "As instâncias otimizadas para qual recurso são projetadas para fornecer desempenho rápido para cargas de trabalho que utilizam muita memória?",
     "answers": [
-      "Elastic Beanstalk",
-      "Outposts",
-      "Auto Scaling",
+      "Computação",
+      "Armazenamento",
+      "Rede",
       "Memória"
     ],
     "correct": 3,
-    "dica": "Estas instâncias são ideais para bancos de dados e aplicações de alta performance.",
+    "dica": "Pense em qual recurso é mais importante para aplicações que precisam armazenar e acessar grandes quantidades de dados rapidamente.",
     "icone_dica": "💡"
   },
   {
@@ -3220,42 +3220,45 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Como as APIs (HTTP, REST ou WebSocket) são geralmente faturadas?",
+    "question": "Como as APIs (HTTP, REST ou WebSocket) gerenciadas pelo API Gateway da AWS são geralmente faturadas?",
     "answers": [
-      "Cognito",
-      "EBS",
+      "Tempo de atividade do serviço",
+      "Quantidade de dados transferidos",
       "Número de solicitações",
-      "Free Tier"
+      "Largura de banda utilizada"
     ],
     "correct": 2,
-    "dica": "A fatura é baseada no uso da API.",
+    "dica": "A fatura reflete o número de vezes que a API é acessada.",
     "icone_dica": "💡"
   },
   {
+
     "titulo": "Armazenamento",
-    "question": "Qual tipo de volume EBS é recomendado para Big Data, Data Warehouse e processamento de logs?",
+    "question": "Para cargas de trabalho que exigem alta taxa de transferência, como Big Data, Data Warehousing e processamento de logs, qual tipo de volume EBS é mais recomendado?",
     "answers": [
-      "Throughput Optimized HDD",
-      "EBS",
-      "Glacier",
-      "S3"
+      "gp3 (SSD de uso geral)",
+      "st1 (Throughput Optimized HDD)",
+      "io2 (Provisioned IOPS SSD)",
+      "sc1 (Cold HDD)"
     ],
-    "correct": 0,
-    "dica": "Este volume oferece alta taxa de transferência para cargas de trabalho sequenciais.",
+    "correct": 1,
+    "dica": "Este tipo de volume EBS oferece um bom equilíbrio entre custo e desempenho para cargas de trabalho sequenciais e de grande porte.",
     "icone_dica": "💡"
+  
   },
   {
     "titulo": "Armazenamento",
-    "question": "Qual tipo de volume EBS de baixo custo é recomendado para armazenamento de arquivos?",
-    "answers": [
-      "EFS",
-      "Storage Gateway",
-      "Cold HDD",
-      "EBS"
-    ],
-    "correct": 2,
-    "dica": "Este volume é otimizado para armazenamento de dados acessados com pouca frequência.",
-    "icone_dica": "💡"
+  "question": "Para armazenar arquivos raramente acessados em um volume EBS, qual opção oferece o menor custo?",
+  "answers": [
+    "EFS",
+    "Storage Gateway",
+    "Cold HDD (sc1)",
+    "Throughput Optimized HDD (st1)"
+  ],
+  "correct": 2,
+  "dica": "Este volume é otimizado para armazenamento de dados acessados com pouca frequência.",
+  "icone_dica": "💡"
+
   },
   {
     "titulo": "Armazenamento",
@@ -3493,14 +3496,14 @@
     "titulo": "Computação",
     "question": "O que acontece quando você hiberna uma instância EC2?",
     "answers": [
-      "Elastic Beanstalk",
-      "EC2",
-      "As informações da memória RAM são salvas",
-      "Auto Scaling"
-    ],
-    "correct": 2,
-    "dica": "Este recurso permite retomar a instância do ponto onde ela parou.",
-    "icone_dica": "💡"
+      "A instância é encerrada e todos os dados são perdidos.",
+      "A instância é interrompida, mas os dados no disco permanecem intactos.",
+      "As informações da memória RAM são salvas no disco EBS e a instância é interrompida.",
+      "A instância é automaticamente migrada para um hardware diferente."
+  ],
+  "correct": 2,
+  "dica": "Hibernar é como colocar seu laptop em modo de espera: você pode retomar de onde parou rapidamente.",
+  "icone_dica": "💡"
   },
   {
     "titulo": "Sem Servidor",
@@ -3556,16 +3559,16 @@
   },
   {
     "titulo": "Migração e Transferência",
-    "question": "Qual serviço da AWS realiza migrações de aplicações on-premises para a nuvem?",
+    "question": "Qual serviço da AWS é projetado especificamente para migrar aplicações on-premises (locais) para a nuvem AWS?",
     "answers": [
-      "EC2",
-      "AWS Application Migration Service",
-      "KMS",
-      "Cognito"
-    ],
-    "correct": 1,
-    "dica": "Este serviço automatiza a migração de aplicações para a AWS.",
-    "icone_dica": "💡"
+      "AWS Database Migration Service (DMS)",
+      "AWS Server Migration Service (SMS) / AWS Application Migration Service (MGN)",
+      "AWS Storage Gateway",
+      "AWS Direct Connect"
+  ],
+  "correct": 1,
+  "dica": "Este serviço minimiza o tempo de inatividade durante a migração, replicando continuamente os servidores para a AWS.",
+  "icone_dica": "💡"
   },
   {
     "titulo": "Migração e Transferência",
@@ -3607,17 +3610,17 @@
     "icone_dica": "💡"  
   },  
   {  
-    "titulo": "Redes e Entrega de Conteúdo",  
-    "question": "Qual serviço da AWS é utilizado para criação, publicação, manutenção, monitoramento e proteção de APIs?",  
-    "answers": [  
-      "Glacier",  
-      "API Gateway",  
-      "EBS",  
-      "Cost Explorer"  
-    ],  
-    "correct": 1,  
-    "dica": "Este serviço permite criar APIs para diferentes tipos de aplicações.",  
-    "icone_dica": "💡"  
+    "titulo": "Redes e Entrega de Conteúdo",
+    "question": "Qual serviço da AWS é utilizado para criação, publicação, manutenção, monitoramento e proteção de APIs?",
+    "answers": [
+      "CloudFront",
+      "API Gateway",
+      "VPC",
+      "Route 53"
+    ],
+    "correct": 1,
+    "dica": "Este serviço atua como uma 'porta de entrada' para as suas aplicações, controlando o acesso e gerenciando o tráfego.",
+    "icone_dica": "💡"
   },  
   {  
     "titulo": "Redes e Entrega de Conteúdo",  
@@ -4049,13 +4052,13 @@
     "titulo": "Redes e Entrega de Conteúdo",
     "question": "É possível habilitar o cache de API no API Gateway para melhorar as respostas do seu endpoint?",
     "answers": [
-      "KMS",
-      "Trusted Advisor",
-      "Billing Dashboard",
-      "Cache"
+      "Sim, sempre",
+      "Não, nunca",
+      "Sim, mas com algumas restrições",
+      "Apenas em alguns tipos de API"
     ],
-    "correct": 3,
-    "dica": "O cache de API melhora a performance e reduz a latência.",
+    "correct": 2,
+    "dica": "O cache pode ser muito útil, mas nem sempre é a melhor opção para todos os casos.",
     "icone_dica": "💡"
   },
   {
@@ -4101,12 +4104,10 @@
     "titulo": "Redes e Entrega de Conteúdo",
     "question": "APIs REST são stateless ou stateful?",
     "answers": [
-      "Auto Scaling",
-      "STS (Security Token Service)",
-      "APIs REST são stateless",
-      "Route53"
+      "Stateful",
+      "Stateless"
     ],
-    "correct": 2,
+    "correct": 1,
     "dica": "Em APIs stateless, cada requisição é independente.",
     "icone_dica": "💡"
   },
@@ -4127,13 +4128,11 @@
     "titulo": "Sem Servidor",
     "question": "O Lambda@Edge é executado em uma rede pública ou privada?",
     "answers": [
-     "Rede pública",
-      "VPC (Virtual Private Cloud)",
-      "Subnets privadas",
-      "Dentro de instâncias EC2"
+      "Rede pública",
+      "Rede Privada"
     ],
     "correct": 0,
-    "dica": "O Lambda@Edge é executado na infraestrutura global da AWS.",
+    "dica": "Pense em onde o Lambda@Edge precisa estar para interceptar e modificar solicitações de usuários em todo o mundo.",
     "icone_dica": "💡"
   },
   {
@@ -4289,17 +4288,19 @@
     "icone_dica": "💡"
   },
   {
+
     "titulo": "Computação",
-    "question": "Qual serviço da AWS oferece instâncias de servidor privado virtual (VPS)?",
+    "question": "Qual dos seguintes serviços da AWS é mais adequado para provisionar instâncias de Servidor Privado Virtual (VPS) de forma rápida e simplificada?",
     "answers": [
-      "Lightsail",
-      "Outposts",
-      "EC2",
-      "Lightsail"
+      "Amazon Lightsail",
+      "Amazon EC2",
+      "AWS Lambda",
+      "AWS Fargate"
     ],
     "correct": 0,
-    "dica": "Este serviço é ideal para projetos menores e com baixo custo.",
+    "dica": "Este serviço oferece planos pré-configurados com um preço fixo mensal.",
     "icone_dica": "💡"
+  
   },
   {
     "titulo": "Computação",
@@ -4433,14 +4434,14 @@
     "titulo": "Sem Servidor",
     "question": "O EKS é um serviço serverless para execução de contêineres Kubernetes ou um serviço de orquestração de contêineres com Kubernetes?",
     "answers": [
-      "Auto Scaling dinâmico.",
-      "Orquestrador Kubernetes gerenciado.",
+      "Serverless.",
+      "Kubernetes gerenciado.",
       "Análise de custos.",
-      "Plataforma serverless."
-    ],
-    "correct": 1,
-    "dica": "Serverless = menos gerenciamento.",
-    "icone_dica": "💡"
+      "Plataforma web serverless."
+  ],
+  "correct": 1,
+  "dica": "Ainda gerencia nós.",
+  "icone_dica": "💡"
   },
   {
     "titulo": "Segurança, Identidade e Conformidade",
@@ -4548,16 +4549,16 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "No S3 Intelligent-Tiering, se um objeto está em uma classe inferior, por exemplo Archive Instance, ao ser acessado, para qual classe ele é movido automaticamente?",
+    "question": "S3 Intelligent-Tiering: objeto em Archive Instance acessado, move para:",
     "answers": [
-      "Standard",
-      "Frequent Access",
-      "Intelligent-Tiering (acesso frequente)",
-      "Glacier"
-    ],
-    "correct": 1,
-    "dica": "Camada otimizada para acesso frequente.",
-    "icone_dica": "💡"
+      "Standard.",
+      "Acesso frequente.",
+      "Intelligent-Tiering.",
+      "Glacier."
+  ],
+  "correct": 1,
+  "dica": "Otimizado para uso imediato.",
+  "icone_dica": "💡"
   },
   {
     "titulo": "Banco de Dados",
@@ -4602,13 +4603,13 @@
     "titulo": "Banco de Dados",
     "question": "Os bancos de dados são cobrados normalmente pelo armazenamento e qual outro fator?",
     "answers": [
-      "Armazenamento e Throughput de dados (entrada e saída)",
-      "EBS",
-      "STS (Security Token Service)",
-      "ACL (Access Control List)"
+      "Throughput de dados (entrada e saída)",
+      "CPU utilizada",
+      "Memória RAM utilizada",
+      "Número de conexões simultâneas"
     ],
     "correct": 0,
-    "dica": "O throughput de dados se refere à quantidade de dados transferidos para dentro e para fora do banco de dados.",
+    "dica": "Este fator está relacionado à quantidade de dados que o banco de dados processa.",
     "icone_dica": "💡"
   },
   {
@@ -4765,19 +4766,19 @@
     "dica": "Este serviço automatiza o processo de build e teste do seu código.",  
     "icone_dica": "💡"  
   },  
-  {  
-    "titulo": "Computação",  
-    "question": "Qual serviço da AWS é de fácil utilização para implantação e escalabilidade de aplicações e serviços em instâncias EC2?",  
-    "answers": [  
-      "Outposts",  
-      "Elastic Beanstalk",  
-      "Lambda",  
-      "Elastic Beanstalk"  
-    ],  
-    "correct": 1,  
-    "dica": "Este serviço simplifica o processo de implantação e gerenciamento de aplicações.",  
-    "icone_dica": "💡"  
-  },  
+  {
+    "titulo": "Computação",
+    "question": "Qual serviço da AWS é de fácil utilização para implantação e escalabilidade de aplicações e serviços em instâncias EC2?",
+    "answers": [
+      "Outposts",
+      "Elastic Beanstalk",
+      "Lambda",
+      "EC2 Auto Scaling"
+    ],
+    "correct": 1,
+    "dica": "Este serviço simplifica o processo de implantação e gerenciamento de aplicações.",
+    "icone_dica": "💡"
+  },
   {  
     "titulo": "Segurança, Identidade e Conformidade",  
     "question": "Qual serviço da AWS é um serviço de detecção de ameaças que monitora continuamente atividades mal-intencionadas e comportamentos não autorizados?",  
@@ -4948,17 +4949,17 @@
     "icone_dica": "💡"  
   },  
   {  
-    "titulo": "Armazenamento",  
-    "question": "No S3 Intelligent-Tiering, se um objeto está em uma classe inferior, por exemplo, Archive Instance, ao ser acessado ele é movido automaticamente para qual classe?",  
-    "answers": [  
-      "S3",  
-      "Frequent Access",  
-      "EFS",  
-      "Storage Gateway"  
-    ],  
-    "correct": 1,  
-    "dica": "Esta é a classe de armazenamento padrão para acesso frequente.",  
-    "icone_dica": "💡"  
+    "titulo": "Armazenamento",
+    "question": "No S3 Intelligent-Tiering, se um objeto que está atualmente na camada de arquivamento (Archive Access Tier) é acessado, para qual camada ele é automaticamente movido?",
+    "answers": [
+      "S3 Glacier Deep Archive",
+      "S3 Standard-IA (Infrequent Access)",
+      "S3 One Zone-IA",
+      "S3 Frequent Access Tier"
+    ],
+    "correct": 3,
+    "dica": "Esta é a camada do S3 Intelligent-Tiering para acesso frequente aos dados.",
+    "icone_dica": "💡"
   },  
   {  
     "titulo": "Banco de Dados",  
@@ -5026,41 +5027,43 @@
     "icone_dica": "💡"  
   },  
   {  
-    "titulo": "Conceitos",  
-    "question": "O que é nuvem privada?",  
-    "answers": [  
-      "ACL (Access Control List)",  
-      "Auto Scaling",  
-      "Nuvem em data center privado/exclusivo",  
-      "Secrets Manager"  
-    ],  
-    "correct": 2,  
-    "dica": "Este tipo de nuvem é utilizado por empresas que precisam de maior controle sobre a infraestrutura.",  
-    "icone_dica": "💡"  
+    "titulo": "Conceitos",
+  "question": "O que é uma nuvem privada?",
+  "answers": [
+    "Um conjunto de servidores dedicados a uma única aplicação.",
+    "Uma infraestrutura de nuvem utilizada exclusivamente por uma organização.",
+    "Um serviço de armazenamento de arquivos criptografados.",
+    "Uma ferramenta para automatizar a criação de instâncias EC2."
+  ],
+  "correct": 1,
+  "dica": "Este modelo de nuvem oferece maior controle e segurança, mas pode ter custos mais elevados.",
+  "icone_dica": "💡"
+    
   },  
   {  
-    "titulo": "Conceitos",  
-    "question": "O que é nuvem híbrida?",  
-    "answers": [  
-      "Glacier",  
-      "Free Tier",  
-      "Savings Plans",  
-      "Nuvem privada e pública"  
-    ],  
-    "correct": 3,  
-    "dica": "Este tipo de nuvem combina o melhor dos dois mundos: a flexibilidade da nuvem pública e o controle da nuvem privada.",  
-    "icone_dica": "💡"  
+     "titulo": "Conceitos",
+  "question": "O que é uma nuvem híbrida?",
+  "answers": [
+    "Uma combinação de infraestrutura local e serviços de nuvem pública.",
+    "Um modelo de preços com descontos para instâncias EC2 reservadas.",
+    "Um serviço de armazenamento de baixo custo para arquivamento de dados.",
+    "Uma ferramenta para monitorar o desempenho de aplicações em tempo real."
+  ],
+  "correct": 0,
+  "dica": "Este modelo permite que as organizações aproveitem o melhor dos dois mundos: a flexibilidade da nuvem pública e o controle da infraestrutura local.",
+  "icone_dica": "💡"
+
   },  
   {  
     "titulo": "Integração de Aplicações",  
     "question": "O CloudWatch Events e o EventBridge são serviços com a mesma finalidade. Qual deles oferece mais recursos?",  
     "answers": [  
-      "Billing Dashboard",  
-      "EventBridge",  
-      "CloudTrail",  
-      "Lambda"  
+  
+    "EventBridge",  
+    "CloudTrail"
+   
     ],  
-    "correct": 1,  
+    "correct": 0,  
     "dica": "Este serviço oferece recursos avançados de roteamento e transformação de eventos.",  
     "icone_dica": "💡"  
   },  
@@ -5094,27 +5097,28 @@
     "titulo": "Redes e Entrega de Conteúdo",  
     "question": "Qual tipo de Internet Gateway permite o tráfego de saída (IPV6), mas impede o tráfego de entrada?",  
     "answers": [  
-      "Lambda",  
-      "CloudTrail",  
-      "Savings Plans",  
-      "Egress-Only Internet Gateway"  
-    ],  
-    "correct": 3,  
-    "dica": "Este gateway oferece maior segurança para suas instâncias na VPC.",  
-    "icone_dica": "💡"  
+      "Internet Gateway padrão",
+      "NAT Gateway",
+      "Virtual Private Gateway",
+      "Egress-Only Internet Gateway"
+    ],
+    "correct": 3,
+    "dica": "Este gateway é ideal para cenários onde você precisa que suas instâncias acessem a internet, mas não quer que elas sejam acessíveis diretamente.",
+    "icone_dica": "💡"
   },  
   {
     "titulo": "Conceitos",
-    "question": "Qual modelo define as responsabilidades compartilhadas entre a AWS e o cliente em relação à segurança e gerenciamento da infraestrutura na nuvem?",
-    "answers": [
-      "STS (Security Token Service)",
-      "Modelo de responsabilidade compartilhada",
-      "Free Tier",
-      "Secrets Manager"
-    ],
-    "correct": 1,
-    "dica": "Este modelo estabelece as responsabilidades de cada parte em relação à segurança na nuvem.",
-    "icone_dica": "💡"
+  "question": "Qual modelo define as responsabilidades compartilhadas entre o provedor de nuvem e o cliente em relação à segurança e gerenciamento na nuvem?",
+  "answers": [
+    "Modelo de precificação sob demanda",
+    "Acordo de nível de serviço (SLA)",
+    "Modelo de responsabilidade compartilhada",
+    "Política de uso aceitável"
+  ],
+  "correct": 2,
+  "dica": "O provedor de nuvem é responsável pela segurança da *infraestrutura* da nuvem, enquanto o cliente é responsável pela segurança *na* nuvem.",
+  "icone_dica": "💡"
+
   },
   {
     "titulo": "Computação",
@@ -5274,15 +5278,15 @@
   },
   {
     "titulo": "Produtividade Empresarial",
-    "question": "Qual serviço da AWS é mais indicado para enviar e-mails em massa para realizar um comunicado em sua empresa?",
+    "question": "Qual serviço da AWS é mais indicado para enviar e-mails em massa para fins de comunicação interna em uma empresa?",
     "answers": [
-      "Budgets",
-      "SES (Simple Email Service)",
-      "EFS",
-      "Auto Scaling"
+      "Amazon Chime",
+      "Amazon SES (Simple Email Service)",
+      "Amazon WorkDocs",
+      "Amazon SNS (Simple Notification Service)"
     ],
     "correct": 1,
-    "dica": "Este serviço é otimizado para enviar grandes volumes de e-mails de forma confiável e escalável.",
+    "dica": "Este serviço permite enviar e-mails de marketing, notificações e e-mails transacionais de forma econômica.",
     "icone_dica": "💡"
   },
   {
@@ -5456,15 +5460,15 @@
   },
   {
     "titulo": "Computação",
-    "question": "Qual serviço da AWS facilita a execução de trabalhos intensivos e em larga escala, usando EC2, EKS ou Fargate?",
+    "question": "Qual serviço da AWS é projetado para facilitar a execução de workloads em lote (batch workloads) em larga escala, utilizando recursos como EC2, ECS ou Fargate?",
     "answers": [
       "AWS Lambda",
-      "Amazon ECS",
+      "AWS Glue",
       "AWS Batch",
       "AWS Step Functions"
     ],
     "correct": 2,
-    "dica": "Pense em 'lotes' de trabalho (jobs) sendo processados.",
+    "dica": "Este serviço permite definir filas de jobs a serem executados, gerenciando a alocação de recursos computacionais.",
     "icone_dica": "💡"
   },
   {
@@ -6561,15 +6565,15 @@
   },
   {
     "titulo": "Computação",
-    "question": "Para uma empresa que busca economia de custos, qual modelo de pagamento é mais interessante?",
+    "question": "Visando otimizar custos a longo prazo para cargas de trabalho de computação, qual opção de compra da AWS oferece descontos significativos em troca de um compromisso de uso?",
     "answers": [
-      "Elastic Beanstalk",
-      "Auto Scaling",
-      "Lightsail",
+      "Instâncias On-Demand",
+      "Instâncias Spot",
+      "Instâncias Reservadas",
       "Savings Plans"
     ],
     "correct": 3,
-    "dica": "Este modelo oferece descontos em troca de compromisso de uso.",
+    "dica": "Esta opção oferece flexibilidade para diferentes tipos de instâncias e regiões.",
     "icone_dica": "💡"
   },
   {
@@ -7067,17 +7071,17 @@
     "icone_dica": "💡"  
   },  
   {  
-    "titulo": "Computação",  
-    "question": "O recurso de Reserva de Elastic IP é cobrado quando a instância está em qual estado?",  
-    "answers": [  
-      "Lightsail",  
-      "Outposts",  
-      "Desligada",  
-      "Lambda"  
-    ],  
-    "correct": 2,  
-    "dica": "A cobrança é aplicada quando o Elastic IP não está associado a uma instância em execução.",  
-    "icone_dica": "💡"  
+    "titulo": "Computação",
+    "question": "Em qual das seguintes situações a AWS cobra por um Elastic IP alocado?",
+    "answers": [
+      "Quando associado a uma instância Lightsail",
+      "Quando associado a um recurso do Outposts",
+      "Quando alocado, mas não associado a uma instância EC2",
+      "Quando usado por uma função Lambda"
+    ],
+    "correct": 2,
+    "dica": "A cobrança é aplicada quando o Elastic IP não está associado a uma instância EC2 em execução.",
+    "icone_dica": "💡"
   },  
   {  
     "titulo": "Conceitos",  
