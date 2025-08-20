@@ -589,12 +589,12 @@
   },
   {
     "titulo": "Computação",
-    "question": "O Qual recurso da AWS que possuí um conjunto de serviços <span style=\"color: rgb(255, 85, 0);\">pré-prontos </span>para EC2, Redshift, SageMaker e outros.",
+    "question": "Qual recurso da AWS que possuí um conjunto de serviços <span style=\"color: rgb(255, 85, 0);\">pré-prontos </span>para EC2, Redshift, SageMaker e outros.",
     "answers": [
       "Market Place",
-      "Auto Scaling",
-      "EC2",
-      "Outposts"
+      "Service Catalog.",
+      "Systems Manager.",
+      "CloudFormation."
     ],
     "correct": 0,
     "dica": "",
@@ -1826,7 +1826,7 @@
   "correct": 1,
   "dica": "Recursos compartilhados via internet.",
   "icone_dica": "💡"
-  
+
   },
   {
     "titulo": "Conceitos",
@@ -1962,10 +1962,10 @@
     "titulo": "Ferramenta de Desenvolvedor",
     "question": "O AWS ______ ajuda desenvolvedores a <span style=\"color: rgb(255, 85, 0);\">analisar e depurar</span> aplicações distribuídas (arquitetura de microsserviços).",
     "answers": [
-      "Auto Scaling",
-      "Billing Dashboard",
-      "Trusted Advisor",
-      "X-Ray"
+      "CodeDeploy.",
+      "CloudWatch.",
+      "Inspector.",
+      "X-Ray."
     ],
     "correct": 3,
     "dica": "Permite visualizar chamadas entre serviços e diagnosticar problemas em aplicações distribuídas.",
@@ -6479,9 +6479,9 @@
     "question": "Para qual país a AWS envia dispositivos da Família Snow (cone, edge e mobile)?",
     "answers": [
       "Estados Unidos",
-      "Route53",
-      "VPC (Virtual Private Cloud)",
-      "Lambda"
+      "Russia",
+      "Canadá",
+      "Australia"
     ],
     "correct": 0,
     "dica": "Este serviço de transferência de dados tem restrições geográficas.",
