@@ -3067,10 +3067,10 @@
     "titulo": "Redes e Entrega de Conteúdo",
     "question": "Qual política de roteamento do Route 53 é mais indicada quando você quer encaminhar o tráfego para a região que oferece o menor tempo de ida e volta?",
     "answers": [
-      "Latency Routing",
-      "Budgets",
-      "Storage Gateway",
-      "Outposts"
+      "Roteamento por Latência (Latency Routing)",
+      "Roteamento Geográfico (Geolocation Routing)",
+      "Roteamento Ponderado (Weighted Routing)",
+      "Roteamento de Failover (Failover Routing)"
     ],
     "correct": 0,
     "dica": "Esta política otimiza a experiência do usuário com base na latência.",
@@ -3080,12 +3080,12 @@
     "titulo": "Redes e Entrega de Conteúdo",
     "question": "Qual política de roteamento do Route 53 é mais indicada quando você quer encaminhar o tráfego com base na localização do usuário?",
     "answers": [
-      "IAM (Identity Access Management)",
-      "Cognito",
-      "Geolocation Routing",
-      "Outposts"
+      "Roteamento Simples (Simple Routing)",
+      "Roteamento Geográfico (Geolocation Routing)",
+      "Roteamento Multivalor (Multivalue Answer Routing)",
+      "Roteamento por Proximidade (Proximity Routing)"
     ],
-    "correct": 2,
+    "correct": 1,
     "dica": "Esta política permite personalizar o conteúdo com base na localização do usuário.",
     "icone_dica": "💡"
   },
@@ -3093,10 +3093,10 @@
     "titulo": "Redes e Entrega de Conteúdo",
     "question": "Qual política de roteamento do Route 53 permite que até 8 hosts respondam a uma solicitação de forma aleatória?",
     "answers": [
-      "Cost Explorer",
-      "Storage Gateway",
-      "Multivalue Answer",
-      "Secrets Manager"
+      "Roteamento Ponderado (Weighted Routing)",
+      "Roteamento de Failover (Failover Routing)",
+      "Roteamento Multivalor (Multivalue Answer Routing)",
+      "Roteamento Geográfico (Geolocation Routing)"
     ],
     "correct": 2,
     "dica": "Esta política é usada para balancear a carga entre vários recursos.",
@@ -3106,10 +3106,10 @@
     "titulo": "Banco de Dados",
     "question": "Onde são armazenados os backups dos bancos de dados RDS?",
     "answers": [
-      "IAM (Identity Access Management)",
-      "S3",
-      "Free Tier",
-      "Transit Gateway"
+      "Volumes EBS da instância RDS",
+      "Buckets S3 gerenciados pela AWS",
+      "Instâncias EC2 dedicadas para backup",
+      "AWS Backup Vaults"
     ],
     "correct": 1,
     "dica": "Este serviço é usado para armazenar objetos de forma escalável e segura.",
@@ -3159,9 +3159,9 @@
     "question": "Para quais casos de uso os bancos de dados de grafo são especialmente vantajosos?",
     "answers": [
       "Mecanismos de recomendação e detecção de fraudes",
-      "Elastic Beanstalk",
-      "Glacier",
-      "Route53"
+      "Análise de séries temporais e dados de sensores",
+      "Armazenamento de documentos e conteúdo não estruturado",
+      "Processamento de transações financeiras em alta escala"
     ],
     "correct": 0,
     "dica": "Pense em cenários onde as relações entre os dados são importantes.",
@@ -3171,10 +3171,10 @@
     "titulo": "Banco de Dados",
     "question": "Qual a principal característica dos bancos de dados em grafo que os torna adequados para armazenar e navegar pelas informações?",
     "answers": [
-      "Armazenamento de relacionamentos",
-      "ACL (Access Control List)",
-      "Cognito",
-      "Savings Plans"
+      "Armazenamento de relacionamentos entre os dados",
+      "Escalabilidade horizontal massiva para grandes volumes de dados",
+      "Suporte a consultas SQL complexas e joins",
+      "Otimização para leitura de dados em alta velocidade"
     ],
     "correct": 0,
     "dica": "Pense em como os dados são conectados uns aos outros.",
@@ -3184,10 +3184,10 @@
     "titulo": "Redes e Entrega de Conteúdo",
     "question": "Qual serviço da AWS é utilizado para criar, publicar, manter, monitorar e proteger APIs?",
     "answers": [
-      "Glacier",
-      "API Gateway",
-      "EBS",
-      "Cost Explorer"
+      "AWS Lambda",
+      "Amazon API Gateway",
+      "Amazon SQS",
+      "Amazon CloudFront"
     ],
     "correct": 1,
     "dica": "Este serviço atua como uma porta de entrada para seus serviços.",
@@ -3197,10 +3197,10 @@
     "titulo": "Redes e Entrega de Conteúdo",
     "question": "Qual tipo de API estabelece e mantém uma conexão persistente entre o cliente e o servidor?",
     "answers": [
-      "Cognito",
-      "S3",
-      "WebSocket",
-      "Cost Explorer"
+      "REST API",
+      "GraphQL API",
+      "WebSocket API",
+      "SOAP API"
     ],
     "correct": 2,
     "dica": "Este tipo de API permite comunicação em tempo real.",
@@ -3210,10 +3210,10 @@
     "titulo": "Redes e Entrega de Conteúdo",
     "question": "Qual tipo de API permite que serviços no backend enviem informações para o cliente sem que requisições adicionais sejam feitas?",
     "answers": [
-      "WebSocket",
-      "Cognito",
-      "Secrets Manager",
-      "S3"
+      "WebSocket API",
+      "REST API com Long Polling",
+      "GraphQL API com Subscriptions",
+      "SOAP API com Callbacks"
     ],
     "correct": 0,
     "dica": "Este tipo de API é ideal para notificações push.",
@@ -3299,19 +3299,6 @@
    "correct": 3,
    "dica": "Este volume oferece o mais alto desempenho de IOPS.",
    "icone_dica": "💡"
-  },
-  {
-    "titulo": "Armazenamento",
-    "question": "Qual tipo de volume EBS é recomendado para cenários nos quais o menor custo de armazenamento é o fator mais importante?",
-    "answers": [
-      "S3",
-      "Cold HDD",
-      "Glacier",
-      "EBS"
-    ],
-    "correct": 1,
-    "dica": "Este volume é otimizado para armazenamento de dados acessados com pouca frequência.",
-    "icone_dica": "💡"
   },
   {
     "titulo": "Armazenamento",
@@ -3505,20 +3492,7 @@
   "correct": 2,
   "dica": "Hibernar é como colocar seu laptop em modo de espera: você pode retomar de onde parou rapidamente.",
   "icone_dica": "💡"
-  },
-  {
-    "titulo": "Sem Servidor",
-    "question": "Qual recurso é um mecanismo de computação sem servidor para contêineres?",
-    "answers": [
-      "Elastic Beanstalk",
-      "S3",
-      "Outposts",
-      "Fargate"
-    ],
-    "correct": 3,
-    "dica": "Este serviço permite executar contêineres sem gerenciar servidores.",
-    "icone_dica": "💡"
-  },
+  },  
   {
     "titulo": "Integração de Aplicações",
     "question": "Além do EventBridge, qual outro serviço da AWS pode tomar ações a partir de eventos que ocorrem no ambiente?",
@@ -3972,19 +3946,6 @@
   },  
   {  
     "titulo": "Migração e Transferência",  
-    "question": "Qual serviço da AWS centraliza e simplifica o planejamento, acompanhamento e gerenciamento de migrações?",  
-    "answers": [  
-      "CloudFront",  
-      "Free Tier",  
-      "Trusted Advisor",  
-      "AWS Migration Hub"  
-    ],  
-    "correct": 3,  
-    "dica": "Este serviço facilita a migração para a AWS.",  
-    "icone_dica": "💡"  
-  },  
-  {  
-    "titulo": "Migração e Transferência",  
     "question": "Qual serviço da AWS realiza migrações de suas aplicações on-premises para a nuvem?",  
     "answers": [  
       "AWS DataSync",
@@ -4008,19 +3969,6 @@
     ],
     "correct": 1,
     "dica": "Este serviço simplifica a migração de aplicações para a AWS.",
-    "icone_dica": "💡"
-  },
-  {
-    "titulo": "Migração e Transferência",
-    "question": "Qual serviço da AWS é utilizado para transferências de arquivos utilizando os protocolos SFTP, FTPS, FTP e AS2?",
-    "answers": [
-      "AWS Config",
-      "Outposts",
-      "CloudTrail",
-      "AWS Transfer Family"
-    ],
-    "correct": 3,
-    "dica": "Este serviço oferece uma forma segura e escalável de transferir arquivos.",
     "icone_dica": "💡"
   },
   {
@@ -6236,46 +6184,7 @@
   "correct": 2,
   "dica": "Traduz textos automaticamente.",
   "icone_dica": "💡"
-  },  
-  {  
-    "titulo": "Gerenciamento, Monitoramento e Governança",  
-    "question": "Qual serviço da AWS analisa suas instâncias EC2 para avaliar o desempenho e recursos, e fornece recomendações para otimizá-las?",  
-    "answers": [  
-      "EFS",  
-      "Lightsail",  
-      "AWS Compute Optimizer",  
-      "Cognito"  
-    ],  
-    "correct": 2,  
-    "dica": "Este serviço ajuda a identificar oportunidades de economia e melhoria de desempenho.",  
-    "icone_dica": "💡"  
-  },  
-  {  
-    "titulo": "Gerenciamento, Monitoramento e Governança",  
-    "question": "Qual serviço da AWS é voltado para governança, facilitando a conformidade na nuvem e implementação de boas práticas?",  
-    "answers": [  
-      "AWS Control Tower",  
-      "Elastic Beanstalk",  
-      "EFS",  
-      "Cognito"  
-    ],  
-    "correct": 0,  
-    "dica": "Este serviço permite automatizar a configuração de ambientes AWS em conformidade com as políticas da empresa.",  
-    "icone_dica": "💡"  
-  },  
-  {  
-    "titulo": "Gerenciamento, Monitoramento e Governança",  
-    "question": "Qual serviço da AWS oferece informações em tempo real sobre o status de saúde dos serviços da AWS em diferentes regiões do mundo?",  
-    "answers": [  
-      "AWS Health Dashboard",  
-      "Cost Explorer",  
-      "Trusted Advisor",  
-      "Route53"  
-    ],  
-    "correct": 0,  
-    "dica": "Este serviço permite monitorar a disponibilidade e o desempenho dos serviços da AWS.",  
-    "icone_dica": "💡"  
-  },  
+  },   
   {  
     "titulo": "Gerenciamento, Monitoramento e Governança",  
     "question": "Qual serviço da AWS simplifica e automatiza o processo de implantação e dimensionamento de aplicativos Windows, SQL Server e SAP na nuvem da AWS?",  
@@ -6849,17 +6758,17 @@
     "icone_dica": "💡"  
   },  
   {  
-    "titulo": "Segurança, Identidade e Conformidade",  
-    "question": "Qual serviço da AWS permite implementar segurança de firewall de rede em suas VPCs?",  
-    "answers": [  
-      "AWS Network Firewall",  
-      "Cognito",  
-      "CloudTrail",  
-      "ACL (Access Control List)"  
-    ],  
-    "correct": 0,  
-    "dica": "Este serviço oferece proteção de rede para suas aplicações na AWS.",  
-    "icone_dica": "💡"  
+    "titulo": "Segurança, Identidade e Conformidade",
+    "question": "Qual serviço da AWS permite implementar segurança de firewall de rede em suas VPCs?",
+    "answers": [
+      "AWS Network Firewall",
+      "Grupos de Segurança",
+      "AWS Shield",
+      "AWS WAF"
+    ],
+    "correct": 0,
+    "dica": "Este serviço oferece proteção de rede para suas aplicações na AWS.",
+    "icone_dica": "💡"
   },  
   {  
     "titulo": "Armazenamento",
@@ -6943,10 +6852,10 @@
     "titulo": "Conceitos",  
     "question": "O que é o AWS re:Post?",  
     "answers": [  
-      "AWS Config",  
-      "EBS",  
-      "Comunidade online para perguntas e respostas sobre a AWS",  
-      "EFS"  
+      "Um serviço de monitoramento de custos da AWS",
+      "Um tipo de instância EC2 otimizada para bancos de dados",
+      "Comunidade online para perguntas e respostas sobre a AWS",
+      "Uma ferramenta para automatizar a criação de infraestrutura"
     ],  
     "correct": 2,  
     "dica": "Este recurso oferece respostas para as perguntas mais frequentes sobre a AWS.",  
