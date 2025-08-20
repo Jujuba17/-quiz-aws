@@ -1216,14 +1216,14 @@
     "titulo": "Redes e Entrega de Conteúdo",
     "question": "Na VPC, qual componente é responsável por permitir que os recursos (como EC2) acessem a internet?",
     "answers": [
-      "EC2",
-      "CloudTrail",
-      "Free Tier",
-      "Internet Gateway"
-    ],
-    "correct": 3,
-    "dica": "É necessário anexar este componente à VPC para habilitar a comunicação pública.",
-    "icone_dica": "💡"
+      "Roteador.",
+      "Sub-rede.",
+      "Grupo de Segurança.",
+      "Internet Gateway."
+  ],
+  "correct": 3,
+  "dica": "Anexar à VPC para comunicação pública.",
+  "icone_dica": "💡"
   },
   {
   "titulo": "Redes e Entrega de Conteúdo",
@@ -4217,13 +4217,13 @@
     "question": "Qual é a sequência esperada em uma pipeline de CI/CD?",
     "answers": [
       "CodeCommit, CodeBuild, CodeDeploy",
-      "S3",
-      "Transit Gateway",
-      "Secrets Manager"
-    ],
-    "correct": 0,
-    "dica": "Esta sequência representa as etapas de um processo de entrega contínua.",
-    "icone_dica": "💡"
+      "CodeBuild, CodeCommit, CodeDeploy",
+      "CodeDeploy, CodeCommit, CodeBuild",
+      "CodeCommit, CodeDeploy, CodeBuild"
+  ],
+  "correct": 0,
+  "dica": "Esta sequência representa as etapas de um processo de entrega contínua.",
+  "icone_dica": "💡"
   },
   {
     "titulo": "Integração de Aplicações",
@@ -6140,36 +6140,36 @@
     "titulo": "Machine Learning",  
     "question": "Qual serviço da AWS utiliza machine learning e linguagem natural para encontrar respostas mais rápidas em pesquisas corporativas inteligentes (pesquisas internas)?",  
     "answers": [  
-      "IAM (Identity Access Management)",  
-      "Lightsail",  
-      "Amazon Kendra",  
-      "Outposts"  
+      "Lex.",
+      "Comprehend.",
+      "Amazon Kendra.",
+      "Forecast."  
     ],  
     "correct": 2,  
     "dica": "Este serviço permite criar um mecanismo de busca inteligente para documentos e informações internas.",  
     "icone_dica": "💡"  
   },  
   {  
-    "titulo": "Machine Learning",  
-    "question": "Qual serviço da AWS permite que desenvolvedores construam interfaces de conversação interativas baseadas em voz para aplicativos e serviços?",  
-    "answers": [  
-      "Route53",  
-      "Billing Dashboard",  
-      "AWS Config",  
-      "Amazon Lex"  
-    ],  
-    "correct": 3,  
-    "dica": "Este serviço oferece ferramentas para criar chatbots e assistentes virtuais.",  
-    "icone_dica": "💡"  
+    "titulo": "Machine Learning",
+    "question": "Qual serviço AWS cria interfaces de voz para apps?",
+    "answers": [
+      "Polly.",
+      "Transcribe.",
+      "Rekognition.",
+      "Amazon Lex."
+  ],
+  "correct": 3,
+  "dica": "Cria chatbots e assistentes virtuais.",
+  "icone_dica": "💡"
   },  
   {  
     "titulo": "Machine Learning",  
     "question": "Qual serviço da AWS converte texto em fala realista e natural?",  
     "answers": [  
-      "Amazon Polly",  
-      "AWS Config",  
-      "Trusted Advisor",  
-      "EFS"  
+      "Amazon Polly.",
+      "Amazon Transcribe.",
+      "Amazon Comprehend.",
+      "Amazon Rekognition."
     ],  
     "correct": 0,  
     "dica": "Este serviço permite criar locuções e narrativas para diferentes aplicações.",  
@@ -6179,27 +6179,27 @@
     "titulo": "Machine Learning",  
     "question": "Qual serviço da AWS oferece recursos de análise e reconhecimento de imagem e vídeo por meio de tecnologia de visão computacional e ML (machine learning)?",  
     "answers": [  
-      "Billing Dashboard",  
-      "Amazon Rekognition",  
-      "EBS",  
-      "IAM (Identity Access Management)"  
-    ],  
-    "correct": 1,  
-    "dica": "Este serviço permite identificar objetos, pessoas e cenas em imagens e vídeos.",  
-    "icone_dica": "💡"  
+      "Amazon Forecast.",
+      "Amazon Rekognition.",
+      "Amazon SageMaker.",
+      "Amazon Comprehend."
+  ],
+  "correct": 1,
+  "dica": "Identifica objetos, pessoas e cenas.",
+  "icone_dica": "💡"
   },  
   {  
     "titulo": "Machine Learning",  
     "question": "Qual serviço da AWS é projetado para simplificar e acelerar o processo de construção, treinamento e implantação de modelos de aprendizado de máquina (Machine Learning)?",  
     "answers": [  
-      "Amazon SageMaker",  
-      "Route53",  
-      "ACL (Access Control List)",  
-      "EBS"  
-    ],  
-    "correct": 0,  
-    "dica": "Este serviço oferece um ambiente completo para o desenvolvimento de modelos de machine learning.",  
-    "icone_dica": "💡"  
+      "Amazon SageMaker.",
+      "Amazon Lex.",
+      "Amazon Rekognition.",
+      "Amazon Forecast."
+  ],
+  "correct": 0,
+  "dica": "Ambiente completo para desenvolvimento de modelos ML.",
+  "icone_dica": "💡"
   },  
   {  
     "titulo": "Machine Learning",  
@@ -6218,27 +6218,27 @@
     "titulo": "Machine Learning",  
     "question": "Qual serviço da AWS converte gravações de áudio em texto, como entrevistas, palestras, chamadas telefônicas e outras?",  
     "answers": [  
-      "Storage Gateway",  
-      "Trusted Advisor",  
-      "Amazon Transcribe",  
-      "Transit Gateway"  
-    ],  
-    "correct": 2,  
-    "dica": "Este serviço oferece transcrição automática de áudio com alta precisão.",  
-    "icone_dica": "💡"  
+      "Amazon Polly.",
+      "Amazon Comprehend.",
+      "Amazon Transcribe.",
+      "Amazon Translate."
+  ],
+  "correct": 2,
+  "dica": "Transcrição automática de áudio.",
+  "icone_dica": "💡"
   },  
   {  
     "titulo": "Machine Learning",  
     "question": "Qual serviço da AWS oferece tradução automática neural, fornecendo traduções de idiomas com rapidez, alta qualidade, acessíveis e personalizáveis?",  
     "answers": [  
-      "KMS",  
-      "Amazon Translate",  
-      "Free Tier",  
-      "Lightsail"  
-    ],  
-    "correct": 1,  
-    "dica": "Este serviço permite traduzir textos entre diferentes idiomas de forma automática.",  
-    "icone_dica": "💡"  
+      "Amazon Polly.",
+      "Amazon Transcribe.",
+      "Amazon Translate.",
+      "Amazon Lex."
+  ],
+  "correct": 2,
+  "dica": "Traduz textos automaticamente.",
+  "icone_dica": "💡"
   },  
   {  
     "titulo": "Gerenciamento, Monitoramento e Governança",  
