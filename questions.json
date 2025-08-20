@@ -5216,40 +5216,37 @@
     "titulo": "Computação",
     "question": "O serviço EC2 é um exemplo de qual modelo de serviço na nuvem?",
     "answers": [
-      "Lambda",
+      "SaaS (Software como Serviço)",
       "IaaS (Infraestrutura como Serviço)",
-      "EC2",
-      "Elastic Beanstalk"
-    ],
-    "correct": 1,
-    "dica": "Neste modelo, o cliente tem controle sobre a infraestrutura, como servidores e máquinas virtuais.",
-    "icone_dica": "💡"
+      "PaaS (Plataforma como Serviço)",
+  ],
+  "correct": 1,
+  "dica": "Neste modelo, o cliente tem controle sobre a infraestrutura, como servidores e máquinas virtuais.",
+  "icone_dica": "💡"
   },
   {
     "titulo": "Conceitos",
     "question": "O serviço de armazenamento S3 é um exemplo de qual modelo de serviço na nuvem?",
     "answers": [
       "IaaS (Infraestrutura como Serviço)",
-      "VPC (Virtual Private Cloud)",
-      "IAM (Identity Access Management)",
-      "Cognito"
-    ],
-    "correct": 0,
-    "dica": "Neste modelo, o provedor gerencia a infraestrutura e o cliente utiliza o serviço para armazenar dados.",
-    "icone_dica": "💡"
+      "PaaS (Plataforma como Serviço)",
+      "SaaS (Software como Serviço)",
+  ],
+  "correct": 0,
+  "dica": "Neste modelo, o provedor gerencia a infraestrutura *física*, mas o cliente controla o uso e a organização dos recursos.",
+  "icone_dica": "💡"
   },
   {
     "titulo": "Sem Servidor",
     "question": "O serviço Lambda é um exemplo de qual modelo de serviço na nuvem?",
     "answers": [
       "PaaS (Plataforma como Serviço)",
-      "Transit Gateway",
-      "Budgets",
-      "Savings Plans"
-    ],
-    "correct": 0,
-    "dica": "Neste modelo, o cliente se concentra no desenvolvimento e execução do código, sem se preocupar com a infraestrutura.",
-    "icone_dica": "💡"
+      "IaaS (Infraestrutura como Serviço)",
+      "SaaS (Software como Serviço)",
+  ],
+  "correct": 0,
+  "dica": "Neste modelo, o cliente carrega o código e a plataforma cuida da execução, escalabilidade e gerenciamento da infraestrutura subjacente.",
+  "icone_dica": "💡"
   },
   {
     "titulo": "Computação",
