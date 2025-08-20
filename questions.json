@@ -3781,10 +3781,10 @@
     "titulo": "Computação",  
     "question": "As zonas do Wavelength estendem a infraestrutura da AWS para qual local?",  
     "answers": [  
-      "Lightsail",  
-      "EC2",  
-      "Auto Scaling",  
-      "Borda da rede de telecomunicações"  
+      "Data centers on-premises",
+      "Regiões da AWS em outros países",
+      "Dispositivos móveis dos usuários",
+      "Borda da rede de telecomunicações" 
     ],  
     "correct": 3,  
     "dica": "Pense em um local que permite baixíssima latência para dispositivos 5G.",  
@@ -4140,10 +4140,10 @@
     "titulo": "Computação",
     "question": "Por padrão, ao reiniciar ou desligar uma instância EC2, seu IPv4 público é alterado. Qual recurso pode ser habilitado para evitar essa mudança?",
     "answers": [
-      "Elastic Beanstalk",
-      "Reserva de Elastic IP",
-      "EC2",
-      "Auto Scaling"
+      "Elastic Load Balancer",
+      "Elastic IP",
+      "Instância Reservada",
+      "Grupo de Segurança"
     ],
     "correct": 1,
     "dica": "Este recurso permite associar um IP fixo à sua instância.",
@@ -4692,17 +4692,17 @@
     "icone_dica": "💡"
   },
   {  
-    "titulo": "Computação",  
-    "question": "Qual serviço da AWS oferece instâncias de servidor privado virtual (VPS)?",  
-    "answers": [  
-      "Lightsail",  
-      "Outposts",  
-      "EC2",  
-      "Lightsail"  
-    ],  
-    "correct": 0,  
-    "dica": "Este serviço é ideal para projetos menores e com orçamento limitado.",  
-    "icone_dica": "💡"  
+    "titulo": "Computação",
+    "question": "Qual serviço da AWS oferece instâncias de servidor privado virtual (VPS)?",
+    "answers": [
+     "Lightsail",
+     "Outposts",
+     "EC2",
+     "Elastic Beanstalk"
+  ],
+  "correct": 0,
+  "dica": "Este serviço é ideal para projetos menores e com orçamento limitado.",
+  "icone_dica": "💡"
   },  
   {  
     "titulo": "Computação",  
@@ -5291,14 +5291,14 @@
     "titulo": "Computação",
     "question": "Para criar uma instância EC2 visando economia, qual modelo de compra oferece o menor custo?",
     "answers": [
-      "Outposts",
-      "EC2",
-      "Savings Plans",
-      "Elastic Beanstalk"
-    ],
-    "correct": 2,
-    "dica": "Este modelo oferece descontos significativos em troca de um compromisso de uso a longo prazo.",
-    "icone_dica": "💡"
+     "Instâncias Sob Demanda",
+     "Instâncias Reservadas",
+     "Instâncias Spot",
+     "Instâncias Dedicadas"
+  ],
+  "correct": 2,
+  "dica": "Este modelo utiliza a capacidade ociosa da AWS, oferecendo descontos significativos, mas com o risco de interrupção.",
+  "icone_dica": "💡"
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
