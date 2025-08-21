@@ -342,10 +342,9 @@
     "titulo": "Armazenamento",
     "question": "Storage Gateway é um <span style=\"color: rgb(255, 85, 0);\">software </span>que você instala, um <span style=\"color: rgb(255, 85, 0);\">appliance </span>(hardware) ou <span style=\"color: rgb(255, 85, 0);\">as duas coisas</span><span style=\"color: rgb(0, 0, 0);\">?</span><br><br>_",
     "answers": [
-      "é um software",
+      "É um software",
       "As duas coisas",
-      "Storage Gateway",
-      "é um appliance"
+      "É um appliance"
     ],
     "correct": 1,
     "dica": "",
@@ -2312,10 +2311,10 @@
     "titulo": "Armazenamento",
     "question": "O que acontece com um volume EBS durante a criação de um snapshot?",
     "answers": [
-      "EFS",
-      "Pode ser usado normalmente",
-      "EBS",
-      "Storage Gateway"
+      "O volume fica inacessível.",
+      "Pode ser usado normalmente.",
+      "O volume é desmontado automaticamente.",
+      "O volume é movido para o S3."
     ],
     "correct": 1,
     "dica": "A criação de snapshots não impede o uso do volume.",
@@ -4012,7 +4011,7 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "Volumes EBS do tipo SSD gp2 podem ser anexados a quantas instâncias EC2?",
+    "question": "  a quantas instâncias EC2?",
     "answers": [
       "4 instâncias",
       "1 instância",
