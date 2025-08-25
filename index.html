@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Quiz AWS</title>
+  <title>AWS Learning Hub</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,11 +15,11 @@
       <p>Teste seus conhecimentos sobre <br>Amazon Web Services.</p>
       <p>Boa sorte! 🚀</p>
       <button id="start-btn">Iniciar Quiz</button>
-      <button id="flashcard-btn">Flash Card</button> <!-- Botão para Flash Card -->
+      <button id="flashcard-btn">Flash Card</button>
     </div>
 
     <!-- CONTEÚDO DO QUIZ (inicialmente oculto) -->
-    <div id="quiz-content" class="quiz-content">
+    <div id="quiz-content" class="quiz-content" style="display: none;">
       <h1>Quiz AWS Cloud</h1>
 
       <div id="question-container">
@@ -44,7 +44,6 @@
 
     <!-- FLASHCARD CONTENT (inicialmente oculto) -->
     <div id="flashcard-content" class="flashcard-content" style="display: none;">
-      
       <h1 style="color: #ff9900;">Flash Cards AWS</h1>
    
       <select id="tema-select">
@@ -58,12 +57,47 @@
         <button id="show-answer-btn">Clique para ver a resposta</button>
         <p id="flashcard-resposta" style="display:none;"></p>
         <button id="next-flashcard-btn">Próximo</button>
-        <button id="back-to-quiz-btn">Voltar ao Quiz</button> <!-- Novo botão para voltar ao quiz -->
+        <button id="back-to-quiz-btn">Voltar ao Quiz</button>
       </div>
     </div>
 
+    <!-- DESAFIO CONTENT -->
+    <div class="desafio-container" id="desafio-content" style="display:none;">
+        <button id="back-to-quiz-btn">← Voltar ao Quiz</button>
+        <h1>Desafio AWS Cloud</h1>
+
+        <label for="prova-select">Selecione a prova:</label>
+        <select id="prova-select">
+            <option value="Prova1.json">Prova 1</option>
+            <option value="Prova2.json">Prova 2</option>
+            <option value="Prova3.json">Prova 3</option>
+            <option value="Prova4.json">Prova 4</option>
+            <option value="Prova5.json">Prova 5</option>
+        </select>
+
+        <div id="desafio-start">
+            <p>Teste seus conhecimentos sobre Amazon Web Services.</p>
+            <p>Boa sorte! 🚀</p>
+            <button id="start-desafio-button">Iniciar Prova Oficial Desafio</button>
+        </div>
+
+        <div id="desafio" style="display:none;">
+            <div id="desafio-question"></div>
+            <div id="desafio-answers"></div>
+            <button id="desafio-next-button">Próxima</button>
+            <div id="desafio-progress">Pergunta <span id="desafio-current"></span>/<span id="desafio-total"></span></div>
+            <div id="desafio-score">Acertos: <span id="desafio-correct-answers">0</span></div>
+        </div>
+
+        <div id="desafio-end" style="display:none;">
+            <h2>Desafio Concluído!</h2>
+            <p>Sua pontuação: <span id="desafio-final-score"></span></p>
+            <button id="desafio-restart-button">Refazer Desafio</button>
+        </div>
+    </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

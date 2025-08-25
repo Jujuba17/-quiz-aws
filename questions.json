@@ -5993,10 +5993,10 @@
     "titulo": "Redes e Entrega de Conteúdo",  
     "question": "Quantos Internet Gateways podem ser associados a uma única VPC?",  
     "answers": [  
-      "Outposts",  
-      "Savings Plans",  
+      "6",  
+      "3",  
       "1",  
-      "VPC (Virtual Private Cloud)"  
+      "2"  
     ],  
     "correct": 2,  
     "dica": "Uma VPC só pode ter um Internet Gateway associado.",  

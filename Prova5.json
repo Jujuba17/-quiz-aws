@@ -1,0 +1,727 @@
+[
+  {
+    "id": 1,
+    "question": "Um usuário deseja permitir que aplicativos em execução em uma instância do Amazon EC2 façam chamadas para outros serviços da AWS. O acesso concedido deve ser seguro. Qual serviço ou recurso da AWS deve ser usado?",
+    "answers": [
+      "Chaves SSH do usuário IAM",
+      "Gerenciador de firewall da AWS",
+      "Funções do IAM",
+      "Grupos de segurança"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 2,
+    "question": "Uma empresa está executando uma carga de trabalho na Nuvem AWS. Qual prática recomendada da AWS garante a arquitetura MAIS econômica para a carga de trabalho?",
+    "answers": [
+      "Cache",
+      "Redundância",
+      "Redimensionamento",
+      "Acoplamento solto"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 3,
+    "question": "Uma empresa precisa de uma rede de entrega de conteúdo que forneça entrega segura de dados, vídeos, aplicativos e APIs para usuários em todo o mundo, com baixa latência e altas velocidades de transferência. Qual serviço da AWS atende a esses requisitos?",
+    "answers": [
+      "Amazon Elastic Transcoder",
+      "Amazon S3",
+      "Amazon CloudFront",
+      "Balanceamento de carga elástico"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 4,
+    "question": "Qual serviço ou ferramenta da AWS pode ser usado para capturar informações sobre o tráfego de entrada e saída em uma Amazon VPC?",
+    "answers": [
+      "Inspetor da Amazon",
+      "Serviços de endpoint VPC",
+      "Registros de fluxo de VPC",
+      "Gateway NAT"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 5,
+    "question": "Uma empresa hospeda um aplicativo em várias instâncias do Amazon EC2. O aplicativo usa Amazon Simple Notification Service (Amazon SNS) para enviar mensagens. Qual serviço ou recurso da AWS dará ao aplicativo permissão para acessar os serviços AWS necessários?",
+    "answers": [
+      "Funções do IAM",
+      "Amazon GuardDuty",
+      "Hub de segurança da AWS",
+      "AWS Certificate Manager (ACM)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 6,
+    "question": "Uma empresa possui um aplicativo ininterrupto executado em instâncias do Amazon EC2. O aplicativo processa constantemente um backlog de arquivos em uma fila do Amazon Simple Queue Service (Amazon SQS). Espera-se que esse uso continue a crescer por anos. Qual é o modelo de compra de instância EC2 MAIS econômico para atender a esses requisitos?",
+    "answers": [
+      "Hosts Dedicados",
+      "Planos de Poupança (Savings Plans)",
+      "Instâncias sob demanda",
+      "Instâncias spot"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 7,
+    "question": "Uma empresa planeja implantar contêineres na AWS. A empresa deseja controle total dos recursos computacionais que hospedam os contêineres. Qual serviço da AWS atenderá a esses requisitos?",
+    "answers": [
+      "Amazon Elastic Container Service (Amazon ECS)",
+      "Amazon EC2",
+      "Serviço Amazon Elastic Kubernetes (Amazon EKS)",
+      "AWS Fargate"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 8,
+    "question": "Uma empresa deseja armazenar e recuperar arquivos no Amazon S3 para seus aplicativos locais existentes usando protocolos de sistema de arquivos padrão do setor. Qual serviço da AWS atenderá a esses requisitos?",
+    "answers": [
+      "Gateway de arquivos Amazon S3",
+      "Família de transferência AWS",
+      "AWS DataSync",
+      "AWS Snowball Edge"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 9,
+    "question": "Uma empresa deseja criar modelos que possam ser reutilizados para implantar vários recursos da AWS. Qual serviço ou recurso da AWS a empresa pode usar para atender a esse requisito?",
+    "answers": [
+      "AWS CloudFormation",
+      "AWS OpsWorks",
+      "Imagem de máquina Amazon (AMI)",
+      "AWS Marketplace"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 10,
+    "question": "Quais princípios de design apoiam o pilar de confiabilidade do AWS Well-Architected Framework? (Escolha dois.)",
+    "answers": [
+      "Distribuir recursos globalmente para melhorar o tempo de resposta",
+      "Habilite a rastreabilidade",
+      "Execute operações como código",
+      "Recuperar-se automaticamente de falhas",
+      "Dimensionar automaticamente para atender à demanda"
+    ],
+    "correct": [2, 3]
+  },
+  {
+    "id": 11,
+    "question": "Qual serviço da AWS é um serviço de armazenamento em nuvem híbrida que fornece aos usuários locais acesso a armazenamento em nuvem praticamente ilimitado?",
+    "answers": [
+      "AWS Storage Gateway",
+      "AWS DataSync",
+      "Amazon S3 Glacier",
+      "Amazon Elastic Block Store (Amazon EBS)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 12,
+    "question": "Uma empresa deseja migrar sua carga de trabalho local do NFS para a AWS. Qual tipo de AWS Storage Gateway a empresa deve usar para atender a esse requisito?",
+    "answers": [
+      "Gateway de fita",
+      "Gateway de arquivos Amazon FSx",
+      "Gateway de arquivos Amazon S3",
+      "Gateway de volume"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 13,
+    "question": "Uma empresa está planejando migrar seu aplicativo para a Nuvem AWS.\nQual ferramenta ou conjunto de recursos da AWS a empresa deve usar para analisar e avaliar sua preparação para a migração?",
+    "answers": [
+      "Orçamentos da AWS",
+      "Estrutura bem arquitetada da AWS",
+      "Estrutura de adoção da nuvem AWS (AWS CAF)",
+      "Calculadora de preços da AWS"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 14,
+    "question": "O que o cliente SEMPRE é responsável por gerenciar, de acordo com o modelo de responsabilidade compartilhada da AWS?",
+    "answers": [
+      "Licenças de software",
+      "Chaves de criptografia",
+      "Dados do cliente",
+      "Rede"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 15,
+    "question": "Uma empresa precisa rastrear a atividade em suas contas da AWS e saber quando uma chamada de API é feita em seus recursos da AWS. Qual ferramenta ou serviço da AWS pode ser usado para atender a esses requisitos?",
+    "answers": [
+      "Inspetor da Amazon",
+      "Amazon CloudWatch",
+      "AWS IAM",
+      "AWS CloudTrail"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 16,
+    "question": "Qual serviço ou ferramenta da AWS pode ser usado para configurar um firewall para controlar o tráfego que entra e sai de uma sub-rede Amazon VPC?",
+    "answers": [
+      "Grupo de segurança",
+      "AWS WAF",
+      "AWS Firewall Manager",
+      "Rede ACL"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 17,
+    "question": "Uma empresa precisa realizar o processamento de dados uma vez por semana, o que normalmente leva cerca de 5 horas para ser concluído. Qual serviço AWS a empresa deve usar para esta carga de trabalho?",
+    "answers": [
+      "Amazon EC2",
+      "AWS Lambda",
+      "Comprimento de onda AWS (AWS Wavelength)",
+      "AWS CodeDeploy"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 18,
+    "question": "Uma empresa deseja um processo automatizado para verificar continuamente suas instâncias do Amazon EC2 em busca de vulnerabilidades de software. Qual serviço da AWS atenderá a esses requisitos?",
+    "answers": [
+      "Amazon GuardDuty",
+      "Amazon Cognito",
+      "Detetive da Amazon (Amazon Detective)",
+      "Inspetor da Amazon (Amazon Inspector)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 19,
+    "question": "Qual serviço da AWS pode ser usado para recuperar relatórios de conformidade sob demanda?",
+    "answers": [
+      "Gerenciador de segredos da AWS",
+      "Artefato AWS",
+      "Hub de segurança da AWS",
+      "Gerenciador de certificados AWS"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 20,
+    "question": "Qual tarefa é de responsabilidade da AWS ao usar os serviços da AWS?",
+    "answers": [
+      "Gerenciamento de permissões de usuário IAM",
+      "Criação de regras de grupo de segurança para acesso de saída",
+      "Manutenção de controles físicos e ambientais",
+      "Aplicação de patches do sistema operacional Amazon EC2"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 21,
+    "question": "Qual ferramenta da AWS oferece aos usuários a capacidade de planejar o uso do serviço, os custos do serviço e as reservas de instâncias, além de permitir que definam alertas personalizados quando seus custos ou uso excederem os limites estabelecidos?",
+    "answers": [
+      "Relatórios de instâncias reservadas (Reserved Instance Reports)",
+      "Orçamentos da AWS (AWS Budgets)",
+      "Relatório de custos e uso da AWS (AWS Cost and Usage Report)",
+      "Explorador de custos (Cost Explorer)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 22,
+    "question": "Uma empresa deseja conceder aos usuários de uma conta da AWS acesso a recursos de outra conta da AWS. Os usuários atualmente não têm permissão para acessar os recursos. Qual serviço da AWS atenderá a esse requisito?",
+    "answers": [
+      "Analisador de acesso IAM",
+      "Etiqueta IAM",
+      "Grupo IAM",
+      "Função do IAM"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 23,
+    "question": "Uma empresa deseja operar um data warehouse para analisar dados sem gerenciar a infraestrutura do data warehouse. Qual serviço da AWS atenderá a esse requisito?",
+    "answers": [
+      "AWS Lambda",
+      "Amazon Redshift sem servidor",
+      "Amazon RDS",
+      "Amazon Aurora"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 24,
+    "question": "Um usuário tem conhecimento limitado dos serviços da AWS, mas deseja implantar rapidamente um aplicativo Node.js escalonável na Nuvem AWS. Qual serviço deve ser usado para implantar o aplicativo?",
+    "answers": [
+      "AWS CloudFormation",
+      "AWS Elastic Beanstalk",
+      "AWS OpsWorks",
+      "Amazon EC2"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 25,
+    "question": "Uma empresa precisa usar software de terceiros para sua carga de trabalho na AWS. Qual serviço ou recurso da AWS a empresa pode usar para adquirir o software?",
+    "answers": [
+      "Serviços gerenciados pela AWS",
+      "Mercado AWS",
+      "Gerenciador de acesso a recursos da AWS",
+      "Gerenciador de licenças da AWS"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 26,
+    "question": "Usar o AWS Identity and Access Management (IAM) para conceder acesso apenas aos recursos necessários para executar uma tarefa é um conceito conhecido como:",
+    "answers": [
+      "acesso conforme necessário",
+      "acesso simbólico",
+      "acesso restrito",
+      "acesso com privilégios mínimos"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 27,
+    "question": "Um desenvolvedor foi contratado por uma grande empresa e precisa de credenciais da AWS. Quais são as melhores práticas de segurança que devem ser seguidas? (Escolha dois.)",
+    "answers": [
+      "Certifique-se de que a política de senha da conta exija um comprimento mínimo",
+      "Conceda ao desenvolvedor acesso apenas aos recursos da AWS necessários para executar o trabalho",
+      "Compartilhe as credenciais do usuário raiz da conta AWS com o desenvolvedor",
+      "Configure uma política de senha que garanta que a senha do desenvolvedor não possa ser alterada",
+      "Adicione o desenvolvedor ao grupo de administradores no AWS IAM"
+    ],
+    "correct": [0, 1]
+  },
+  {
+    "id": 28,
+    "question": "Qual modelo de preços do Amazon EC2 é o MAIS econômico para uma carga de trabalho ininterrupta executada uma vez por ano durante 24 horas?",
+    "answers": [
+      "Instâncias Dedicadas",
+      "Instâncias sob demanda",
+      "Instâncias spot",
+      "Instâncias Reservadas"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 29,
+    "question": "Uma empresa está usando um serviço de terceiros para fazer backup de 10 TB de dados em uma biblioteca de fitas. O servidor de backup local está ficando sem espaço. A empresa deseja usar os serviços da AWS para backups sem alterar seus fluxos de trabalho de backup existentes. Qual serviço AWS a empresa deve usar para atender a esses requisitos?",
+    "answers": [
+      "Amazon Elastic Block Store (Amazon EBS)",
+      "Amazon Elastic Container Service (Amazon ECS)",
+      "AWS Lambda",
+      "AWS Storage Gateway"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 30,
+    "question": "Qual das alternativas a seguir descreve algumas das principais funcionalidades do Amazon S3?",
+    "answers": [
+      "O Amazon S3 é um NFS elástico escalável e totalmente gerenciado para uso com serviços da Nuvem AWS e recursos locais:",
+      "Amazon S3 é um serviço de armazenamento de objetos que oferece desempenho, segurança, escalabilidade e disponibilidade de dados de alto nível:",
+      "O Amazon S3 é um serviço de armazenamento em blocos de alto desempenho projetado para uso com o Amazon EC2:",
+      "O Amazon S3 é um sistema de armazenamento de arquivos totalmente gerenciado, altamente confiável e escalável, acessível por meio do protocolo SMB padrão do setor:"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 31,
+    "question": "Qual ferramenta um desenvolvedor deve usar para integrar recursos de serviços da AWS diretamente em um aplicativo?",
+    "answers": [
+      "Kit de desenvolvimento de software AWS",
+      "Lote AWS",
+      "AWS Lambda",
+      "AWS CodeDeploy"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 32,
+    "question": "Qual benefício da AWS é demonstrado pelos serviços de tecnologia sob demanda que permitem às empresas substituir despesas fixas iniciais por despesas variáveis?",
+    "answers": [
+      "Alcance global",
+      "Economias de escala:",
+      "Preços pré-pagos:",
+      "Alta disponibilidade:"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 33,
+    "question": "Uma empresa deseja uma ferramenta unificada para fornecer um método consistente de interação com os serviços da AWS. Qual serviço ou ferramenta da AWS atenderá a esse requisito?",
+    "answers": [
+      "Rede privada virtual da AWS (AWS VPN)",
+      "AWS Cloud9",
+      "Amazon Elastic Container Service (Amazon ECS)",
+      "AWS CLI"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 34,
+    "question": "Qual serviço ou recurso da AWS permite que os usuários criem novas contas da AWS, agrupem várias contas para organizar fluxos de trabalho e apliquem políticas a grupos de contas?",
+    "answers": [
+      "Organizações AWS",
+      "Consultor confiável da AWS",
+      "AWS Identity and Access Management (IAM)",
+      "AWS CloudFormation"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 35,
+    "question": "Uma empresa deseja automatizar a implantação de infraestrutura usando infraestrutura como código (IaC). A empresa deseja dimensionar as pilhas de produção para que possam ser implantadas em várias regiões da AWS. Qual serviço da AWS atenderá a esses requisitos?",
+    "answers": [
+      "AWS Trusted Advisor",
+      "AWS Config",
+      "Amazon CloudWatch",
+      "AWS CloudFormation"
+    ],
+    "correct": 4
+  },
+  {
+    "id": 36,
+    "question": "Qual serviço da AWS os usuários devem usar para aprender sobre a disponibilidade e as operações dos serviços da AWS?",
+    "answers": [
+      "Torre de controle AWS:",
+      "Painel de integridade da AWS",
+      "Catálogo de serviços AWS",
+      "Amazon EventBridge:"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 37,
+    "question": "Qual das alternativas a seguir é um princípio de design recomendado do AWS Well-Architected Framework?",
+    "answers": [
+      "Reduza o tempo de inatividade fazendo alterações na infraestrutura com pouca frequência e em grandes incrementos",
+      "Invista tempo para configurar a infraestrutura manualmente",
+      "Use design de aplicativo monolítico para centralização",
+      "Aprenda a melhorar com as falhas operacionais"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 38,
+    "question": "Uma empresa possui uma frota de navios cargueiros. Os navios cargueiros possuem sensores que coletam dados no mar, onde há conectividade intermitente ou inexistente com a internet. A empresa precisa coletar, formatar e processar os dados no mar e movê-los posteriormente para a AWS. Qual serviço AWS a empresa deve usar para atender a esses requisitos?",
+    "answers": [
+      "AWS IoT Core:",
+      "AWS Storage Gateway:",
+      "Amazon Lightsail",
+      "AWS Snowball Edge:"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 39,
+    "question": "Uma empresa planeja migrar para a AWS e deseja criar estimativas de custos para seus casos de uso da AWS. Qual serviço ou ferramenta da AWS a empresa pode usar para atender a esses requisitos?",
+    "answers": [
+      "Calculadora de preços da AWS",
+      "Explorador de custos da AWS",
+      "Amazon CloudWatch",
+      "Orçamentos da AWS"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 40,
+    "question": "Uma empresa deseja migrar seu banco de dados para um serviço gerenciado da AWS compatível com PostgreSQL. Quais serviços da AWS atenderão a esses requisitos? (Escolha dois.)",
+    "answers": [
+      "Amazon Athena",
+      "Amazon RDS:",
+      "Amazon EC2:",
+      "Amazon Aurora",
+      "Amazon DynamoDB"
+    ],
+    "correct": [1, 3]
+  },
+  {
+    "id": 41,
+    "question": "Uma empresa deseja que um serviço AWS forneça recomendações de produtos com base nos dados de seus clientes. Qual serviço da AWS atenderá a esse requisito?",
+    "answers": [
+      "Amazon Comprehend",
+      "Amazon Rekognition",
+      "Amazon Polly",
+      "Amazon Personalize"
+    ],
+    "correct": 4
+  },
+  {
+    "id": 42,
+    "question": "Uma empresa deseja projetar um sistema de armazenamento centralizado para gerenciar os dados de configuração e as senhas de seus aplicativos comerciais críticos. Qual serviço ou recurso da AWS atenderá a esses requisitos de maneira MAIS econômica?",
+    "answers": [
+      "Amazon S3",
+      "AWS Config",
+      "Gerenciador de segredos da AWS (AWS Secrets Manager)",
+      "Armazenamento de parâmetros do AWS Systems Manager"
+    ],
+    "correct": 4
+  },
+  {
+    "id": 43,
+    "question": "Uma empresa de mídia social deseja proteger seu aplicativo Web contra explorações comuns da Web, como injeções de SQL e scripts entre sites. Qual serviço da AWS atenderá a esses requisitos?",
+    "answers": [
+      "Amazon CloudWatch",
+      "AWS WAF",
+      "Amazon GuardDuty",
+      "Inspetor da Amazon"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 44,
+    "question": "Quais tarefas são de responsabilidade do cliente, de acordo com o modelo de responsabilidade compartilhada da AWS? (Escolha dois.)",
+    "answers": [
+      "Execute a criptografia de dados do lado do cliente",
+      "Corrigir instâncias de banco de dados do Amazon RDS",
+      "Configurar credenciais do IAM",
+      "Locais de borda seguros",
+      "Estabelecer a infra-estrutura global"
+    ],
+    "correct": [0, 2]
+  },
+  {
+    "id": 45,
+    "question": "Uma empresa que usa AWS precisa transferir 2 TB de dados. Que tipo de transferência desses dados não resultaria em nenhum custo para a empresa?",
+    "answers": [
+      "Transferência de dados entre regiões da AWS:",
+      "Transferência de dados de entrada da Internet:",
+      "Transferência de dados entre zonas de disponibilidade:",
+      "Transferência de dados de saída para a Internet:"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 46,
+    "question": "Uma empresa deseja um servidor de arquivos Windows totalmente gerenciado para seus aplicativos baseados em Windows. Qual serviço da AWS atenderá a esse requisito?",
+    "answers": [
+      "Serviço Amazon Elastic Kubernetes (Amazon EKS)",
+      "Amazon FSx",
+      "Amazon Elastic Container Service (Amazon ECS)",
+      "Amazon EMR"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 47,
+    "question": "Qual perspectiva do AWS Cloud Adoption Framework (AWS CAF) inclui recursos para gerenciamento de configuração e gerenciamento de patches?",
+    "answers": [
+      "Operações",
+      "Plataforma",
+      "Segurança",
+      "Governança"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 48,
+    "question": "Quais das opções a seguir são vantagens de migrar para a Nuvem AWS? (Escolha dois.)",
+    "answers": [
+      "A capacidade de transferir a responsabilidade por toda a segurança para a AWS",
+      "A capacidade de usar o modelo pré-pago",
+      "A capacidade de ter controle total sobre a infraestrutura física:",
+      "Não é mais necessário adivinhar qual capacidade será necessária",
+      "Não se preocupe mais com os controles de acesso dos usuários"
+    ],
+    "correct": [3, 4]
+  },
+  {
+    "id": 49,
+    "question": "Uma empresa está planejando sua migração para a Nuvem AWS. A empresa está identificando suas lacunas de capacidade usando as perspectivas do AWS Cloud Adoption Framework (AWS CAF). Qual fase da jornada de transformação da nuvem inclui essas atividades de identificação?",
+    "answers": [
+      "Visualize",
+      "Alinhar",
+      "Escala",
+      "Lançamento"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 50,
+    "question": "Qual serviço ou recurso da AWS uma empresa pode usar para aplicar regras de segurança a instâncias específicas do Amazon EC2?",
+    "answers": [
+      "AWS WAF:",
+      "As Listas de Controle de Acesso (ACLs) de rede são aplicadas ao nível da sub-rede e podem controlar o tráfego para toda a sub-rede, não especificamente para instâncias individuais.",
+      "Grupos de segurança:",
+      "ACLs de rede"
+    ],
+    "correct": 2
+  }, 
+  {  
+    "id": 51,  
+    "question": "Quais serviços ou recursos da AWS permitem que os usuários conectem redes locais a uma VPC? (Escolha dois.)",  
+    "answers": [  
+      "Amazon CloudFront:",  
+      "AWS Direct Connect:",  
+      "Balanceamento de carga elástico:",  
+      "AWS VPN",  
+      "Pareamento de VPC:"  
+    ],  
+    "correct": [1, 3]  
+  },  
+  {  
+    "id": 52,  
+    "question": "Qual serviço da AWS permite que os usuários verifiquem vulnerabilidades em instâncias do Amazon EC2 usando modelos de avaliação predefinidos?",  
+    "answers": [  
+      "Inspetor da Amazon",  
+      "Escudo AWS:",  
+      "AWS WAF",  
+      "Consultor confiável da AWS:"  
+    ],  
+    "correct": 0  
+  },  
+  {  
+    "id": 53,  
+    "question": "Qual benefício da AWS é demonstrado pelos serviços de tecnologia sob demanda que permitem às empresas substituir despesas fixas iniciais por despesas variáveis?",  
+    "answers": [  
+      "Economias de escala:",  
+      "Preços pré-pagos:",  
+      "Alcance global:",  
+      "Alta disponibilidade"  
+    ],  
+    "correct": 0  
+  },  
+  {  
+    "id": 54,  
+    "question": "Uma empresa tem várias contas da AWS que incluem cargas de trabalho de computação que não podem ser interrompidas. A empresa deseja obter descontos de faturamento com base no uso dos serviços AWS pela empresa. Qual recurso ou opção de compra da AWS atenderá a esses requisitos?",  
+    "answers": [  
+      "Marcação de recursos:",  
+      "Instâncias spot",  
+      "Preços pré-pagos",  
+      "Faturamento consolidado"  
+    ],  
+    "correct": 3  
+  },  
+  {  
+    "id": 55,  
+    "question": "Uma empresa quer bloquear ataques de injeção de SQL. Qual serviço ou recurso da AWS a empresa deve usar para atender a esse requisito?",  
+    "answers": [  
+      "Grupos de segurança",  
+      "ACLs de rede (Network ACLs)",  
+      "AWS WAF",  
+      "AWS Certificate Manager (ACM)"  
+    ],  
+    "correct": 2  
+  },  
+  {  
+    "id": 56,  
+    "question": "Uma empresa planeja migrar para a Nuvem AWS. A empresa está coletando informações sobre sua infraestrutura local e exige informações como nome do host, endereço IP e endereço MAC.",  
+    "answers": [  
+      "Serviço de migração de banco de dados AWS (AWS DMS):",  
+      "Serviço de migração de aplicativos AWS",  
+      "Serviço de descoberta de aplicativos AWS",  
+      "AWS DataSync:"  
+    ],  
+    "correct": 2  
+  },  
+  {  
+    "id": 57,  
+    "question": "Qual opção é um recurso de perspectiva da plataforma AWS Cloud Adoption Framework (AWS CAF)?",  
+    "answers": [  
+      "Ciência de dados",  
+      "Proteção de dados",  
+      "Governança de dados",  
+      "Arquitetura de dados"  
+    ],  
+    "correct": 3  
+  },  
+  {  
+    "id": 58,  
+    "question": "Quais ações são exemplos do esforço de uma empresa para redimensionar seus recursos da AWS para controlar os custos da nuvem? (Escolha dois.)",  
+    "answers": [  
+      "Basear a seleção de tipos de instância do Amazon EC2 em padrões de utilização anteriores:",  
+      "Mude do Amazon RDS para o Amazon DynamoDB para acomodar conjuntos de dados NoSQL",  
+      "Use as políticas de ciclo de vida do Amazon S3 para mover objetos que os usuários acessam com pouca frequência para níveis de armazenamento de custo mais baixo:",  
+      "Substitua as instâncias existentes do Amazon EC2 pelo AWS Elastic Beanstalk:",  
+      "Use implantações Multi-AZ para Amazon RDS:"  
+    ],  
+    "correct": [0, 2]  
+  },  
+  {  
+    "id": 59,  
+    "question": "Uma empresa está construindo um aplicativo que requer a capacidade de enviar, armazenar e receber mensagens entre componentes do aplicativo. A empresa tem outro requisito para processar mensagens na ordem FIFO (primeiro a entrar, primeiro a sair). Qual serviço AWS a empresa deve usar?",  
+    "answers": [  
+      "Serviço de notificação simples da Amazon (Amazon SNS)",  
+      "Funções de etapas da AWS:",  
+      "Fluxos de dados do Amazon Kinesis:",  
+      "Amazon Simple Queue Service (Amazon SQS):"  
+    ],  
+    "correct": 3  
+  },  
+  {  
+    "id": 60,  
+    "question": "Uma empresa tem uma carga de trabalho de computação estável, previsível e ininterrupta. Quais opções de compra de instâncias do Amazon EC2 atendem a esses requisitos de maneira MAIS econômica? (Escolha dois.)",  
+    "answers": [  
+      "Planos de poupança (Savings Plans)",  
+      "Instâncias Reservadas",  
+      "Instâncias sob demanda",  
+      "Instâncias spot",  
+      "Hosts Dedicados"  
+    ],  
+    "correct": [0, 1]  
+  },  
+  {  
+    "id": 61,  
+    "question": "Quais opções são perspectivas do AWS Cloud Adoption Framework (AWS CAF)? (Escolha duas.)",  
+    "answers": [  
+      "Aceleração da mudança",  
+      "Arquitetura",  
+      "Negócios",  
+      "Segurança",  
+      "Fluência na nuvem"  
+    ],  
+    "correct": [2, 4]  
+  },  
+  {  
+    "id": 62,  
+    "question": "Qual serviço ou recurso da AWS é um serviço pré-autenticado baseado em navegador que pode ser iniciado diretamente no Console de gerenciamento da AWS?",  
+    "answers": [  
+      "Nuvem AWS9:",  
+      "API da AWS:",  
+      "AWS Lightsail:",  
+      "AWS CloudShell:"  
+    ],  
+    "correct": 3  
+  },  
+  {  
+    "id": 63,  
+    "question": "Qual serviço AWS totalmente gerenciado auxilia na criação, teste e gerenciamento de imagens personalizadas do Amazon EC2?",  
+    "answers": [  
+      "Assistente de inicialização da AWS",  
+      "Imagem de máquina Amazon (AMI)",  
+      "Construtor de imagens EC2 (EC2 Image Builder)",  
+      "AWS Elastic Beanstalk"  
+    ],  
+    "correct": 3  
+  },  
+  {
+    "id": 64,
+    "question": "Qual serviço ou recurso da AWS fornece informações de log do tráfego de entrada e saída em interfaces de rede em uma VPC?",
+    "answers": [
+      "AWS Identity and Access Management (IAM)",
+      "Registros de fluxo de VPC (VPC Flow Logs)",
+      "AWS CloudTrail",
+      "Logs do Amazon CloudWatch"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 65,
+    "question": "Uma empresa precisa avaliar seu ambiente AWS e fornecer recomendações de melhores práticas em cinco categorias: custo, desempenho, limites de serviço, tolerância a falhas e segurança. Qual serviço AWS a empresa pode usar para atender a esses requisitos?",
+    "answers": [
+      "AWS WAF",
+      "Escudo AWS (AWS Shield)",
+      "Catálogo de serviços AWS (AWS Service Catalog)",
+      "Consultor confiável da AWS (AWS Trusted Advisor)"
+    ],
+    "correct": 3
+  
+  }
+]

@@ -1,0 +1,634 @@
+
+[
+  {
+    "id": 1,
+    "question": "Uma empresa executa sua carga de trabalho de produção na AWS Cloud. A empresa precisa escolher um dos planos de suporte da AWS. Qual dos planos de suporte atenderá a esses requisitos com o menor custo?",
+    "answers": [
+      "Enterprise On-Ramp",
+      "Enterprise",
+      "Business",
+      "Developer"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 2,
+    "question": "Qual perspectiva do AWS Cloud Adoption Framework (AWS CAF) inclui a capacidade de gerenciamento de incidentes e problemas?",
+    "answers": [
+      "Operations (Operações)",
+      "Business (Negócios)",
+      "Platform (Plataforma)",
+      "Security (Segurança)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 3,
+    "question": "Uma empresa executa cargas de trabalho de banco de dados MySQL em servidores auto-gerenciados em um data center on-premises. A empresa deseja migrar as cargas de trabalho do banco de dados para um serviço gerenciado pela AWS. Qual estratégia de migração a empresa deve usar?",
+    "answers": [
+      "Refactor (Refatoração)",
+      "Repurchase (Recompra)",
+      "Rehost (Rehospedar)",
+      "Replatform (Replataforma)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 4,
+    "question": "Quais princípios de design estão incluídos no pilar de confiabilidade do AWS Well-Architected Framework? (Escolha dois.)",
+    "answers": [
+      "Parar de adivinhar capacidade",
+      "Conceder acesso a todos para aumentar as cotas de serviço da AWS",
+      "Planejar para aumentar as cotas de serviço da AWS primeiro em uma região secundária da AWS",
+      "Recuperar automaticamente de falhas",
+      "Projetar aplicações para rodar em uma única Zona de Disponibilidade"
+    ],
+    "correct": [0, 3]
+  },
+  {
+    "id": 5,
+    "question": "Uma empresa precisa de uma ponte entre tecnologia e negócios para ajudar a evoluir para uma cultura de crescimento e aprendizado contínuos. Qual perspectiva no AWS Cloud Adoption Framework (AWS CAF) serve como essa ponte?",
+    "answers": [
+      "People (Pessoas)",
+      "Security (Segurança)",
+      "Operations (Operações)",
+      "Governance (Governança)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 6,
+    "question": "Quais benefícios o AWS Business Support fornece? (Escolha dois.)",
+    "answers": [
+      "Revisões operacionais anuais com arquitetos de soluções da AWS",
+      "Tempo de resposta de 15 minutos para interrupções em sistemas de produção",
+      "Suporte de um Gerente Técnico de Conta (TAM) dedicado da AWS",
+      "Um número ilimitado de casos e contatos",
+      "Assistência 24 horas por dia, 7 dias por semana, via chat ao vivo ou chamada telefônica"
+    ],
+    "correct": [3, 4]
+  },
+  {
+    "id": 7,
+    "question": "Qual perspectiva do AWS Cloud Adoption Framework (AWS CAF) inclui uma capacidade para arquitetura de dados e análises bem projetada?",
+    "answers": [
+      "Security (Segurança)",
+      "Governance (Governança)",
+      "Platform (Plataforma)",
+      "Operations (Operações)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 8,
+    "question": "Uma empresa precisa de um plano de suporte AWS que forneça gerenciamento de casos programático por meio da AWS Support API. Qual plano de suporte atenderá a esse requisito da forma mais econômica?",
+    "answers": [
+      "AWS Business Support",
+      "AWS Basic Support",
+      "AWS Enterprise Support",
+      "AWS Developer Support"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 9,
+    "question": "Quais capacidades do AWS Cloud Adoption Framework (AWS CAF) estão na perspectiva de negócios? (Escolha duas.)",
+    "answers": [
+      "Data monetization (Monetização de dados)",
+      "Data engineering (Engenharia de dados)",
+      "Strategic partnership (Parceria estratégica)",
+      "Risk management (Gerenciamento de riscos)",
+      "Cloud fluency (Fluência em nuvem)"
+    ],
+    "correct": [0, 2]
+  },
+  {
+    "id": 10,
+    "question": "Uma empresa executa uma carga de trabalho legada em um data center on-premises. A empresa deseja migrar a carga de trabalho para a AWS. A empresa não quer fazer nenhuma alteração na carga de trabalho. Qual estratégia de migração a empresa deve usar?",
+    "answers": [
+      "Replatform (Replataforma)",
+      "Repurchase (Recompra)",
+      "Rehost (Rehospedagem)",
+      "Refactor (Refatoração)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 11,
+    "question": "Qual conceito do AWS Well-Architected Framework representa a capacidade de um sistema de permanecer funcional quando encontra problemas operacionais?",
+    "answers": [
+      "Elasticity (Elasticidade)",
+      "Consistency (Consistência)",
+      "Durability (Durabilidade)",
+      "Latency (Latência)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 12,
+    "question": "Quais opções são perspectivas do AWS Cloud Adoption Framework (AWS CAF)? (Escolha duas.)",
+    "answers": [
+      "Cloud fluency (Fluência em nuvem)",
+      "Business (Negócios)",
+      "Security (Segurança)",
+      "Change acceleration (Aceleração da mudança)",
+      "Architecture (Arquitetura)"
+    ],
+    "correct": [1, 2]
+  },
+  {
+    "id": 13,
+    "question": "Uma empresa tem como objetivo operar e monitorar sistemas para entregar valor comercial, enquanto melhora continuamente os processos e procedimentos de suporte. Qual pilar do AWS Well-Architected Framework atende a esse objetivo?",
+    "answers": [
+      "Operational excellence (Excelência operacional)",
+      "Performance efficiency (Eficiência de desempenho)",
+      "Security (Segurança)",
+      "Reliability (Confiabilidade)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 14,
+    "question": "Qual perspectiva do AWS Cloud Adoption Framework (AWS CAF) foca no gerenciamento de identidades e permissões em escala?",
+    "answers": [
+      "Operations (Operações)",
+      "Security (Segurança)",
+      "Platform (Plataforma)",
+      "Governance (Governança)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 15,
+    "question": "Qual perspectiva do AWS Cloud Adoption Framework (AWS CAF) ajuda uma empresa a alcançar a confidencialidade e a integridade de seus dados?",
+    "answers": [
+      "Operations (Operações)",
+      "Governance (Governança)",
+      "Security (Segurança)",
+      "Business (Negócios)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 16,
+    "question": "Uma empresa está projetando cargas de trabalho na AWS Cloud. A empresa deseja que as cargas de trabalho desempenhem sua função prevista corretamente e de forma consistente ao longo de seu ciclo de vida. Qual pilar do AWS Well-Architected Framework representa esse objetivo?",
+    "answers": [
+      "Performance efficiency (Eficiência de desempenho)",
+      "Security (Segurança)",
+      "Operational excellence (Excelência operacional)",
+      "Reliability (Confiabilidade)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 17,
+    "question": "Quais capacidades estão na perspectiva de segurança do AWS Cloud Adoption Framework (AWS CAF)? (Escolha duas.)",
+    "answers": [
+      "Identity and access management (Gerenciamento de identidade e acesso)",
+      "Vulnerability management (Gerenciamento de vulnerabilidades)",
+      "Patch management (Gerenciamento de patches)",
+      "Strategy management (Gerenciamento de estratégia)",
+      "Risk management (Gerenciamento de riscos)"
+    ],
+    "correct": [0, 1]
+  },
+  {
+    "id": 18,
+    "question": "Qual pilar do AWS Well-Architected Framework foca na alocação estruturada e simplificada de recursos computacionais?",
+    "answers": [
+      "Performance efficiency (Eficiência de desempenho)",
+      "Reliability (Confiabilidade)",
+      "Operational excellence (Excelência operacional)",
+      "Sustainability (Sustentabilidade)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 19,
+    "question": "Quais capacidades estão na perspectiva de operações do AWS Cloud Adoption Framework (AWS CAF)? (Escolha duas.)",
+    "answers": [
+      "Configuration management (Gerenciamento de configuração)",
+      "Data governance (Governança de dados)",
+      "Portfolio management (Gerenciamento de portfólio)",
+      "Incident response (Resposta a incidentes)",
+      "Observability (Observabilidade)"
+    ],
+    "correct": [3, 4]
+  },
+  {
+    "id": 20,
+    "question": "Qual pilar do AWS Well-Architected Framework inclui um princípio de design sobre medir a eficiência geral das workloads em termos de valor para o negócio?",
+    "answers": [
+      "Operational excellence (Excelência Operacional)",
+      "Security (Segurança)",
+      "Reliability (Confiabilidade)",
+      "Cost optimization (Otimização de Custos)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 21,
+    "question": "Qual é o plano mínimo de suporte AWS necessário para obter o conjunto completo de verificações de melhores práticas do AWS Trusted Advisor?",
+    "answers": [
+      "AWS Enterprise Support",
+      "AWS Developer Support",
+      "AWS Enterprise On-Ramp Support",
+      "AWS Business Support"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 22,
+    "question": "Uma empresa deseja migrar suas aplicações para a AWS Cloud. A empresa planeja identificar e priorizar quaisquer oportunidades de transformação de negócios e avaliar sua prontidão para a nuvem AWS. Qual serviço ou ferramenta da AWS a empresa deve usar para atender a esses requisitos?",
+    "answers": [
+      "AWS Cloud Adoption Framework (AWS CAF)",
+      "AWS Migration Hub",
+      "AWS Managed Services (AMS)",
+      "AWS Well-Architected Framework"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 23,
+    "question": "Qual princípio de design está relacionado ao pilar de confiabilidade, de acordo com o AWS Well-Architected Framework?",
+    "answers": [
+      "Testar procedimentos de recuperação",
+      "Experimentar mais frequentemente",
+      "Analisar e atribuir despesas",
+      "Expandir globalmente em minutos"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 24,
+    "question": "Qual capacidade do AWS Cloud Adoption Framework (AWS CAF) pertence à perspectiva de negócios?",
+    "answers": [
+      "Change and release management (Gestão de mudanças e lançamentos)",
+      "Data science (Ciência de dados)",
+      "Program and project management (Gestão de programas e projetos)",
+      "Observability (Observabilidade)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 25,
+    "question": "Qual perspectiva do AWS Cloud Adoption Framework (AWS CAF) inclui a capacidade de gerenciamento de riscos?",
+    "answers": [
+      "Operations (Operações)",
+      "People (Pessoas)",
+      "Business (Negócios)",
+      "Governance (Governança)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 26,
+    "question": "Uma empresa deseja melhorar continuamente processos e procedimentos para entregar valor comercial. Qual pilar do AWS Well-Architected Framework representa esse objetivo?",
+    "answers": [
+      "Reliability (Confiabilidade)",
+      "Sustainability (Sustentabilidade)",
+      "Performance efficiency (Eficiência de desempenho)",
+      "Operational excellence (Excelência operacional)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 27,
+    "question": "Quais capacidades estão na perspectiva de pessoas do AWS Cloud Adoption Framework (AWS CAF)? (Escolha duas.)",
+    "answers": [
+      "Configuration management (Gerenciamento de configuração)",
+      "Innovation management (Gerenciamento de inovação)",
+      "Culture evolution (Evolução cultural)",
+      "Security assurance (Garantia de segurança)",
+      "Change acceleration (Aceleração de mudanças)"
+    ],
+    "correct": [2, 4]
+  },
+  {
+    "id": 28,
+    "question": "Quais dos seguintes são pilares do AWS Well-Architected Framework? (Escolha dois.)",
+    "answers": [
+      "Operational excellence (Excelência operacional)",
+      "Desenvolvimento ágil (Agile development)",
+      "Escalabilidade de recursos (Resource scalability)",
+      "Performance efficiency (Eficiência de desempenho)",
+      "Elasticidade do sistema (System elasticity)"
+    ],
+    "correct": [0, 4]
+  },
+  {
+    "id": 29,
+    "question": "Quais capacidades do AWS Cloud Adoption Framework (AWS CAF) pertencem à perspectiva de governança? (Escolha duas.)",
+    "answers": [
+      "Event management (Gerenciamento de eventos)",
+      "Risk management (Gerenciamento de riscos)",
+      "Portfolio management (Gerenciamento de portfólio)",
+      "Product management (Gerenciamento de produtos)",
+      "Program and project management (Gerenciamento de programas e projetos)"
+    ],
+    "correct": [1, 2]
+  },
+  {
+    "id": 30,
+    "question": "Qual capacidade do AWS Cloud Adoption Framework (AWS CAF) está incluída na perspectiva de governança?",
+    "answers": [
+      "Application security (Segurança de aplicações)",
+      "Application management (Gerenciamento de aplicações)",
+      "Organization design (Design organizacional)",
+      "Application portfolio management (Gerenciamento de portfólio de aplicações)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 31,
+    "question": "Quais planos de suporte da AWS fornecem acesso a um Gerente de Conta Técnica (TAM)? (Escolha duas opções.)",
+    "answers": [
+      "AWS Developer Support",
+      "AWS Business Support",
+      "AWS Basic Support",
+      "AWS Enterprise On-Ramp Support",
+      "AWS Enterprise Support"
+    ],
+    "correct": [3, 4]
+  },
+  {
+    "id": 32,
+    "question": "Uma empresa está planejando migrar aplicações para a AWS Cloud. Durante uma auditoria do sistema, a empresa descobre que sua aplicação de gerenciamento de conteúdo (CMS) é incompatível com ambientes de nuvem. Quais estratégias de migração ajudarão a empresa a migrar a aplicação CMS com o MENOR esforço? (Escolha duas.)",
+    "answers": [
+      "Refactor (Refatoração)",
+      "Retire (Descontinuar)",
+      "Repurchase (Recompra)",
+      "Rehost (Rehospedar)",
+      "Replatform (Replataforma)"
+    ],
+    "correct": [2, 3]
+  },
+  {
+    "id": 33,
+    "question": "Um profissional de nuvem é responsável pelo gerenciamento de programas e projetos de iniciativas de nuvem. Qual perspectiva do AWS Cloud Adoption Framework (AWS CAF) inclui essa capacidade?",
+    "answers": [
+      "Operations (Operações)",
+      "Business (Negócios)",
+      "Governance (Governança)",
+      "Platform (Plataforma)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 34,
+    "question": "Uma empresa está planejando migrar para a AWS Cloud. A empresa está realizando uma transformação organizacional e deseja se tornar mais responsiva às solicitações e feedbacks dos clientes. Qual tarefa a empresa deve realizar para atender a esses requisitos, de acordo com o AWS Cloud Adoption Framework (AWS CAF)?",
+    "answers": [
+      "Migrar e modernizar a infraestrutura legada",
+      "Usar uma nova plataforma de dados e análises para gerar insights acionáveis",
+      "Criar novas proposições de valor com novos produtos e serviços",
+      "Realinhar equipes para se concentrarem em produtos e fluxos de valor"
+    ],
+    "correct": 3
+  },
+ {
+    "id": 35,
+    "question": "Qual princípio de design está alinhado com o pilar de eficiência de desempenho do AWS Well-Architected Framework?",
+    "answers": [
+     "Escalar horizontalmente",
+     "Usar serviços gerenciados",
+     "Medir o custo das cargas de trabalho",
+     "Usar arquiteturas serverless"
+      ],
+    "correct": 0
+   },
+  {
+    "id": 36,
+    "question": "Uma empresa executa workloads críticas na AWS. A empresa precisa de uma resposta do suporte técnico da AWS em até 15 minutos se um sistema crítico apresentar falha. Qual plano de suporte da AWS oferece esse tempo de resposta?",
+    "answers": [
+     "AWS Developer Support",
+     "AWS Basic Support",
+     "AWS Enterprise Support",
+     "AWS Business Support"
+      ],
+    "correct": 2
+   },
+  {
+    "id": 37,
+    "question": "Quais benefícios uma empresa recebe com o AWS Business Support? (Escolha dois.)",
+    "answers": [
+      "Tempo de resposta inferior a 15 minutos para casos críticos de negócios",
+      "Revisões Well-Architected",
+      "Gerente de conta técnica (TAM) dedicado",
+      "Conjunto completo de verificações de melhores práticas do AWS Trusted Advisor",
+      "Suporte por telefone, web e chat 24 horas por dia, 7 dias por semana"
+    ],
+    "correct": [3, 4]
+  },
+  {
+    "id": 38,
+    "question": "Qual das opções a seguir é um pilar do AWS Well-Architected Framework?",
+    "answers": [
+      "Operational excellence (Excelência Operacional)",
+      "Redundancy (Redundância)",
+      "Availability (Disponibilidade)",
+      "Multi-Region (Multi-região)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 39,
+    "question": "Qual pilar do AWS Well-Architected Framework foca na capacidade de se recuperar automaticamente de interrupções de serviço?",
+    "answers": [
+      "Operational excellence (Excelência operacional)",
+      "Performance efficiency (Eficiência de desempenho)",
+      "Security (Segurança)",
+      "Reliability (Confiabilidade)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 40,
+    "question": "Qual plano de suporte da AWS fornece o conjunto completo de verificações do AWS Trusted Advisor pelo menor custo?",
+    "answers": [
+      "AWS Enterprise Support",
+      "AWS Developer Support",
+      "AWS Enterprise On-Ramp Support",
+      "AWS Business Support"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 41,
+    "question": "Qual perspectiva do AWS Cloud Adoption Framework (AWS CAF) foca na organização de um inventário de produtos de dados em um catálogo de dados?",
+    "answers": [
+      "Platform (Plataforma)",
+      "Business (Negócios)",
+      "Governance (Governança)",
+      "Operations (Operações)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 42,
+    "question": "Uma empresa deseja projetar sua arquitetura em nuvem para que possa suportar inovações no desenvolvimento e melhorar continuamente os processos e procedimentos. Este é um exemplo de qual pilar do AWS Well-Architected Framework?",
+    "answers": [
+      "Performance efficiency (Eficiência de desempenho)",
+      "Reliability (Confiabilidade)",
+      "Operational excellence (Excelência operacional)",
+      "Security (Segurança)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 43,
+    "question": "Qual benefício é sempre gratuito na AWS, independentemente do plano de suporte AWS do usuário?",
+    "answers": [
+      "Programmatic case management",
+      "AWS Developer Support",
+      "AWS Developer Forums",
+      "AWS technical account manager (TAM)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 44,
+    "question": "Uma empresa está planejando migrar uma aplicação monolítica para a AWS. A empresa deseja modernizar a aplicação dividindo-a em microsserviços. A empresa implantará os microsserviços na AWS. Qual estratégia de migração a empresa deve usar?",
+    "answers": [
+      "Repurchase (Recompra)",
+      "Rehost (Rehospedar)",
+      "Refactor (Refatoração)",
+      "Replatform (Replataforma)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 45,
+    "question": "Qual princípio de design está incluído no pilar de excelência operacional do AWS Well-Architected Framework?",
+    "answers": [
+      "Optimize costs (Otimizar custos)",
+      "Create annotated documentation (Criar documentação anotada)",
+      "Ensure performance efficiency (Garantir eficiência de desempenho)",
+      "Anticipate failure (Antecipar falhas)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 46,
+    "question": "Qual é o plano de suporte AWS menos caro que contém o conjunto completo de verificações de melhores práticas do AWS Trusted Advisor?",
+    "answers": [
+      "AWS Business Support",
+      "AWS Enterprise Support",
+      "AWS Developer Support",
+      "AWS Basic Support"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 47,
+    "question": "Uma empresa possui um plano AWS Business Support. A empresa precisa obter acesso ao AWS DDoS Response Team (DRT) para ajudar a mitigar eventos de DDoS. Qual serviço ou recurso da AWS a empresa deve usar para atender a esses requisitos?",
+    "answers": [
+      "AWS WAF",
+      "AWS Enterprise Support",
+      "AWS Shield Standard",
+      "AWS Shield Advanced"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 48,
+    "question": "Uma empresa está migrando uma workload para a AWS. A empresa precisa que a equipe do AWS Support responda a problemas críticos para o negócio em 30 minutos ou menos. Qual plano de suporte da AWS atenderá a esse requisito?",
+    "answers": [
+      "AWS Basic Support",
+      "AWS Enterprise Support",
+      "AWS Developer Support",
+      "AWS Business Support"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 49,
+    "question": "Qual perspectiva do AWS Cloud Adoption Framework (AWS CAF) foca em insights em tempo real e responde a perguntas sobre estratégia?",
+    "answers": [
+      "People (Pessoas)",
+      "Platform (Plataforma)",
+      "Business (Negócios)",
+      "Operations (Operações)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 50,
+    "question": "Um novo usuário da AWS precisa interagir com o suporte da AWS utilizando chamadas de API. Qual plano de suporte da AWS atenderá a esse requisito de maneira mais econômica?",
+    "answers": [
+      "AWS Business Support",
+      "AWS Developer Support",
+      "AWS Enterprise Support",
+      "AWS Basic Support"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 51,
+    "question": "Quais opções são capacidades da perspectiva de pessoas (People) do AWS Cloud Adoption Framework (AWS CAF)? (Escolha duas.)",
+    "answers": [
+      "Organization design (Design organizacional)",
+      "Risk management (Gerenciamento de riscos)",
+      "Organizational alignment (Alinhamento organizacional)",
+      "Portfolio management (Gerenciamento de portfólio)",
+      "Modern application development (Desenvolvimento de aplicações modernas)"
+    ],
+    "correct": [0, 2]
+  },
+  {
+    "id": 52,
+    "question": "Uma empresa está planejando migrar para a AWS Cloud. A empresa está realizando uma transformação organizacional e deseja se tornar mais responsiva às solicitações e feedbacks dos clientes. Qual tarefa a empresa deve realizar para atender a esses requisitos, de acordo com o AWS Cloud Adoption Framework (AWS CAF)? (Escolha duas.)",
+    "answers": [
+      "Migrar e modernizar a infraestrutura legada",
+      "Usar uma nova plataforma de dados e análises para gerar insights acionáveis",
+      "Criar novas proposições de valor com novos produtos e serviços",
+      "Realinhar equipes para se concentrarem em produtos e fluxos de valor",
+      "Usar métodos ágeis para iterar e evoluir rapidamente"
+    ],
+    "correct": [3, 4]
+  },
+  {
+    "id": 53,
+    "question": "Uma empresa está aprendendo sobre as perspectivas do AWS Cloud Adoption Framework (AWS CAF). Qual perspectiva do AWS CAF aborda a capacidade de gerenciamento estratégico?",
+    "answers": [
+      "Perspectiva de Operações",
+      "Perspectiva de Governança",
+      "Perspectiva de Pessoas",
+      "Perspectiva de Negócios"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 54,
+    "question": "Quais capacidades estão na perspectiva de plataforma do AWS Cloud Adoption Framework (AWS CAF)? (Escolha duas.)",
+    "answers": [
+      "Data protection (Proteção de dados)",
+      "Data science (Ciência de dados)",
+      "Data architecture (Arquitetura de dados)",
+      "Data engineering (Engenharia de dados)",
+      "Data governance (Governança de dados)"
+    ],
+    "correct": [0, 2]
+  },
+  {
+    "id": 55,
+    "question": "Qual plano de suporte da AWS fornece acesso ao AWS Incident Detection and Response com um custo adicional?",
+    "answers": [
+      "AWS Business Support",
+      "AWS Developer Support",
+      "AWS Enterprise On-Ramp Support",
+      "AWS Enterprise Support"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 56,
+    "question": "Qual equipe ou serviço da AWS ajuda os usuários a acelerar a adoção da nuvem por meio de contratos pagos em qualquer uma das várias áreas de prática especializada?",
+    "answers": [
+      "AWS account managers",
+      "AWS Professional Services",
+      "AWS solutions architects",
+      "AWS Enterprise Support"
+    ],
+    "correct": 1
+  }
+]
