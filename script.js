@@ -3,7 +3,7 @@ let selectedQuestions = [];
 let currentQuestion = 0;
 let score = 0;
 let userAnswers = [];
-const TOTAL_QUESTIONS = 3;
+const TOTAL_QUESTIONS = 20;
 
 let answeredQuestions = JSON.parse(localStorage.getItem('quizProgress')) || [];
 let repeatQuestions = [];
