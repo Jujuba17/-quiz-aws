@@ -51,11 +51,21 @@ function connectEventListeners() {
       document.getElementById('start-screen').style.display = 'block'; // Exibe a tela inicial novamente
     };
   }
+// Botão Voltar ao Início no Quiz
+  const backToQuizStartBtn = document.getElementById('back-to-quiz-start-btn');
+  if (backToQuizStartBtn) {
+    backToQuizStartBtn.onclick = () => {
+      document.getElementById('quiz-content').style.display = 'none';
+      document.getElementById('start-screen').style.display = 'block';
+    };
+  }
 }
+
 
 // 🚦 NOVO CÓDIGO DE FLASHCARDS
 
 const flashcards = [
+  { tema: "Análise", pergunta: "Amazon CloudSearch", resposta: "Serviço gerenciado de pesquisa do seu site ou aplicativo" },
   { tema: "Análise", pergunta: "Amazon CloudSearch", resposta: "Serviço gerenciado de pesquisa do seu site ou aplicativo" },
   { tema: "Análise", pergunta: "Amazon DataZone", resposta: "Descubra dados dentre os limites organizacionais" },
   { tema: "Análise", pergunta: "Amazon FinSpace", resposta: "Armazene, catalogue, prepare e analise dados do setor financeiro" },
