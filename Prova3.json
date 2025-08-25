@@ -353,15 +353,15 @@
       "Federação de identidade",
       "Proteção de dados"
     ],
-    "correct": 4
+    "correct": 3
   },
   {
     "id": 33,
     "question": "Quais planos de Suporte da AWS fornecem acesso a um gerente técnico de contas (TAM) da AWS? (Escolha dois.)",
     "answers": [
       "Suporte para Desenvolvedores da AWS",
-      "E. Suporte Empresarial da AWS",
-      "D. Suporte Empresarial On-Ramp da AWS",
+      "Suporte Empresarial da AWS",
+      "Suporte Empresarial On-Ramp da AWS",
       "Suporte Básico da AWS"
     ],
     "correct": [1, 2]
@@ -404,8 +404,8 @@
     "question": "Uma empresa planeja executar sua infraestrutura de TI na Nuvem AWS. A infraestrutura deve ser altamente disponível. A empresa também deve minimizar a latência de rede entre os servidores. Qual cenário de implantação atenderá a esses requisitos?",
     "answers": [
       "Implantar em várias Zonas de Disponibilidade em várias Regiões da AWS",
-      "Implantar em uma Zona de Disponibilidade em uma Região da AWS",
-      "Implantar em várias Zonas de Disponibilidade em uma Região da AWS",
+      "Implantar em uma Zona de Disponibilidade, e uma Região da AWS",
+      "Implantar em várias Zonas de Disponibilidade, e uma Região da AWS",
       "Implantar em várias Regiões da AWS. Implantar em uma Zona de Disponibilidade em cada Região"
     ],
     "correct": 2
