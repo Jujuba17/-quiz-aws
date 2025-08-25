@@ -19,7 +19,14 @@ function connectEventListeners() {
       loadQuestions();
     };
   }
-
+  // 🆕 Botão Voltar ao Quiz - Desafio Oficial
+  const backToQuizDesafioBtn = document.querySelector('#desafio-content #back-to-quiz-btn');
+  if (backToQuizDesafioBtn) {
+    backToQuizDesafioBtn.onclick = () => {
+      document.getElementById('desafio-content').style.display = 'none';
+      document.getElementById('start-screen').style.display = 'block';
+    };
+  }
   // Botão Próxima
   const nextBtn = document.getElementById('next-btn');
   if (nextBtn) {
