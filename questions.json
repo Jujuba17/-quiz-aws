@@ -1671,17 +1671,19 @@
     "icone_dica": "💡"
   },
   {
+    
     "titulo": "Segurança, Identidade e Conformidade",
-    "question": "O que são Roles (papéis) no contexto da AWS?",
+    "question": "O que são Roles (funções) no contexto do IAM na AWS?",
     "answers": [
-      "Secrets Manager",
-      "IAM User Groups",
-      "CloudTrail",
-      "Permissões temporárias atribuídas a entidades confiáveis"
+      "Permissões temporárias que podem ser assumidas por entidades confiáveis",
+      "Um conjunto de usuários que compartilham as mesmas permissões",
+      "Um documento que define explicitamente as permissões (ex: JSON)",
+      "Uma identidade com credenciais de longo prazo para uma pessoa ou aplicação"
     ],
-    "correct": 3,
-    "dica": "Roles permitem atribuir permissões a serviços ou usuários temporariamente.",
+    "correct": 0,
+    "dica": "Pense em como um serviço da AWS, como o EC2, pode obter permissão para acessar o S3 sem usar credenciais fixas.",
     "icone_dica": "💡"
+
   },
   {
     "titulo": "Gerenciamento, Monitoramento e Governança",
@@ -1726,14 +1728,14 @@
     "titulo": "Banco de Dados",
     "question": "No Amazon RDS, um cluster _______ permite que instâncias em espera forneçam suporte para failover e também para tráfego de leitura.",
     "answers": [
-      "ACL (Access Control List)",
       "Multi-AZ",
-      "Glacier",
-      "Route 53"
-    ],
-    "correct": 1,
-    "dica": "Ajuda a garantir alta disponibilidade e escalabilidade de leitura.",
-    "icone_dica": "💡"
+      "Read Replica",
+      "Single-AZ",
+      "Snapshot"
+  ],
+  "correct": 0,
+  "dica": "Essa configuração garante alta disponibilidade e, ao mesmo tempo, permite descarregar as consultas de leitura da instância principal.",
+  "icone_dica": "💡"
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
@@ -2897,15 +2899,15 @@
   },
   {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "Qual política de roteamento do Route 53 roteia o tráfego com base na localização dos seus recursos (e não do usuário)?",
+    "question": "Qual política de roteamento do Route 53 direciona o tráfego com base na localização dos seus recursos (e não na localização do usuário)?",
     "answers": [
-      "EFS",
-      "Geoproximity Routing",
-      "Budgets",
-      "EBS"
+      "Geoproximity Routing (proximidade geográfica)",
+      "Geolocation Routing (localização do usuário)",
+      "Latency-based Routing (menor latência)",
+      "Weighted Routing (roteamento ponderado)"
     ],
-    "correct": 1,
-    "dica": "Esta política permite otimizar o roteamento com base na proximidade geográfica dos recursos.",
+    "correct": 0,
+    "dica": "Pense na política que permite usar 'biases' (vieses) para expandir ou reduzir a área geográfica de onde os recursos recebem tráfego.",
     "icone_dica": "💡"
   },
   {
@@ -3299,19 +3301,19 @@
    "dica": "Este volume oferece o mais alto desempenho de IOPS.",
    "icone_dica": "💡"
   },
-  {
+    {
     "titulo": "Armazenamento",
-    "question": "Volumes EBS do tipo Provisioned IOPS SSD podem ser usados como volume de boot para sistemas operacionais?",
+    "question": "É possível usar um volume EBS do tipo Provisioned IOPS (io1/io2) como o volume de boot de uma instância EC2?",
     "answers": [
-      "Sim, se a instância for Nitro e o kernel for compatível com NVMe.",
-      "Storage Gateway sincronizado com um cache local em RAM.",
-      "Glacier para acesso imediato com restauração acelerada.",
-      "S3 com versionamento ativado e política de lifecycle para Standard_IA."
+      "Sim, todos os tipos de volumes EBS podem ser usados como volume de boot.",
+      "Não, apenas os volumes do tipo General Purpose SSD (gp2/gp3) são permitidos para boot.",
+      "Não, volumes Provisioned IOPS são exclusivos para dados e não para sistemas operacionais.",
+      "Sim, mas apenas em instâncias otimizadas para EBS e com custo significativamente maior."
     ],
     "correct": 0,
-    "dica": "Este volume oferece alta performance para cargas de trabalho com IOPS intensivo.",
+    "dica": "A AWS oferece flexibilidade na escolha do volume de boot, embora o General Purpose SSD (gp2/gp3) seja o padrão e mais comum por seu equilíbrio entre custo e performance.",
     "icone_dica": "💡"
-  },
+},
   {
     "titulo": "Armazenamento",
     "question": "Volumes EBS do tipo Cold HDD podem ser usados como volume de boot para sistemas operacionais?",
@@ -3559,16 +3561,16 @@
   },
   {  
     "titulo": "Banco de Dados",  
-    "question": "Quais tipos de bancos de dados são vantajosos para mecanismos de recomendação e detecção de fraudes?",  
-    "answers": [  
-      "Bancos de dados de grafos",  
-      "Elastic Beanstalk",  
-      "Glacier",  
-      "Route53"  
-    ],  
-    "correct": 0,  
-    "dica": "Pense em um tipo de banco de dados que é otimizado para relacionamentos complexos.",  
-    "icone_dica": "💡"  
+    "question": "Quais tipos de bancos de dados são vantajosos para mecanismos de recomendação e detecção de fraudes?",
+    "answers": [
+      "Bancos de dados de grafos (ex: Neptune)",
+      "Bancos de dados relacionais (ex: RDS)",
+      "Bancos de dados de chave-valor (ex: DynamoDB)",
+      "Bancos de dados de documentos (ex: DocumentDB)"
+    ],
+    "correct": 0,
+    "dica": "Pense em um tipo de banco de dados que é otimizado para relacionamentos complexos.",
+    "icone_dica": "💡"
   },  
   {  
     "titulo": "Banco de Dados",  
@@ -4379,19 +4381,6 @@
     "icone_dica": "💡"
   },
   {
-    "titulo": "Sem Servidor",
-    "question": "O EKS é um serviço serverless para execução de contêineres Kubernetes ou um serviço de orquestração de contêineres com Kubernetes?",
-    "answers": [
-      "Serverless.",
-      "Kubernetes gerenciado.",
-      "Análise de custos.",
-      "Plataforma web serverless."
-  ],
-  "correct": 1,
-  "dica": "Ainda gerencia nós.",
-  "icone_dica": "💡"
-  },
-  {
     "titulo": "Segurança, Identidade e Conformidade",
     "question": "Qual serviço da AWS facilita a análise, a investigação e a identificação rápida da causa raiz de potenciais problemas de segurança?",
     "answers": [
@@ -4779,19 +4768,19 @@
     "dica": "Este serviço permite executar código sem precisar provisionar ou gerenciar servidores.",  
     "icone_dica": "💡"  
   },  
-  {  
-    "titulo": "Sem Servidor",  
-    "question": "O EKS é um serviço serverless para execução de contêineres Kubernetes ou um serviço de orquestração de contêineres com Kubernetes?",  
-    "answers": [  
-      "Auto Scaling",  
-      "Orquestração",  
-      "Cost Explorer",  
-      "Serverless"  
-    ],  
-    "correct": 1,  
-    "dica": "O EKS simplifica o gerenciamento de clusters Kubernetes na AWS.",  
-    "icone_dica": "💡"  
-  },  
+  {
+    "titulo": "Computação",
+    "question": "Qual das seguintes opções melhor descreve a principal função do Amazon EKS (Elastic Kubernetes Service)?",
+    "answers": [
+      "Serviço de orquestração de contêineres",
+      "Serviço de execução serverless de funções",
+      "Plataforma como Serviço (PaaS) para aplicações web",
+      "Ferramenta de Infraestrutura como Código (IaC)"
+    ],
+    "correct": 0,
+    "dica": "O EKS foi criado para gerenciar, executar e escalar cargas de trabalho usando o Kubernetes na AWS.",
+    "icone_dica": "💡"
+ },  
   {  
     "titulo": "Segurança, Identidade e Conformidade",  
     "question": "Qual serviço da AWS facilita a análise, a investigação e a identificação rápida da causa raiz de potenciais problemas de segurança?",  
@@ -5008,7 +4997,7 @@
     "answers": [  
   
     "EventBridge",  
-    "CloudTrail"
+    "CloudWatch Events"
    
     ],  
     "correct": 0,  
@@ -5429,17 +5418,17 @@
     "dica": "Este serviço permite executar tarefas de processamento em lote de forma escalável e eficiente.",
     "icone_dica": "💡"
   },
-  {
+    {
     "titulo": "Contêineres",
-    "question": "O que significa a sigla ECR?",
+    "question": "Na AWS, o que significa a sigla ECR?",
     "answers": [
-      "Outposts",
       "Elastic Container Registry",
-      "S3",
-      "Elastic Load Balancer"
+      "Elastic Container Repository",
+      "Elastic Compute Registry",
+      "External Container Runtime"
     ],
-    "correct": 1,
-    "dica": "Este serviço é utilizado para armazenar e gerenciar imagens de contêineres.",
+    "correct": 0,
+    "dica": "É o serviço da AWS para armazenar, gerenciar e implantar imagens de contêiner Docker. O 'R' vem de 'Registry', um termo padrão para repositórios de imagens.",
     "icone_dica": "💡"
   },
   {
@@ -5611,19 +5600,19 @@
     "dica": "Uma VPC pode ter apenas um Internet Gateway anexado a ela.",
     "icone_dica": "💡"
   },
-  {
+    {
     "titulo": "Redes e Entrega de Conteúdo",
-    "question": "O frontend da sua aplicação está em uma sub-rede pública, e o backend em uma sub-rede privada. Você precisa que seu backend tenha acesso à internet de forma segura, sem expô-lo diretamente. Qual recurso permite esse acesso?",
+    "question": "Seu backend está em uma sub-rede privada e precisa acessar a internet para atualizações, mas não deve ser acessível publicamente. Qual componente de VPC permite essa comunicação de saída (outbound) de forma segura?",
     "answers": [
-      "S3",
-      "Budgets",
-      "Cost Explorer",
-      "NAT Gateway"
+      "NAT Gateway",
+      "Internet Gateway",
+      "VPC Peering",
+      "Direct Connect"
     ],
-    "correct": 3,
-    "dica": "Este recurso permite que instâncias em sub-redes privadas acessem a internet sem receber tráfego da internet.",
+    "correct": 0,
+    "dica": "Pense em um 'tradutor' de endereços de rede que permite que o tráfego privado saia para a internet usando o IP público do gateway, mas bloqueia conexões iniciadas de fora.",
     "icone_dica": "💡"
-  },
+},
   {
     "titulo": "Web e Dispositivos Móveis de Front End",
     "question": "Qual serviço da AWS facilita a criação de APIs usando GraphQL?",
@@ -6355,15 +6344,15 @@
   },
   {
     "titulo": "Armazenamento",
-    "question": "No S3, quem é que possui a classe de armazenamento (Standard, Glacier, Standard-IA...)?",
+    "question": "No Amazon S3, qual elemento possui uma classe de armazenamento específica (como Standard, Glacier ou Intelligent-Tiering)?",
     "answers": [
-      "EFS",
-      "Storage Gateway",
-      "Glacier",
-      "Objeto"
+      "O Objeto",
+      "O Bucket",
+      "A Versão do Objeto",
+      "O Prefixo (pasta)"
     ],
-    "correct": 3,
-    "dica": "A classe de armazenamento define o custo e a disponibilidade dos dados.",
+    "correct": 0,
+    "dica": "A classe de armazenamento é uma propriedade definida individualmente para cada dado que você carrega. Um bucket pode conter dados em várias classes diferentes ao mesmo tempo.",
     "icone_dica": "💡"
   },
   {
@@ -6953,17 +6942,17 @@
     "icone_dica": "💡"  
   },  
   {  
-    "titulo": "Banco de Dados",  
-    "question": "Como um banco de dados relacional pode ser implementado na AWS?",  
-    "answers": [  
-      "RDS ou instâncias EC2",  
-      "DynamoDB",
-      "Redshift",
-      "Neptune"
-    ],  
-    "correct": 0,  
-    "dica": "Existem duas opções principais para implementar bancos de dados relacionais na AWS.",  
-    "icone_dica": "💡"  
+    "titulo": "Banco de Dados",
+    "question": "Como um banco de dados relacional pode ser implementado na AWS?",
+    "answers": [
+      "Com o serviço RDS ou instalando em uma instância EC2",
+      "Exclusivamente através do serviço DynamoDB",
+      "Armazenando arquivos SQL no S3",
+      "Utilizando o serviço de data warehouse Redshift"
+    ],
+    "correct": 0,
+    "dica": "Existem duas opções principais para implementar bancos de dados relacionais na AWS.",
+    "icone_dica": "💡"
   },  
   {  
     "titulo": "Computação",  
