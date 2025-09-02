@@ -37,6 +37,8 @@
       <div class="quiz-buttons">
         <button id="back-to-quiz-start-btn">← Voltar ao Início</button>
         <button id="hint-btn" title="Ver dica">💡</button>
+        <button id="submit-button" style="display: none;">Enviar</button>
+        <button id="next-button" style="display: none;">Próxima</button>
         <button id="next-btn" disabled>Próxima</button>
       </div>
 
@@ -74,6 +76,7 @@
             <option value="Prova3.json">Prova 3</option>
             <option value="Prova4.json">Prova 4</option>
             <option value="Prova5.json">Prova 5</option>
+            <option value="Prova6.json">Prova 6</option>
         </select>
 
         <div id="desafio-start">
@@ -85,7 +88,8 @@
         <div id="desafio" style="display:none;">
             <div id="desafio-question"></div>
             <div id="desafio-answers"></div>
-            <button id="desafio-next-button">Próxima</button>
+           <!-- ton id="desafio-next-button">Próxima</button> -->
+            <button id="desafio-next-button" disabled>Enviar Resposta</button>
             <div id="desafio-progress">Pergunta <span id="desafio-current"></span>/<span id="desafio-total"></span></div>
             <div id="desafio-score">Acertos: <span id="desafio-correct-answers">0</span></div>
         </div>

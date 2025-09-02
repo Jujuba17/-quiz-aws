@@ -1,0 +1,612 @@
+[
+  {
+    "id": 1,
+    "question": "Quais serviços da AWS podem ser usados em conjunto para enviar alertas sempre que o usuário root da conta da AWS fizer login? (Selecione duas)",
+    "answers": [
+      "Serviço de Notificação Simples da Amazon (Amazon SNS)",
+      "Serviço de fila simples da Amazon (Amazon SQS)",
+      "Amazon CloudWatch",
+      "Funções de etapa da AWS",
+      "AWS Lambda"
+    ],
+    "correct": [0, 2]
+  },
+  {
+    "id": 2,
+    "question": "As instâncias Spot do Amazon Elastic Compute Cloud (Amazon EC2) são mais adequadas para quais dos seguintes cenários?",
+    "answers": [
+      "Para executar processos em lote para cargas de trabalho críticas",
+      "Para executar qualquer carga de trabalho em contêiner com o Amazon Elastic Container Service (Amazon ECS) que pode ser interrompida",
+      "Para instalar um banco de dados Amazon RDS econômico",
+      "Para executar trabalhos agendados (trabalhos executados no mesmo horário todos os dias)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 3,
+    "question": "Qual das seguintes opções é uma perspectiva do AWS Cloud Adoption Framework (AWS CAF)?",
+    "answers": [
+      "Arquitetura",
+      "Processo",
+      "Produto",
+      "Negócios"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 4,
+    "question": "Uma empresa de serviços financeiros deseja garantir que todos os dados de clientes carregados em seu data lake no Amazon Simple Storage Service (Amazon S3) permaneçam sempre privados. Qual das seguintes opções é a solução MAIS eficiente para atender a esse requisito de conformidade?",
+    "answers": [
+      "Use o Amazon S3 Block Public Access para garantir que todos os recursos do Amazon S3 permaneçam privados",
+      "Use o Amazon CloudWatch para garantir que todos os recursos do Amazon S3 permaneçam privados",
+      "Crie um comitê consultivo de alto nível para revisar as configurações de privacidade de cada objeto carregado no Amazon S3",
+      "Acione uma função lambda sempre que um objeto for carregado no Amazon S3. A função lambda deve alterar as configurações do objeto para garantir que ele permaneça privado."
+    ],
+    "correct": 0
+  },
+  {
+    "id": 5,
+    "question": "Qual das seguintes opções descreve uma Zona de Disponibilidade (AZ) na Nuvem AWS?",
+    "answers": [
+      "Um ou mais data centers em vários locais",
+      "Um ou mais data centers no mesmo local",
+      "Um ou mais racks de servidores no mesmo local",
+      "Um ou mais racks de servidores em vários locais"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 6,
+    "question": "Qual das seguintes entidades pode ser usada para se conectar a um servidor Amazon Elastic Compute Cloud (Amazon EC2) de um computador baseado em Mac OS, Windows ou Linux por meio de um cliente baseado em navegador?",
+    "answers": [
+      "Massa de vidraceiro",
+      "Conexão direta da AWS",
+      "Conexão de instância do Amazon EC2",
+      "SSH"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 7,
+    "question": "Qual das seguintes opções é a opção de compra de instância do Amazon Elastic Compute Cloud (Amazon EC2) MAIS econômica para cargas de trabalho críticas, intermitentes e de curto prazo na Nuvem AWS?",
+    "answers": [
+      "Instância sob demanda",
+      "Host dedicado",
+      "Instância Reservada (RI)",
+      "Instância Spot"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 8,
+    "question": "Quais das seguintes opções são práticas de segurança recomendadas para o usuário root da conta da AWS? (Selecione duas)",
+    "answers": [
+      "Desabilite a autenticação multifator (MFA) para o usuário root da conta AWS, pois isso pode bloquear toda a conta AWS se o dispositivo de autenticação multifator (MFA) for perdido.",
+      "Habilitar autenticação multifator (MFA) para o usuário raiz da conta da AWS",
+      "Configure um usuário do IAM com permissões de administrador e não use o usuário root da conta da AWS para tarefas administrativas",
+      "Mantenha as chaves de acesso do usuário root da sua conta AWS em um arquivo criptografado no Amazon S3",
+      "Compartilhe chaves de acesso do usuário root da conta AWS com outros administradores"
+    ],
+    "correct": [1, 2]
+  },
+  {
+    "id": 9,
+    "question": "Uma empresa de mídia social deseja ter a estratégia MAIS econômica para implantar instâncias do Amazon Elastic Compute Cloud (Amazon EC2). Como profissional de nuvem, qual das seguintes opções você recomendaria? (Selecione duas)",
+    "answers": [
+      "Use Instâncias Reservadas (RI) para trabalhos ad-hoc que podem ser interrompidos",
+      "Use instâncias sob demanda para executar aplicativos com uso previsível no próximo ano",
+      "Use Instâncias Reservadas (RI) para executar aplicativos com uso previsível no próximo ano",
+      "Use instâncias sob demanda para trabalhos ad-hoc que podem ser interrompidos",
+      "Use instâncias spot para trabalhos ad-hoc que podem ser interrompidos"
+    ],
+    "correct": [2, 4]
+  },
+  {
+    "id": 10,
+    "question": "Qual política de roteamento do Amazon Route 53 você usaria para rotear o tráfego para um único recurso, como um servidor web, para seu site?",
+    "answers": [
+      "Roteamento de failover",
+      "Roteamento ponderado",
+      "Roteamento baseado em latência",
+      "Roteamento simples"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 11,
+    "question": "Qual das seguintes opções é a melhor prática para arquitetura de aplicativos na Nuvem AWS?",
+    "answers": [
+      "Use comunicação síncrona entre componentes",
+      "Crie aplicações monolíticas",
+      "Construir componentes fortemente acoplados",
+      "Construir componentes fracamente acoplados"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 12,
+    "question": "Qual dos seguintes é um serviço de contêiner da AWS?",
+    "answers": [
+      "Amazon SageMaker",
+      "AWS Elastic Beanstalk",
+      "AWS Fargate",
+      "Serviço de Notificação Simples da Amazon (Amazon SNS)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 13,
+    "question": "Uma empresa de serviços financeiros deseja migrar de seu data center local para a Nuvem AWS. Como profissional de nuvem, qual serviço da AWS você recomendaria para que a empresa possa comparar o custo de execução de sua infraestrutura de TI local com a Nuvem AWS?",
+    "answers": [
+      "Orçamentos da AWS",
+      "Explorador de custos da AWS",
+      "Calculadora de preços da AWS",
+      "Consultor confiável da AWS"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 14,
+    "question": "Qual serviço da AWS você escolheria para um projeto de processamento de dados que precisa de um banco de dados sem esquema?",
+    "answers": [
+      "Amazon RedShift",
+      "Amazon DynamoDB",
+      "Serviço de Banco de Dados Relacional da Amazon (Amazon RDS)",
+      "Aurora Amazônica"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 15,
+    "question": "Qual entidade garante que seu aplicativo no Amazon Elastic Compute Cloud (Amazon EC2) sempre tenha a quantidade certa de capacidade para lidar com a demanda de tráfego atual?",
+    "answers": [
+      "Balanceador de carga de rede",
+      "Implantação Multi-AZ",
+      "Dimensionamento automático do Amazon EC2",
+      "Balanceador de carga de aplicativo"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 16,
+    "question": "Uma empresa deseja manter os mesmos dados no Amazon Simple Storage Service (Amazon S3) entre sua conta de produção e várias contas de teste. Qual técnica você deve escolher para copiar dados para várias contas de teste, mantendo os metadados do objeto?",
+    "answers": [
+      "Replicação do Amazon S3",
+      "Política de bucket do Amazon S3",
+      "Aceleração de transferência do Amazon S3 (Amazon S3TA)",
+      "Classes de armazenamento do Amazon S3"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 17,
+    "question": "Uma empresa de mídia digital deseja converter legendas em inglês para legendas em espanhol. Como profissional de nuvem, qual serviço da AWS você recomendaria para este caso de uso?",
+    "answers": [
+      "Amazon Transcrição",
+      "Reconhecimento da Amazon",
+      "Amazon Polly",
+      "Amazon Tradutor"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 18,
+    "question": "Quais das seguintes afirmações são verdadeiras sobre o Amazon Simple Storage Service (Amazon S3) (selecione duas)?",
+    "answers": [
+      "O Amazon Simple Storage Service (Amazon S3) é um serviço de armazenamento de objetos baseado em valor-chave",
+      "Você pode instalar bancos de dados no Amazon Simple Storage Service (Amazon S3)",
+      "O Amazon Simple Storage Service (Amazon S3) armazena dados em uma estrutura plana e não hierárquica",
+      "O Amazon Simple Storage Service (Amazon S3) é um serviço de armazenamento em bloco projetado para uma ampla gama de cargas de trabalho",
+      "O Amazon Simple Storage Service (Amazon S3) é um serviço de armazenamento de sistema de arquivos totalmente gerenciado e elástico usado como backup de banco de dados"
+    ],
+    "correct": [0, 2]
+  },
+  {
+    "id": 19,
+    "question": "Qual das opções a seguir está disponível em todos os planos do AWS Support?",
+    "answers": [
+      "Conjunto completo de verificações de práticas recomendadas do AWS Trusted Advisor",
+      "Suporte técnico aprimorado com casos e contatos ilimitados",
+      "Painel de saúde da AWS – Saúde da sua conta",
+      "Suporte de software de terceiros"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 20,
+    "question": "Qual dos seguintes serviços de armazenamento da AWS pode ser usado diretamente com sistemas locais?",
+    "answers": [
+      "Loja de blocos elásticos da Amazon (Amazon EBS)",
+      "Serviço de armazenamento simples da Amazon (Amazon S3)",
+      "Loja de instâncias do Amazon EC2",
+      "Sistema de arquivos elástico da Amazon (Amazon EFS)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 21,
+    "question": "Quais das seguintes afirmações estão CORRETAS em relação ao AWS Global Accelerator? (Selecione duas)",
+    "answers": [
+      "O AWS Global Accelerator não pode ser configurado com um Elastic Load Balancer (ELB)",
+      "O AWS Global Accelerator pode ser usado para hospedar sites estáticos",
+      "O AWS Global Accelerator utiliza a rede global da AWS e seus pontos de presença. No entanto, os pontos de presença usados pelo Global Accelerator são diferentes dos pontos de presença do Amazon CloudFront.",
+      "O AWS Global Accelerator fornece endereços IP estáticos que atuam como um ponto de entrada fixo para seus aplicativos",
+      "O AWS Global Accelerator é uma boa opção para casos de uso não HTTP"
+    ],
+    "correct": [3, 4]
+  },
+  {
+    "id": 22,
+    "question": "Qual benefício da computação em nuvem permite que a AWS ofereça preços mais baixos de pagamento conforme o uso, já que o uso de centenas de milhares de clientes é agregado na nuvem?",
+    "answers": [
+      "Torne-se global em minutos",
+      "Grandes economias de escala",
+      "Despesa de capital comercial para despesa variável",
+      "Maior velocidade e agilidade"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 23,
+    "question": "Quais das seguintes opções são benefícios do AWS Web Application Firewall (AWS WAF)? (Selecione duas)",
+    "answers": [
+      "O AWS Web Application Firewall (AWS WAF) permite monitorar as solicitações HTTP e HTTPS encaminhadas para o Amazon Route 53",
+      "O AWS Web Application Firewall (AWS WAF) pode verificar a presença de código SQL que provavelmente é malicioso (conhecido como injeção de SQL)",
+      "O AWS Web Application Firewall (AWS WAF) pode bloquear todas as solicitações, exceto aquelas que você permite",
+      "O AWS Web Application Firewall (AWS WAF) oferece proteção contra todos os ataques de infraestrutura conhecidos (camadas 3 e 4)",
+      "O AWS Web Application Firewall (AWS WAF) oferece suporte dedicado da Equipe de Resposta a DDoS (DRT) e relatórios avançados"
+    ],
+    "correct": [1, 2]
+  },
+  {
+    "id": 24,
+    "question": "De acordo com o Modelo de Responsabilidade Compartilhada da AWS, qual das seguintes opções é uma responsabilidade da AWS do ponto de vista de segurança e conformidade?",
+    "answers": [
+      "Gerenciamento de Identidade e Acesso",
+      "Aplicação de patches em sistemas operacionais convidados e aplicativos",
+      "Proteção de Serviços e Comunicações",
+      "Aplicação de patches na infraestrutura de rede"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 25,
+    "question": "O AWS Shield Advanced oferece proteção expandida contra ataques DDoS para aplicativos da web executados em quais dos seguintes recursos? (Selecione dois)",
+    "answers": [
+      "Serviço de armazenamento simples da Amazon (Amazon S3)",
+      "Amazon CloudFront",
+      "AWS Elastic Beanstalk",
+      "Gerenciamento de Identidade e Acesso da AWS (AWS IAM)",
+      "Nuvem de computação elástica da Amazon (Amazon EC2)"
+    ],
+    "correct": [1, 4]
+  },
+  {
+    "id": 26,
+    "question": "A equipe de DevOps de uma consultoria de Big Data configurou instâncias do Amazon Elastic Compute Cloud (Amazon EC2) em duas regiões da AWS para seu aplicativo principal. Qual das seguintes opções caracteriza essa arquitetura de aplicativo?",
+    "answers": [
+      "A implantação do aplicativo em duas regiões da AWS melhora a agilidade",
+      "A implantação do aplicativo em duas regiões da AWS melhora a disponibilidade",
+      "A implantação do aplicativo em duas regiões da AWS melhora a segurança",
+      "A implantação do aplicativo em duas regiões da AWS melhora a escalabilidade"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 27,
+    "question": "Qual serviço da AWS ajudará você a implantar código de aplicativo automaticamente em uma instância do Amazon Elastic Compute Cloud (Amazon EC2)?",
+    "answers": [
+      "AWS Elastic Beanstalk",
+      "AWS CloudFormation",
+      "AWS CodeBuild",
+      "AWS CodeDeploy"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 28,
+    "question": "Uma empresa de comércio eletrônico migrou sua infraestrutura de TI do data center local para a Nuvem AWS. Por quais dos seguintes custos a empresa é responsável?",
+    "answers": [
+      "Custos de infraestrutura de hardware na Nuvem AWS",
+      "Custos de licença de software de aplicação",
+      "Custos para alimentar servidores na Nuvem AWS",
+      "Custos de segurança física do data center da AWS"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 29,
+    "question": "Quais das seguintes entidades fazem parte de uma Amazon Virtual Private Cloud (Amazon VPC) na Nuvem AWS? (Selecione duas)",
+    "answers": [
+      "Gateway de armazenamento da AWS",
+      "Sub-rede",
+      "Gateway de API",
+      "Gateway de Internet",
+      "Objeto"
+    ],
+    "correct": [1, 3]
+  },
+  {
+    "id": 30,
+    "question": "Qual das opções a seguir você pode usar para executar um script de bootstrap ao iniciar uma instância do Amazon Elastic Compute Cloud (Amazon EC2)?",
+    "answers": [
+      "Dados da AMI da instância do Amazon EC2",
+      "Dados de configuração da instância do Amazon EC2",
+      "Dados do usuário da instância do Amazon EC2",
+      "Metadados da instância do Amazon EC2"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 31,
+    "question": "A equipe de DevOps de uma empresa de TI deseja gerenciar centralmente seus servidores na Nuvem AWS, bem como em um data center local, para poder coletar inventário de software, executar comandos, configurar e aplicar patches em servidores em escala. Como profissional de nuvem, qual serviço da AWS você recomendaria para este caso de uso?",
+    "answers": [
+      "AWS CloudFormation",
+      "Configuração da AWS",
+      "Gerente de sistemas da AWS",
+      "AWS OpsWorks"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 32,
+    "question": "Qual dos seguintes serviços da AWS oferece configuração de ciclo de vida para armazenamento com custo otimizado?",
+    "answers": [
+      "Loja de instâncias do Amazon EC2",
+      "Serviço de armazenamento simples da Amazon (Amazon S3)",
+      "Gateway de armazenamento da AWS",
+      "Loja de blocos elásticos da Amazon (Amazon EBS)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 33,
+    "question": "Quais dos seguintes tipos são gratuitos no modelo de preços do Amazon Simple Storage Service (Amazon S3)? (Selecione duas)",
+    "answers": [
+      "Dados transferidos para uma instância do Amazon Elastic Compute Cloud (Amazon EC2) em qualquer região da AWS",
+      "Dados transferidos para uma instância do Amazon Elastic Compute Cloud (Amazon EC2), quando a instância está na mesma região da AWS que o bucket do S3",
+      "Dados transferidos da Internet",
+      "Taxa de armazenamento de dados para objetos armazenados no S3 Standard",
+      "Taxa de armazenamento de dados para objetos armazenados no S3 Glacier"
+    ],
+    "correct": [1, 2]
+  },
+  {
+    "id": 34,
+    "question": "Qual das seguintes entidades da AWS lista todos os usuários na sua conta e o status dos vários aspectos da conta, como senhas, chaves de acesso e dispositivos MFA?",
+    "answers": [
+      "Relatório de Custo e Uso da AWS (AWS CUR)",
+      "Relatório de Credenciais",
+      "Consultor confiável da AWS",
+      "Inspetor da Amazon"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 35,
+    "question": "O AWS Organizations oferece quais dos seguintes benefícios? (Selecione dois)",
+    "answers": [
+      "Implantar patches em instâncias do Amazon EC2 em todas as contas AWS membros",
+      "Verifique vulnerabilidades em instâncias do Amazon EC2 nas contas AWS dos membros",
+      "Provisionar instâncias Spot do Amazon EC2 nas contas AWS membros",
+      "Descontos por volume para Amazon EC2 e Amazon S3 agregados em todas as contas AWS associadas",
+      "Compartilhe as instâncias reservadas do Amazon EC2 entre as contas AWS membros"
+    ],
+    "correct": [3, 4]
+  },
+  {
+    "id": 36,
+    "question": "Qual serviço da AWS você usará para provisionar a mesma infraestrutura da AWS em várias contas e regiões da AWS?",
+    "answers": [
+      "Gerente de sistemas da AWS",
+      "AWS OpsWorks",
+      "AWS CloudFormation",
+      "AWS CodeDeploy"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 37,
+    "question": "Qual serviço da AWS pode ser usado para hospedar um site estático com MENOR esforço?",
+    "answers": [
+      "Sistema de arquivos elástico da Amazon (Amazon EFS)",
+      "Serviço de armazenamento simples da Amazon (Amazon S3)",
+      "Amazon S3 Glacier",
+      "Gateway de armazenamento da AWS"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 38,
+    "question": "Quais dos seguintes planos do AWS Support oferecem acesso programático aos recursos do AWS Support Center para criar, gerenciar e encerrar seus casos de suporte? (Selecione dois)",
+    "answers": [
+      "Suporte ao desenvolvedor da AWS",
+      "Suporte Corporativo da AWS",
+      "Suporte empresarial da AWS",
+      "Suporte empresarial da AWS",
+      "Suporte básico da AWS"
+    ],
+    "correct": [2, 3]
+  },
+  {
+    "id": 39,
+    "question": "Bob e Susan têm, cada um, uma conta AWS no AWS Organizations. Susan tem cinco Instâncias Reservadas (RIs) do mesmo tipo e Bob não tem nenhuma. Durante uma hora específica, Susan usa três instâncias e Bob usa seis, totalizando nove instâncias na fatura consolidada da organização.\nQuais das seguintes afirmações estão corretas sobre o faturamento consolidado no AWS Organizations? (Selecione duas)",
+    "answers": [
+      "Bob recebe o custo-benefício da Instância Reservada (IR) de Susan somente se ele iniciar suas instâncias na mesma Região da AWS onde Susan comprou suas Instâncias Reservadas (IR)",
+      "A AWS cobra cinco instâncias como Instâncias Reservadas e as quatro instâncias restantes como instâncias regulares",
+      "A AWS cobra três instâncias como Instâncias Reservadas (RI) e as seis instâncias restantes como instâncias regulares",
+      "Bob não recebe nenhum custo-benefício, pois não adquiriu nenhuma Instância Reservada (IR). Se sua conta tiver pelo menos uma IR, o custo-benefício da conta de Susan também será adicionado à sua conta.",
+      "Bob recebe o custo-benefício das Instâncias Reservadas (RI) de Susan somente se ele iniciar suas instâncias na mesma Zona de Disponibilidade (AZ) onde Susan comprou suas Instâncias Reservadas"
+    ],
+    "correct": [1, 4]
+  },
+  {
+    "id": 40,
+    "question": "A equipe de controle de qualidade de uma empresa quer uma ferramenta/serviço que possa fornecer acesso a diferentes dispositivos móveis com variações de firmware e versões de sistema operacional.\nQual serviço da AWS pode abordar esse caso de uso?",
+    "answers": [
+      "Fazenda de dispositivos da AWS",
+      "Fazenda móvel da AWS",
+      "AWS CodePipeline",
+      "AWS Elastic Beanstalk"
+    ],
+    "correct": 0
+  }, 
+  {  
+    "id": 41,  
+    "question": "Qual serviço da AWS pode ajudar você a analisar sua infraestrutura para identificar volumes elásticos do Amazon EBS não anexados ou subutilizados?",  
+    "answers": [  
+      "Configuração da AWS",  
+      "Inspetor da Amazon",  
+      "Consultor confiável da AWS",  
+      "Amazon CloudWatch"  
+    ],  
+    "correct": 2  
+  },  
+  {  
+    "id": 42,  
+    "question": "De acordo com o Modelo de Responsabilidade Compartilhada da AWS, quais das seguintes opções são responsabilidades do cliente em relação ao Gerenciamento de Identidade e Acesso da AWS (AWS IAM)? (Selecione duas opções)",  
+    "answers": [  
+      "Validação de conformidade para a infraestrutura de software subjacente",  
+      "Gerenciar a infraestrutura de segurança de rede global",  
+      "Análise de configuração e vulnerabilidade para a infraestrutura de software subjacente",  
+      "Habilitar autenticação multifator (MFA) em todas as contas",  
+      "Analisar padrões de acesso do usuário e revisar as permissões do AWS Identity and Access Management (AWS IAM)"  
+    ],  
+    "correct": [3, 4]  
+  },  
+  {  
+    "id": 43,  
+    "question": "Uma empresa de comércio eletrônico deseja analisar os relatórios do Setor de Cartões de Pagamento (PCI) na Nuvem AWS. Qual recurso da AWS pode ser usado para abordar esse caso de uso?",  
+    "answers": [  
+      "Artefato AWS",  
+      "Relatório de Custo e Uso da AWS (AWS CUR)",  
+      "Gerenciador de segredos da AWS",  
+      "Consultor confiável da AWS"  
+    ],  
+    "correct": 0  
+  },  
+  {  
+    "id": 44,  
+    "question": "Uma empresa de mídia carrega seus arquivos de mídia (áudio e vídeo) para um bucket centralizado do Amazon Simple Storage Service (Amazon S3) a partir de locais geograficamente dispersos. Qual das seguintes soluções a empresa pode usar para otimizar as velocidades de transferência?",  
+    "answers": [  
+      "Conexão direta da AWS",  
+      "Amazon CloudFront",  
+      "Aceleração de transferência do Amazon S3 (S3TA)",  
+      "Acelerador Global da AWS"  
+    ],  
+    "correct": 2  
+  },  
+  {  
+    "id": 45,  
+    "question": "Quais dos seguintes são serviços de computação sem servidor oferecidos pela AWS? (Selecione dois)",  
+    "answers": [  
+      "AWS Elastic Beanstalk",  
+      "AWS Fargate",  
+      "Nuvem de computação elástica da Amazon (Amazon EC2)",  
+      "AWS Lambda",  
+      "Amazon Lightsail"
+],
+   "correct": 2  
+  },
+  {  
+    "id": 53,  
+    "question": "Uma empresa de comércio eletrônico gostaria de receber alertas quando a utilização de Instâncias Reservadas (RI) do Amazon EC2 cair abaixo de um determinado limite. Qual serviço da AWS pode ser usado para atender a esse caso de uso?",  
+    "answers": [  
+      "Gerente de sistemas da AWS",  
+      "Orçamentos da AWS",  
+      "Explorador de custos da AWS",  
+      "Consultor confiável da AWS"  
+    ],  
+    "correct": 1  
+  },  
+  {  
+    "id": 54,  
+    "question": "Qual dos seguintes mecanismos de autenticação da AWS oferece suporte a um dispositivo de autenticação multifator da AWS (AWS MFA) que você pode conectar a uma porta USB no seu computador?",  
+    "answers": [  
+      "Dispositivo de autenticação multifator virtual (AWS MFA)",  
+      "Autenticação multifator baseada em mensagem de texto SMS (AWS MFA)",  
+      "Dispositivo de autenticação multifator de hardware (AWS MFA)",  
+      "Chave de segurança U2F"  
+    ],  
+    "correct": 3  
+  },  
+  {  
+    "id": 55,  
+    "question": "Qual dos seguintes serviços da AWS pode ser usado para prever o uso e os custos da sua conta da AWS?",  
+    "answers": [  
+      "Calculadora de preços da AWS",  
+      "Relatório de Custo e Uso da AWS (AWS CUR)",  
+      "Orçamentos da AWS",  
+      "Explorador de custos da AWS"  
+    ],  
+    "correct": 3  
+  },  
+  {  
+    "id": 56,  
+    "question": "O AWS Marketplace facilita qual dos seguintes casos de uso? (Selecione dois)",  
+    "answers": [  
+      "Adquira documentos de conformidade de fornecedores terceirizados",  
+      "Vender soluções de Software como Serviço (SaaS) para clientes da AWS",  
+      "Solicitar a compra da conexão AWS Direct Connect",  
+      "Compre instâncias reservadas padrão do Amazon EC2 (RI)",  
+      "O cliente da AWS pode comprar software que foi agrupado em Amazon Machine Image (AMIs) personalizadas pelos vendedores do AWS Marketplace"  
+    ],  
+    "correct": [1, 4]  
+  },  
+  {  
+    "id": 57,  
+    "question": "Uma organização mantém uma Nuvem Privada Virtual (VPC) separada para cada uma de suas unidades de negócios. Duas unidades precisam compartilhar dados de forma privada. Qual é a maneira mais adequada de compartilhar dados de forma privada entre as duas VPCs?",  
+    "answers": [  
+      "VPN de site para site da AWS",  
+      "Conexão de peering VPC",  
+      "Ponto de extremidade da VPC",  
+      "Conexão direta da AWS"  
+    ],  
+    "correct": 1  
+  },  
+  {  
+    "id": 58,  
+    "question": "Qual serviço da AWS pode ser usado para configurar alarmes de cobrança para monitorar cobranças estimadas na sua conta da AWS?",  
+    "answers": [  
+      "Organizações da AWS",  
+      "AWS CloudTrail",  
+      "Explorador de custos da AWS",  
+      "Amazon CloudWatch"  
+    ],  
+    "correct": 3  
+  },  
+  {  
+    "id": 59,  
+    "question": "Qual das seguintes opções está correta em relação ao serviço Amazon Relational Database Service (Amazon RDS)?",  
+    "answers": [  
+      "Você pode usar réplicas de leitura apenas para melhor desempenho de leitura e implantação multi-AZ apenas para recuperação de desastres",  
+      "Você pode usar réplicas de leitura e implantação multi-AZ com espera única para melhor desempenho de leitura",  
+      "Você pode usar réplicas de leitura e implantação multi-AZ para recuperação de desastres",  
+      "Você pode usar réplicas de leitura somente para recuperação de desastres e implantação multi-AZ para melhor desempenho de leitura somente"  
+    ],  
+    "correct": 2  
+  },  
+  {  
+    "id": 60,  
+    "question": "Qual das opções a seguir é mais adequada para balanceamento de carga de tráfego HTTP e HTTPS?",  
+    "answers": [  
+      "Balanceador de carga do sistema",  
+      "Balanceador de carga de rede",  
+      "Dimensionamento automático da AWS",  
+      "Balanceador de carga de aplicativo"  
+    ],  
+    "correct": 3  
+  },  
+  {  
+    "id": 61,  
+    "question": "O AWS Trusted Advisor pode fornecer alertas sobre quais das seguintes configurações de segurança comuns? (Selecione duas)?",  
+    "answers": [  
+      "Quando você compartilha credenciais de usuário do IAM com outras pessoas",  
+      "Quando você permite acesso público aos buckets do Amazon S3",  
+      "Quando você não marca objetos em buckets do Amazon S3",  
+      "Quando você não habilita a criptografia de dados no Amazon S3 Glacier",  
+      "Quando você não ativa o registro de atividades do usuário (AWS CloudTrail)"  
+    ],  
+    "correct": [1, 4]  
+  }
+]
