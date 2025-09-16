@@ -382,3 +382,26 @@ h1 {
     cursor: not-allowed;
     transform: none; /* Remove o efeito de levantar */
 }
+/* Estilo para o botão de voltar no topo do container do desafio */
+#desafio-content .desafio-back-btn {
+    display: block;      
+    margin-bottom: 15px; /* Espaço entre o botão e o título H1 */
+    margin-right: auto;  
+    background-color: #f8f9fa; 
+    color: #343a40;          
+    border: 1px solid #dee2e6;
+    padding: 8px 16px;         
+    border-radius: 5px;        
+    cursor: pointer;           
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#desafio-content .desafio-back-btn:hover {
+    background-color: #e9ecef;
+}
+
+/* Garante um espaço consistente para o título */
+#desafio-content > h1 {
+    margin-bottom: 30px;
+}
