@@ -355,3 +355,30 @@ h1 {
 #back-to-quiz-btn:hover {
     background-color: #e0e0e0;
 }
+
+/* Estilo para os botões de ação do desafio (Enviar e Próxima) */
+.desafio-action-btn {
+    background-color: #007bff; /* Um azul padrão, pode mudar */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 5px; /* Adiciona um pequeno espaçamento */
+}
+
+/* Efeito ao passar o mouse */
+.desafio-action-btn:hover:not(:disabled) {
+    background-color: #0056b3; /* Um azul mais escuro */
+    transform: translateY(-2px);
+}
+
+/* Estilo para o botão quando estiver desabilitado */
+.desafio-action-btn:disabled {
+    background-color: #a0a0a0; /* Um cinza */
+    cursor: not-allowed;
+    transform: none; /* Remove o efeito de levantar */
+}
