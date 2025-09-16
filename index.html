@@ -35,7 +35,8 @@
 
       <!-- Botões: Dica + Próxima -->
       <div class="quiz-buttons">
-        <button id="back-to-quiz-start-btn">← Voltar ao Início</button>
+        <!-- ✅ AJUSTE 1: ID PADRONIZADO -->
+        <button id="back-to-start-btn">← Voltar ao Início</button>
         <button id="hint-btn" title="Ver dica">💡</button>
         <button id="submit-button" style="display: none;">Enviar</button>
         <button id="next-button" style="display: none;">Próxima</button>
@@ -60,46 +61,52 @@
         <button id="show-answer-btn">Clique para ver a resposta</button>
         <p id="flashcard-resposta" style="display:none;"></p>
         <button id="next-flashcard-btn">Próximo</button>
-        <button id="back-to-quiz-btn">Voltar ao Quiz</button>
+        <!-- ✅ AJUSTE 2: ID PADRONIZADO -->
+        <button id="back-to-start-btn">Voltar ao Quiz</button>
       </div>
     </div>
 
     <!-- DESAFIO CONTENT -->
+ 
     <div class="desafio-container" id="desafio-content" style="display:none;">
-    <button id="back-to-quiz-btn"> Voltar ao Quiz</button>
+        
+        <!-- ✅ BOTÃO MOVIDO PARA O TOPO DE TUDO -->
+        <button id="desafio-back-to-start" class="desafio-back-btn">← Voltar ao Início</button>
+        
+        <!-- ✅ TÍTULO FIXO LOGO ABAIXO DO BOTÃO -->
         <h1>Desafio AWS Cloud</h1>
 
-        <label for="prova-select">Selecione a prova:</label>
-        <select id="prova-select">
-            <option value="Prova1.json">Prova 1</option>
-            <option value="Prova2.json">Prova 2</option>
-            <option value="Prova3.json">Prova 3</option>
-            <option value="Prova4.json">Prova 4</option>
-            <option value="Prova5.json">Prova 5</option>
-            <option value="Prova6.json">Prova 6</option>
-            <option value="Prova7.json">Prova 7</option>
-            <option value="Prova8.json">Prova 8</option>
-        </select>
-
+        <!-- TELA 1: INÍCIO DO DESAFIO (Agora sem o título principal) -->
         <div id="desafio-start">
+            <label for="prova-select">Selecione a prova:</label>
+            <select id="prova-select">
+                <option value="Prova1.json">Prova 1</option>
+                <option value="Prova2.json">Prova 2</option>
+                <option value="Prova3.json">Prova 3</option>
+                <option value="Prova4.json">Prova 4</option>
+                <option value="Prova5.json">Prova 5</option>
+                <option value="Prova6.json">Prova 6</option>
+                <option value="Prova7.json">Prova 7</option>
+                <option value="Prova8.json">Prova 8</option>
+            </select>
             <p>Teste seus conhecimentos sobre Amazon Web Services.</p>
             <p>Boa sorte! 🚀</p>
             <button id="start-desafio-button">Iniciar Prova Oficial Desafio</button>
         </div>
 
+        <!-- TELA 2: PERGUNTA (Agora sem o botão de voltar e sem o título) -->
         <div id="desafio" style="display:none;">
             <div id="desafio-question"></div>
             <div id="desafio-answers"></div>
-           <!-- ton id="desafio-next-button">Próxima</button> -->
-      
-        <div class="desafio-buttons-container">
-            <button id="desafio-submit-button" class="desafio-action-btn">Enviar Resposta</button>
-            <button id="desafio-next-button" class="desafio-action-btn" style="display: none;">Próxima Pergunta</button>
-        </div>
+            <div class="desafio-buttons-container">
+                <button id="desafio-submit-button" class="desafio-action-btn">Enviar Resposta</button>
+                <button id="desafio-next-button" class="desafio-action-btn" style="display: none;">Próxima Pergunta</button>
+            </div>
             <div id="desafio-progress">Pergunta <span id="desafio-current"></span>/<span id="desafio-total"></span></div>
             <div id="desafio-score">Acertos: <span id="desafio-correct-answers">0</span></div>
         </div>
 
+        <!-- TELA 3: FIM DO DESAFIO -->
         <div id="desafio-end" style="display:none;">
             <h2>Desafio Concluído!</h2>
             <p>Sua pontuação: <span id="desafio-final-score"></span></p>
@@ -108,7 +115,10 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="script.js"></script>
+  <!-- Carrega os scripts no final do body -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> --> <!-- Você pode manter ou remover, já que os scripts JS estão adicionando dinamicamente -->
+  <script src="script.js"></script> <!-- Seu primeiro script (Quiz principal, Flashcards) -->
+  <script src="desafio.js"></script> <!-- Seu segundo script (Desafio Oficial). Sugiro renomear para ficar claro -->
+
 </body>
 </html>
