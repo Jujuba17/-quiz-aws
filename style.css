@@ -405,3 +405,19 @@ h1 {
 #desafio-content > h1 {
     margin-bottom: 30px;
 }
+#flashcard-tema-container {
+    text-align: left; /* Alinha a badge à esquerda */
+    margin-bottom: 8px; /* Espaço entre a badge e o card */
+}
+
+.tema-badge {
+    display: inline-block;
+    padding: 5px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    background-color: #e9ecef; /* Um cinza claro e neutro */
+    border: 1px solid #dee2e6;
+    border-radius: 20px; /* Bordas arredondadas para o formato de pílula */
+    text-transform: capitalize; /* Ex: "armazenamento" vira "Armazenamento" */
+}
