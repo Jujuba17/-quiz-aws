@@ -1,6 +1,6 @@
 // =============================================================
 // ARQUIVO: script.js (Quiz Principal e Flashcards)
-// VERSÃO ATUALIZADA - Botão Voltar Recarrega a Página
+// VERSÃO ATUALIZADA - Flashcards carregados de JSON
 // =============================================================
 
 // --- VARIÁVEIS GLOBAIS DO QUIZ PRINCIPAL ---
@@ -13,14 +13,10 @@ const TOTAL_QUESTIONS = 20;
 let answeredQuestions = JSON.parse(localStorage.getItem('quizProgress')) || [];
 
 // --- VARIÁVEIS GLOBAIS DOS FLASHCARDS ---
-const flashcards = [
-  { tema: "Análise", pergunta: "Amazon CloudSearch", resposta: "Serviço gerenciado de pesquisa do seu site ou aplicativo" },
-  { tema: "Infraestrutura como Código", pergunta: "Benefícios da Infraestrutura como Código", resposta: "Automação: Provisione e configure a infraestrutura automaticamente, reduzindo erros.\nConsistência: Garanta que as configurações sejam idênticas em diferentes ambientes.\nRepetibilidade: Recrie a mesma infraestrutura facilmente sempre que necessário.\nVersionamento: Rastreie e reverta alterações como em um código-fonte comum.\nColaboração: Equipes podem trabalhar juntas de forma mais eficaz, usando o mesmo código." },
-  // Adicione mais flashcards aqui
-];
+let allFlashcards = []; // Começa vazio, será carregado do JSON
 let currentFlashcardIndex = 0;
 let filteredFlashcards = [];
-
+let areFlashcardsLoaded = false; // Flag para controlar o carregamento
 
 // --- FUNÇÃO DE CONEXÃO DE EVENTOS ---
 function connectEventListeners() {
@@ -40,16 +36,15 @@ function connectEventListeners() {
     flashcardBtn.onclick = () => {
       document.getElementById('start-screen').style.display = 'none';
       document.getElementById('flashcard-content').style.display = 'block';
+      // A função showFlashcard agora se encarrega de carregar os dados se necessário
       showFlashcard();
     };
   }
   
-  // ✅ CORREÇÃO APLICADA AQUI
-  // Pega TODOS os botões "Voltar" (do quiz e do flashcard) com o ID padronizado.
+  // Botões "Voltar" (do quiz e do flashcard)
   const backToStartButtons = document.querySelectorAll('#back-to-start-btn');
   backToStartButtons.forEach(button => {
     button.onclick = () => {
-      // Simplesmente recarrega a página. É o reset mais eficaz e garantido.
       location.reload(); 
     };
   });
@@ -69,36 +64,93 @@ function connectEventListeners() {
 }
 
 // --- FUNÇÕES DOS FLASHCARDS ---
-// (Nenhuma alteração nesta seção)
-function showFlashcard() {
+
+// Carrega os flashcards do arquivo JSON de forma assíncrona
+async function loadFlashcards() {
+  if (areFlashcardsLoaded) return; // Não carrega de novo se já tiver carregado
+
+  try {
+    const res = await fetch('flashcards.json');
+    if (!res.ok) throw new Error(`Erro na resposta da rede: ${res.statusText}`);
+    allFlashcards = await res.json();
+    areFlashcardsLoaded = true;
+    populateTemaSelect(); // Preenche o <select> de temas dinamicamente
+  } catch(error) {
+    console.error("Erro ao carregar flashcards.json:", error);
+    document.getElementById("flashcard-pergunta").innerText = "Falha ao carregar os flashcards. Verifique o console.";
+  }
+}
+
+// Preenche o menu <select> com os temas encontrados no JSON
+function populateTemaSelect() {
+    const temaSelect = document.getElementById("tema-select");
+    if (!temaSelect) return;
+
+    // Extrai temas únicos para não haver duplicatas no menu
+    const temas = [...new Set(allFlashcards.map(card => card.tema))];
+    
+    // Limpa opções antigas (mantém a opção "Todos")
+    while (temaSelect.options.length > 1) {
+        temaSelect.remove(1);
+    }
+    
+    // Adiciona cada tema como uma nova <option>
+    temas.sort().forEach(tema => {
+        const option = document.createElement("option");
+        option.value = tema.toLowerCase(); // valor em minúsculas para consistência
+        option.textContent = tema;
+        temaSelect.appendChild(option);
+    });
+}
+
+// Garante que os dados estão carregados e então exibe um flashcard
+async function showFlashcard() {
+  await loadFlashcards(); // Espera o carregamento ser concluído
+
   const selectedTema = document.getElementById("tema-select").value;
-  filteredFlashcards = flashcards.filter(flashcard =>
+  filteredFlashcards = allFlashcards.filter(flashcard =>
     selectedTema === "todos" || flashcard.tema.toLowerCase() === selectedTema.toLowerCase()
   );
 
+  const nextFlashcardBtn = document.getElementById("next-flashcard-btn");
+
   if (filteredFlashcards.length === 0) {
-    alert("Não há flashcards disponíveis para essa categoria.");
-    document.getElementById("flashcard-pergunta").innerText = "Nenhum card encontrado.";
+    document.getElementById("flashcard-pergunta").innerText = "Nenhum card encontrado para este tema.";
     document.getElementById("flashcard-resposta").style.display = "none";
     document.getElementById("show-answer-btn").style.display = "none";
+    if (nextFlashcardBtn) nextFlashcardBtn.style.display = "none";
     return;
   }
 
+  // Sorteia um novo card aleatório dos que foram filtrados
   currentFlashcardIndex = Math.floor(Math.random() * filteredFlashcards.length);
   displayFlashcard();
+  if (nextFlashcardBtn) nextFlashcardBtn.style.display = "inline-block";
 }
 
+// Exibe o conteúdo do flashcard selecionado
 function displayFlashcard() {
   const flashcard = filteredFlashcards[currentFlashcardIndex];
+  const temaContainer = document.getElementById("flashcard-tema-container");
+
+  // Limpa o container e adiciona a nova badge
+  temaContainer.innerHTML = ''; 
+  if (flashcard.tema) {
+    const temaBadge = document.createElement("span");
+    temaBadge.className = "tema-badge";
+    temaBadge.textContent = flashcard.tema;
+    temaContainer.appendChild(temaBadge);
+  }
   document.getElementById("flashcard-pergunta").innerHTML = flashcard.pergunta;
   document.getElementById("flashcard-resposta").innerText = flashcard.resposta;
+  
+  // Reseta a visibilidade da resposta e do botão
   document.getElementById("flashcard-resposta").style.display = "none";
   document.getElementById("show-answer-btn").style.display = "inline-block";
 }
 
-
 // --- FUNÇÕES DO QUIZ PRINCIPAL ---
-// (Nenhuma alteração nesta seção)
+// (Esta seção permanece inalterada)
 async function loadQuestions() {
   try {
     const res = await fetch('questions.json');
@@ -241,13 +293,12 @@ function showResult() {
 }
 
 function resetQuiz() {
-  // O recarregamento da página é a forma mais simples de reiniciar
   location.reload();
 }
 
 function resetCompleteQuiz() {
   localStorage.removeItem('quizProgress');
-  location.reload(); // Recarrega a página para um reset completo
+  location.reload();
 }
 
 
@@ -271,10 +322,10 @@ function addDesafioContentListeners() {
     };
 }
 
-
 document.addEventListener('DOMContentLoaded', () => {
   connectEventListeners();
 
+  // Eventos dos Flashcards
   document.getElementById("show-answer-btn").onclick = () => {
     document.getElementById("flashcard-resposta").style.display = "block";
     document.getElementById("show-answer-btn").style.display = "none";
@@ -289,6 +340,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // =============================================================
 // ARQUIVO: desafio.js (Desafio Oficial)
 // VERSÃO ATUALIZADA - Botão Voltar Recarrega a Página
+// =============================================================
+// =============================================================
+// ARQUIVO: desafio.js (Desafio Oficial)
 // =============================================================
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -312,7 +366,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const backToStartButton = document.getElementById('desafio-back-to-start');
 
     // --- Carregamento dinâmico de Scripts e Variáveis de Estado ---
-    // (Nenhuma alteração nesta seção)
     if (!window.Chart) {
         const chartScript = document.createElement('script');
         chartScript.src = 'https://cdn.jsdelivr.net/npm/chart.js';
@@ -326,7 +379,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // --- Funções do Desafio ---
-    // (Nenhuma alteração nesta seção)
     function restartDesafio() {
         currentQuestionIndex = 0;
         correctAnswers = 0;
@@ -396,45 +448,34 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
-
     function selectAnswer(event) {
         const selectedButton = event.target;
         const answerIndex = parseInt(selectedButton.dataset.index, 10);
         const questionData = questions[currentQuestionIndex];
         const isMultipleChoice = Array.isArray(questionData.correct);
 
-        // ✅ LÓGICA CORRIGIDA PARA MÚLTIPLA ESCOLHA
         if (isMultipleChoice) {
             const requiredAnswersCount = questionData.correct.length;
             const isAlreadySelected = selectedAnswers.includes(answerIndex);
 
             if (isAlreadySelected) {
-                // Se já está selecionado, permite desmarcar.
                 selectedAnswers = selectedAnswers.filter(index => index !== answerIndex);
                 selectedButton.classList.remove('selected');
             } else {
-                // Se NÃO está selecionado, verifica se o limite já foi atingido.
                 if (selectedAnswers.length < requiredAnswersCount) {
-                    // Limite ainda não atingido, permite selecionar.
                     selectedAnswers.push(answerIndex);
                     selectedButton.classList.add('selected');
                 } else {
-                    // Limite atingido. Ignora o clique em uma nova opção.
-                    // Opcional: pode-se adicionar um feedback visual, mas por enquanto, só ignoramos.
                     console.log(`Limite de ${requiredAnswersCount} respostas atingido.`);
-                    return; // Impede a execução do resto da função
+                    return;
                 }
             }
         } else {
-            // Lógica para perguntas de resposta única (permanece a mesma)
-            // Remove a seleção anterior
             document.querySelectorAll('.answer.selected').forEach(btn => btn.classList.remove('selected'));
-            // Adiciona a nova seleção
             selectedAnswers = [answerIndex];
             selectedButton.classList.add('selected');
         }
 
-        // Habilita ou desabilita o botão de enviar com base na seleção
         submitButton.disabled = selectedAnswers.length === 0;
     }
 
@@ -490,11 +531,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ✅ CORREÇÃO APLICADA AQUI
-    // Listener do botão "Voltar ao Início" durante o desafio.
     if (backToStartButton) {
         backToStartButton.addEventListener('click', () => {
-            // Ação unificada: recarregar a página para voltar ao início.
             location.reload();
         });
     }
