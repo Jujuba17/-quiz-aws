@@ -59,7 +59,7 @@
     "id": 6,
     "question": "Qual das seguintes entidades pode ser usada para se conectar a um servidor Amazon Elastic Compute Cloud (Amazon EC2) de um computador baseado em Mac OS, Windows ou Linux por meio de um cliente baseado em navegador?",
     "answers": [
-      "Massa de vidraceiro",
+      "Putty",
       "Conexão direta da AWS",
       "Conexão de instância do Amazon EC2",
       "SSH"
