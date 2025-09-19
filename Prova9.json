@@ -52,7 +52,7 @@
       "Compute Savings Plan",
       "All Upfront payment(Pagamento adiantado)"
     ],
-    "correct": 0
+    "correct": [0, 3]
   },
   {
     "id": 6,
@@ -97,7 +97,7 @@
       "Eliminação da necessidade de planejamento de recuperação de desastres",
       "Implantação mais rápida de novos recursos e aplicativos"
     ],
-    "correct": 0
+    "correct": [0, 4]
   },
   {
     "id": 10,
@@ -340,7 +340,7 @@
       "Detecção de problemas de segurança, conformidade e desempenho",
       "Implementação da marcação imposta em todos os recursos da AWS"
     ],
-    "correct": 2
+    "correct": [2, 3]
   },
   {
     "id": 32,
@@ -671,7 +671,7 @@
       "Amazon S3",
       "Amazon EC2"
     ],
-    "correct": 0
+    "correct": [0, 3]
   },
   {
     "id": 62,
