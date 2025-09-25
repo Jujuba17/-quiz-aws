@@ -506,7 +506,7 @@
       "AWS Lambda",  
       "Amazon Lightsail"
 ],
-   "correct": 2  
+   "correct": [1, 3]  
   },
   {  
     "id": 53,  
